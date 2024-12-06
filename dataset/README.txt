@@ -10,20 +10,26 @@ expressibility_german: expressibility data for German experiment, modeled + raw 
 
 similarity_df_final: data with concepts, answers, expressibility, cosine similarity, and other info
 
+df_similarity_only: data only with target, answer and cosine similarity (the numberbatch usually takes a lot of time to load, so to prevent running it all the time again, this is just all the data)
+
 ----
 
-- Add columns:
-	- participant: for unique identifier of participant (e.g., 1, 2, 3...)
-	- dyad: for unique identifier of dyad (e.g., 1, 2, 3...)
-	- file: name of file of the production
-	- correction: 0 = first production, 1 = second production, 2 = third production
+New additions
+	- column pcnID, tracking participants (ignoring the two parts of a session), in form session_participant
+	- column for dyad
+	- column for correction, note that part 1 has value of correction 0
+	- column for trial_order to keep track of the order how stimuli were presented
+	- column trial_type keeps track of what concept is target/practice
+	- column cycle renamed to participant (0 starts first, 1 follows, this is decided by rock-paper-scissors game and kept constant throughout the session)
+	- column session ID stands for session_part
+	- new dataframe df_similarity_only, see above the reason (it's just for data-wrangling purposes)
 
-- Remove non-target items. Alternatively, add a column that allows for identification (e.g., called "trial" with values "practice" and "target")
+Notes
+	- dyad 68 is not there because consent was withdrawn
+	- dyad 19 is missing - not sure why, will check back on hard-drive 
+	- therefore, for now, 140 participants
 
-- Maybe after the steps above, it will not be necessary anymore: 
-	Please let me know what are the columns:
-	- cycle
-	- session_ID (what are the individual parts)
-	
-- Other questions:
-	- Please double-check that all dyads are there. I have data from 61 dyads and 122 participants (as opposed to 72 dyads and 144 participants.)
+TODO
+
+	- file name (will add later, need to check the string format of the video/audio name)
+
