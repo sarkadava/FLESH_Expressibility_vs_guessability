@@ -1,0 +1,93 @@
+---
+title: "The relationship between expectation and performance: Methodological evaluation"
+author: "Aleksandra Ćwiek, Wim Pouw, Susanne Fuchs, Šárka Kadavá"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  rmarkdown::html_document:
+    theme: readable
+    number_sections: yes
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    df_print: paged
+    code_folding: hide
+  pdf_document:
+    number_sections: yes
+    toc: yes
+    toc_depth: '3'
+  html_notebook:
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+editor_options: 
+  chunk_output_type: console
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+This is the modeling of expressibility vs.
+guessability, preregistered at
+[AsPredicted](https://aspredicted.org/kmry-vx5s.pdf).
+
+This script uses the output of `1_descriptive.Rmd` and prodcues all the values and plots reported in the paper.
+
+# Data preparation
+
+## Setup
+
+```{r source setup, echo = TRUE, message=FALSE, warning = FALSE}
+
+########## folders ##########
+library(here)
+
+parentfolder <- dirname(getwd())
+
+rawdata       <- paste0(parentfolder, '/rawdata/');
+dataset       <- paste0(parentfolder, '/dataset/');
+models        <- paste0(parentfolder, '/models/');
+plots         <- paste0(parentfolder, '/plots/');
+scripts       <- paste0(parentfolder, '/scripts/');
+
+########## source file ##########
+
+rmarkdown::render("1_descriptive.Rmd", envir = globalenv(), clean = FALSE)
+
+#################### packages ####################
+# Data Manipulation
+library(tidyverse);
+
+# Plotting
+library(corrplot);
+library(cowplot);
+library(ggdist);
+
+# Bayesian
+library(brms);
+library(cmdstanr);
+library(emmeans);
+library(posterior);
+library(tidybayes);
+
+theme_set(theme_tidybayes() + panel_border());
+
+
+# use all available cores for parallel computing
+options(mc.cores = parallel::detectCores());
+
+colorBlindBlack8  <- c("#000000", "#E69F00", "#56B4E9", "#009E73", 
+                       "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+```
+
+# Session info
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+sessionInfo()
+```

@@ -1,0 +1,517 @@
+---
+title: "The relationship between expectation and performance: Methodological evaluation"
+author: "Aleksandra Ćwiek, Wim Pouw, Susanne Fuchs, Šárka Kadavá"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  rmarkdown::html_document:
+    theme: readable
+    number_sections: yes
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    df_print: paged
+    code_folding: hide
+  pdf_document:
+    number_sections: yes
+    toc: yes
+    toc_depth: '3'
+  html_notebook:
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+editor_options: 
+  chunk_output_type: console
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+This is the preparation and descriptive analysis of expressibility vs.
+guessability, preregistered at
+[AsPredicted](https://aspredicted.org/kmry-vx5s.pdf).
+
+# Data preparation
+
+## Source setup
+
+```{r source setup, echo = TRUE, message=FALSE, warning = FALSE}
+
+########## folders ##########
+library(here)
+
+parentfolder <- dirname(getwd())
+
+rawdata       <- paste0(parentfolder, '/rawdata/')
+dataset       <- paste0(parentfolder, '/dataset/')
+models        <- paste0(parentfolder, '/models/')
+plots         <- paste0(parentfolder, '/plots/')
+scripts       <- paste0(parentfolder, '/scripts/')
+
+########## source file ##########
+
+#source(paste0(scripts, "adjectives-preparation.R"))
+
+#################### packages ####################
+# Data Manipulation
+library(tibble)
+library(stringr)
+library(tidyverse) # includes readr, tidyr, dplyr, ggplot2
+packageVersion("tidyverse")
+library(data.table)
+library(readxl)
+
+# Plotting
+library(ggforce)
+library(ggpubr)
+library(gridExtra)
+library(corrplot)
+library(ggdist)
+library(ggbeeswarm)
+
+library(BayesFactor)
+
+# use all available cores for parallel computing
+options(mc.cores = parallel::detectCores())
+
+colorBlindBlack8  <- c("#000000", "#E69F00", "#56B4E9", "#009E73", 
+                       "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+```
+
+## Load in data frames
+
+```{r read metadata, echo=TRUE, message=FALSE, warning=FALSE}
+# Load data frame
+df <- read_csv(paste0(dataset, "similarity_df_final.csv"))
+
+# Load concept list
+concepts <- read_excel(paste0(dataset, "conceptlist_info.xlsx"))
+
+# Load expressibility German
+expr_german <- read_csv(paste0(dataset, "expressibility_german.csv"))
+
+# Load expressibility Dutch
+expr_dutch <- read_csv(paste0(dataset, "expressibility_dutch.csv"))
+
+```
+
+# Cleaning
+
+```{r}
+df <- df %>%
+  mutate(
+    modality = case_when(
+      modality == "combinatie" ~ "combined",
+      modality == "gebaren" ~ "gesture",
+      modality == "geluiden" ~ "vocal",
+      TRUE ~ modality
+    )
+  ) %>%
+  rename(participant = cycle) %>%
+  rename(exp_part = exp) %>%
+  rename(concept = English) %>%
+  mutate(dyad = str_extract(sessionID, "^[^_]+")) %>%
+  select(-`...1`) %>%  # Remove the first column
+  rename(stimulus = word)
+
+# Reorder the columns in the specified order
+df <- df %>%
+  select(dyad, participant, exp_part, modality, expressibility_dutch, 
+         concept, guess_binary, cosine_similarity, stimulus, answer, 
+         SemanticSubcat, sessionID)
+
+# Only keep target trials
+df <- df %>%
+  semi_join(concepts, by = c("concept" = "English"))
+
+```
+
+# Descriptive statistics
+
+How many dyads?
+
+```{r}
+length(unique(df$dyad))
+```
+
+How many participants?
+
+```{r}
+length(unique(df$participant))
+# Now incorrect because of participant coding
+```
+
+How many concepts?
+
+```{r}
+length(unique(df$concept))
+```
+
+How many productions are there per concept?
+
+```{r}
+df %>%
+  group_by(concept) %>%
+  summarise(frequency = n()) %>%
+  arrange(desc(frequency)) %>% 
+  print(n = 100)
+```
+
+How many productions per concept within the experiment parts?
+
+```{r}
+df %>%
+  group_by(concept, exp_part) %>%
+  summarise(frequency = n(), .groups = "drop") %>%  # Calculate frequency for each exp_part
+  pivot_wider(names_from = exp_part, values_from = frequency, names_prefix = "frequency_part") %>%
+  arrange(desc(frequency_part1), desc(frequency_part2)) %>%
+  print(n = 100)
+```
+
+What is the performance of each dyad? We only look at binary guessing.
+
+```{r}
+df %>%
+  group_by(dyad) %>%
+  summarise(
+    total_trials = n(),  # Total number of rows per dyad
+    total_guesses = sum(guess_binary == 1),  # Number of guesses where guess_binary == 1
+    perf_dyad = (total_guesses / total_trials) * 100  # Percentage of correct guesses
+  ) %>%
+  arrange(desc(perf_dyad)) %>%  # Optional: sort by performance
+  print(n = 100)
+```
+
+What is the performance of each participant within the dyad? We only
+look at binary guessing.
+
+```{r}
+df %>%
+  group_by(dyad, participant) %>%
+  summarise(
+    total_trials = n(),  # Total number of rows per dyad
+    total_guesses = sum(guess_binary == 1),  # Number of guesses where guess_binary == 1
+    perf_participant = (total_guesses / total_trials) * 100  # Percentage of correct guesses
+  ) %>%
+  arrange(desc(perf_participant)) %>%  # Optional: sort by performance
+  print(n = 150)
+```
+
+### Hypothesis 1
+
+*The higher the expressibility rating of the concept for the modality in
+which the concept is produced, the higher the guessability will be.*
+
+Expressibility and binary guessability?
+
+```{r}
+df %>%
+  group_by(guess_binary) %>%
+  summarise(
+    mean_expressibility = mean(expressibility_dutch, na.rm = TRUE),
+    sd_expressibility = sd(expressibility_dutch, na.rm = TRUE),
+    min_expressibility = min(expressibility_dutch, na.rm = TRUE),
+    max_expressibility = max(expressibility_dutch, na.rm = TRUE),
+    median_expressibility = median(expressibility_dutch, na.rm = TRUE),
+    n = n()
+  )
+
+# Boxplot for expressibility_dutch grouped by guess_binary
+ggplot(df, aes(x = factor(guess_binary), y = expressibility_dutch, fill = factor(guess_binary))) +
+  geom_boxplot(
+    color = "black",  # Set border color for the box
+    alpha = 0.5      # Set transparency (alpha) for the box
+  ) +
+  scale_fill_manual(values = c("0" = colorBlindBlack8[1], "1" = colorBlindBlack8[2])) +  # Assign colors to the groups
+  scale_x_discrete(labels = c("incorrect", "correct")) +  # Change x-axis labels
+  labs(
+    x = "Guess", 
+    y = "Expressibility"
+  ) +
+  guides(fill = "none") +
+  theme_minimal()
+
+# Trying ggdist
+ggplot(df, aes(x = expressibility_dutch, y = factor(guess_binary), fill = factor(guess_binary))) +
+  # Adding the slabinterval using stat_halfeye
+  ggdist::stat_halfeye(
+    aes(fill = factor(guess_binary)),
+    side = "left",  # Slabinterval on the left side
+    slab_color = NA,  # Remove outline for the slab
+    interval_size = 1.2,  # Adjust interval thickness
+    point_interval = mean_qi,  # Add mean and credible interval
+    alpha = 0.5,
+    size = 5  # Make the line thicker
+  ) +
+  # Adding geom_boxplot for the boxplot representation
+  geom_boxplot(
+    width = 0.15,
+    outlier.shape = NA,
+    alpha = 0.5,
+    position = position_nudge(y = 0.2)  # Slightly move the boxplot up to avoid overlap
+  ) +
+  # Adding stat_summary for the median point
+  stat_summary(
+    fun = median,
+    geom = "point",
+    color = "red",
+    size = 2,
+    position = position_nudge(y = 0.2)
+  ) +
+  # Customizing the colors
+  scale_fill_manual(values = c("0" = colorBlindBlack8[1], "1" = colorBlindBlack8[2])) +
+  scale_y_discrete(labels = c("incorrect", "correct")) +  # Change x-axis labels
+  coord_flip() +  # Flip the axes to match the orientation
+  theme_minimal() +
+  theme(
+    legend.position = "none",  # Remove legend for simplicity
+    plot.title = element_text(hjust = 0.5),  # Center-align the title
+    axis.title.x = element_text(vjust = -0.5),  # Adjust x-axis label position
+    axis.title.y = element_text(vjust = 1.5),   # Adjust y-axis label position
+    text = element_text(size = 18)  # Increase font size for better readability
+  ) +
+  labs(
+    y = "Expressibility",
+    x = "Guess",
+    fill = "Guess"
+  )
+
+# Ridgeline
+ggplot(df, aes(x = expressibility_dutch, y = factor(guess_binary), color = factor(guess_binary), fill = factor(guess_binary))) + 
+  coord_cartesian(clip = "off") +  # Allow the plot to extend beyond the plot region
+  scale_y_discrete(expand = c(0.07, 0.07)) +  # Add some space between the ridgelines
+  scale_color_manual(values = c("0" = colorBlindBlack8[1], "1" = colorBlindBlack8[2]), guide = "none") +  # Assign color to groups
+  scale_fill_manual(values = c("0" = colorBlindBlack8[1], "1" = colorBlindBlack8[2]), guide = "none") +  # Assign fill to groups
+  theme_minimal() +
+  theme(
+    axis.title.y = element_blank(),  # Remove y-axis label
+    axis.title.x = element_text(vjust = -0.5),  # Adjust x-axis title position
+    axis.text.y = element_blank(),  # Remove y-axis ticks
+    plot.title = element_text(hjust = 0.5),  # Center-align the title
+    #legend.position = "none"  # Remove the legend
+  ) +
+  ggridges::stat_density_ridges(
+    quantile_lines = TRUE, quantiles = 2, 
+    color = "black", alpha = .5, size = 1.5
+  ) +
+  labs(
+    x = "Expressibility"
+  )
+```
+
+Expressibility and cosine similarity?
+
+```{r}
+# Calculate correlation coefficient
+## 
+cor(df$expressibility_dutch, df$cosine_similarity, use = "complete.obs")
+correlationBF(df$expressibility_dutch, df$cosine_similarity)
+```
+
+The **correlation coefficient** of **0.5176** suggests a **moderate to
+strong positive correlation** between `expressibility_dutch` and
+`cosine_similarity`.
+
+The Bayes Factor indicates **extremely strong evidence in favor of a
+non-zero correlation**, with a Bayes Factor of **2.035279e+531**. This
+suggests that the correlation between `expressibility_dutch` and
+`cosine_similarity` is extremely likely and the null hypothesis (no
+correlation) can be rejected with very high confidence.
+
+```{r}
+# Scatter plot with correlation coefficient in the title
+ggplot(df, aes(x = expressibility_dutch, y = cosine_similarity)) +
+  geom_point(color = colorBlindBlack8[1], alpha = 0.5) +  # Set alpha for points
+  geom_smooth(method = "lm", se = TRUE, color = colorBlindBlack8[2], size = 2) +  # Set thickness of lm line and add error bars (se = TRUE)
+  scale_color_manual(
+    values = colorBlindBlack8[2]
+  ) +  # Rename cosine_similarity in the legend
+  labs(
+    x = "Expressibility",
+    y = "Cosine similarity"
+  ) +
+  theme_minimal()
+```
+
+To better visualize the relationship let us calculate the average
+`cosine_similarity` for each unique `expressibility_dutch` value and
+create a plot where:
+
+-   **Averaged points** are plotted on the graph.
+
+-   The size of the dots represents the number of original observations
+    contributing to each averaged point.
+
+-   This will make it easier to see whether the relationship between
+    `expressibility_dutch` and `cosine_similarity` is linear on average.
+
+```{r}
+df %>%
+  group_by(expressibility_dutch) %>%
+  summarise(
+    mean_cosine_similarity = mean(cosine_similarity, na.rm = TRUE),  # Mean cosine similarity
+    n = n()  # Count of data points for each unique x value
+  ) %>%
+  ggplot(aes(x = expressibility_dutch, y = mean_cosine_similarity, size = n)) +
+  geom_point(color = colorBlindBlack8[1], alpha = 0.7) +  # Scatterplot with size mapped to n
+  geom_smooth(method = "lm", se = TRUE, color = colorBlindBlack8[2], size = 1.5) +  # Linear regression line with error bars
+  labs(
+    x = "Expressibility",
+    y = "Mean cosine similarity",
+    size = "Number of data points",
+  ) +
+  theme_minimal()
+```
+
+### Hypothesis 2
+
+*The higher the expressibility rating of the concept for the modality in
+which the concept is produced, the fewer repetitions there will be.*
+
+Expressibility and repetitions.
+
+```{r}
+
+```
+
+### Hypothesis 3
+
+*Guessability is higher when there is feedback between a producer and a
+guesser (i.e., in the second half of the experiment, where the guesser
+knows if they answered correctly, and the producer knows what the
+guesser answered).*
+
+Experiment parts and binary guessability
+
+```{r}
+df %>%
+  group_by(exp_part) %>%
+  summarise(
+    total_trials = n(),  # Total number of rows for this experiment part
+    total_guesses = sum(guess_binary == 1),  # Total successful guesses for this experiment part
+    overall_performance = (total_guesses / total_trials) * 100  # Performance percentage
+  ) %>%
+  arrange(exp_part)  # Optional: Sort by experiment part
+```
+
+```{r}
+ggplot(df, aes(x = factor(exp_part), y = guess_binary, fill = factor(exp_part))) +
+  stat_summary(fun = "mean", geom = "bar", color = "black", alpha = 0.7) +  # Calculate mean for guess_binary (performance)
+  stat_summary(fun.data = "mean_cl_normal", geom = "errorbar", width = 0.2) +  # Add error bars (95% CI)
+  labs(
+    x = "Experiment part", 
+    y = "Guessability",
+  ) +
+  scale_fill_manual(values = c("1" = colorBlindBlack8[1], "2" = colorBlindBlack8[2])) + 
+  guides(fill = "none") +  # Remove the fill legend
+  scale_y_continuous(breaks = seq(0, 1, by = 0.05),
+                     limits = c(0,1)) +
+  theme_minimal()
+```
+
+Experiment parts and cosine similarity
+
+```{r}
+df %>%
+  group_by(exp_part) %>%
+  summarise(
+    avg_cosine_similarity = mean(cosine_similarity, na.rm = TRUE),  # Mean cosine similarity
+    sd_cosine_similarity = sd(cosine_similarity, na.rm = TRUE),    # Standard deviation
+    total_trials = n()  # Total number of trials for reference
+  ) %>%
+  arrange(exp_part)  # Optional: Sort by experiment part
+
+```
+
+```{r}
+ggplot(df, aes(x = factor(exp_part), y = cosine_similarity, fill = factor(exp_part))) +
+  stat_summary(fun = "mean", geom = "bar", color = "black", alpha = 0.7) +  
+  stat_summary(fun.data = "mean_cl_normal", geom = "errorbar", width = 0.2) +  # Add error bars (95% CI)
+  labs(
+    x = "Experiment part", 
+    y = "Cosine similarity",
+  ) +
+  scale_fill_manual(values = c("1" = colorBlindBlack8[1], "2" = colorBlindBlack8[2])) + 
+  guides(fill = "none") +  # Remove the fill legend
+  scale_y_continuous(breaks = seq(0, 1, by = 0.05),
+                     limits = c(0,1)) +
+  theme_minimal()
+```
+
+### Hypothesis 4
+
+*Guessability will differ by modality; the order from highest to lowest
+will be: combined \> gesture \> vocalization.*
+
+Modalities and binary guessability
+
+```{r}
+df %>%
+  group_by(modality) %>%
+  summarise(
+    total_trials = n(),  # Number of trials for each modality
+    total_guesses = sum(guess_binary == 1),  # Number of correct guesses
+    perf_modality = (total_guesses / total_trials) * 100  # Performance as percentage
+  ) %>%
+  arrange(desc(perf_modality))
+```
+
+Visualize the binary guessability across modalities
+
+```{r}
+ggplot(df, aes(x = modality, y = guess_binary, fill = modality)) +
+  stat_summary(fun = "mean", geom = "bar", color = "black", alpha = 0.7) +  # Calculate mean for guess_binary (performance)
+  stat_summary(fun.data = "mean_cl_normal", geom = "errorbar", width = 0.2) +  # Add error bars (95% CI)
+  labs(
+    x = "Modality", 
+    y = "Guessability",
+  ) +
+  scale_fill_manual(values = c("combined" = colorBlindBlack8[1], "gesture" = colorBlindBlack8[2], "vocal" = colorBlindBlack8[3])) +  # Customize colors
+  guides(fill = "none") +  # Remove the fill legend
+  scale_y_continuous(breaks = seq(0, 1, by = 0.05),
+                     limits = c(0,1)) +
+  theme_minimal()
+```
+
+Modalities and cosine similarity
+
+```{r}
+df %>%
+  group_by(modality) %>%
+  summarise(
+    total_trials = n(),  # Number of trials for each modality
+    mean_cosine_similarity = mean(cosine_similarity, na.rm = TRUE),  # Mean cosine similarity
+    sd_cosine_similarity = sd(cosine_similarity, na.rm = TRUE),  # Standard deviation of cosine similarity
+    perf_modality = (mean_cosine_similarity) * 100  # Performance as percentage
+  ) %>%
+  arrange(desc(perf_modality))
+```
+
+Visualize the cosine similarity across modalities
+
+```{r}
+ggplot(df, aes(x = modality, y = cosine_similarity, fill = modality)) +
+  stat_summary(fun = "mean", geom = "bar", color = "black", alpha = 0.7) +  # Calculate mean
+  stat_summary(fun.data = "mean_cl_normal", geom = "errorbar", width = 0.2) +  # Add error bars (95% CI)
+  labs(
+    x = "Modality", 
+    y = "Cosine similarity",
+  ) +
+  scale_fill_manual(values = c("combined" = colorBlindBlack8[1], "gesture" = colorBlindBlack8[2], "vocal" = colorBlindBlack8[3])) +  # Customize colors
+  guides(fill = "none") +  # Remove the fill legend
+  scale_y_continuous(breaks = seq(0, 1, by = 0.05),
+                     limits = c(0,1)) +
+  theme_minimal()
+```
+
+# Session info
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+sessionInfo()
+```
