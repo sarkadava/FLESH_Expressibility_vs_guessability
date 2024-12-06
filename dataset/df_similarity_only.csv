@@ -107,10 +107,7 @@ boos,boos,1.0
 walgen,walgen,1.0
 goed,goed,1.0
 luidruchtig,druk,0.493
-luidruchtig,druk,0.493
 luidruchtig,schreeuwen,0.468
-luidruchtig,schreeuwen,0.468
-luidruchtig,babbelen,0.204
 luidruchtig,babbelen,0.204
 man,baas,0.501
 man,bodybuilder,0.244
@@ -277,10 +274,7 @@ juichen,vieren,0.462
 juichen,aanmoedigen,0.283
 juichen,dansen,0.178
 luidruchtig,schreeuwen,0.468
-luidruchtig,schreeuwen,0.468
 luidruchtig,roepen,0.306
-luidruchtig,roepen,0.306
-luidruchtig,aanvallen,0.065
 luidruchtig,aanvallen,0.065
 berg,klimmen,0.407
 berg,bergwandeling,
@@ -489,10 +483,7 @@ vlieg,bij,0.15
 vlieg,vlieg,1.0
 blij,blij,1.0
 luidruchtig,drummen,0.119
-luidruchtig,drummen,0.119
 luidruchtig,druk,0.493
-luidruchtig,druk,0.493
-luidruchtig,kalmeren,0.178
 luidruchtig,kalmeren,0.178
 zout,kruiden,0.457
 zout,zout,1.0
@@ -582,10 +573,7 @@ fiets,melodie,0.005
 fiets,bel,0.059
 juichen,juichen,1.0
 luidruchtig,langzaam,0.166
-luidruchtig,langzaam,0.166
 luidruchtig,neuriën,0.242
-luidruchtig,neuriën,0.242
-luidruchtig,hoog,0.203
 luidruchtig,hoog,0.203
 man,eten,0.105
 man,brommen,0.042
@@ -814,10 +802,7 @@ vuur,kraken,-0.018
 vuur,malen,0.127
 vuur,kruiden,0.067
 luidruchtig,gejuich,0.305
-luidruchtig,gejuich,0.305
 luidruchtig,schreeuwen,0.468
-luidruchtig,schreeuwen,0.468
-luidruchtig,joelen,0.439
 luidruchtig,joelen,0.439
 misschien,mening,0.159
 misschien,nadenken,0.424
@@ -887,10 +872,7 @@ groot,lang,0.419
 groot,groot,1.0
 koud,koud,1.0
 luidruchtig,zacht,0.326
-luidruchtig,zacht,0.326
 luidruchtig,luid,0.778
-luidruchtig,luid,0.778
-luidruchtig,hard,0.533
 luidruchtig,hard,0.533
 misschien,twijfelen,0.284
 misschien,misschien,1.0
@@ -1021,7 +1003,6 @@ auto,motor,0.747
 vogel,spuiten,0.039
 hond,grommen,0.163
 hoorn,olifant,0.241
-luidruchtig,machine,0.082
 luidruchtig,machine,0.082
 staart,spuiten,0.072
 vliegen,blazen,0.164
@@ -1201,7 +1182,6 @@ haasten,haast,0.547
 vogel,vogel,1.0
 heet,heet,1.0
 luidruchtig,doof,0.168
-luidruchtig,doof,0.168
 blazen,blazen,1.0
 lachen,lachen,1.0
 likken,kat,0.212
@@ -1362,7 +1342,6 @@ snel,sprinten,0.391
 vlieg,vlieg,1.0
 hoog,groot,0.448
 luidruchtig,juichen,0.254
-luidruchtig,juichen,0.254
 berg,ballerina,-0.03
 drinken,drinken,1.0
 grommen,leeuw,0.108
@@ -1502,7 +1481,6 @@ lachen,lachen,1.0
 slapen,slapen,1.0
 haasten,hardlopen,0.336
 knippen,knippen,1.0
-luidruchtig,schreeuwen,0.468
 luidruchtig,schreeuwen,0.468
 niet,nee,0.746
 dik,taille,0.198
@@ -1821,10 +1799,7 @@ glimlach,lach,0.931
 glimlach,glimlach,1.0
 zwaaien,zwaaien,1.0
 luidruchtig,coach,-0.0
-luidruchtig,coach,-0.0
 luidruchtig,aanvoerder,0.069
-luidruchtig,aanvoerder,0.069
-luidruchtig,toejuichen,0.212
 luidruchtig,toejuichen,0.212
 sterk,sterk,1.0
 ademen,opgelucht,0.199
@@ -1887,7 +1862,6 @@ gek,verbazing,0.282
 snijden,snijden,1.0
 vrouw,nonchalant,0.066
 hoorn,hoorn,1.0
-luidruchtig,meeuwen,0.059
 luidruchtig,meeuwen,0.059
 verdrietig,huilen,0.389
 onweer,onweer,1.0
@@ -2055,7 +2029,6 @@ gek,schrikken,0.181
 dood,doodgaan,0.686
 ei,klein,0.086
 bliksem,bliksem,1.0
-luidruchtig,schreeuwen,0.468
 luidruchtig,schreeuwen,0.468
 zout,muis,-0.045
 vallen,bukken,0.269
@@ -2239,10 +2212,7 @@ bitter,vies eten,
 bitter,bitter,1.0
 koud,koud,1.0
 luidruchtig,box,0.152
-luidruchtig,box,0.152
 luidruchtig,muziek,0.137
-luidruchtig,muziek,0.137
-luidruchtig,schreeuwen,0.468
 luidruchtig,schreeuwen,0.468
 misschien,twijfelen,0.284
 misschien,keuze,0.112
@@ -2407,10 +2377,7 @@ zwaar,vermoeid,0.305
 zwaar,opgelucht,0.343
 zwaar,geïrriteerd,0.232
 luidruchtig,zingen,0.207
-luidruchtig,zingen,0.207
 luidruchtig,praten,0.124
-luidruchtig,praten,0.124
-luidruchtig,ruzie,0.326
 luidruchtig,ruzie,0.326
 geur,vragen,0.008
 geur,genot,0.134
@@ -2531,7 +2498,6 @@ jagen,schieten,0.469
 auto,racen,0.393
 olifant,olifant,1.0
 hond,hond,1.0
-luidruchtig,waterspuwer,0.051
 luidruchtig,waterspuwer,0.051
 niet,afkeuren,0.198
 sterk,spierbal,0.307
@@ -2685,7 +2651,6 @@ fluisteren,fluisteren,1.0
 bloem,achtbaan,0.001
 haasten,rennen,0.355
 vuur,wind,0.178
-luidruchtig,zeuren,0.409
 luidruchtig,zeuren,0.409
 geur,ruiken,0.867
 zuur,proeven,0.171
@@ -2969,10 +2934,7 @@ ver,zuchten,0.106
 ver,vermoeid,0.136
 ver,geïrriteerd,0.106
 luidruchtig,oorlog,0.064
-luidruchtig,oorlog,0.064
 luidruchtig,protest,0.28
-luidruchtig,protest,0.28
-luidruchtig,schreeuwen,0.468
 luidruchtig,schreeuwen,0.468
 langzaam,klok,0.158
 langzaam,geweer,0.026
@@ -3054,7 +3016,6 @@ dansen,dansen,1.0
 olifant,olifant,1.0
 hond,hijgen,0.048
 vuur,vuur,1.0
-luidruchtig,schreeuwen,0.468
 luidruchtig,schreeuwen,0.468
 langzaam,lopen,0.228
 bijten,bijten,1.0
@@ -3193,7 +3154,6 @@ groot,uitrekken,0.146
 bitter,walgen,0.293
 ver,zoeken,0.164
 hoorn,teletubbie,
-luidruchtig,schreeuwen,0.468
 luidruchtig,schreeuwen,0.468
 staart,afvegen,0.074
 slaan,slaan,1.0
@@ -3345,7 +3305,6 @@ water,druppels,0.363
 snel,vogel,0.016
 snijden,schieten,0.221
 vogel,berichtje,-0.047
-luidruchtig,overgeven,0.055
 luidruchtig,overgeven,0.055
 berg,verbazing,0.046
 sterk,eten,0.004
@@ -3508,7 +3467,6 @@ olifant,olifcapslockn,
 snel,rennen,0.376
 vis,zwemmen,0.433
 goed,goed,1.0
-luidruchtig,schreeuwen,0.468
 luidruchtig,schreeuwen,0.468
 verdrietig,verdrietig,1.0
 onweer,boom,0.123
@@ -3681,7 +3639,6 @@ zwemmen,vallen,0.131
 knippen,knippen,1.0
 bloem,wonder,0.12
 luidruchtig,ruzie,0.326
-luidruchtig,ruzie,0.326
 bang,bang,1.0
 zoet,lekker,0.614
 kauwen,kauwen,1.0
@@ -3846,7 +3803,6 @@ lachen,lachen,1.0
 rennen,rennen,1.0
 bloem,realiseren,0.04
 rijk,geld,0.171
-luidruchtig,schreeuwen,0.468
 luidruchtig,schreeuwen,0.468
 regen,druppelen,0.398
 dik,moe,0.221
@@ -4043,10 +3999,7 @@ hoog,grijpen,0.077
 hoog,verleggen,0.047
 hoog,groeien,0.207
 luidruchtig,gillen,0.433
-luidruchtig,gillen,0.433
 luidruchtig,juichen,0.254
-luidruchtig,juichen,0.254
-luidruchtig,lawaai,0.673
 luidruchtig,lawaai,0.673
 verdrietig,verdrietig,1.0
 staart,staart,1.0
@@ -4247,10 +4200,7 @@ vliegtuig,vliegtuig,1.0
 vogel,vogel,1.0
 kind,kind,1.0
 luidruchtig,gillen,0.433
-luidruchtig,gillen,0.433
 luidruchtig,drama,0.04
-luidruchtig,drama,0.04
-luidruchtig,druk,0.493
 luidruchtig,druk,0.493
 geur,geur,1.0
 langzaam,langzaam,1.0
@@ -4319,7 +4269,6 @@ knippen,knippen,1.0
 dansen,dansen,1.0
 bitter,bubbelen,
 hoorn,blazen,0.285
-luidruchtig,luisteren,0.164
 luidruchtig,luisteren,0.164
 misschien,afvragen,0.351
 slaan,neerslaan,0.599
@@ -4472,7 +4421,6 @@ comfortabel,opgelucht,0.266
 koud,koud,1.0
 walgen,vies,0.354
 ver,zoeken,0.164
-luidruchtig,grappig,0.118
 luidruchtig,grappig,0.118
 slang,slang,1.0
 huilen,baby,0.173
@@ -4642,7 +4590,6 @@ lopen,rennen,0.734
 gek,snel,0.063
 comfortabel,lui,0.173
 ver,zoeken,0.164
-luidruchtig,angstig,0.327
 luidruchtig,angstig,0.327
 geur,ruiken,0.867
 oud,ouderen,0.572
@@ -4930,10 +4877,7 @@ juichen,juichen,1.0
 zingen,zingen,1.0
 koud,koud,1.0
 luidruchtig,joelen,0.439
-luidruchtig,joelen,0.439
 luidruchtig,schreeuwen,0.468
-luidruchtig,schreeuwen,0.468
-luidruchtig,ruzie,0.326
 luidruchtig,ruzie,0.326
 klein,ontspannen,0.111
 klein,schattig,0.371
@@ -5001,7 +4945,6 @@ staan,bevel,0.074
 lopen,lopen,1.0
 leeg,leeg,1.0
 olifant,olifant,1.0
-luidruchtig,schreeuwen,0.468
 luidruchtig,schreeuwen,0.468
 ziek,kater,0.157
 klein,lift,0.023
@@ -5145,7 +5088,6 @@ knippen,slikken,0.092
 dansen,trommelen,0.284
 vogel,vlinder,0.426
 kat,kat,1.0
-luidruchtig,schrikken,0.188
 luidruchtig,schrikken,0.188
 zoet,lekker,0.614
 blazen,wind,0.464
@@ -5394,10 +5336,7 @@ vlieg,bij,0.15
 vlieg,auto,-0.021
 vlieg,mug,0.484
 luidruchtig,stemmen,0.079
-luidruchtig,stemmen,0.079
 luidruchtig,lawaai,0.673
-luidruchtig,lawaai,0.673
-luidruchtig,bom,-0.034
 luidruchtig,bom,-0.034
 misschien,instemmen,0.09
 misschien,nadenken,0.424
@@ -5479,7 +5418,6 @@ lopen,druppel,0.219
 rijk,rijk,1.0
 olifant,olifant,1.0
 koud,koud,1.0
-luidruchtig,aap,0.063
 luidruchtig,aap,0.063
 langzaam,traag,0.896
 bijten,bijten,1.0
@@ -5655,7 +5593,6 @@ vogel,vogel,1.0
 walgen,stikken,0.107
 hoog,vallen,0.172
 luidruchtig,gek,0.194
-luidruchtig,gek,0.194
 zout,krekel,-0.043
 kauwen,eten,0.497
 gooien,vallen,0.383
@@ -5810,7 +5747,6 @@ knippen,baby,0.021
 dansen,neuriën,0.17
 ver,zoemen,0.102
 luidruchtig,lachen,0.14
-luidruchtig,lachen,0.14
 staart,baby,0.072
 verbranden,spelen,0.061
 horen,spannend,0.05
@@ -5960,7 +5896,6 @@ gek,kreet,0.09
 dansen,dansen,1.0
 ik,praten,0.127
 snel,auto,0.166
-luidruchtig,hond,0.09
 luidruchtig,hond,0.09
 kruipen,lopen,0.416
 lachen,lachen,1.0
@@ -6114,7 +6049,6 @@ koken,bakken,0.682
 koud,koud,1.0
 goed,goed,1.0
 hoog,strekken,0.196
-luidruchtig,schreeuwen,0.468
 luidruchtig,schreeuwen,0.468
 oud,bejaarde,0.598
 vangen,pakken,0.845
@@ -6384,10 +6318,7 @@ bitter,vies,0.417
 bitter,lekker,0.258
 bitter,vies,0.417
 luidruchtig,kletsen,0.228
-luidruchtig,kletsen,0.228
 luidruchtig,ruzie,0.326
-luidruchtig,ruzie,0.326
-luidruchtig,verwarring,0.236
 luidruchtig,verwarring,0.236
 misschien,verbazing,0.029
 misschien,teleurstelling,0.105
@@ -6569,10 +6500,7 @@ vliegtuig,balanceren,0.055
 snel,rennen,0.376
 snel,snel,1.0
 luidruchtig,schreeuwen,0.468
-luidruchtig,schreeuwen,0.468
 luidruchtig,roepen,0.306
-luidruchtig,roepen,0.306
-luidruchtig,geluid,0.433
 luidruchtig,geluid,0.433
 langzaam,langzaam,1.0
 piepen,muis,0.158
@@ -6703,10 +6631,7 @@ fiets,fietsen,0.95
 koud,koud,1.0
 hond,hond,1.0
 luidruchtig,oud,0.066
-luidruchtig,oud,0.066
 luidruchtig,praten,0.124
-luidruchtig,praten,0.124
-luidruchtig,pas,0.024
 luidruchtig,pas,0.024
 zuur,vies,0.246
 zuur,eten,0.089
@@ -7035,10 +6960,7 @@ vrouw,sterk,0.078
 vrouw,mooi,0.072
 vrouw,zwanger,0.265
 luidruchtig,luid,0.778
-luidruchtig,luid,0.778
 luidruchtig,zachter,0.292
-luidruchtig,zachter,0.292
-luidruchtig,luidruchtig,1.0
 luidruchtig,luidruchtig,1.0
 misschien,onwetend,0.066
 misschien,twijfel,0.224
@@ -7161,10 +7083,7 @@ heet,verbranden,0.412
 heet,koud,0.452
 heet,heet,1.0
 luidruchtig,oorpijn,0.116
-luidruchtig,oorpijn,0.116
 luidruchtig,luid,0.778
-luidruchtig,luid,0.778
-luidruchtig,kabaal,0.552
 luidruchtig,kabaal,0.552
 ziek,buikpijn,0.302
 ziek,koorts,0.374
@@ -7278,7 +7197,6 @@ comfortabel,knuffelen,0.215
 hond,hond,1.0
 snel,rennen,0.376
 luidruchtig,schreeuwen,0.468
-luidruchtig,schreeuwen,0.468
 geur,geur,1.0
 regen,regen,1.0
 onweer,ster,0.075
@@ -7390,7 +7308,6 @@ bloem,wereldvrede,0.075
 rijk,luxe,0.394
 koud,koud,1.0
 ver,kijken,0.168
-luidruchtig,schreeuwen,0.468
 luidruchtig,schreeuwen,0.468
 sterk,sterk,1.0
 onweer,vallen,0.107
@@ -7588,7 +7505,6 @@ gek,uitlachen,0.266
 knippen,knippen,1.0
 zoemen,zweven,0.282
 luidruchtig,groots,0.231
-luidruchtig,groots,0.231
 man,dominant,0.052
 zout,walgen,0.092
 kruipen,kruipen,1.0
@@ -7745,7 +7661,6 @@ koken,koken,1.0
 boos,boos,1.0
 walgen,walgelijk,0.57
 luidruchtig,hilarisch,0.121
-luidruchtig,hilarisch,0.121
 scherp,prikken,0.243
 stil,stilte,0.792
 huilen,huilen,1.0
@@ -7868,7 +7783,6 @@ staan,blazen,0.066
 rijk,geld,0.171
 knippen,knippen,1.0
 heet,warm,0.712
-luidruchtig,juichen,0.254
 luidruchtig,juichen,0.254
 zuur,fluiten,0.052
 kauwen,eten,0.497
@@ -8124,10 +8038,7 @@ snel,wind,0.087
 snel,racen,0.271
 snel,f1,
 luidruchtig,schreeuwen,0.468
-luidruchtig,schreeuwen,0.468
 luidruchtig,lachen,0.14
-luidruchtig,lachen,0.14
-luidruchtig,instemmen,-0.0
 luidruchtig,instemmen,-0.0
 dik,beuken,0.105
 dik,slaan,0.065
@@ -8309,10 +8220,7 @@ ver,opstijgen,0.098
 vlieg,bij,0.15
 vlieg,vlieg,1.0
 luidruchtig,zingen,0.207
-luidruchtig,zingen,0.207
 luidruchtig,praten,0.124
-luidruchtig,praten,0.124
-luidruchtig,schreeuwen,0.468
 luidruchtig,schreeuwen,0.468
 sterk,sterk,1.0
 vechten,slaan,0.308
@@ -8433,10 +8341,7 @@ zwaaien,zwaaien,1.0
 heet,warm,0.712
 heet,heet,1.0
 luidruchtig,boos,0.424
-luidruchtig,boos,0.424
 luidruchtig,schreeuwen,0.468
-luidruchtig,schreeuwen,0.468
-luidruchtig,ruzie,0.326
 luidruchtig,ruzie,0.326
 huilen,verdrietig,0.389
 huilen,huilen,1.0
@@ -8590,7 +8495,6 @@ auto,autorijden,0.826
 comfortabel,luieren,0.229
 ik,ik,1.0
 boos,boos,1.0
-luidruchtig,roepen,0.306
 luidruchtig,roepen,0.306
 zuur,zuur,1.0
 onweer,kwal,0.088
@@ -8798,10 +8702,7 @@ walgen,walgelijk,0.57
 walgen,afgunst,0.326
 hond,hond,1.0
 luidruchtig,lawaai,0.673
-luidruchtig,lawaai,0.673
 luidruchtig,overlast,0.327
-luidruchtig,overlast,0.327
-luidruchtig,geluid,0.433
 luidruchtig,geluid,0.433
 klein,klein,1.0
 piepen,muis,0.158
@@ -8935,10 +8836,7 @@ glimlach,lachen,0.715
 glimlach,tevreden,0.31
 heet,heet,1.0
 luidruchtig,hard,0.533
-luidruchtig,hard,0.533
 luidruchtig,geluid,0.433
-luidruchtig,geluid,0.433
-luidruchtig,trommelvlies,0.153
 luidruchtig,trommelvlies,0.153
 niet,fout,0.258
 niet,verkeerd,0.265
@@ -9185,10 +9083,7 @@ bitter,vies,0.417
 bitter,proeven,0.137
 bitter,goor,0.35
 luidruchtig,schrikken,0.188
-luidruchtig,schrikken,0.188
 luidruchtig,kletsen,0.228
-luidruchtig,kletsen,0.228
-luidruchtig,schreeuwen,0.468
 luidruchtig,schreeuwen,0.468
 zoet,lekker,0.614
 zoet,zoet,1.0
@@ -9355,10 +9250,7 @@ zwaar,zuchten,0.203
 zwaar,puffen,0.181
 zwaar,opluchting,0.111
 luidruchtig,zingen,0.207
-luidruchtig,zingen,0.207
 luidruchtig,roddelen,0.229
-luidruchtig,roddelen,0.229
-luidruchtig,heks,-0.014
 luidruchtig,heks,-0.014
 geur,ruiken,0.867
 geur,proeven,0.224
@@ -9502,10 +9394,7 @@ bliksem,schoten,0.176
 bliksem,oorlog,0.037
 bliksem,bliksem,1.0
 luidruchtig,schreeuwen,0.468
-luidruchtig,schreeuwen,0.468
 luidruchtig,luid,0.778
-luidruchtig,luid,0.778
-luidruchtig,schurk,0.024
 luidruchtig,schurk,0.024
 regen,kraken,-0.015
 regen,teleurgesteld,0.041
@@ -9526,7 +9415,6 @@ leeg,zacht,0.207
 ik,melodie,0.08
 hond,hond,1.0
 vlieg,bij,0.15
-luidruchtig,luidruchtig,1.0
 luidruchtig,luidruchtig,1.0
 man,gezeur,0.113
 verdrietig,huilen,0.389
@@ -9697,7 +9585,6 @@ lopen,lopen,1.0
 snijden,snijden,1.0
 koken,afwassen,0.5
 blij,blij,1.0
-luidruchtig,mars,0.008
 luidruchtig,mars,0.008
 zout,slijpen,0.125
 ziek,heet,0.136
@@ -9891,10 +9778,7 @@ bal,bal,1.0
 ver,vinden,0.173
 ver,ver,1.0
 luidruchtig,lachen,0.14
-luidruchtig,lachen,0.14
 luidruchtig,uitzoomen,0.018
-luidruchtig,uitzoomen,0.018
-luidruchtig,geluid,0.433
 luidruchtig,geluid,0.433
 zout,zout,1.0
 stil,stil,1.0
@@ -10000,7 +9884,6 @@ bitter,vies,0.417
 walgen,overgeven,0.352
 goed,goed bezig,
 hoog,gooien,0.125
-luidruchtig,eng,0.309
 luidruchtig,eng,0.309
 zout,niet lekker vinden,
 sterk,sterk,1.0
@@ -10175,7 +10058,6 @@ zwemmen,tegenhouden,0.034
 haasten,haast,0.547
 snijden,snijden,1.0
 kat,kat,1.0
-luidruchtig,dansen,0.03
 luidruchtig,dansen,0.03
 zout,zuur,0.471
 stil,zachtjes,0.515
@@ -10419,10 +10301,7 @@ vuur,wind,0.178
 vuur,waaien,0.214
 vuur,storm,0.251
 luidruchtig,juichen,0.254
-luidruchtig,juichen,0.254
 luidruchtig,praten,0.124
-luidruchtig,praten,0.124
-luidruchtig,groeten,0.091
 luidruchtig,groeten,0.091
 man,frustratie,0.072
 man,overleggen,0.025
@@ -10539,7 +10418,6 @@ gek,frankenstein,0.173
 rijk,zakenman,-0.007
 koud,bibberen,0.229
 vis,vis,1.0
-luidruchtig,carnaval,0.057
 luidruchtig,carnaval,0.057
 ziek,ziek,1.0
 stil,kalmeren,0.463
@@ -10680,7 +10558,6 @@ rijk,blijdschap,0.106
 koken,koken,1.0
 walgen,kotsen,0.541
 vis,vissen,0.932
-luidruchtig,enthousiasme,0.221
 luidruchtig,enthousiasme,0.221
 oud,opa,0.43
 verdrietig,huilen,0.389
@@ -10867,7 +10744,6 @@ olifant,trompet spelen,
 snel,afval wegvegen,
 vis,zinken,0.141
 luidruchtig,schreeuwen,0.468
-luidruchtig,schreeuwen,0.468
 geur,ruiken,0.867
 oud,oud,1.0
 grommen,grommen,1.0
@@ -11039,7 +10915,6 @@ auto,motor,0.747
 ik,lachen,0.151
 kat,kat,1.0
 goed,goed,1.0
-luidruchtig,woedend,0.459
 luidruchtig,woedend,0.459
 geur,sniffen,
 klein,muis,0.181
@@ -11252,10 +11127,7 @@ zoemen,mug,0.217
 zoemen,krekel,0.15
 ei,ei,1.0
 luidruchtig,schreeuwen,0.468
-luidruchtig,schreeuwen,0.468
 luidruchtig,luid,0.778
-luidruchtig,luid,0.778
-luidruchtig,hard,0.533
 luidruchtig,hard,0.533
 zout,zout,1.0
 eten,eten,1.0
@@ -11370,7 +11242,6 @@ gek,eng,0.36
 olifant,olifant,1.0
 koud,koud,1.0
 hoog,grijpen,0.077
-luidruchtig,hard,0.533
 luidruchtig,hard,0.533
 bijten,bijten,1.0
 blazen,blazen,1.0
