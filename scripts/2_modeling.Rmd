@@ -57,7 +57,7 @@ scripts       <- paste0(parentfolder, '/scripts/');
 
 ########## source file ##########
 
-rmarkdown::render("1_descriptive.Rmd", envir = globalenv(), clean = FALSE)
+#rmarkdown::render("1_descriptive.Rmd", envir = globalenv(), clean = FALSE)
 
 #################### packages ####################
 # Data Manipulation
@@ -85,6 +85,27 @@ colorBlindBlack8  <- c("#000000", "#E69F00", "#56B4E9", "#009E73",
                        "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 
 ```
+
+## Load in data frames
+
+```{r read metadata, echo=TRUE, message=FALSE, warning=FALSE}
+# Load data frame
+df <- read_csv(paste0(dataset, "df.csv"))
+
+# Load concept list
+concepts <- read_excel(paste0(dataset, "conceptlist_info.xlsx"))
+
+# Load expressibility German
+expr_german <- read_csv(paste0(dataset, "expressibility_german.csv"))
+
+# Load expressibility Dutch
+expr_dutch <- read_csv(paste0(dataset, "expressibility_dutch.csv"))
+
+```
+
+
+
+
 
 # Session info
 

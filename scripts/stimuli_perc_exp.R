@@ -27,21 +27,24 @@ df <- df %>%
   ) %>%
   filter(modality == "combined") %>%
   filter(str_ends(sessionID, "1")) %>%
-  rename(participant = cycle) %>%
-  rename(exp_part = exp) %>%
-  mutate(dyad = str_extract(sessionID, "^[^_]+")) %>%
+  rename(participant_dyad = participant) %>%
+  rename(participant_ID = pcnID) %>%
+  rename(concept = English) %>%
   select(-`...1`) %>%  # Remove the first column
   rename(stimulus = word)
 
 # Reorder the columns in the specified order
 df <- df %>%
-  select(dyad, participant, exp_part, modality, expressibility_dutch, 
-         English, guess_binary, cosine_similarity, stimulus, answer, 
+  select(trial_order, trial_type, 
+         dyad, participant_dyad, participant_ID, exp_part, modality, 
+         expressibility_dutch, concept, correction,
+         guess_binary, cosine_similarity, stimulus, answer, 
          SemanticSubcat, sessionID)
-  
-# Only keep rows that match English in concepts
+
+# Only keep target trials
 df <- df %>%
-  semi_join(concepts, by = "English")
+  filter(trial_type == "target")%>%
+  select(-`trial_type`) # Remove trial_type columns
 
 # Add guessing performance
 ## Calculate performance by dyad and add it as a new column
