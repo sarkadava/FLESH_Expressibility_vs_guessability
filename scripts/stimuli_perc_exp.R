@@ -57,9 +57,17 @@ df <- df %>%
 
 ## Calculate performance by participant within dyad and add it as a new column
 df <- df %>%
-  group_by(dyad, participant) %>%
+  group_by(dyad, participant_dyad) %>%
   mutate(
-    perf_participant = (sum(guess_binary == 1) / n()) * 100
+    perf_participant_dyad = (sum(guess_binary == 1) / n()) * 100
+  ) %>%
+  ungroup()
+
+## Calculate performance by participant
+df <- df %>%
+  group_by(participant_ID) %>%
+  mutate(
+    perf_participant_ID = (sum(guess_binary == 1) / n()) * 100
   ) %>%
   ungroup()
 
@@ -70,15 +78,15 @@ df_worst <- df %>%
   filter(guess_binary == 0)
 
 # Frequencies ----
-# Generate a frequency table for the 'English' column
+# Generate a frequency table for the 'concept' column
 df_best %>%
-  group_by(English) %>%
+  group_by(concept) %>%
   summarise(frequency = n()) %>%
   arrange(desc(frequency)) %>% 
   print(n = 100)
-## 70 out of 84
+## 72 out of 84
 df_worst %>%
-  group_by(English) %>%
+  group_by(concept) %>%
   summarise(frequency = n()) %>%
   arrange(desc(frequency)) %>% 
   print(n = 100)
@@ -87,19 +95,19 @@ df_worst %>%
 # Best of best ----
 # Identify the best-performing dyad and participant for each unique concept
 best_of_best <- df_best %>%
-  group_by(English) %>%  # Group by unique concepts
+  group_by(concept) %>%  # Group by unique concepts
   filter(
     perf_dyad == max(perf_dyad)  # Retain rows with the best-performing dyad
   ) %>%
   filter(
-    perf_participant == max(perf_participant)  # Within dyad, retain rows with the best-performing participant
+    perf_participant_ID == max(perf_participant_ID) 
   ) %>%
   ungroup()
   
 # Worst of worst ----
 # Identify the worst-performing dyad and participant for each unique concept
 worst_of_worst <- df_worst %>%
-  group_by(English) %>%  # Group by unique concepts
+  group_by(concept) %>%  # Group by unique concepts
   filter(
     cosine_similarity == min(cosine_similarity, na.rm = TRUE)  # Retain rows with the lowest cosine similarity
   ) %>%
@@ -107,27 +115,27 @@ worst_of_worst <- df_worst %>%
     perf_dyad == min(perf_dyad)  # Among those, retain rows with the worst-performing dyad
   ) %>%
   filter(
-    perf_participant == min(perf_participant)  # Within the dyad, retain rows with the worst-performing participant
+    perf_participant_ID == min(perf_participant_ID)
   ) %>%
   ungroup()
 
 # Check repetitions
 best_of_best %>%
-  group_by(English) %>%
+  group_by(concept) %>%
   summarise(row_count = n()) %>%
   mutate(type = ifelse(row_count > 1, "repeated", "single")) %>%
   summarise(
     total_repeated = sum(type == "repeated"),
     total_single = sum(type == "single")
   )
-setdiff(unique(trimws(tolower(df$English))), unique(trimws(tolower(df_best$English))))
+setdiff(unique(trimws(tolower(df$concept))), unique(trimws(tolower(df_best$concept))))
 
 worst_of_worst %>%
-  group_by(English) %>%
+  group_by(concept) %>%
   summarise(row_count = n()) %>%
   mutate(type = ifelse(row_count > 1, "repeated", "single")) %>%
   summarise(
     total_repeated = sum(type == "repeated"),
     total_single = sum(type == "single") )
-setdiff(unique(trimws(tolower(df$English))), unique(trimws(tolower(df_worst$English))))
+setdiff(unique(trimws(tolower(df$concept))), unique(trimws(tolower(df_worst$concept))))
 
