@@ -26,8 +26,7 @@ New additions
 
 Notes
 	- dyad 68 is not there because consent was withdrawn
-	- dyad 19 is missing - not sure why, will check back on hard-drive 
-	- therefore, for now, 140 participants
+	- dyad 49 - needs to be check which concepts repeat in part 2 and get rid of them (part 1 was accidentaly different dyad number so some concepts repeat)
 
 TODO
 

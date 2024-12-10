@@ -45,7 +45,7 @@ dik,olifant,0.15
 huilen,huilen,1.0
 drinken,drinken,1.0
 comfortabel,zingen,0.004
-bloem,vlief,
+bloem,vlieg,0.109
 kind,baby,0.761
 ver,ballon,0.04
 blij,lachen,0.347
@@ -143,7 +143,7 @@ glimlach,begroeten,0.234
 sneeuw,omweer,0.381
 sneeuw,regen,0.455
 sneeuw,winter,0.603
-berg,leegopen,
+berg,leeglopen,-0.046
 berg,zuchten,0.063
 berg,ontladen,0.032
 blazen,blazen,1.0
@@ -317,7 +317,7 @@ dood,dood,1.0
 ver,kijken,0.168
 ver,ver weg,
 vis,vis,1.0
-vlieg,sprinkelen,
+vlieg,sprenkelen,0.151
 vlieg,zweven,0.476
 vlieg,vogeltje,0.267
 langzaam,traag,0.896
@@ -650,7 +650,7 @@ hoog,hoog,1.0
 regen,regen,1.0
 zwemmen,zwemmen,1.0
 wind,raken,0.031
-wind,fohnen,
+wind,föhnen,
 wind,wind,1.0
 snijden,zagen,0.284
 rijk,uitgeven,0.085
@@ -806,7 +806,7 @@ luidruchtig,schreeuwen,0.468
 luidruchtig,joelen,0.439
 misschien,mening,0.159
 misschien,nadenken,0.424
-misschien,overwegen,0.331
+misschien,over wegen,
 ademen,hijgen,0.593
 ademen,ademen,1.0
 geven,denken,0.297
@@ -962,7 +962,7 @@ boos,boos,1.0
 kind,baby,0.761
 kind,peuter,0.831
 kind,kind,1.0
-ver,verweg,
+ver,ver weg,
 vis,slang,0.212
 vis,kronkelen,0.034
 vis,zee,0.497
@@ -1470,7 +1470,7 @@ lopen,joggen,0.498
 water,waterval,0.453
 water,kraan,0.417
 water,water,1.0
-snijden,banden oppompe,
+snijden,banden oppompen,
 rijk,springen,0.054
 koud,koud,1.0
 hond,hond,1.0
@@ -1524,7 +1524,7 @@ geur,ruiken,0.867
 klein,klein,1.0
 slaan,slaan,1.0
 lachen,lachen,1.0
-glimlach,giegelen,
+glimlach,giechelen,0.561
 glimlach,lachen,0.715
 glimlach,uitlachen,0.43
 zingen,neuriën,0.714
@@ -1708,7 +1708,7 @@ geven,verdergaan,0.263
 geven,zingen,0.154
 slaan,slaan,1.0
 glimlach,lachen,0.715
-glimlach,grinniken,0.562
+glimlach,grinnikenen,
 glimlach,zuchten,0.246
 fiets,hijgen,0.031
 fiets,hardlopen,0.278
@@ -1750,7 +1750,7 @@ langzaam,lopen,0.228
 langzaam,zachtjes lopen,
 langzaam,langzaam,1.0
 staart,wc rol,
-staart,staartbackslash,
+staart,staart,1.0
 horen,doof,0.162
 horen,horen,1.0
 fluisteren,stil,0.431
@@ -1893,7 +1893,7 @@ heet,opgelucht,0.611
 heet,zuchten,0.13
 misschien,denken,0.567
 misschien,afvragen,0.351
-misschien,overwegen,0.331
+misschien,over wegen,
 langzaam,onweer,0.025
 langzaam,poepen,-0.009
 langzaam,sprinten,0.187
@@ -1926,7 +1926,7 @@ eten,eten,1.0
 staan,stevig,0.219
 staan,recht,0.238
 staan,sterk,0.194
-sneeuw,sprinkelen,
+sneeuw,sprenkelen,0.123
 sneeuw,sneeuw,1.0
 vliegtuig,vliegen,0.745
 vliegtuig,vliegtuig,1.0
@@ -2301,7 +2301,7 @@ vlieg,mug,0.484
 vlieg,vlieg,1.0
 blij,glimlachen,0.371
 blij,lachen,0.347
-blij,giegelen,
+blij,giechelen,0.247
 hoog,vraag,0.07
 hoog,wijzen,0.111
 hoog,hoog,1.0
@@ -2414,7 +2414,7 @@ slaan,slaan,1.0
 lopen,lui,0.128
 lopen,niksen,0.188
 lopen,buiten,0.26
-vliegtuig,leegopen,
+vliegtuig,leeglopen,0.08
 vliegtuig,neerstorten,0.271
 vliegtuig,aardbeving,0.056
 zwaaien,knikken,0.393
@@ -2857,7 +2857,7 @@ glimlach,neuriën,0.204
 glimlach,lachen,0.715
 glimlach,goedkeuring,0.084
 fiets,telefoon,0.06
-fiets,busstop,
+fiets,bushalte,0.204
 fiets,autoweg,0.362
 kind,baby,0.761
 kind,kraaien,0.126
@@ -2875,7 +2875,7 @@ ruiken,snikken,0.15
 ruiken,verkouden,0.079
 ruiken,ruiken,1.0
 vliegtuig,magnetron,0.017
-vliegtuig,fohn,
+vliegtuig,föhn,0.084
 vliegtuig,vlieg,0.567
 geheim,fluisteren,0.29
 geheim,geheim,1.0
@@ -3021,7 +3021,7 @@ goed,bevestigen,0.094
 oud,moe,0.253
 geven,lachen,0.068
 springen,ongeloofwaardig,0.114
-rennen,buitenadem,
+rennen,buiten adem,
 staan,boos,0.037
 bal,rond,0.227
 bal,bal,1.0
@@ -3029,7 +3029,7 @@ juichen,juichen,1.0
 hond,hond,1.0
 zwaar,zwaar,1.0
 misschien,twijfel,0.224
-misschien,overweging,0.287
+misschien,over weging,
 verdrietig,huilen,0.389
 blazen,blazen,1.0
 likken,likken,1.0
@@ -3286,7 +3286,7 @@ auto,motor,0.747
 koud,bibberen,0.229
 snel,hijgen,0.151
 goed,goedkeuring,0.227
-niet,grinniken,-0.021
+niet,grinnikenen,
 ziek,hoesten,0.322
 weten,knikken,0.119
 water,blazen,0.168
@@ -3304,7 +3304,7 @@ olifant,olifant,1.0
 zwaar,groot,0.521
 berg,bergen,0.552
 oud,bejaard,0.814
-langzaam,slowmoting,
+langzaam,slowmotion,
 sterk,sterk,1.0
 kruipen,kat,0.097
 huilen,huilen,1.0
@@ -3623,7 +3623,7 @@ huilen,huilen,1.0
 lachen,lachen,1.0
 zuigen,blazen,0.393
 rijk,geld,0.171
-olifant,olifcapslockn,
+olifant,olifant,1.0
 snel,rennen,0.376
 vis,zwemmen,0.433
 goed,goed,1.0
@@ -3719,7 +3719,7 @@ ei,koken,0.337
 ei,pasta,0.361
 ei,ei,1.0
 berg,huis,0.123
-berg,ski vakante,
+berg,skivakantie,0.368
 berg,piste,0.256
 oud,bejaarde,0.598
 oud,bejaarden,0.654
@@ -3781,7 +3781,7 @@ staan,alfaman,
 haasten,heet,0.134
 comfortabel,blij,0.357
 ik,geïrriteerd,0.106
-groot,verbeisterd,
+groot,verbijsterd,0.049
 hond,hond,1.0
 goed,moe,0.08
 heet,klaar,0.227
@@ -4068,7 +4068,7 @@ zuur,koud,0.199
 zuur,vies,0.246
 zuur,niet lekker,
 likken,pop,0.075
-likken,fles ontpoppen,
+likken,fles ontkurken,
 likken,geluid,0.03
 zwaaien,wind,0.196
 zwaaien,fluiten,0.223
@@ -4120,7 +4120,7 @@ zoet,genieten,0.178
 ademen,ademen,1.0
 grommen,grommen,1.0
 zuigen,zuigen,1.0
-lopen,margeren,
+lopen,marcheren,0.56
 rijk,geld,0.171
 haasten,rennen,0.355
 zoemen,bij,0.165
@@ -4253,7 +4253,7 @@ niet,afwijzen,0.196
 ziek,ziek,1.0
 slang,slang,1.0
 vechten,boksen,0.547
-vechten,knock out,
+vechten,knockout,
 vechten,vechten,1.0
 kotsen,overgeven,0.773
 kotsen,kotsen,1.0
@@ -4366,7 +4366,7 @@ geur,geur,1.0
 langzaam,langzaam,1.0
 dik,dik,1.0
 kauwen,bijten,0.712
-kauwen,knarzen,
+kauwen,knarsen,0.302
 kauwen,spoelen,0.146
 zwaaien,zwaaien,1.0
 geheim,roddelen,0.213
@@ -5095,7 +5095,7 @@ zuigen,drinken,0.256
 gooien,overgeven,0.424
 kotsen,overgeven,0.773
 gek,enthousiast,0.287
-koken,ping pong,
+koken,pingpong,0.101
 snel,rennen,0.376
 zoet,heet,0.262
 kauwen,kauwen,1.0
@@ -5108,7 +5108,7 @@ olifant,olifant,1.0
 luidruchtig,schreeuwen,0.468
 ziek,kater,0.157
 klein,lift,0.023
-piepen,typgeluid,
+piepen,typegeluid,
 dik,gorilla,0.176
 bijten,bijten,1.0
 lachen,lachen,1.0
@@ -5683,7 +5683,7 @@ zwaaien,zwaaien,1.0
 zingen,zingen,1.0
 goed,goed,1.0
 misschien,twijfelen,0.284
-misschien,overwegen,0.331
+misschien,over wegen,
 misschien,optie,0.178
 blazen,bellenblazen,
 blazen,blazen,1.0
@@ -5720,7 +5720,7 @@ staart,staart,1.0
 lachen,lachen,1.0
 likken,schoonlikken,
 water,water,1.0
-comfortabel,illen,
+comfortabel,chillen,0.34
 bloem,bloem,1.0
 koud,koud,1.0
 hoorn,trompet,0.66
@@ -5757,7 +5757,7 @@ zout,krekel,-0.043
 kauwen,eten,0.497
 gooien,vallen,0.383
 gek,praten,0.078
-olifant,oorkest,
+olifant,orkest,0.034
 boos,brommen,0.208
 vlieg,glijden,0.182
 goed,vallen,0.066
@@ -5945,7 +5945,7 @@ zuigen,slurpen,0.545
 zuigen,zuigen,1.0
 water,blazen,0.168
 water,wind,0.206
-water,ruizen,
+water,ruisen,0.079
 bal,bel,0.094
 bal,kerkklok,0.116
 bal,casino,0.128
@@ -5983,7 +5983,7 @@ fluisteren,fluisteren,1.0
 fiets,fiets,1.0
 vliegtuig,vliegen,0.745
 vliegtuig,springen,0.176
-vliegtuig,skydiving,
+vliegtuig,skydiven,0.05
 vlieg,wesp,0.397
 vlieg,bij,0.15
 vlieg,bang,0.016
@@ -6137,7 +6137,7 @@ niet,afwijzen,0.196
 niet,verboden,0.366
 jagen,schieten,0.469
 jagen,afschieten,0.42
-jagen,lslash,
+jagen,,
 gooien,granaat,0.195
 gooien,gooien,1.0
 fiets,fietsen,0.95
@@ -6195,7 +6195,7 @@ sterk,winnen,0.16
 sterk,poepen,-0.006
 sterk,zwaar,0.691
 ruiken,ruiken,1.0
-auto,auto rijden,
+auto,autorijden,0.826
 leeg,wachten,0.093
 boos,boos,1.0
 dood,dood,1.0
@@ -6255,7 +6255,7 @@ geheim,stilte,0.411
 geheim,zwijgen,0.417
 zuur,bang,0.121
 zuur,vies,0.246
-zuur,disgust,
+zuur,walging,0.21
 verbranden,alarm,0.128
 verbranden,fluisteren,-0.003
 verbranden,wekker,0.041
@@ -6302,7 +6302,7 @@ zoemen,swingen,0.245
 zoemen,feesten,0.026
 bliksem,gooien,0.052
 bliksem,onweer,0.691
-bliksem,elektrisiteit,
+bliksem,elektriciteit,0.338
 scherp,snee,0.233
 scherp,snijden,0.246
 scherp,verwonden,0.079
@@ -6356,7 +6356,7 @@ kat,kat,1.0
 vis,vis,1.0
 misschien,denken,0.567
 misschien,twijfelen,0.284
-misschien,overwegen,0.331
+misschien,over wegen,
 staart,staart,1.0
 grommen,beer,0.139
 grommen,wolf,0.246
@@ -6469,7 +6469,7 @@ vangen,woe,0.041
 vangen,lucht,0.091
 weten,eens,0.309
 fiets,schuiven,0.08
-fiets,sleeen,
+fiets,sleën,
 fiets,skiën,0.305
 vliegtuig,wind,0.196
 vliegtuig,waaien,0.127
@@ -6512,7 +6512,7 @@ telefoon,telefoon,1.0
 ei,kuiken,0.511
 ei,ei,1.0
 hoog,lang,0.344
-hoog,reaching,
+hoog,reiken,0.244
 hoog,groeien,0.207
 bang,schrikken,0.747
 bang,bang,1.0
@@ -6572,7 +6572,7 @@ zoemen,brommen,0.831
 ei,ei,1.0
 zout,kaars,-0.019
 staart,aap,0.262
-springen,skippiebal,
+springen,skippybal,0.339
 gooien,gooien,1.0
 kotsen,kotsen,1.0
 eend,eend,1.0
@@ -6621,7 +6621,7 @@ regen,slaan,0.062
 blazen,wind,0.464
 blazen,blazen,1.0
 ademen,hijgen,0.593
-ademen,buitenadem,
+ademen,buiten adem,
 ademen,rennen,0.16
 weten,idee,0.292
 weten,denken,0.631
@@ -6840,7 +6840,7 @@ klein,schattig,0.371
 piepen,mug,0.096
 verbranden,prik,0.052
 ruiken,geur,0.867
-kotsen,kokhalsen,
+kotsen,kokhalzen,0.701
 auto,motor,0.747
 dansen,zingen,0.377
 ver,nadenken,0.135
@@ -6879,7 +6879,7 @@ gooien,gooien,1.0
 wind,geschrokken,0.046
 glimlach,bang,0.098
 glimlach,giechelen,0.561
-glimlach,grinnik,
+glimlach,grinniken,0.562
 zingen,zingen,1.0
 vuur,wind,0.178
 vuur,vliegen,0.111
@@ -6958,7 +6958,7 @@ jagen,katapult,0.123
 jagen,jagen,1.0
 likken,likken,1.0
 juichen,juichen,1.0
-eend,pinguin,
+eend,pinguïn,0.365
 eend,eend,1.0
 kind,dwerg,0.219
 kind,baby,0.761
@@ -7307,7 +7307,7 @@ onweer,donder,0.593
 onweer,onweer,1.0
 vangen,ontwijken,0.331
 vangen,vangen,1.0
-dansen,discodisco,
+dansen,disco,0.587
 auto,auto,1.0
 boos,balen,0.625
 koud,koud,1.0
@@ -7364,7 +7364,7 @@ wind,wind,1.0
 zwaaien,puppy,0.005
 zwaaien,zoemen,0.315
 zwaaien,huppelen,0.357
-glimlach,grinniken,0.562
+glimlach,grinnikenen,
 glimlach,glimlachen,0.985
 bitter,eten,0.004
 bitter,smakken,0.105
@@ -7485,7 +7485,7 @@ water,drinken,0.385
 comfortabel,gezellig,0.651
 haasten,rennen,0.355
 vogel,vogel,1.0
-oud,oudpersoon,
+oud,oud persoon,
 regen,regen,1.0
 blazen,blazen,1.0
 eten,eten,1.0
@@ -7511,7 +7511,7 @@ springen,tillen,0.234
 fluisteren,fluisteren,1.0
 koken,wind,0.09
 leeg,zucht,0.192
-vrouw,griniken,
+vrouw,grinniken,-0.043
 vuur,zucht,0.182
 verdrietig,lachen,0.198
 bang,vallen,0.124
@@ -7895,7 +7895,7 @@ vangen,vangen,1.0
 grommen,grommen,1.0
 lachen,lachen,1.0
 bal,druppelen,0.1
-bal,ping pongen,
+bal,pingpongen,
 bal,tafeltennis,0.504
 sneeuw,koud,0.471
 sneeuw,versnellen,0.014
@@ -7931,7 +7931,7 @@ bliksem,trein,0.124
 bliksem,huifkar,0.089
 staart,baasje,0.164
 staart,uitlaten,-0.001
-staart,boederij,
+staart,boerderij,0.026
 kauwen,paard,0.027
 kauwen,kauwen,1.0
 vechten,pistool,0.081
@@ -8070,7 +8070,7 @@ zout,proeven,0.145
 zout,walgen,0.092
 zout,smaak,0.254
 staart,zweep,0.334
-staart,paardijden,
+staart,paardrijden,0.096
 staart,leiden,0.075
 vliegen,wind,0.255
 vliegen,alarm,-0.006
@@ -8171,7 +8171,7 @@ klok,klok,1.0
 vliegtuig,wind,0.196
 vliegtuig,waaien,0.127
 vliegtuig,motor,0.305
-boos,neuril,
+boos,,
 boos,grommen,0.307
 boos,teleurgesteld,0.5
 kat,kat,1.0
@@ -8196,7 +8196,7 @@ kind,papa,0.462
 kind,praten,0.04
 snel,wind,0.087
 snel,racen,0.271
-snel,f1,
+snel,formula 1,
 luidruchtig,schreeuwen,0.468
 luidruchtig,lachen,0.14
 luidruchtig,instemmen,-0.0
@@ -8392,7 +8392,7 @@ glimlach,lachen,0.715
 glimlach,vrolijk,0.411
 klok,klok,1.0
 langzaam,lopen,0.228
-langzaam,stamperen,
+langzaam,stampen,0.103
 langzaam,gooien,-0.037
 zuur,smakken,0.094
 zuur,eten,0.089
@@ -8428,7 +8428,7 @@ likken,likken,1.0
 gooien,gooien,1.0
 geheim,klein,0.078
 geheim,fluisteren,0.29
-geheim,stilzijn,
+geheim,stil zijn,
 sneeuw,sneeuw,1.0
 walgen,vies,0.354
 walgen,misselijk,0.745
@@ -8517,7 +8517,7 @@ eend,vogel,0.615
 eend,eend,1.0
 vuur,regen,0.145
 vuur,cactus,0.038
-vuur,bbq,
+vuur,barbecue,0.332
 vlieg,mug,0.484
 vlieg,vlieg,1.0
 geur,stinken,0.757
@@ -8533,7 +8533,7 @@ zwemmen,zwemmen,1.0
 sneeuw,koud,0.471
 sneeuw,sneeuw,1.0
 bal,bal,1.0
-bitter,zur,
+bitter,zuur,0.581
 bitter,vies,0.417
 bitter,zuur,0.581
 koud,koud,1.0
@@ -8744,7 +8744,7 @@ slang,duiken,0.103
 slang,sidderaal,0.254
 sterk,sterk,1.0
 gooien,gooien,1.0
-eend,pinguin,
+eend,pinguïn,0.365
 eend,eend,1.0
 telefoon,telefoon,1.0
 groot,lang,0.419
@@ -8761,7 +8761,7 @@ vangen,vangen,1.0
 weten,idee,0.292
 weten,slim,0.212
 weten,intelligent,0.239
-bloem,hgvlgi,
+bloem,,
 leeg,bakje,0.18
 gek,gek,1.0
 bitter,vies,0.417
@@ -8840,7 +8840,7 @@ zoemen,bij,0.165
 zoemen,horen,0.252
 zoemen,vlieg,0.185
 misschien,twijfelen,0.284
-misschien,overwegen,0.331
+misschien,over wegen,
 misschien,onzeker,0.123
 sterk,sterk,1.0
 zoet,lekker,0.614
@@ -8907,7 +8907,7 @@ fiets,laat,-0.013
 fiets,haaste,0.034
 geheim,stil,0.266
 geheim,bibliotheek,0.126
-geheim,stilzijn,
+geheim,stil zijn,
 boos,geïrriteerd,0.779
 boos,boos,1.0
 ziek,ziek,1.0
@@ -9092,7 +9092,7 @@ blij,blij,1.0
 zwaar,zwaar,1.0
 dik,vol,0.385
 slaan,slaan,1.0
-staan,awkward,
+staan,ongemakkelijk,0.086
 olifant,olifant,1.0
 dansen,dansen,1.0
 vrouw,meisje,0.614
@@ -9133,7 +9133,7 @@ snijden,snijden,1.0
 knippen,klok,0.088
 dood,huilen,0.109
 man,rijk,-0.003
-regen,typem,
+regen,typen,-0.013
 bijten,kauwen,0.712
 blazen,wind,0.464
 vallen,pijn,0.037
@@ -9180,7 +9180,7 @@ vliegtuig,vliegen,0.745
 vliegtuig,instappen,0.162
 vliegtuig,opstijgen,0.304
 goed,tevreden,0.315
-goed,goedzo,
+goed,goed zo,
 goed,goed,1.0
 geur,parfum,0.922
 geur,ruiken,0.867
@@ -9201,7 +9201,7 @@ hoorn,eenhoorn,0.345
 hoorn,hoorn,1.0
 piepen,snavel,0.193
 piepen,vogelbek,0.237
-piepen,chirpen,
+piepen,tjirpen,0.785
 vangen,vangen,1.0
 vechten,boksen,0.547
 vechten,vechten,1.0
@@ -9585,7 +9585,7 @@ kat,kat,1.0
 zwaar,tillen,0.125
 hoog,hoog,1.0
 heet,verbranden,0.412
-misschien,onwetenheid,
+misschien,onwetendheid,0.063
 dik,dik,1.0
 lopen,wandelen,0.751
 knippen,knippen,1.0
@@ -9633,7 +9633,7 @@ eten,eten,1.0
 zuigen,zuigen,1.0
 bal,bal,1.0
 zingen,zingen,1.0
-ver,verweg,
+ver,ver weg,
 ver,ver,1.0
 niet,verboden,0.366
 niet,regels,0.133
@@ -9704,7 +9704,7 @@ grommen,oor,0.138
 grommen,leeuw,0.108
 horen,horen,1.0
 zwemmen,zwemmen,1.0
-kotsen,kotsem,
+kotsen,kotsen,1.0
 glimlach,lachen,0.715
 glimlach,glimlachen,0.985
 glimlach,mondhoek,
@@ -9840,7 +9840,7 @@ ei,kip,0.541
 ei,haan,0.377
 ei,ei,1.0
 dik,kotsen,0.021
-dik,kokhalsen,
+dik,kokhalzen,0.027
 dik,vies,0.269
 verbranden,pijn,0.119
 verbranden,verbranden,1.0
@@ -9987,7 +9987,7 @@ geheim,verplaatsen,-0.004
 geheim,geheim,1.0
 ik,persoon,0.311
 ik,ik,1.0
-walgen,afgrijzing,
+walgen,afgrijzen,0.702
 walgen,afschuw,0.741
 walgen,afschuwelijk,0.477
 bliksem,vermoorden,0.007
@@ -10091,7 +10091,7 @@ stil,stil,1.0
 staart,leeg,0.056
 likken,likken,1.0
 zuigen,zuigen,1.0
-water,blasen,
+water,blazen,0.168
 glimlach,lachen,0.715
 glimlach,schattig,0.225
 glimlach,baby,0.088
@@ -10153,14 +10153,14 @@ rennen,rennen,1.0
 lopen,lopen,1.0
 eend,eend,1.0
 telefoon,bellen,0.671
-telefoon,telefooneren,
+telefoon,telefoneren,0.944
 telefoon,praten,0.249
 vogel,vogel,1.0
 ei,ei,1.0
 ver,ver,1.0
 misschien,denken,0.567
 misschien,afvragen,0.351
-misschien,overwegen,0.331
+misschien,over wegen,
 piepen,muis,0.158
 piepen,alarm,0.336
 piepen,toon,0.223
@@ -10198,7 +10198,7 @@ ruiken,gezicht,0.088
 ruiken,stinken,0.834
 ruiken,ruiken,1.0
 bloem,bij,0.114
-gek,llen,
+gek,,
 dood,trommel,0.074
 bang,w,0.026
 ziek,kuchen,0.284
@@ -10251,7 +10251,7 @@ hoog,lang,0.344
 langzaam,slowmotion,
 huilen,huilen,1.0
 gooien,gooien,1.0
-fiets,motor rijden,
+fiets,motorrijden,
 fiets,sporten,0.225
 fiets,paardrijden,0.423
 bal,cirkel,0.189
@@ -10309,7 +10309,7 @@ staan,aanmoedigen,0.197
 staan,sterk,0.194
 eend,kip,0.544
 eend,meeuw,0.373
-eend,pinguin,
+eend,pinguïn,0.365
 glimlach,lachen,0.715
 glimlach,glimlach,1.0
 zwaar,uitgeput,0.181
@@ -10342,7 +10342,7 @@ piepen,alarm,0.336
 bijten,tongen,0.31
 bijten,tikken,0.252
 bijten,gehemelte,0.216
-ademen,ademenen,
+ademen,ademen,1.0
 vechten,boksen,0.547
 vechten,slaan,0.308
 vechten,vechten,1.0
@@ -10378,7 +10378,7 @@ blazen,blazen,1.0
 kauwen,kauwen,1.0
 slaan,slaan,1.0
 likken,likken,1.0
-auto,lrijden,
+auto,rijden,0.484
 comfortabel,knuffelen,0.215
 ei,breken,0.123
 langzaam,dansen,0.105
@@ -10857,7 +10857,7 @@ hoorn,oppakken,0.084
 regen,regen,1.0
 blazen,blazen,1.0
 slaan,slaan,1.0
-jagen,pijlenboog,
+jagen,pijl-en-boog,
 jagen,pijl,0.235
 jagen,boogschutter,0.186
 zuigen,kussen,0.266
@@ -11087,7 +11087,7 @@ scherp,geld,-0.003
 huilen,huilen,1.0
 springen,schreeuw,0.253
 lachen,lachen,1.0
-rennen,buitenadem,
+rennen,buiten adem,
 geheim,stil,0.266
 geheim,geluid,0.011
 geheim,luisteren,0.09
@@ -11127,12 +11127,12 @@ wind,waaien,0.641
 wind,golven,0.3
 vliegtuig,vliegtuig,1.0
 glimlach,vieren,0.112
-glimlach,giegelen,
+glimlach,giechelen,0.561
 glimlach,poseren,0.18
 zwaar,uitgeput,0.181
 zwaar,zwaar,1.0
 heet,uitgeput,0.087
-heet,buitenadem,
+heet,buiten adem,
 heet,moe,0.147
 misschien,knikken,0.126
 misschien,ja,0.447
@@ -11240,7 +11240,7 @@ knippen,likken,0.21
 auto,rijde,0.363
 ik,lachen,0.151
 hond,hond,1.0
-oud,nijdi,
+oud,nijdig,0.104
 scherp,zuigen,0.021
 slang,mug,0.173
 zuur,ademen,0.061
@@ -11317,7 +11317,7 @@ heet,branden,0.482
 heet,vuur,0.571
 heet,koud,0.452
 misschien,denken,0.567
-misschien,overwegen,0.331
+misschien,over wegen,
 misschien,nadenken,0.424
 regen,regen,1.0
 verdrietig,huilen,0.389

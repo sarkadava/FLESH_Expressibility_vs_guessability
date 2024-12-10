@@ -45,7 +45,7 @@
 43,44,target,0,huilen,geluiden,huilen,0,10_1,1,10,1,to cry,1.0,1,0.822727134099333,vocal_oral
 44,45,target,0,drinken,geluiden,drinken,0,10_1,1,10,1,to drink,1.0,1,0.657074938645804,vocal_oral
 45,46,practice,1,comfortabel,geluiden,zingen,0,10_1,1,10,2,comfortable,0.004,0,,
-46,47,practice,1,bloem,geluiden,vlief,0,10_1,1,10,2,flower,,0,,
+46,47,practice,1,bloem,geluiden,vlieg,0,10_1,1,10,2,flower,0.109,0,,
 47,48,target,1,kind,geluiden,baby,0,10_1,1,10,2,child,0.761,0,0.431409213563599,social
 48,49,target,1,ver,geluiden,ballon,0,10_1,1,10,2,far,0.04,0,0.306589745694138,spatial
 49,50,target,1,blij,geluiden,lachen,0,10_1,1,10,2,happy,0.347,0,0.571342868662109,valence
@@ -143,7 +143,7 @@
 141,88,practice,1,sneeuw,geluiden,omweer,0,10_2,2,10,2,snow,0.381,0,,
 142,89,practice,1,sneeuw,geluiden,regen,1,10_2,2,10,2,snow,0.455,0,,
 143,90,practice,1,sneeuw,geluiden,winter,2,10_2,2,10,2,snow,0.603,0,,
-144,91,target,1,berg,geluiden,leegopen,0,10_2,2,10,2,mountain,,0,0.292221991868001,environment
+144,91,target,1,berg,geluiden,leeglopen,0,10_2,2,10,2,mountain,-0.046,0,0.292221991868001,environment
 145,92,target,1,berg,geluiden,zuchten,1,10_2,2,10,2,mountain,0.063,0,0.292221991868001,environment
 146,93,target,1,berg,geluiden,ontladen,2,10_2,2,10,2,mountain,0.032,0,0.292221991868001,environment
 147,94,target,1,blazen,geluiden,blazen,0,10_2,2,10,2,to blow,1.0,1,0.805891834375597,vocal_oral
@@ -317,7 +317,7 @@
 315,103,target,1,ver,gebaren,kijken,0,11_2,2,11,4,far,0.168,0,0.577545048933384,spatial
 316,104,target,1,ver,gebaren,ver weg,1,11_2,2,11,4,far,,0,0.577545048933384,spatial
 317,105,target,1,vis,gebaren,vis,0,11_2,2,11,4,fish,1.0,1,0.69659625199764,animal
-318,106,target,1,vlieg,gebaren,sprinkelen,0,11_2,2,11,4,fly,,0,0.59811289452599,animal
+318,106,target,1,vlieg,gebaren,sprenkelen,0,11_2,2,11,4,fly,0.151,0,0.59811289452599,animal
 319,107,target,1,vlieg,gebaren,zweven,1,11_2,2,11,4,fly,0.476,0,0.59811289452599,animal
 320,108,target,1,vlieg,gebaren,vogeltje,2,11_2,2,11,4,fly,0.267,0,0.59811289452599,animal
 321,109,target,1,langzaam,gebaren,traag,0,11_2,2,11,4,slow,0.896,0,0.689425946655567,manner
@@ -650,7 +650,7 @@
 648,104,target,1,regen,combinatie,regen,0,13_2,2,13,8,rain,1.0,1,0.719579068930045,environment
 649,105,target,1,zwemmen,combinatie,zwemmen,0,13_2,2,13,8,to swim,1.0,1,0.808464019729012,locomotion
 650,106,target,1,wind,combinatie,raken,0,13_2,2,13,8,wind,0.031,0,0.641802506189562,environment
-651,107,target,1,wind,combinatie,fohnen,1,13_2,2,13,8,wind,,0,0.641802506189562,environment
+651,107,target,1,wind,combinatie,föhnen,1,13_2,2,13,8,wind,,0,0.641802506189562,environment
 652,108,target,1,wind,combinatie,wind,2,13_2,2,13,8,wind,1.0,1,0.641802506189562,environment
 653,1,practice,0,snijden,combinatie,zagen,0,14_1,1,14,9,to cut,0.284,0,,
 654,2,practice,0,rijk,combinatie,uitgeven,0,14_1,1,14,9,rich,0.085,0,,
@@ -806,7 +806,7 @@
 804,98,target,1,luidruchtig,geluiden,joelen,2,14_2,2,14,10,loud,0.439,0,0.587862264905011,auditory
 805,99,target,1,misschien,geluiden,mening,0,14_2,2,14,10,maybe,0.159,0,0.314638353811457,logical
 806,100,target,1,misschien,geluiden,nadenken,1,14_2,2,14,10,maybe,0.424,0,0.314638353811457,logical
-807,101,target,1,misschien,geluiden,overwegen,2,14_2,2,14,10,maybe,0.331,0,0.314638353811457,logical
+807,101,target,1,misschien,geluiden,over wegen,2,14_2,2,14,10,maybe,,0,0.314638353811457,logical
 808,102,target,1,ademen,geluiden,hijgen,0,14_2,2,14,10,to breathe,0.593,0,0.784779073219606,olfactory
 809,103,target,1,ademen,geluiden,ademen,1,14_2,2,14,10,to breathe,1.0,1,0.784779073219606,olfactory
 810,104,target,1,geven,geluiden,denken,0,14_2,2,14,10,to give,0.297,0,0.275959375649482,manual
@@ -962,7 +962,7 @@
 960,94,target,1,kind,gebaren,baby,0,15_2,2,15,12,child,0.761,0,0.561592930943448,social
 961,95,target,1,kind,gebaren,peuter,1,15_2,2,15,12,child,0.831,0,0.561592930943448,social
 962,96,target,1,kind,gebaren,kind,2,15_2,2,15,12,child,1.0,1,0.561592930943448,social
-963,97,target,1,ver,gebaren,verweg,0,15_2,2,15,12,far,,0,0.577545048933384,spatial
+963,97,target,1,ver,gebaren,ver weg,0,15_2,2,15,12,far,,0,0.577545048933384,spatial
 964,98,target,1,vis,gebaren,slang,0,15_2,2,15,12,fish,0.212,0,0.69659625199764,animal
 965,99,target,1,vis,gebaren,kronkelen,1,15_2,2,15,12,fish,0.034,0,0.69659625199764,animal
 966,100,target,1,vis,gebaren,zee,2,15_2,2,15,12,fish,0.497,0,0.69659625199764,animal
@@ -1470,7 +1470,7 @@
 1468,105,target,1,water,combinatie,waterval,0,18_2,2,18,18,water,0.453,0,0.574876010515767,environment
 1469,106,target,1,water,combinatie,kraan,1,18_2,2,18,18,water,0.417,0,0.574876010515767,environment
 1470,107,target,1,water,combinatie,water,2,18_2,2,18,18,water,1.0,1,0.574876010515767,environment
-1471,1,practice,0,snijden,geluiden,banden oppompe,0,19_1,1,19,19,to cut,,0,,
+1471,1,practice,0,snijden,geluiden,banden oppompen,0,19_1,1,19,19,to cut,,0,,
 1472,2,practice,0,rijk,geluiden,springen,0,19_1,1,19,19,rich,0.054,0,,
 1473,3,target,0,koud,geluiden,koud,0,19_1,1,19,19,cold,1.0,1,0.744751221657995,temperature
 1474,4,target,0,hond,geluiden,hond,0,19_1,1,19,19,dog,1.0,1,0.846022321803246,animal
@@ -1524,7 +1524,7 @@
 1522,52,target,1,klein,gebaren,klein,0,19_1,1,19,20,small,1.0,1,0.782210786119577,quantity
 1523,53,target,1,slaan,gebaren,slaan,0,19_1,1,19,20,to hit,1.0,1,0.797135486956284,manual
 1524,54,target,1,lachen,gebaren,lachen,0,19_1,1,19,20,to laugh,1.0,1,0.829161424358265,vocal_oral
-1525,1,practice,0,glimlach,geluiden,giegelen,0,19_2,2,19,19,smile,,0,,
+1525,1,practice,0,glimlach,geluiden,giechelen,0,19_2,2,19,19,smile,0.561,0,,
 1526,2,practice,0,glimlach,geluiden,lachen,1,19_2,2,19,19,smile,0.715,0,,
 1527,3,practice,0,glimlach,geluiden,uitlachen,2,19_2,2,19,19,smile,0.43,0,,
 1528,4,practice,0,zingen,geluiden,neuriën,0,19_2,2,19,19,to sing,0.714,0,,
@@ -1708,7 +1708,7 @@
 1706,22,target,0,geven,geluiden,zingen,2,1_2,2,1,21,to give,0.154,0,0.275959375649482,manual
 1707,23,target,0,slaan,geluiden,slaan,0,1_2,2,1,21,to hit,1.0,1,0.582960821716634,manual
 1708,24,practice,1,glimlach,geluiden,lachen,0,1_2,2,1,22,smile,0.715,0,,
-1709,25,practice,1,glimlach,geluiden,grinniken,1,1_2,2,1,22,smile,0.562,0,,
+1709,25,practice,1,glimlach,geluiden,grinnikenen,1,1_2,2,1,22,smile,,0,,
 1710,26,practice,1,glimlach,geluiden,zuchten,2,1_2,2,1,22,smile,0.246,0,,
 1711,27,practice,1,fiets,geluiden,hijgen,0,1_2,2,1,22,bicycle,0.031,0,,
 1712,28,practice,1,fiets,geluiden,hardlopen,1,1_2,2,1,22,bicycle,0.278,0,,
@@ -1750,7 +1750,7 @@
 1748,64,target,0,langzaam,gebaren,zachtjes lopen,1,1_2,2,1,21,slow,,0,0.689425946655567,manner
 1749,65,target,0,langzaam,gebaren,langzaam,2,1_2,2,1,21,slow,1.0,1,0.689425946655567,manner
 1750,66,target,0,staart,gebaren,wc rol,0,1_2,2,1,21,tail,,0,0.594711648335829,quantity
-1751,67,target,0,staart,gebaren,staartbackslash,1,1_2,2,1,21,tail,,0,0.594711648335829,quantity
+1751,67,target,0,staart,gebaren,staart,1,1_2,2,1,21,tail,1.0,1,0.594711648335829,quantity
 1752,68,target,0,horen,gebaren,doof,0,1_2,2,1,21,to hear,0.162,0,0.755612083056296,auditory
 1753,69,target,0,horen,gebaren,horen,1,1_2,2,1,21,to hear,1.0,1,0.755612083056296,auditory
 1754,70,target,0,fluisteren,gebaren,stil,0,1_2,2,1,21,to whisper,0.431,0,0.615289104632194,auditory
@@ -1893,7 +1893,7 @@
 1891,27,target,1,heet,geluiden,zuchten,2,20_2,2,20,24,hot,0.13,0,0.49098203287298,temperature
 1892,28,target,1,misschien,geluiden,denken,0,20_2,2,20,24,maybe,0.567,0,0.314638353811457,logical
 1893,29,target,1,misschien,geluiden,afvragen,1,20_2,2,20,24,maybe,0.351,0,0.314638353811457,logical
-1894,30,target,1,misschien,geluiden,overwegen,2,20_2,2,20,24,maybe,0.331,0,0.314638353811457,logical
+1894,30,target,1,misschien,geluiden,over wegen,2,20_2,2,20,24,maybe,,0,0.314638353811457,logical
 1895,31,target,1,langzaam,geluiden,onweer,0,20_2,2,20,24,slow,0.025,0,0.369492215989784,manner
 1896,32,target,1,langzaam,geluiden,poepen,1,20_2,2,20,24,slow,-0.009,0,0.369492215989784,manner
 1897,33,target,1,langzaam,geluiden,sprinten,2,20_2,2,20,24,slow,0.187,0,0.369492215989784,manner
@@ -1926,7 +1926,7 @@
 1924,60,target,0,staan,combinatie,stevig,0,20_2,2,20,23,to stand,0.219,0,0.588114856958718,locomotion
 1925,61,target,0,staan,combinatie,recht,1,20_2,2,20,23,to stand,0.238,0,0.588114856958718,locomotion
 1926,62,target,0,staan,combinatie,sterk,2,20_2,2,20,23,to stand,0.194,0,0.588114856958718,locomotion
-1927,63,practice,1,sneeuw,combinatie,sprinkelen,0,20_2,2,20,24,snow,,0,,
+1927,63,practice,1,sneeuw,combinatie,sprenkelen,0,20_2,2,20,24,snow,0.123,0,,
 1928,64,practice,1,sneeuw,combinatie,sneeuw,1,20_2,2,20,24,snow,1.0,1,,
 1929,65,practice,1,vliegtuig,combinatie,vliegen,0,20_2,2,20,24,airplane,0.745,0,,
 1930,66,practice,1,vliegtuig,combinatie,vliegtuig,1,20_2,2,20,24,airplane,1.0,1,,
@@ -2301,7 +2301,7 @@
 2299,106,target,1,vlieg,combinatie,vlieg,1,22_2,2,22,28,fly,1.0,1,0.682424716627464,animal
 2300,107,target,1,blij,combinatie,glimlachen,0,22_2,2,22,28,happy,0.371,0,0.797175441371254,valence
 2301,108,target,1,blij,combinatie,lachen,1,22_2,2,22,28,happy,0.347,0,0.797175441371254,valence
-2302,109,target,1,blij,combinatie,giegelen,2,22_2,2,22,28,happy,,0,0.797175441371254,valence
+2302,109,target,1,blij,combinatie,giechelen,2,22_2,2,22,28,happy,0.247,0,0.797175441371254,valence
 2303,110,target,1,hoog,combinatie,vraag,0,22_2,2,22,28,high,0.07,0,0.749105900955685,auditory
 2304,111,target,1,hoog,combinatie,wijzen,1,22_2,2,22,28,high,0.111,0,0.749105900955685,auditory
 2305,112,target,1,hoog,combinatie,hoog,2,22_2,2,22,28,high,1.0,1,0.749105900955685,auditory
@@ -2414,7 +2414,7 @@
 2412,51,target,0,lopen,geluiden,lui,0,23_2,2,23,29,to walk,0.128,0,0.319057764809126,locomotion
 2413,52,target,0,lopen,geluiden,niksen,1,23_2,2,23,29,to walk,0.188,0,0.319057764809126,locomotion
 2414,53,target,0,lopen,geluiden,buiten,2,23_2,2,23,29,to walk,0.26,0,0.319057764809126,locomotion
-2415,54,practice,1,vliegtuig,geluiden,leegopen,0,23_2,2,23,30,airplane,,0,,
+2415,54,practice,1,vliegtuig,geluiden,leeglopen,0,23_2,2,23,30,airplane,0.08,0,,
 2416,55,practice,1,vliegtuig,geluiden,neerstorten,1,23_2,2,23,30,airplane,0.271,0,,
 2417,56,practice,1,vliegtuig,geluiden,aardbeving,2,23_2,2,23,30,airplane,0.056,0,,
 2418,57,practice,1,zwaaien,geluiden,knikken,0,23_2,2,23,30,to wave,0.393,0,,
@@ -2857,7 +2857,7 @@
 2855,2,practice,0,glimlach,geluiden,lachen,1,26_2,2,26,35,smile,0.715,0,,
 2856,3,practice,0,glimlach,geluiden,goedkeuring,2,26_2,2,26,35,smile,0.084,0,,
 2857,4,practice,0,fiets,geluiden,telefoon,0,26_2,2,26,35,bicycle,0.06,0,,
-2858,5,practice,0,fiets,geluiden,busstop,1,26_2,2,26,35,bicycle,,0,,
+2858,5,practice,0,fiets,geluiden,bushalte,1,26_2,2,26,35,bicycle,0.204,0,,
 2859,6,practice,0,fiets,geluiden,autoweg,2,26_2,2,26,35,bicycle,0.362,0,,
 2860,7,target,0,kind,geluiden,baby,0,26_2,2,26,35,child,0.761,0,0.431409213563599,social
 2861,8,target,0,kind,geluiden,kraaien,1,26_2,2,26,35,child,0.126,0,0.431409213563599,social
@@ -2875,7 +2875,7 @@
 2873,20,target,0,ruiken,geluiden,verkouden,1,26_2,2,26,35,to smell,0.079,0,0.50270369735164,olfactory
 2874,21,target,0,ruiken,geluiden,ruiken,2,26_2,2,26,35,to smell,1.0,1,0.50270369735164,olfactory
 2875,22,practice,1,vliegtuig,geluiden,magnetron,0,26_2,2,26,36,airplane,0.017,0,,
-2876,23,practice,1,vliegtuig,geluiden,fohn,1,26_2,2,26,36,airplane,,0,,
+2876,23,practice,1,vliegtuig,geluiden,föhn,1,26_2,2,26,36,airplane,0.084,0,,
 2877,24,practice,1,vliegtuig,geluiden,vlieg,2,26_2,2,26,36,airplane,0.567,0,,
 2878,25,practice,1,geheim,geluiden,fluisteren,0,26_2,2,26,36,secret,0.29,0,,
 2879,26,practice,1,geheim,geluiden,geheim,1,26_2,2,26,36,secret,1.0,1,,
@@ -3021,7 +3021,7 @@
 3019,50,target,1,oud,geluiden,moe,0,27_1,1,27,38,old,0.253,0,0.310336292435631,time
 3020,51,target,1,geven,geluiden,lachen,0,27_1,1,27,38,to give,0.068,0,0.275959375649482,manual
 3021,52,target,1,springen,geluiden,ongeloofwaardig,0,27_1,1,27,38,to jump,0.114,0,0.343503131163236,locomotion
-3022,53,target,1,rennen,geluiden,buitenadem,0,27_1,1,27,38,to run,,0,0.336019187014838,locomotion
+3022,53,target,1,rennen,geluiden,buiten adem,0,27_1,1,27,38,to run,,0,0.336019187014838,locomotion
 3023,54,target,1,staan,geluiden,boos,0,27_1,1,27,38,to stand,0.037,0,0.318111108747142,locomotion
 3024,1,practice,0,bal,gebaren,rond,0,27_2,2,27,37,ball,0.227,0,,
 3025,2,practice,0,bal,gebaren,bal,1,27_2,2,27,37,ball,1.0,1,,
@@ -3029,7 +3029,7 @@
 3027,4,target,0,hond,gebaren,hond,0,27_2,2,27,37,dog,1.0,1,0.702295683196924,animal
 3028,5,target,0,zwaar,gebaren,zwaar,0,27_2,2,27,37,heavy,1.0,1,0.688818480327848,quantity
 3029,6,target,0,misschien,gebaren,twijfel,0,27_2,2,27,37,maybe,0.224,0,0.504368306013113,logical
-3030,7,target,0,misschien,gebaren,overweging,1,27_2,2,27,37,maybe,0.287,0,0.504368306013113,logical
+3030,7,target,0,misschien,gebaren,over weging,1,27_2,2,27,37,maybe,,0,0.504368306013113,logical
 3031,8,target,0,verdrietig,gebaren,huilen,0,27_2,2,27,37,sad,0.389,0,0.816931671134317,valence
 3032,9,target,0,blazen,gebaren,blazen,0,27_2,2,27,37,to blow,1.0,1,0.684113267327739,vocal_oral
 3033,10,target,0,likken,gebaren,likken,0,27_2,2,27,37,to lick,1.0,1,0.757301371697859,gustatory
@@ -3286,7 +3286,7 @@
 3284,3,target,0,koud,geluiden,bibberen,0,29_1,1,29,41,cold,0.229,0,0.744751221657995,temperature
 3285,4,target,0,snel,geluiden,hijgen,0,29_1,1,29,41,fast,0.151,0,0.45736979983774,manner
 3286,5,target,0,goed,geluiden,goedkeuring,0,29_1,1,29,41,good,0.227,0,0.42473028945648,valence
-3287,6,target,0,niet,geluiden,grinniken,0,29_1,1,29,41,not,-0.021,0,0.332493391437193,logical
+3287,6,target,0,niet,geluiden,grinnikenen,0,29_1,1,29,41,not,,0,0.332493391437193,logical
 3288,7,target,0,ziek,geluiden,hoesten,0,29_1,1,29,41,sick,0.322,0,0.548898090158061,animate
 3289,8,target,0,weten,geluiden,knikken,0,29_1,1,29,41,to know,0.119,0,0.388979878106872,cognitive
 3290,9,target,0,water,geluiden,blazen,0,29_1,1,29,41,water,0.168,0,0.500621316131559,environment
@@ -3304,7 +3304,7 @@
 3302,21,target,0,zwaar,combinatie,groot,0,29_1,1,29,41,heavy,0.521,0,0.680855320383285,quantity
 3303,22,target,0,berg,combinatie,bergen,0,29_1,1,29,41,mountain,0.552,0,0.63512643878935,environment
 3304,23,target,0,oud,combinatie,bejaard,0,29_1,1,29,41,old,0.814,0,0.598288311266584,time
-3305,24,target,0,langzaam,combinatie,slowmoting,0,29_1,1,29,41,slow,,0,0.697044299048591,manner
+3305,24,target,0,langzaam,combinatie,slowmotion,0,29_1,1,29,41,slow,,0,0.697044299048591,manner
 3306,25,target,0,sterk,combinatie,sterk,0,29_1,1,29,41,strong,1.0,1,0.82173351174681,animate
 3307,26,target,0,kruipen,combinatie,kat,0,29_1,1,29,41,to crawl,0.097,0,0.786001237160513,locomotion
 3308,27,target,0,huilen,combinatie,huilen,0,29_1,1,29,41,to cry,1.0,1,0.83134459155959,vocal_oral
@@ -3623,7 +3623,7 @@
 3621,26,target,0,lachen,gebaren,lachen,0,30_1,1,30,45,to laugh,1.0,1,0.829161424358265,vocal_oral
 3622,27,target,0,zuigen,gebaren,blazen,0,30_1,1,30,45,to suck,0.393,0,0.641118953574169,vocal_oral
 3623,28,practice,1,rijk,gebaren,geld,0,30_1,1,30,46,rich,0.171,0,,
-3624,29,practice,1,olifant,gebaren,olifcapslockn,0,30_1,1,30,46,elephant,,0,,
+3624,29,practice,1,olifant,gebaren,olifant,0,30_1,1,30,46,elephant,1.0,1,,
 3625,30,target,1,snel,gebaren,rennen,0,30_1,1,30,46,fast,0.376,0,0.714505262077287,manner
 3626,31,target,1,vis,gebaren,zwemmen,0,30_1,1,30,46,fish,0.433,0,0.69659625199764,animal
 3627,32,target,1,goed,gebaren,goed,0,30_1,1,30,46,good,1.0,1,0.690424355205965,valence
@@ -3719,7 +3719,7 @@
 3717,68,target,1,ei,gebaren,pasta,1,30_2,2,30,46,egg,0.361,0,0.545621192753626,object
 3718,69,target,1,ei,gebaren,ei,2,30_2,2,30,46,egg,1.0,1,0.545621192753626,object
 3719,70,target,1,berg,gebaren,huis,0,30_2,2,30,46,mountain,0.123,0,0.62087766049062,environment
-3720,71,target,1,berg,gebaren,ski vakante,1,30_2,2,30,46,mountain,,0,0.62087766049062,environment
+3720,71,target,1,berg,gebaren,skivakantie,1,30_2,2,30,46,mountain,0.368,0,0.62087766049062,environment
 3721,72,target,1,berg,gebaren,piste,2,30_2,2,30,46,mountain,0.256,0,0.62087766049062,environment
 3722,73,target,1,oud,gebaren,bejaarde,0,30_2,2,30,46,old,0.598,0,0.553101281867092,time
 3723,74,target,1,oud,gebaren,bejaarden,1,30_2,2,30,46,old,0.654,0,0.553101281867092,time
@@ -3781,7 +3781,7 @@
 3779,19,practice,0,haasten,geluiden,heet,0,31_1,1,31,47,to hurry,0.134,0,,
 3780,20,practice,0,comfortabel,geluiden,blij,0,31_1,1,31,47,comfortable,0.357,0,,
 3781,21,target,0,ik,geluiden,geïrriteerd,0,31_1,1,31,47,I,0.106,0,0.357741139583888,social
-3782,22,target,0,groot,geluiden,verbeisterd,0,31_1,1,31,47,big,,0,0.35201321754525,quantity
+3782,22,target,0,groot,geluiden,verbijsterd,0,31_1,1,31,47,big,0.049,0,0.35201321754525,quantity
 3783,23,target,0,hond,geluiden,hond,0,31_1,1,31,47,dog,1.0,1,0.846022321803246,animal
 3784,24,target,0,goed,geluiden,moe,0,31_1,1,31,47,good,0.08,0,0.42473028945648,valence
 3785,25,target,0,heet,geluiden,klaar,0,31_1,1,31,47,hot,0.227,0,0.49098203287298,temperature
@@ -4068,7 +4068,7 @@
 4066,87,target,0,zuur,geluiden,vies,1,32_2,2,32,49,sour,0.246,0,0.361936361379245,gustatory
 4067,88,target,0,zuur,geluiden,niet lekker,2,32_2,2,32,49,sour,,0,0.361936361379245,gustatory
 4068,89,target,0,likken,geluiden,pop,0,32_2,2,32,49,to lick,0.075,0,0.687199600527179,gustatory
-4069,90,target,0,likken,geluiden,fles ontpoppen,1,32_2,2,32,49,to lick,,0,0.687199600527179,gustatory
+4069,90,target,0,likken,geluiden,fles ontkurken,1,32_2,2,32,49,to lick,,0,0.687199600527179,gustatory
 4070,91,target,0,likken,geluiden,geluid,2,32_2,2,32,49,to lick,0.03,0,0.687199600527179,gustatory
 4071,92,practice,1,zwaaien,geluiden,wind,0,32_2,2,32,50,to wave,0.196,0,,
 4072,93,practice,1,zwaaien,geluiden,fluiten,1,32_2,2,32,50,to wave,0.223,0,,
@@ -4120,7 +4120,7 @@
 4118,24,target,0,ademen,combinatie,ademen,0,33_1,1,33,51,to breathe,1.0,1,0.808141386412857,olfactory
 4119,25,target,0,grommen,combinatie,grommen,0,33_1,1,33,51,to growl,1.0,1,0.713962417775868,vocal_oral
 4120,26,target,0,zuigen,combinatie,zuigen,0,33_1,1,33,51,to suck,1.0,1,0.671311406311871,vocal_oral
-4121,27,target,0,lopen,combinatie,margeren,0,33_1,1,33,51,to walk,,0,0.83908076354321,locomotion
+4121,27,target,0,lopen,combinatie,marcheren,0,33_1,1,33,51,to walk,0.56,0,0.83908076354321,locomotion
 4122,28,practice,1,rijk,combinatie,geld,0,33_1,1,33,52,rich,0.171,0,,
 4123,29,practice,1,haasten,combinatie,rennen,0,33_1,1,33,52,to hurry,0.355,0,,
 4124,30,target,1,zoemen,combinatie,bij,0,33_1,1,33,52,buzz,0.165,0,0.647930328473485,auditory
@@ -4253,7 +4253,7 @@
 4251,103,target,1,ziek,combinatie,ziek,0,33_2,2,33,52,sick,1.0,1,0.716614849190809,animate
 4252,104,target,1,slang,combinatie,slang,0,33_2,2,33,52,snake,1.0,1,0.80478903012149,animal
 4253,105,target,1,vechten,combinatie,boksen,0,33_2,2,33,52,to fight,0.547,0,0.820194675119722,survival
-4254,106,target,1,vechten,combinatie,knock out,1,33_2,2,33,52,to fight,,0,0.820194675119722,survival
+4254,106,target,1,vechten,combinatie,knockout,1,33_2,2,33,52,to fight,,0,0.820194675119722,survival
 4255,107,target,1,vechten,combinatie,vechten,2,33_2,2,33,52,to fight,1.0,1,0.820194675119722,survival
 4256,108,target,1,kotsen,combinatie,overgeven,0,33_2,2,33,52,to vomit,0.773,0,0.828901259475311,gustatory
 4257,109,target,1,kotsen,combinatie,kotsen,1,33_2,2,33,52,to vomit,1.0,1,0.828901259475311,gustatory
@@ -4366,7 +4366,7 @@
 4364,53,target,0,langzaam,gebaren,langzaam,0,34_2,2,34,53,slow,1.0,1,0.689425946655567,manner
 4365,54,target,0,dik,gebaren,dik,0,34_2,2,34,53,thick,1.0,1,0.756104836111392,quantity
 4366,55,target,0,kauwen,gebaren,bijten,0,34_2,2,34,53,to chew,0.712,0,0.732601016130094,gustatory
-4367,56,target,0,kauwen,gebaren,knarzen,1,34_2,2,34,53,to chew,,0,0.732601016130094,gustatory
+4367,56,target,0,kauwen,gebaren,knarsen,1,34_2,2,34,53,to chew,0.302,0,0.732601016130094,gustatory
 4368,57,target,0,kauwen,gebaren,spoelen,2,34_2,2,34,53,to chew,0.146,0,0.732601016130094,gustatory
 4369,58,practice,1,zwaaien,gebaren,zwaaien,0,34_2,2,34,54,to wave,1.0,1,,
 4370,59,practice,1,geheim,gebaren,roddelen,0,34_2,2,34,54,secret,0.213,0,,
@@ -5095,7 +5095,7 @@
 5093,17,target,1,gooien,geluiden,overgeven,0,39_1,1,39,64,to throw,0.424,0,0.32044193552744,manual
 5094,18,target,1,kotsen,geluiden,overgeven,0,39_1,1,39,64,to vomit,0.773,0,0.79853309737283,gustatory
 5095,19,practice,0,gek,gebaren,enthousiast,0,39_1,1,39,63,crazy,0.287,0,,
-5096,20,practice,0,koken,gebaren,ping pong,0,39_1,1,39,63,to cook,,0,,
+5096,20,practice,0,koken,gebaren,pingpong,0,39_1,1,39,63,to cook,0.101,0,,
 5097,21,target,0,snel,gebaren,rennen,0,39_1,1,39,63,fast,0.376,0,0.714505262077287,manner
 5098,22,target,0,zoet,gebaren,heet,0,39_1,1,39,63,sweet,0.262,0,0.258150304252129,gustatory
 5099,23,target,0,kauwen,gebaren,kauwen,0,39_1,1,39,63,to chew,1.0,1,0.732601016130094,gustatory
@@ -5108,7 +5108,7 @@
 5106,30,target,1,luidruchtig,gebaren,schreeuwen,0,39_1,1,39,64,loud,0.468,0,0.618296512390658,auditory
 5107,31,target,1,ziek,gebaren,kater,0,39_1,1,39,64,sick,0.157,0,0.674832951598419,animate
 5108,32,target,1,klein,gebaren,lift,0,39_1,1,39,64,small,0.023,0,0.782210786119577,quantity
-5109,33,target,1,piepen,gebaren,typgeluid,0,39_1,1,39,64,squeak,,0,0.329523830267451,auditory
+5109,33,target,1,piepen,gebaren,typegeluid,0,39_1,1,39,64,squeak,,0,0.329523830267451,auditory
 5110,34,target,1,dik,gebaren,gorilla,0,39_1,1,39,64,thick,0.176,0,0.756104836111392,quantity
 5111,35,target,1,bijten,gebaren,bijten,0,39_1,1,39,64,to bite,1.0,1,0.788344961875328,vocal_oral
 5112,36,target,1,lachen,gebaren,lachen,0,39_1,1,39,64,to laugh,1.0,1,0.829161424358265,vocal_oral
@@ -5683,7 +5683,7 @@
 5681,70,practice,0,zingen,combinatie,zingen,0,41_2,2,41,69,to sing,1.0,1,,
 5682,71,target,0,goed,combinatie,goed,0,41_2,2,41,69,good,1.0,1,0.687562055559869,valence
 5683,72,target,0,misschien,combinatie,twijfelen,0,41_2,2,41,69,maybe,0.284,0,0.599769001504526,logical
-5684,73,target,0,misschien,combinatie,overwegen,1,41_2,2,41,69,maybe,0.331,0,0.599769001504526,logical
+5684,73,target,0,misschien,combinatie,over wegen,1,41_2,2,41,69,maybe,,0,0.599769001504526,logical
 5685,74,target,0,misschien,combinatie,optie,2,41_2,2,41,69,maybe,0.178,0,0.599769001504526,logical
 5686,75,target,0,blazen,combinatie,bellenblazen,0,41_2,2,41,69,to blow,,0,0.771810542050373,vocal_oral
 5687,76,target,0,blazen,combinatie,blazen,1,41_2,2,41,69,to blow,1.0,1,0.771810542050373,vocal_oral
@@ -5720,7 +5720,7 @@
 5718,7,target,0,lachen,gebaren,lachen,0,42_1,1,42,71,to laugh,1.0,1,0.829161424358265,vocal_oral
 5719,8,target,0,likken,gebaren,schoonlikken,0,42_1,1,42,71,to lick,,0,0.757301371697859,gustatory
 5720,9,target,0,water,gebaren,water,0,42_1,1,42,71,water,1.0,1,0.560355838581374,environment
-5721,10,practice,1,comfortabel,gebaren,illen,0,42_1,1,42,72,comfortable,,0,,
+5721,10,practice,1,comfortabel,gebaren,chillen,0,42_1,1,42,72,comfortable,0.34,0,,
 5722,11,practice,1,bloem,gebaren,bloem,0,42_1,1,42,72,flower,1.0,1,,
 5723,12,target,1,koud,gebaren,koud,0,42_1,1,42,72,cold,1.0,1,0.847021849271004,temperature
 5724,13,target,1,hoorn,gebaren,trompet,0,42_1,1,42,72,horn,0.66,0,0.541237492784099,other
@@ -5757,7 +5757,7 @@
 5755,44,target,0,kauwen,geluiden,eten,0,42_1,1,42,71,to chew,0.497,0,0.713509315277749,gustatory
 5756,45,target,0,gooien,geluiden,vallen,0,42_1,1,42,71,to throw,0.383,0,0.32044193552744,manual
 5757,46,practice,1,gek,geluiden,praten,0,42_1,1,42,72,crazy,0.078,0,,
-5758,47,practice,1,olifant,geluiden,oorkest,0,42_1,1,42,72,elephant,,0,,
+5758,47,practice,1,olifant,geluiden,orkest,0,42_1,1,42,72,elephant,0.034,0,,
 5759,48,target,1,boos,geluiden,brommen,0,42_1,1,42,72,angry,0.208,0,0.742980107622976,valence
 5760,49,target,1,vlieg,geluiden,glijden,0,42_1,1,42,72,fly,0.182,0,0.56695234249888,animal
 5761,50,target,1,goed,geluiden,vallen,0,42_1,1,42,72,good,0.066,0,0.42473028945648,valence
@@ -5945,7 +5945,7 @@
 5943,22,target,0,zuigen,geluiden,zuigen,1,43_2,2,43,73,to suck,1.0,1,0.673960888054455,vocal_oral
 5944,23,target,0,water,geluiden,blazen,0,43_2,2,43,73,water,0.168,0,0.500621316131559,environment
 5945,24,target,0,water,geluiden,wind,1,43_2,2,43,73,water,0.206,0,0.500621316131559,environment
-5946,25,target,0,water,geluiden,ruizen,2,43_2,2,43,73,water,,0,0.500621316131559,environment
+5946,25,target,0,water,geluiden,ruisen,2,43_2,2,43,73,water,0.079,0,0.500621316131559,environment
 5947,26,practice,1,bal,geluiden,bel,0,43_2,2,43,74,ball,0.094,0,,
 5948,27,practice,1,bal,geluiden,kerkklok,1,43_2,2,43,74,ball,0.116,0,,
 5949,28,practice,1,bal,geluiden,casino,2,43_2,2,43,74,ball,0.128,0,,
@@ -5983,7 +5983,7 @@
 5981,60,practice,1,fiets,gebaren,fiets,0,43_2,2,43,74,bicycle,1.0,1,,
 5982,61,practice,1,vliegtuig,gebaren,vliegen,0,43_2,2,43,74,airplane,0.745,0,,
 5983,62,practice,1,vliegtuig,gebaren,springen,1,43_2,2,43,74,airplane,0.176,0,,
-5984,63,practice,1,vliegtuig,gebaren,skydiving,2,43_2,2,43,74,airplane,,0,,
+5984,63,practice,1,vliegtuig,gebaren,skydiven,2,43_2,2,43,74,airplane,0.05,0,,
 5985,64,target,1,vlieg,gebaren,wesp,0,43_2,2,43,74,fly,0.397,0,0.59811289452599,animal
 5986,65,target,1,vlieg,gebaren,bij,1,43_2,2,43,74,fly,0.15,0,0.59811289452599,animal
 5987,66,target,1,vlieg,gebaren,bang,2,43_2,2,43,74,fly,0.016,0,0.59811289452599,animal
@@ -6137,7 +6137,7 @@
 6135,47,target,0,niet,combinatie,verboden,2,44_2,2,44,75,not,0.366,0,0.582985856060995,logical
 6136,48,target,0,jagen,combinatie,schieten,0,44_2,2,44,75,to hunt,0.469,0,0.682815334308846,survival
 6137,49,target,0,jagen,combinatie,afschieten,1,44_2,2,44,75,to hunt,0.42,0,0.682815334308846,survival
-6138,50,target,0,jagen,combinatie,lslash,2,44_2,2,44,75,to hunt,,0,0.682815334308846,survival
+6138,50,target,0,jagen,combinatie,,2,44_2,2,44,75,to hunt,,0,0.682815334308846,survival
 6139,51,target,0,gooien,combinatie,granaat,0,44_2,2,44,75,to throw,0.195,0,0.803268146536285,manual
 6140,52,target,0,gooien,combinatie,gooien,1,44_2,2,44,75,to throw,1.0,1,0.803268146536285,manual
 6141,53,practice,1,fiets,combinatie,fietsen,0,44_2,2,44,76,bicycle,0.95,0,,
@@ -6195,7 +6195,7 @@
 6193,105,target,1,sterk,geluiden,poepen,1,44_2,2,44,76,strong,-0.006,0,0.408761111306824,animate
 6194,106,target,1,sterk,geluiden,zwaar,2,44_2,2,44,76,strong,0.691,0,0.408761111306824,animate
 6195,107,target,1,ruiken,geluiden,ruiken,0,44_2,2,44,76,to smell,1.0,1,0.50270369735164,olfactory
-6196,1,practice,0,auto,gebaren,auto rijden,0,45_1,1,45,77,car,,0,,
+6196,1,practice,0,auto,gebaren,autorijden,0,45_1,1,45,77,car,0.826,0,,
 6197,2,practice,0,leeg,gebaren,wachten,0,45_1,1,45,77,empty,0.093,0,,
 6198,3,target,0,boos,gebaren,boos,0,45_1,1,45,77,angry,1.0,1,0.803028772880841,valence
 6199,4,target,0,dood,gebaren,dood,0,45_1,1,45,77,dead,1.0,1,0.75602172047801,animate
@@ -6255,7 +6255,7 @@
 6253,4,practice,0,geheim,geluiden,zwijgen,2,45_2,2,45,77,secret,0.417,0,,
 6254,5,target,0,zuur,geluiden,bang,0,45_2,2,45,77,sour,0.121,0,0.361936361379245,gustatory
 6255,6,target,0,zuur,geluiden,vies,1,45_2,2,45,77,sour,0.246,0,0.361936361379245,gustatory
-6256,7,target,0,zuur,geluiden,disgust,2,45_2,2,45,77,sour,,0,0.361936361379245,gustatory
+6256,7,target,0,zuur,geluiden,walging,2,45_2,2,45,77,sour,0.21,0,0.361936361379245,gustatory
 6257,8,target,0,verbranden,geluiden,alarm,0,45_2,2,45,77,to burn,0.128,0,0.367189286077145,other
 6258,9,target,0,verbranden,geluiden,fluisteren,1,45_2,2,45,77,to burn,-0.003,0,0.367189286077145,other
 6259,10,target,0,verbranden,geluiden,wekker,2,45_2,2,45,77,to burn,0.041,0,0.367189286077145,other
@@ -6302,7 +6302,7 @@
 6300,51,target,0,zoemen,gebaren,feesten,2,45_2,2,45,77,buzz,0.026,0,0.400420365943101,auditory
 6301,52,target,0,bliksem,gebaren,gooien,0,45_2,2,45,77,lightning,0.052,0,0.525289002863704,environment
 6302,53,target,0,bliksem,gebaren,onweer,1,45_2,2,45,77,lightning,0.691,0,0.525289002863704,environment
-6303,54,target,0,bliksem,gebaren,elektrisiteit,2,45_2,2,45,77,lightning,,0,0.525289002863704,environment
+6303,54,target,0,bliksem,gebaren,elektriciteit,2,45_2,2,45,77,lightning,0.338,0,0.525289002863704,environment
 6304,55,target,0,scherp,gebaren,snee,0,45_2,2,45,77,sharp,0.233,0,0.501172040780983,haptic
 6305,56,target,0,scherp,gebaren,snijden,1,45_2,2,45,77,sharp,0.246,0,0.501172040780983,haptic
 6306,57,target,0,scherp,gebaren,verwonden,2,45_2,2,45,77,sharp,0.079,0,0.501172040780983,haptic
@@ -6356,7 +6356,7 @@
 6354,105,target,1,vis,combinatie,vis,0,45_2,2,45,78,fish,1.0,1,0.741024648680267,animal
 6355,106,target,1,misschien,combinatie,denken,0,45_2,2,45,78,maybe,0.567,0,0.599769001504526,logical
 6356,107,target,1,misschien,combinatie,twijfelen,1,45_2,2,45,78,maybe,0.284,0,0.599769001504526,logical
-6357,108,target,1,misschien,combinatie,overwegen,2,45_2,2,45,78,maybe,0.331,0,0.599769001504526,logical
+6357,108,target,1,misschien,combinatie,over wegen,2,45_2,2,45,78,maybe,,0,0.599769001504526,logical
 6358,109,target,1,staart,combinatie,staart,0,45_2,2,45,78,tail,1.0,1,0.613189302838734,quantity
 6359,110,target,1,grommen,combinatie,beer,0,45_2,2,45,78,to growl,0.139,0,0.713962417775868,vocal_oral
 6360,111,target,1,grommen,combinatie,wolf,1,45_2,2,45,78,to growl,0.246,0,0.713962417775868,vocal_oral
@@ -6469,7 +6469,7 @@
 6467,48,target,0,vangen,geluiden,lucht,2,46_2,2,46,79,to catch,0.091,0,0.302403521174031,manual
 6468,49,target,0,weten,geluiden,eens,0,46_2,2,46,79,to know,0.309,0,0.388979878106872,cognitive
 6469,50,practice,1,fiets,geluiden,schuiven,0,46_2,2,46,80,bicycle,0.08,0,,
-6470,51,practice,1,fiets,geluiden,sleeen,1,46_2,2,46,80,bicycle,,0,,
+6470,51,practice,1,fiets,geluiden,sleën,1,46_2,2,46,80,bicycle,,0,,
 6471,52,practice,1,fiets,geluiden,skiën,2,46_2,2,46,80,bicycle,0.305,0,,
 6472,53,practice,1,vliegtuig,geluiden,wind,0,46_2,2,46,80,airplane,0.196,0,,
 6473,54,practice,1,vliegtuig,geluiden,waaien,1,46_2,2,46,80,airplane,0.127,0,,
@@ -6512,7 +6512,7 @@
 6510,91,target,1,ei,combinatie,kuiken,0,46_2,2,46,80,egg,0.511,0,0.581012583251545,object
 6511,92,target,1,ei,combinatie,ei,1,46_2,2,46,80,egg,1.0,1,0.581012583251545,object
 6512,93,target,1,hoog,combinatie,lang,0,46_2,2,46,80,high,0.344,0,0.749105900955685,auditory
-6513,94,target,1,hoog,combinatie,reaching,1,46_2,2,46,80,high,,0,0.749105900955685,auditory
+6513,94,target,1,hoog,combinatie,reiken,1,46_2,2,46,80,high,0.244,0,0.749105900955685,auditory
 6514,95,target,1,hoog,combinatie,groeien,2,46_2,2,46,80,high,0.207,0,0.749105900955685,auditory
 6515,96,target,1,bang,combinatie,schrikken,0,46_2,2,46,80,scared,0.747,0,0.758043579817488,valence
 6516,97,target,1,bang,combinatie,bang,1,46_2,2,46,80,scared,1.0,1,0.758043579817488,valence
@@ -6572,7 +6572,7 @@
 6570,49,target,1,ei,combinatie,ei,0,47_1,1,47,82,egg,1.0,1,0.581012583251545,object
 6571,50,target,1,zout,combinatie,kaars,0,47_1,1,47,82,salt,-0.019,0,0.303234302798168,gustatory
 6572,51,target,1,staart,combinatie,aap,0,47_1,1,47,82,tail,0.262,0,0.613189302838734,quantity
-6573,52,target,1,springen,combinatie,skippiebal,0,47_1,1,47,82,to jump,,0,0.814537922310332,locomotion
+6573,52,target,1,springen,combinatie,skippybal,0,47_1,1,47,82,to jump,0.339,0,0.814537922310332,locomotion
 6574,53,target,1,gooien,combinatie,gooien,0,47_1,1,47,82,to throw,1.0,1,0.803268146536285,manual
 6575,54,target,1,kotsen,combinatie,kotsen,0,47_1,1,47,82,to vomit,1.0,1,0.828901259475311,gustatory
 6576,1,practice,0,eend,combinatie,eend,0,47_2,2,47,81,duck,1.0,1,,
@@ -6621,7 +6621,7 @@
 6619,44,target,0,blazen,geluiden,wind,0,47_2,2,47,81,to blow,0.464,0,0.805891834375597,vocal_oral
 6620,45,target,0,blazen,geluiden,blazen,1,47_2,2,47,81,to blow,1.0,1,0.805891834375597,vocal_oral
 6621,46,target,0,ademen,geluiden,hijgen,0,47_2,2,47,81,to breathe,0.593,0,0.784779073219606,olfactory
-6622,47,target,0,ademen,geluiden,buitenadem,1,47_2,2,47,81,to breathe,,0,0.784779073219606,olfactory
+6622,47,target,0,ademen,geluiden,buiten adem,1,47_2,2,47,81,to breathe,,0,0.784779073219606,olfactory
 6623,48,target,0,ademen,geluiden,rennen,2,47_2,2,47,81,to breathe,0.16,0,0.784779073219606,olfactory
 6624,49,target,0,weten,geluiden,idee,0,47_2,2,47,81,to know,0.292,0,0.388979878106872,cognitive
 6625,50,target,0,weten,geluiden,denken,1,47_2,2,47,81,to know,0.631,0,0.388979878106872,cognitive
@@ -6840,7 +6840,7 @@
 6838,15,target,1,piepen,combinatie,mug,0,49_1,1,49,86,squeak,0.096,0,0.543249319540667,auditory
 6839,16,target,1,verbranden,combinatie,prik,0,49_1,1,49,86,to burn,0.052,0,0.56189613651175,other
 6840,17,target,1,ruiken,combinatie,geur,0,49_1,1,49,86,to smell,0.867,0,0.762309813460577,olfactory
-6841,18,target,1,kotsen,combinatie,kokhalsen,0,49_1,1,49,86,to vomit,,0,0.828901259475311,gustatory
+6841,18,target,1,kotsen,combinatie,kokhalzen,0,49_1,1,49,86,to vomit,0.701,0,0.828901259475311,gustatory
 6842,19,practice,0,auto,geluiden,motor,0,49_1,1,49,85,car,0.747,0,,
 6843,20,practice,0,dansen,geluiden,zingen,0,49_1,1,49,85,to dance,0.377,0,,
 6844,21,target,0,ver,geluiden,nadenken,0,49_1,1,49,85,far,0.135,0,0.306589745694138,spatial
@@ -6879,7 +6879,7 @@
 6877,54,target,1,wind,gebaren,geschrokken,0,49_1,1,49,86,wind,0.046,0,0.535647636647091,environment
 6878,1,practice,0,glimlach,geluiden,bang,0,49_2,2,49,85,smile,0.098,0,,
 6879,2,practice,0,glimlach,geluiden,giechelen,1,49_2,2,49,85,smile,0.561,0,,
-6880,3,practice,0,glimlach,geluiden,grinnik,2,49_2,2,49,85,smile,,0,,
+6880,3,practice,0,glimlach,geluiden,grinniken,2,49_2,2,49,85,smile,0.562,0,,
 6881,4,practice,0,zingen,geluiden,zingen,0,49_2,2,49,85,to sing,1.0,1,,
 6882,5,target,0,vuur,geluiden,wind,0,49_2,2,49,85,fire,0.178,0,0.325215717417947,object
 6883,6,target,0,vuur,geluiden,vliegen,1,49_2,2,49,85,fire,0.111,0,0.325215717417947,object
@@ -6958,7 +6958,7 @@
 6956,79,target,0,jagen,combinatie,jagen,2,49_2,2,49,85,to hunt,1.0,1,0.682815334308846,survival
 6957,80,target,0,likken,combinatie,likken,0,49_2,2,49,85,to lick,1.0,1,0.791051083509889,gustatory
 6958,81,practice,1,juichen,combinatie,juichen,0,49_2,2,49,86,to cheer,1.0,1,,
-6959,82,practice,1,eend,combinatie,pinguin,0,49_2,2,49,86,duck,,0,,
+6959,82,practice,1,eend,combinatie,pinguïn,0,49_2,2,49,86,duck,0.365,0,,
 6960,83,practice,1,eend,combinatie,eend,1,49_2,2,49,86,duck,1.0,1,,
 6961,84,target,1,kind,combinatie,dwerg,0,49_2,2,49,86,child,0.219,0,0.595086558643404,social
 6962,85,target,1,kind,combinatie,baby,1,49_2,2,49,86,child,0.761,0,0.595086558643404,social
@@ -7307,7 +7307,7 @@
 7305,112,target,1,onweer,combinatie,onweer,2,50_2,2,50,90,thunder,1.0,1,0.560816179699852,environment
 7306,113,target,1,vangen,combinatie,ontwijken,0,50_2,2,50,90,to catch,0.331,0,0.715821711656047,manual
 7307,114,target,1,vangen,combinatie,vangen,1,50_2,2,50,90,to catch,1.0,1,0.715821711656047,manual
-7308,1,practice,0,dansen,geluiden,discodisco,0,51_1,1,51,91,to dance,,0,,
+7308,1,practice,0,dansen,geluiden,disco,0,51_1,1,51,91,to dance,0.587,0,,
 7309,2,practice,0,auto,geluiden,auto,0,51_1,1,51,91,car,1.0,1,,
 7310,3,target,0,boos,geluiden,balen,0,51_1,1,51,91,angry,0.625,0,0.742980107622976,valence
 7311,4,target,0,koud,geluiden,koud,0,51_1,1,51,91,cold,1.0,1,0.744751221657995,temperature
@@ -7364,7 +7364,7 @@
 7362,1,practice,0,zwaaien,geluiden,puppy,0,51_2,2,51,91,to wave,0.005,0,,
 7363,2,practice,0,zwaaien,geluiden,zoemen,1,51_2,2,51,91,to wave,0.315,0,,
 7364,3,practice,0,zwaaien,geluiden,huppelen,2,51_2,2,51,91,to wave,0.357,0,,
-7365,4,practice,0,glimlach,geluiden,grinniken,0,51_2,2,51,91,smile,0.562,0,,
+7365,4,practice,0,glimlach,geluiden,grinnikenen,0,51_2,2,51,91,smile,,0,,
 7366,5,practice,0,glimlach,geluiden,glimlachen,1,51_2,2,51,91,smile,0.985,0,,
 7367,6,target,0,bitter,geluiden,eten,0,51_2,2,51,91,bitter,0.004,0,0.21654433031206,gustatory
 7368,7,target,0,bitter,geluiden,smakken,1,51_2,2,51,91,bitter,0.105,0,0.21654433031206,gustatory
@@ -7485,7 +7485,7 @@
 7483,19,practice,0,comfortabel,combinatie,gezellig,0,52_1,1,52,93,comfortable,0.651,0,,
 7484,20,practice,0,haasten,combinatie,rennen,0,52_1,1,52,93,to hurry,0.355,0,,
 7485,21,target,0,vogel,combinatie,vogel,0,52_1,1,52,93,bird,1.0,1,0.806460221089258,animal
-7486,22,target,0,oud,combinatie,oudpersoon,0,52_1,1,52,93,old,,0,0.598288311266584,time
+7486,22,target,0,oud,combinatie,oud persoon,0,52_1,1,52,93,old,,0,0.598288311266584,time
 7487,23,target,0,regen,combinatie,regen,0,52_1,1,52,93,rain,1.0,1,0.719579068930045,environment
 7488,24,target,0,blazen,combinatie,blazen,0,52_1,1,52,93,to blow,1.0,1,0.771810542050373,vocal_oral
 7489,25,target,0,eten,combinatie,eten,0,52_1,1,52,93,to eat,1.0,1,0.799176047935077,vocal_oral
@@ -7511,7 +7511,7 @@
 7509,45,target,0,fluisteren,geluiden,fluisteren,0,52_1,1,52,93,to whisper,1.0,1,0.703341393070909,auditory
 7510,46,practice,1,koken,geluiden,wind,0,52_1,1,52,94,to cook,0.09,0,,
 7511,47,practice,1,leeg,geluiden,zucht,0,52_1,1,52,94,empty,0.192,0,,
-7512,48,target,1,vrouw,geluiden,griniken,0,52_1,1,52,94,female,,0,0.403534954357456,animate
+7512,48,target,1,vrouw,geluiden,grinniken,0,52_1,1,52,94,female,-0.043,0,0.403534954357456,animate
 7513,49,target,1,vuur,geluiden,zucht,0,52_1,1,52,94,fire,0.182,0,0.325215717417947,object
 7514,50,target,1,verdrietig,geluiden,lachen,0,52_1,1,52,94,sad,0.198,0,0.746777577338304,valence
 7515,51,target,1,bang,geluiden,vallen,0,52_1,1,52,94,scared,0.124,0,0.693961201585873,valence
@@ -7895,7 +7895,7 @@
 7893,59,target,1,grommen,combinatie,grommen,0,54_2,2,54,98,to growl,1.0,1,0.713962417775868,vocal_oral
 7894,60,target,1,lachen,combinatie,lachen,0,54_2,2,54,98,to laugh,1.0,1,0.852786166779168,vocal_oral
 7895,61,practice,0,bal,geluiden,druppelen,0,54_2,2,54,97,ball,0.1,0,,
-7896,62,practice,0,bal,geluiden,ping pongen,1,54_2,2,54,97,ball,,0,,
+7896,62,practice,0,bal,geluiden,pingpongen,1,54_2,2,54,97,ball,,0,,
 7897,63,practice,0,bal,geluiden,tafeltennis,2,54_2,2,54,97,ball,0.504,0,,
 7898,64,practice,0,sneeuw,geluiden,koud,0,54_2,2,54,97,snow,0.471,0,,
 7899,65,practice,0,sneeuw,geluiden,versnellen,1,54_2,2,54,97,snow,0.014,0,,
@@ -7931,7 +7931,7 @@
 7929,95,target,1,bliksem,geluiden,huifkar,2,54_2,2,54,98,lightning,0.089,0,0.549301947437214,environment
 7930,96,target,1,staart,geluiden,baasje,0,54_2,2,54,98,tail,0.164,0,0.26916670248274,quantity
 7931,97,target,1,staart,geluiden,uitlaten,1,54_2,2,54,98,tail,-0.001,0,0.26916670248274,quantity
-7932,98,target,1,staart,geluiden,boederij,2,54_2,2,54,98,tail,,0,0.26916670248274,quantity
+7932,98,target,1,staart,geluiden,boerderij,2,54_2,2,54,98,tail,0.026,0,0.26916670248274,quantity
 7933,99,target,1,kauwen,geluiden,paard,0,54_2,2,54,98,to chew,0.027,0,0.713509315277749,gustatory
 7934,100,target,1,kauwen,geluiden,kauwen,1,54_2,2,54,98,to chew,1.0,1,0.713509315277749,gustatory
 7935,101,target,1,vechten,geluiden,pistool,0,54_2,2,54,98,to fight,0.081,0,0.551944383571384,survival
@@ -8070,7 +8070,7 @@
 8068,74,target,1,zout,geluiden,walgen,1,55_2,2,55,100,salt,0.092,0,0.153255935410395,gustatory
 8069,75,target,1,zout,geluiden,smaak,2,55_2,2,55,100,salt,0.254,0,0.153255935410395,gustatory
 8070,76,target,1,staart,geluiden,zweep,0,55_2,2,55,100,tail,0.334,0,0.26916670248274,quantity
-8071,77,target,1,staart,geluiden,paardijden,1,55_2,2,55,100,tail,,0,0.26916670248274,quantity
+8071,77,target,1,staart,geluiden,paardrijden,1,55_2,2,55,100,tail,0.096,0,0.26916670248274,quantity
 8072,78,target,1,staart,geluiden,leiden,2,55_2,2,55,100,tail,0.075,0,0.26916670248274,quantity
 8073,79,target,1,vliegen,geluiden,wind,0,55_2,2,55,100,to fly,0.255,0,0.451697867828672,locomotion
 8074,80,target,1,vliegen,geluiden,alarm,1,55_2,2,55,100,to fly,-0.006,0,0.451697867828672,locomotion
@@ -8171,7 +8171,7 @@
 8169,2,practice,0,vliegtuig,geluiden,wind,0,56_2,2,56,101,airplane,0.196,0,,
 8170,3,practice,0,vliegtuig,geluiden,waaien,1,56_2,2,56,101,airplane,0.127,0,,
 8171,4,practice,0,vliegtuig,geluiden,motor,2,56_2,2,56,101,airplane,0.305,0,,
-8172,5,target,0,boos,geluiden,neuril,0,56_2,2,56,101,angry,,0,0.742980107622976,valence
+8172,5,target,0,boos,geluiden,,0,56_2,2,56,101,angry,,0,0.742980107622976,valence
 8173,6,target,0,boos,geluiden,grommen,1,56_2,2,56,101,angry,0.307,0,0.742980107622976,valence
 8174,7,target,0,boos,geluiden,teleurgesteld,2,56_2,2,56,101,angry,0.5,0,0.742980107622976,valence
 8175,8,target,0,kat,geluiden,kat,0,56_2,2,56,101,cat,1.0,1,0.840948971730618,animal
@@ -8196,7 +8196,7 @@
 8194,27,target,1,kind,geluiden,praten,2,56_2,2,56,102,child,0.04,0,0.431409213563599,social
 8195,28,target,1,snel,geluiden,wind,0,56_2,2,56,102,fast,0.087,0,0.45736979983774,manner
 8196,29,target,1,snel,geluiden,racen,1,56_2,2,56,102,fast,0.271,0,0.45736979983774,manner
-8197,30,target,1,snel,geluiden,f1,2,56_2,2,56,102,fast,,0,0.45736979983774,manner
+8197,30,target,1,snel,geluiden,formula 1,2,56_2,2,56,102,fast,,0,0.45736979983774,manner
 8198,31,target,1,luidruchtig,geluiden,schreeuwen,0,56_2,2,56,102,loud,0.468,0,0.587862264905011,auditory
 8199,32,target,1,luidruchtig,geluiden,lachen,1,56_2,2,56,102,loud,0.14,0,0.587862264905011,auditory
 8200,33,target,1,luidruchtig,geluiden,instemmen,2,56_2,2,56,102,loud,-0.0,0,0.587862264905011,auditory
@@ -8392,7 +8392,7 @@
 8390,58,practice,1,glimlach,geluiden,vrolijk,2,57_2,2,57,104,smile,0.411,0,,
 8391,59,practice,1,klok,geluiden,klok,0,57_2,2,57,104,clock,1.0,1,,
 8392,60,target,1,langzaam,geluiden,lopen,0,57_2,2,57,104,slow,0.228,0,0.369492215989784,manner
-8393,61,target,1,langzaam,geluiden,stamperen,1,57_2,2,57,104,slow,,0,0.369492215989784,manner
+8393,61,target,1,langzaam,geluiden,stampen,1,57_2,2,57,104,slow,0.103,0,0.369492215989784,manner
 8394,62,target,1,langzaam,geluiden,gooien,2,57_2,2,57,104,slow,-0.037,0,0.369492215989784,manner
 8395,63,target,1,zuur,geluiden,smakken,0,57_2,2,57,104,sour,0.094,0,0.361936361379245,gustatory
 8396,64,target,1,zuur,geluiden,eten,1,57_2,2,57,104,sour,0.089,0,0.361936361379245,gustatory
@@ -8428,7 +8428,7 @@
 8426,94,target,0,gooien,gebaren,gooien,0,57_2,2,57,103,to throw,1.0,1,0.828635174388149,manual
 8427,95,practice,1,geheim,gebaren,klein,0,57_2,2,57,104,secret,0.078,0,,
 8428,96,practice,1,geheim,gebaren,fluisteren,1,57_2,2,57,104,secret,0.29,0,,
-8429,97,practice,1,geheim,gebaren,stilzijn,2,57_2,2,57,104,secret,,0,,
+8429,97,practice,1,geheim,gebaren,stil zijn,2,57_2,2,57,104,secret,,0,,
 8430,98,practice,1,sneeuw,gebaren,sneeuw,0,57_2,2,57,104,snow,1.0,1,,
 8431,99,target,1,walgen,gebaren,vies,0,57_2,2,57,104,disgusted,0.354,0,0.584517923117511,valence
 8432,100,target,1,walgen,gebaren,misselijk,1,57_2,2,57,104,disgusted,0.745,0,0.584517923117511,valence
@@ -8517,7 +8517,7 @@
 8515,19,practice,1,eend,gebaren,eend,2,58_2,2,58,106,duck,1.0,1,,
 8516,20,target,1,vuur,gebaren,regen,0,58_2,2,58,106,fire,0.145,0,0.612736156749429,object
 8517,21,target,1,vuur,gebaren,cactus,1,58_2,2,58,106,fire,0.038,0,0.612736156749429,object
-8518,22,target,1,vuur,gebaren,bbq,2,58_2,2,58,106,fire,,0,0.612736156749429,object
+8518,22,target,1,vuur,gebaren,barbecue,2,58_2,2,58,106,fire,0.332,0,0.612736156749429,object
 8519,23,target,1,vlieg,gebaren,mug,0,58_2,2,58,106,fly,0.484,0,0.59811289452599,animal
 8520,24,target,1,vlieg,gebaren,vlieg,1,58_2,2,58,106,fly,1.0,1,0.59811289452599,animal
 8521,25,target,1,geur,gebaren,stinken,0,58_2,2,58,106,odor,0.757,0,0.580764408529184,olfactory
@@ -8533,7 +8533,7 @@
 8531,35,practice,0,sneeuw,combinatie,koud,0,58_2,2,58,105,snow,0.471,0,,
 8532,36,practice,0,sneeuw,combinatie,sneeuw,1,58_2,2,58,105,snow,1.0,1,,
 8533,37,practice,0,bal,combinatie,bal,0,58_2,2,58,105,ball,1.0,1,,
-8534,38,target,0,bitter,combinatie,zur,0,58_2,2,58,105,bitter,,0,0.409843169892478,gustatory
+8534,38,target,0,bitter,combinatie,zuur,0,58_2,2,58,105,bitter,0.581,0,0.409843169892478,gustatory
 8535,39,target,0,bitter,combinatie,vies,1,58_2,2,58,105,bitter,0.417,0,0.409843169892478,gustatory
 8536,40,target,0,bitter,combinatie,zuur,2,58_2,2,58,105,bitter,0.581,0,0.409843169892478,gustatory
 8537,41,target,0,koud,combinatie,koud,0,58_2,2,58,105,cold,1.0,1,0.819687004635733,temperature
@@ -8744,7 +8744,7 @@
 8742,82,target,0,slang,gebaren,sidderaal,2,59_2,2,59,107,snake,0.254,0,0.743866818263405,animal
 8743,83,target,0,sterk,gebaren,sterk,0,59_2,2,59,107,strong,1.0,1,0.824278361111733,animate
 8744,84,target,0,gooien,gebaren,gooien,0,59_2,2,59,107,to throw,1.0,1,0.828635174388149,manual
-8745,85,practice,1,eend,gebaren,pinguin,0,59_2,2,59,108,duck,,0,,
+8745,85,practice,1,eend,gebaren,pinguïn,0,59_2,2,59,108,duck,0.365,0,,
 8746,86,practice,1,eend,gebaren,eend,1,59_2,2,59,108,duck,1.0,1,,
 8747,87,practice,1,telefoon,gebaren,telefoon,0,59_2,2,59,108,telephone,1.0,1,,
 8748,88,target,1,groot,gebaren,lang,0,59_2,2,59,108,big,0.419,0,0.75757088404005,quantity
@@ -8761,7 +8761,7 @@
 8759,99,target,1,weten,gebaren,idee,0,59_2,2,59,108,to know,0.292,0,0.506590701964198,cognitive
 8760,100,target,1,weten,gebaren,slim,1,59_2,2,59,108,to know,0.212,0,0.506590701964198,cognitive
 8761,101,target,1,weten,gebaren,intelligent,2,59_2,2,59,108,to know,0.239,0,0.506590701964198,cognitive
-8762,1,practice,0,bloem,gebaren,hgvlgi,0,5_1,1,5,109,flower,,0,,
+8762,1,practice,0,bloem,gebaren,,0,5_1,1,5,109,flower,,0,,
 8763,2,practice,0,leeg,gebaren,bakje,0,5_1,1,5,109,empty,0.18,0,,
 8764,3,practice,0,gek,gebaren,gek,0,5_1,1,5,109,crazy,1.0,1,,
 8765,4,target,0,bitter,gebaren,vies,0,5_1,1,5,109,bitter,0.417,0,0.292422929920138,gustatory
@@ -8840,7 +8840,7 @@
 8838,22,target,1,zoemen,combinatie,horen,1,5_2,2,5,110,buzz,0.252,0,0.647930328473485,auditory
 8839,23,target,1,zoemen,combinatie,vlieg,2,5_2,2,5,110,buzz,0.185,0,0.647930328473485,auditory
 8840,24,target,1,misschien,combinatie,twijfelen,0,5_2,2,5,110,maybe,0.284,0,0.599769001504526,logical
-8841,25,target,1,misschien,combinatie,overwegen,1,5_2,2,5,110,maybe,0.331,0,0.599769001504526,logical
+8841,25,target,1,misschien,combinatie,over wegen,1,5_2,2,5,110,maybe,,0,0.599769001504526,logical
 8842,26,target,1,misschien,combinatie,onzeker,2,5_2,2,5,110,maybe,0.123,0,0.599769001504526,logical
 8843,27,target,1,sterk,combinatie,sterk,0,5_2,2,5,110,strong,1.0,1,0.82173351174681,animate
 8844,28,target,1,zoet,combinatie,lekker,0,5_2,2,5,110,sweet,0.614,0,0.307835133794218,gustatory
@@ -8907,7 +8907,7 @@
 8905,89,practice,1,fiets,geluiden,haaste,2,5_2,2,5,110,bicycle,0.034,0,,
 8906,90,practice,1,geheim,geluiden,stil,0,5_2,2,5,110,secret,0.266,0,,
 8907,91,practice,1,geheim,geluiden,bibliotheek,1,5_2,2,5,110,secret,0.126,0,,
-8908,92,practice,1,geheim,geluiden,stilzijn,2,5_2,2,5,110,secret,,0,,
+8908,92,practice,1,geheim,geluiden,stil zijn,2,5_2,2,5,110,secret,,0,,
 8909,93,target,1,boos,geluiden,geïrriteerd,0,5_2,2,5,110,angry,0.779,0,0.742980107622976,valence
 8910,94,target,1,boos,geluiden,boos,1,5_2,2,5,110,angry,1.0,1,0.742980107622976,valence
 8911,95,target,1,ziek,geluiden,ziek,0,5_2,2,5,110,sick,1.0,1,0.548898090158061,animate
@@ -9092,7 +9092,7 @@
 9090,6,target,0,zwaar,combinatie,zwaar,0,61_1,1,61,113,heavy,1.0,1,0.680855320383285,quantity
 9091,7,target,0,dik,combinatie,vol,0,61_1,1,61,113,thick,0.385,0,0.770642312607539,quantity
 9092,8,target,0,slaan,combinatie,slaan,0,61_1,1,61,113,to hit,1.0,1,0.794014980882957,manual
-9093,9,target,0,staan,combinatie,awkward,0,61_1,1,61,113,to stand,,0,0.588114856958718,locomotion
+9093,9,target,0,staan,combinatie,ongemakkelijk,0,61_1,1,61,113,to stand,0.086,0,0.588114856958718,locomotion
 9094,10,practice,1,olifant,combinatie,olifant,0,61_1,1,61,114,elephant,1.0,1,,
 9095,11,practice,1,dansen,combinatie,dansen,0,61_1,1,61,114,to dance,1.0,1,,
 9096,12,target,1,vrouw,combinatie,meisje,0,61_1,1,61,114,female,0.614,0,0.656370403148978,animate
@@ -9133,7 +9133,7 @@
 9131,47,practice,1,knippen,geluiden,klok,0,61_1,1,61,114,to cut,0.088,0,,
 9132,48,target,1,dood,geluiden,huilen,0,61_1,1,61,114,dead,0.109,0,0.423358570613411,animate
 9133,49,target,1,man,geluiden,rijk,0,61_1,1,61,114,male,-0.003,0,0.422189612157541,animate
-9134,50,target,1,regen,geluiden,typem,0,61_1,1,61,114,rain,,0,0.486748744260416,environment
+9134,50,target,1,regen,geluiden,typen,0,61_1,1,61,114,rain,-0.013,0,0.486748744260416,environment
 9135,51,target,1,bijten,geluiden,kauwen,0,61_1,1,61,114,to bite,0.712,0,0.631514571319774,vocal_oral
 9136,52,target,1,blazen,geluiden,wind,0,61_1,1,61,114,to blow,0.464,0,0.805891834375597,vocal_oral
 9137,53,target,1,vallen,geluiden,pijn,0,61_1,1,61,114,to fall,0.037,0,0.407214738448983,locomotion
@@ -9180,7 +9180,7 @@
 9178,40,practice,0,vliegtuig,gebaren,instappen,1,61_2,2,61,113,airplane,0.162,0,,
 9179,41,practice,0,vliegtuig,gebaren,opstijgen,2,61_2,2,61,113,airplane,0.304,0,,
 9180,42,target,0,goed,gebaren,tevreden,0,61_2,2,61,113,good,0.315,0,0.690424355205965,valence
-9181,43,target,0,goed,gebaren,goedzo,1,61_2,2,61,113,good,,0,0.690424355205965,valence
+9181,43,target,0,goed,gebaren,goed zo,1,61_2,2,61,113,good,,0,0.690424355205965,valence
 9182,44,target,0,goed,gebaren,goed,2,61_2,2,61,113,good,1.0,1,0.690424355205965,valence
 9183,45,target,0,geur,gebaren,parfum,0,61_2,2,61,113,odor,0.922,0,0.580764408529184,olfactory
 9184,46,target,0,geur,gebaren,ruiken,1,61_2,2,61,113,odor,0.867,0,0.580764408529184,olfactory
@@ -9201,7 +9201,7 @@
 9199,61,target,1,hoorn,gebaren,hoorn,1,61_2,2,61,114,horn,1.0,1,0.541237492784099,other
 9200,62,target,1,piepen,gebaren,snavel,0,61_2,2,61,114,squeak,0.193,0,0.329523830267451,auditory
 9201,63,target,1,piepen,gebaren,vogelbek,1,61_2,2,61,114,squeak,0.237,0,0.329523830267451,auditory
-9202,64,target,1,piepen,gebaren,chirpen,2,61_2,2,61,114,squeak,,0,0.329523830267451,auditory
+9202,64,target,1,piepen,gebaren,tjirpen,2,61_2,2,61,114,squeak,0.785,0,0.329523830267451,auditory
 9203,65,target,1,vangen,gebaren,vangen,0,61_2,2,61,114,to catch,1.0,1,0.747603541088915,manual
 9204,66,target,1,vechten,gebaren,boksen,0,61_2,2,61,114,to fight,0.547,0,0.834806690703802,survival
 9205,67,target,1,vechten,gebaren,vechten,1,61_2,2,61,114,to fight,1.0,1,0.834806690703802,survival
@@ -9585,7 +9585,7 @@
 9583,22,target,0,zwaar,combinatie,tillen,0,64_1,1,64,119,heavy,0.125,0,0.680855320383285,quantity
 9584,23,target,0,hoog,combinatie,hoog,0,64_1,1,64,119,high,1.0,1,0.749105900955685,auditory
 9585,24,target,0,heet,combinatie,verbranden,0,64_1,1,64,119,hot,0.412,0,0.785049622345663,temperature
-9586,25,target,0,misschien,combinatie,onwetenheid,0,64_1,1,64,119,maybe,,0,0.599769001504526,logical
+9586,25,target,0,misschien,combinatie,onwetendheid,0,64_1,1,64,119,maybe,0.063,0,0.599769001504526,logical
 9587,26,target,0,dik,combinatie,dik,0,64_1,1,64,119,thick,1.0,1,0.770642312607539,quantity
 9588,27,target,0,lopen,combinatie,wandelen,0,64_1,1,64,119,to walk,0.751,0,0.83908076354321,locomotion
 9589,28,practice,1,knippen,combinatie,knippen,0,64_1,1,64,120,to cut,1.0,1,,
@@ -9633,7 +9633,7 @@
 9631,16,target,0,zuigen,gebaren,zuigen,0,64_2,2,64,119,to suck,1.0,1,0.641118953574169,vocal_oral
 9632,17,practice,1,bal,gebaren,bal,0,64_2,2,64,120,ball,1.0,1,,
 9633,18,practice,1,zingen,gebaren,zingen,0,64_2,2,64,120,to sing,1.0,1,,
-9634,19,target,1,ver,gebaren,verweg,0,64_2,2,64,120,far,,0,0.577545048933384,spatial
+9634,19,target,1,ver,gebaren,ver weg,0,64_2,2,64,120,far,,0,0.577545048933384,spatial
 9635,20,target,1,ver,gebaren,ver,1,64_2,2,64,120,far,1.0,1,0.577545048933384,spatial
 9636,21,target,1,niet,gebaren,verboden,0,64_2,2,64,120,not,0.366,0,0.546206866167494,logical
 9637,22,target,1,niet,gebaren,regels,1,64_2,2,64,120,not,0.133,0,0.546206866167494,logical
@@ -9704,7 +9704,7 @@
 9702,87,target,0,grommen,combinatie,leeuw,2,64_2,2,64,119,to growl,0.108,0,0.713962417775868,vocal_oral
 9703,88,target,0,horen,combinatie,horen,0,64_2,2,64,119,to hear,1.0,1,0.740356572783746,auditory
 9704,89,target,0,zwemmen,combinatie,zwemmen,0,64_2,2,64,119,to swim,1.0,1,0.808464019729012,locomotion
-9705,90,target,0,kotsen,combinatie,kotsem,0,64_2,2,64,119,to vomit,,0,0.828901259475311,gustatory
+9705,90,target,0,kotsen,combinatie,kotsen,0,64_2,2,64,119,to vomit,1.0,1,0.828901259475311,gustatory
 9706,91,practice,1,glimlach,combinatie,lachen,0,64_2,2,64,120,smile,0.715,0,,
 9707,92,practice,1,glimlach,combinatie,glimlachen,1,64_2,2,64,120,smile,0.985,0,,
 9708,93,practice,1,glimlach,combinatie,mondhoek,2,64_2,2,64,120,smile,,0,,
@@ -9840,7 +9840,7 @@
 9838,60,target,1,ei,geluiden,haan,1,65_2,2,65,122,egg,0.377,0,0.286021122209493,object
 9839,61,target,1,ei,geluiden,ei,2,65_2,2,65,122,egg,1.0,1,0.286021122209493,object
 9840,62,target,1,dik,geluiden,kotsen,0,65_2,2,65,122,thick,0.021,0,0.328297815791421,quantity
-9841,63,target,1,dik,geluiden,kokhalsen,1,65_2,2,65,122,thick,,0,0.328297815791421,quantity
+9841,63,target,1,dik,geluiden,kokhalzen,1,65_2,2,65,122,thick,0.027,0,0.328297815791421,quantity
 9842,64,target,1,dik,geluiden,vies,2,65_2,2,65,122,thick,0.269,0,0.328297815791421,quantity
 9843,65,target,1,verbranden,geluiden,pijn,0,65_2,2,65,122,to burn,0.119,0,0.367189286077145,other
 9844,66,target,1,verbranden,geluiden,verbranden,1,65_2,2,65,122,to burn,1.0,1,0.367189286077145,other
@@ -9987,7 +9987,7 @@
 9985,54,practice,1,geheim,gebaren,geheim,2,66_2,2,66,124,secret,1.0,1,,
 9986,55,target,1,ik,gebaren,persoon,0,66_2,2,66,124,I,0.311,0,0.696928502541587,social
 9987,56,target,1,ik,gebaren,ik,1,66_2,2,66,124,I,1.0,1,0.696928502541587,social
-9988,57,target,1,walgen,gebaren,afgrijzing,0,66_2,2,66,124,disgusted,,0,0.584517923117511,valence
+9988,57,target,1,walgen,gebaren,afgrijzen,0,66_2,2,66,124,disgusted,0.702,0,0.584517923117511,valence
 9989,58,target,1,walgen,gebaren,afschuw,1,66_2,2,66,124,disgusted,0.741,0,0.584517923117511,valence
 9990,59,target,1,walgen,gebaren,afschuwelijk,2,66_2,2,66,124,disgusted,0.477,0,0.584517923117511,valence
 9991,60,target,1,bliksem,gebaren,vermoorden,0,66_2,2,66,124,lightning,0.007,0,0.525289002863704,environment
@@ -10091,7 +10091,7 @@
 10089,51,target,1,staart,geluiden,leeg,0,67_1,1,67,126,tail,0.056,0,0.26916670248274,quantity
 10090,52,target,1,likken,geluiden,likken,0,67_1,1,67,126,to lick,1.0,1,0.687199600527179,gustatory
 10091,53,target,1,zuigen,geluiden,zuigen,0,67_1,1,67,126,to suck,1.0,1,0.673960888054455,vocal_oral
-10092,54,target,1,water,geluiden,blasen,0,67_1,1,67,126,water,,0,0.500621316131559,environment
+10092,54,target,1,water,geluiden,blazen,0,67_1,1,67,126,water,0.168,0,0.500621316131559,environment
 10093,1,practice,0,glimlach,geluiden,lachen,0,67_2,2,67,125,smile,0.715,0,,
 10094,2,practice,0,glimlach,geluiden,schattig,1,67_2,2,67,125,smile,0.225,0,,
 10095,3,practice,0,glimlach,geluiden,baby,2,67_2,2,67,125,smile,0.088,0,,
@@ -10153,14 +10153,14 @@
 10151,59,target,0,lopen,combinatie,lopen,0,67_2,2,67,125,to walk,1.0,1,0.83908076354321,locomotion
 10152,60,practice,1,eend,combinatie,eend,0,67_2,2,67,126,duck,1.0,1,,
 10153,61,practice,1,telefoon,combinatie,bellen,0,67_2,2,67,126,telephone,0.671,0,,
-10154,62,practice,1,telefoon,combinatie,telefooneren,1,67_2,2,67,126,telephone,,0,,
+10154,62,practice,1,telefoon,combinatie,telefoneren,1,67_2,2,67,126,telephone,0.944,0,,
 10155,63,practice,1,telefoon,combinatie,praten,2,67_2,2,67,126,telephone,0.249,0,,
 10156,64,target,1,vogel,combinatie,vogel,0,67_2,2,67,126,bird,1.0,1,0.806460221089258,animal
 10157,65,target,1,ei,combinatie,ei,0,67_2,2,67,126,egg,1.0,1,0.581012583251545,object
 10158,66,target,1,ver,combinatie,ver,0,67_2,2,67,126,far,1.0,1,0.550625431083315,spatial
 10159,67,target,1,misschien,combinatie,denken,0,67_2,2,67,126,maybe,0.567,0,0.599769001504526,logical
 10160,68,target,1,misschien,combinatie,afvragen,1,67_2,2,67,126,maybe,0.351,0,0.599769001504526,logical
-10161,69,target,1,misschien,combinatie,overwegen,2,67_2,2,67,126,maybe,0.331,0,0.599769001504526,logical
+10161,69,target,1,misschien,combinatie,over wegen,2,67_2,2,67,126,maybe,,0,0.599769001504526,logical
 10162,70,target,1,piepen,combinatie,muis,0,67_2,2,67,126,squeak,0.158,0,0.543249319540667,auditory
 10163,71,target,1,piepen,combinatie,alarm,1,67_2,2,67,126,squeak,0.336,0,0.543249319540667,auditory
 10164,72,target,1,piepen,combinatie,toon,2,67_2,2,67,126,squeak,0.223,0,0.543249319540667,auditory
@@ -10198,7 +10198,7 @@
 10196,104,target,1,ruiken,gebaren,stinken,1,67_2,2,67,126,to smell,0.834,0,0.767441240842589,olfactory
 10197,105,target,1,ruiken,gebaren,ruiken,2,67_2,2,67,126,to smell,1.0,1,0.767441240842589,olfactory
 10198,1,practice,0,bloem,geluiden,bij,0,69_1,1,69,127,flower,0.114,0,,
-10199,2,practice,0,gek,geluiden,llen,0,69_1,1,69,127,crazy,,0,,
+10199,2,practice,0,gek,geluiden,,0,69_1,1,69,127,crazy,,0,,
 10200,3,target,0,dood,geluiden,trommel,0,69_1,1,69,127,dead,0.074,0,0.423358570613411,animate
 10201,4,target,0,bang,geluiden,w,0,69_1,1,69,127,scared,0.026,0,0.693961201585873,valence
 10202,5,target,0,ziek,geluiden,kuchen,0,69_1,1,69,127,sick,0.284,0,0.548898090158061,animate
@@ -10251,7 +10251,7 @@
 10249,52,target,1,langzaam,gebaren,slowmotion,0,69_1,1,69,128,slow,,0,0.689425946655567,manner
 10250,53,target,1,huilen,gebaren,huilen,0,69_1,1,69,128,to cry,1.0,1,0.842937622085652,vocal_oral
 10251,54,target,1,gooien,gebaren,gooien,0,69_1,1,69,128,to throw,1.0,1,0.828635174388149,manual
-10252,1,practice,0,fiets,gebaren,motor rijden,0,69_2,2,69,127,bicycle,,0,,
+10252,1,practice,0,fiets,gebaren,motorrijden,0,69_2,2,69,127,bicycle,,0,,
 10253,2,practice,0,fiets,gebaren,sporten,1,69_2,2,69,127,bicycle,0.225,0,,
 10254,3,practice,0,fiets,gebaren,paardrijden,2,69_2,2,69,127,bicycle,0.423,0,,
 10255,4,practice,0,bal,gebaren,cirkel,0,69_2,2,69,127,ball,0.189,0,,
@@ -10309,7 +10309,7 @@
 10307,56,target,0,staan,combinatie,sterk,2,69_2,2,69,127,to stand,0.194,0,0.588114856958718,locomotion
 10308,57,practice,1,eend,combinatie,kip,0,69_2,2,69,128,duck,0.544,0,,
 10309,58,practice,1,eend,combinatie,meeuw,1,69_2,2,69,128,duck,0.373,0,,
-10310,59,practice,1,eend,combinatie,pinguin,2,69_2,2,69,128,duck,,0,,
+10310,59,practice,1,eend,combinatie,pinguïn,2,69_2,2,69,128,duck,0.365,0,,
 10311,60,practice,1,glimlach,combinatie,lachen,0,69_2,2,69,128,smile,0.715,0,,
 10312,61,practice,1,glimlach,combinatie,glimlach,1,69_2,2,69,128,smile,1.0,1,,
 10313,62,target,1,zwaar,combinatie,uitgeput,0,69_2,2,69,128,heavy,0.181,0,0.680855320383285,quantity
@@ -10342,7 +10342,7 @@
 10340,89,target,0,bijten,geluiden,tongen,0,69_2,2,69,127,to bite,0.31,0,0.631514571319774,vocal_oral
 10341,90,target,0,bijten,geluiden,tikken,1,69_2,2,69,127,to bite,0.252,0,0.631514571319774,vocal_oral
 10342,91,target,0,bijten,geluiden,gehemelte,2,69_2,2,69,127,to bite,0.216,0,0.631514571319774,vocal_oral
-10343,92,target,0,ademen,geluiden,ademenen,0,69_2,2,69,127,to breathe,,0,0.784779073219606,olfactory
+10343,92,target,0,ademen,geluiden,ademen,0,69_2,2,69,127,to breathe,1.0,1,0.784779073219606,olfactory
 10344,93,target,0,vechten,geluiden,boksen,0,69_2,2,69,127,to fight,0.547,0,0.551944383571384,survival
 10345,94,target,0,vechten,geluiden,slaan,1,69_2,2,69,127,to fight,0.308,0,0.551944383571384,survival
 10346,95,target,0,vechten,geluiden,vechten,2,69_2,2,69,127,to fight,1.0,1,0.551944383571384,survival
@@ -10378,7 +10378,7 @@
 10376,7,target,0,kauwen,gebaren,kauwen,0,6_1,1,6,129,to chew,1.0,1,0.732601016130094,gustatory
 10377,8,target,0,slaan,gebaren,slaan,0,6_1,1,6,129,to hit,1.0,1,0.797135486956284,manual
 10378,9,target,0,likken,gebaren,likken,0,6_1,1,6,129,to lick,1.0,1,0.757301371697859,gustatory
-10379,10,practice,1,auto,gebaren,lrijden,0,6_1,1,6,130,car,,0,,
+10379,10,practice,1,auto,gebaren,rijden,0,6_1,1,6,130,car,0.484,0,,
 10380,11,practice,1,comfortabel,gebaren,knuffelen,0,6_1,1,6,130,comfortable,0.215,0,,
 10381,12,target,1,ei,gebaren,breken,0,6_1,1,6,130,egg,0.123,0,0.545621192753626,object
 10382,13,target,1,langzaam,gebaren,dansen,0,6_1,1,6,130,slow,0.105,0,0.689425946655567,manner
@@ -10857,7 +10857,7 @@
 10855,105,target,1,regen,combinatie,regen,0,71_2,2,71,134,rain,1.0,1,0.719579068930045,environment
 10856,106,target,1,blazen,combinatie,blazen,0,71_2,2,71,134,to blow,1.0,1,0.771810542050373,vocal_oral
 10857,107,target,1,slaan,combinatie,slaan,0,71_2,2,71,134,to hit,1.0,1,0.794014980882957,manual
-10858,108,target,1,jagen,combinatie,pijlenboog,0,71_2,2,71,134,to hunt,,0,0.682815334308846,survival
+10858,108,target,1,jagen,combinatie,pijl-en-boog,0,71_2,2,71,134,to hunt,,0,0.682815334308846,survival
 10859,109,target,1,jagen,combinatie,pijl,1,71_2,2,71,134,to hunt,0.235,0,0.682815334308846,survival
 10860,110,target,1,jagen,combinatie,boogschutter,2,71_2,2,71,134,to hunt,0.186,0,0.682815334308846,survival
 10861,111,target,1,zuigen,combinatie,kussen,0,71_2,2,71,134,to suck,0.266,0,0.671311406311871,vocal_oral
@@ -11087,7 +11087,7 @@
 11085,51,target,1,huilen,geluiden,huilen,0,7_1,1,7,138,to cry,1.0,1,0.822727134099333,vocal_oral
 11086,52,target,1,springen,geluiden,schreeuw,0,7_1,1,7,138,to jump,0.253,0,0.343503131163236,locomotion
 11087,53,target,1,lachen,geluiden,lachen,0,7_1,1,7,138,to laugh,1.0,1,0.87420386676992,vocal_oral
-11088,54,target,1,rennen,geluiden,buitenadem,0,7_1,1,7,138,to run,,0,0.336019187014838,locomotion
+11088,54,target,1,rennen,geluiden,buiten adem,0,7_1,1,7,138,to run,,0,0.336019187014838,locomotion
 11089,1,practice,0,geheim,gebaren,stil,0,7_2,2,7,137,secret,0.266,0,,
 11090,2,practice,0,geheim,gebaren,geluid,1,7_2,2,7,137,secret,0.011,0,,
 11091,3,practice,0,geheim,gebaren,luisteren,2,7_2,2,7,137,secret,0.09,0,,
@@ -11127,12 +11127,12 @@
 11125,37,target,1,wind,gebaren,golven,2,7_2,2,7,138,wind,0.3,0,0.535647636647091,environment
 11126,38,practice,0,vliegtuig,geluiden,vliegtuig,0,7_2,2,7,137,airplane,1.0,1,,
 11127,39,practice,0,glimlach,geluiden,vieren,0,7_2,2,7,137,smile,0.112,0,,
-11128,40,practice,0,glimlach,geluiden,giegelen,1,7_2,2,7,137,smile,,0,,
+11128,40,practice,0,glimlach,geluiden,giechelen,1,7_2,2,7,137,smile,0.561,0,,
 11129,41,practice,0,glimlach,geluiden,poseren,2,7_2,2,7,137,smile,0.18,0,,
 11130,42,target,0,zwaar,geluiden,uitgeput,0,7_2,2,7,137,heavy,0.181,0,0.38282540003767,quantity
 11131,43,target,0,zwaar,geluiden,zwaar,1,7_2,2,7,137,heavy,1.0,1,0.38282540003767,quantity
 11132,44,target,0,heet,geluiden,uitgeput,0,7_2,2,7,137,hot,0.087,0,0.49098203287298,temperature
-11133,45,target,0,heet,geluiden,buitenadem,1,7_2,2,7,137,hot,,0,0.49098203287298,temperature
+11133,45,target,0,heet,geluiden,buiten adem,1,7_2,2,7,137,hot,,0,0.49098203287298,temperature
 11134,46,target,0,heet,geluiden,moe,2,7_2,2,7,137,hot,0.147,0,0.49098203287298,temperature
 11135,47,target,0,misschien,geluiden,knikken,0,7_2,2,7,137,maybe,0.126,0,0.314638353811457,logical
 11136,48,target,0,misschien,geluiden,ja,1,7_2,2,7,137,maybe,0.447,0,0.314638353811457,logical
@@ -11240,7 +11240,7 @@
 11238,47,practice,1,auto,geluiden,rijde,0,8_1,1,8,140,car,0.363,0,,
 11239,48,target,1,ik,geluiden,lachen,0,8_1,1,8,140,I,0.151,0,0.357741139583888,social
 11240,49,target,1,hond,geluiden,hond,0,8_1,1,8,140,dog,1.0,1,0.846022321803246,animal
-11241,50,target,1,oud,geluiden,nijdi,0,8_1,1,8,140,old,,0,0.310336292435631,time
+11241,50,target,1,oud,geluiden,nijdig,0,8_1,1,8,140,old,0.104,0,0.310336292435631,time
 11242,51,target,1,scherp,geluiden,zuigen,0,8_1,1,8,140,sharp,0.021,0,0.289772587287242,haptic
 11243,52,target,1,slang,geluiden,mug,0,8_1,1,8,140,snake,0.173,0,0.756185551284266,animal
 11244,53,target,1,zuur,geluiden,ademen,0,8_1,1,8,140,sour,0.061,0,0.361936361379245,gustatory
@@ -11317,7 +11317,7 @@
 11315,70,target,0,heet,geluiden,vuur,1,8_2,2,8,139,hot,0.571,0,0.49098203287298,temperature
 11316,71,target,0,heet,geluiden,koud,2,8_2,2,8,139,hot,0.452,0,0.49098203287298,temperature
 11317,72,target,0,misschien,geluiden,denken,0,8_2,2,8,139,maybe,0.567,0,0.314638353811457,logical
-11318,73,target,0,misschien,geluiden,overwegen,1,8_2,2,8,139,maybe,0.331,0,0.314638353811457,logical
+11318,73,target,0,misschien,geluiden,over wegen,1,8_2,2,8,139,maybe,,0,0.314638353811457,logical
 11319,74,target,0,misschien,geluiden,nadenken,2,8_2,2,8,139,maybe,0.424,0,0.314638353811457,logical
 11320,75,target,0,regen,geluiden,regen,0,8_2,2,8,139,rain,1.0,1,0.486748744260416,environment
 11321,76,target,0,verdrietig,geluiden,huilen,0,8_2,2,8,139,sad,0.389,0,0.746777577338304,valence
