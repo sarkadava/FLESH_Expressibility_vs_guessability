@@ -71,6 +71,15 @@ df <- df %>%
   ) %>%
   ungroup()
 
+# Calculate mean/median cosine similarity for each participant
+df <- df %>%
+  group_by(participant_ID) %>%
+  mutate(
+    mean_cosine_similarity = mean(cosine_similarity, na.rm = TRUE),  # Replace with median() if needed
+    median_cosine_similarity = median(cosine_similarity, na.rm = TRUE)  # Optional: include both metrics
+  ) %>%
+  ungroup()
+
 # Sort by optimal and suboptimal
 df_best <- df %>%
   filter(guess_binary == 1)
@@ -102,6 +111,9 @@ best_of_best <- df_best %>%
   filter(
     perf_participant_ID == max(perf_participant_ID) 
   ) %>%
+  filter(
+    mean_cosine_similarity == max(mean_cosine_similarity, na.rm = TRUE) 
+  ) %>%
   ungroup()
   
 # Worst of worst ----
@@ -119,7 +131,7 @@ worst_of_worst <- df_worst %>%
   ) %>%
   ungroup()
 
-# Check repetitions
+# Check repetitions and missing concepts ----
 best_of_best %>%
   group_by(concept) %>%
   summarise(row_count = n()) %>%
@@ -138,4 +150,54 @@ worst_of_worst %>%
     total_repeated = sum(type == "repeated"),
     total_single = sum(type == "single") )
 setdiff(unique(trimws(tolower(df$concept))), unique(trimws(tolower(df_worst$concept))))
+
+# Find missing ----
+# List of concepts missing from best_of_best
+missing_from_best <- setdiff(unique(trimws(tolower(df$concept))), unique(trimws(tolower(df_best$concept))))
+
+# Filter df for the missing concepts and extract rows with the highest cosine_similarity
+missing_best_concepts <- df %>%
+  filter(trimws(tolower(concept)) %in% missing_from_best) %>%
+  group_by(concept) %>%
+  filter(cosine_similarity == max(cosine_similarity, na.rm = TRUE)) %>%
+  filter(
+    perf_dyad == max(perf_dyad)  # Retain rows with the best-performing dyad
+  ) %>%
+  filter(
+    perf_participant_ID == max(perf_participant_ID) 
+  ) %>%
+  filter(
+    mean_cosine_similarity == max(mean_cosine_similarity, na.rm = TRUE) 
+  ) %>%
+  ungroup()
+
+
+# List of concepts missing from worst_of_worst
+missing_from_worst <- setdiff(unique(trimws(tolower(df$concept))), unique(trimws(tolower(df_worst$concept))))
+
+# Filter df for the missing concepts and extract rows with the highest cosine_similarity
+missing_worst_concepts <- df %>%
+  filter(trimws(tolower(concept)) %in% missing_from_worst) %>%
+  group_by(concept) %>%
+  filter(cosine_similarity == min(cosine_similarity, na.rm = TRUE)) %>%
+  filter(
+    perf_dyad == min(perf_dyad)  # Retain rows with the best-performing dyad
+  ) %>%
+  filter(
+    perf_participant_ID == min(perf_participant_ID) 
+  ) %>%
+  filter(
+    mean_cosine_similarity == min(mean_cosine_similarity, na.rm = TRUE) 
+  ) %>%
+  ungroup()
+
+# Combine data frames ----
+
+# Combine best_of_best with missing_best_concepts
+the_best <- bind_rows(best_of_best, missing_best_concepts)
+write.csv(the_best, paste0(dataset, "the_best.csv"), row.names = FALSE)
+
+# Combine worst_of_worst with missing_worst_concepts
+the_worst <- bind_rows(worst_of_worst, missing_worst_concepts)
+write.csv(the_worst, paste0(dataset, "the_worst.csv"), row.names = FALSE)
 
