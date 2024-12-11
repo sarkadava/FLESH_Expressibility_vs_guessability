@@ -806,7 +806,7 @@ luidruchtig,schreeuwen,0.468
 luidruchtig,joelen,0.439
 misschien,mening,0.159
 misschien,nadenken,0.424
-misschien,over wegen,
+misschien,overwegen,0.331
 ademen,hijgen,0.593
 ademen,ademen,1.0
 geven,denken,0.297
@@ -860,7 +860,7 @@ wind,wind,1.0
 koken,koken,1.0
 olifant,olifant,1.0
 ik,jijzelf,0.577
-vuur,openhaard,
+vuur,open haard,
 zwaar,bewegen,0.084
 drinken,drinken,1.0
 vechten,boksen,0.547
@@ -923,7 +923,7 @@ glimlach,lachen,0.715
 glimlach,lachen,0.715
 zoemen,zoemen,1.0
 dood,tikken,0.085
-dood,uitgleiden,
+dood,uitglijden,0.02
 dood,achtbaan,0.045
 bliksem,schieten,0.239
 bliksem,blazen,0.222
@@ -1102,7 +1102,7 @@ sneeuw,neuriën,0.062
 sneeuw,vrolijk,0.146
 ei,kip,0.541
 ei,haan,0.377
-ei,kukkelen,
+ei,kukelen,
 zwaar,zuchten,0.203
 zwaar,moe,0.316
 zwaar,zuchten,0.203
@@ -1617,7 +1617,7 @@ water,water,1.0
 zwaaien,zwaaien,1.0
 klok,klok,1.0
 vuur,vaas,0.1
-vuur,openhaard,
+vuur,open haard,
 vuur,vuur,1.0
 man,plassen,0.071
 man,man,1.0
@@ -1893,7 +1893,7 @@ heet,opgelucht,0.611
 heet,zuchten,0.13
 misschien,denken,0.567
 misschien,afvragen,0.351
-misschien,over wegen,
+misschien,overwegen,0.331
 langzaam,onweer,0.025
 langzaam,poepen,-0.009
 langzaam,sprinten,0.187
@@ -3029,7 +3029,7 @@ juichen,juichen,1.0
 hond,hond,1.0
 zwaar,zwaar,1.0
 misschien,twijfel,0.224
-misschien,over wegen,
+misschien,overwegen,0.331
 verdrietig,huilen,0.389
 blazen,blazen,1.0
 likken,likken,1.0
@@ -5683,7 +5683,7 @@ zwaaien,zwaaien,1.0
 zingen,zingen,1.0
 goed,goed,1.0
 misschien,twijfelen,0.284
-misschien,over wegen,
+misschien,overwegen,0.331
 misschien,optie,0.178
 blazen,bellenblazen,
 blazen,blazen,1.0
@@ -5714,7 +5714,7 @@ slaan,slaan,1.0
 haasten,haasten,1.0
 snijden,snijden,1.0
 hond,hond,1.0
-berg,bergklimmen,
+berg,bergbeklimmen,
 regen,regen,1.0
 staart,staart,1.0
 lachen,lachen,1.0
@@ -5816,7 +5816,7 @@ bitter,vies,0.417
 bitter,zuur,0.581
 bitter,bitter,1.0
 ei,ei,1.0
-vuur,openhaard,
+vuur,open haard,
 vuur,vuur,1.0
 zwaar,zwaar,1.0
 heet,heet,1.0
@@ -6356,7 +6356,7 @@ kat,kat,1.0
 vis,vis,1.0
 misschien,denken,0.567
 misschien,twijfelen,0.284
-misschien,over wegen,
+misschien,overwegen,0.331
 staart,staart,1.0
 grommen,beer,0.139
 grommen,wolf,0.246
@@ -8133,7 +8133,7 @@ springen,springen,1.0
 zwemmen,zwemmen,1.0
 koken,pannenkoek,0.276
 leeg,borsten,0.13
-ei,diamand,
+ei,diamant,0.028
 hoog,hoog,1.0
 bliksem,waterval,0.157
 staart,haar,0.38
@@ -8196,7 +8196,7 @@ kind,papa,0.462
 kind,praten,0.04
 snel,wind,0.087
 snel,racen,0.271
-snel,formula 1,
+snel,formule 1,
 luidruchtig,schreeuwen,0.468
 luidruchtig,lachen,0.14
 luidruchtig,instemmen,-0.0
@@ -8840,7 +8840,7 @@ zoemen,bij,0.165
 zoemen,horen,0.252
 zoemen,vlieg,0.185
 misschien,twijfelen,0.284
-misschien,over wegen,
+misschien,overwegen,0.331
 misschien,onzeker,0.123
 sterk,sterk,1.0
 zoet,lekker,0.614
@@ -9361,7 +9361,7 @@ vliegtuig,vliegen,0.745
 vliegtuig,zweven,0.431
 vliegtuig,vliegtuig,1.0
 dood,stikken,0.199
-dood,doodslikken,
+dood,doorslikken,0.045
 dood,doodgaan,0.686
 snel,snel,1.0
 blazen,blazen,1.0
@@ -9696,7 +9696,7 @@ walgen,walgen,1.0
 snel,rennen,0.376
 snel,race,0.155
 snel,tijdstip,0.236
-vuur,openhaard,
+vuur,open haard,
 vuur,kachel,0.48
 vuur,vuur,1.0
 grommen,tijger,0.137
@@ -10160,7 +10160,7 @@ ei,ei,1.0
 ver,ver,1.0
 misschien,denken,0.567
 misschien,afvragen,0.351
-misschien,over wegen,
+misschien,overwegen,0.331
 piepen,muis,0.158
 piepen,alarm,0.336
 piepen,toon,0.223
@@ -10365,7 +10365,7 @@ niet,niet,1.0
 zuur,wind,0.127
 zuur,rilling,0.035
 zuur,mislukken,0.051
-dik,volzitten,
+dik,vol zitten,
 dik,misselijk,0.131
 dik,uitgeteld,0.084
 lachen,lachen,1.0
@@ -10642,7 +10642,7 @@ rennen,rennen,1.0
 lopen,lopen,1.0
 vliegtuig,vliegen,0.745
 vliegtuig,superheld,0.062
-vliegtuig,stewardes,
+vliegtuig,stewardess,0.488
 geheim,stil,0.266
 geheim,bibliotheek,0.126
 geheim,sussen,0.042
@@ -11317,7 +11317,7 @@ heet,branden,0.482
 heet,vuur,0.571
 heet,koud,0.452
 misschien,denken,0.567
-misschien,over wegen,
+misschien,overwegen,0.331
 misschien,nadenken,0.424
 regen,regen,1.0
 verdrietig,huilen,0.389
