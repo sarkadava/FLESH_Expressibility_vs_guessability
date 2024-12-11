@@ -860,7 +860,7 @@ wind,wind,1.0
 koken,koken,1.0
 olifant,olifant,1.0
 ik,jijzelf,0.577
-vuur,openhaart,
+vuur,openhaard,
 zwaar,bewegen,0.084
 drinken,drinken,1.0
 vechten,boksen,0.547
@@ -1700,7 +1700,7 @@ geur,inademen,0.351
 piepen,aap,0.195
 piepen,aapje,0.136
 piepen,remmen,0.146
-vangen,iets pakken,
+vangen,pakken,0.845
 vangen,weggooien,0.314
 vangen,glijden,0.172
 geven,schommelen,0.177
@@ -1708,7 +1708,7 @@ geven,verdergaan,0.263
 geven,zingen,0.154
 slaan,slaan,1.0
 glimlach,lachen,0.715
-glimlach,grinnikenen,
+glimlach,grinniken,0.562
 glimlach,zuchten,0.246
 fiets,hijgen,0.031
 fiets,hardlopen,0.278
@@ -1754,7 +1754,7 @@ staart,staart,1.0
 horen,doof,0.162
 horen,horen,1.0
 fluisteren,stil,0.431
-fluisteren,silte vragen,
+fluisteren,stilte vragen,
 fluisteren,vertellen,0.299
 bal,rondje,0.233
 bal,voetbal,0.619
@@ -3029,7 +3029,7 @@ juichen,juichen,1.0
 hond,hond,1.0
 zwaar,zwaar,1.0
 misschien,twijfel,0.224
-misschien,over weging,
+misschien,over wegen,
 verdrietig,huilen,0.389
 blazen,blazen,1.0
 likken,likken,1.0
@@ -3286,7 +3286,7 @@ auto,motor,0.747
 koud,bibberen,0.229
 snel,hijgen,0.151
 goed,goedkeuring,0.227
-niet,grinnikenen,
+niet,grinniken,-0.021
 ziek,hoesten,0.322
 weten,knikken,0.119
 water,blazen,0.168
@@ -6469,7 +6469,7 @@ vangen,woe,0.041
 vangen,lucht,0.091
 weten,eens,0.309
 fiets,schuiven,0.08
-fiets,sleën,
+fiets,sleeën,0.331
 fiets,skiën,0.305
 vliegtuig,wind,0.196
 vliegtuig,waaien,0.127
@@ -7364,7 +7364,7 @@ wind,wind,1.0
 zwaaien,puppy,0.005
 zwaaien,zoemen,0.315
 zwaaien,huppelen,0.357
-glimlach,grinnikenen,
+glimlach,grinniken,0.562
 glimlach,glimlachen,0.985
 bitter,eten,0.004
 bitter,smakken,0.105
@@ -8586,7 +8586,7 @@ grommen,boos,0.307
 grommen,geïrriteerd,0.322
 grommen,groot,0.061
 zingen,zingen,1.0
-glimlach,grinneken,
+glimlach,grinniken,0.562
 glimlach,glimlach,1.0
 ik,glimlach,0.117
 ik,goedkeuren,0.055
@@ -8612,7 +8612,7 @@ berg,bom,0.085
 niet,nee,0.746
 dik,grote buik,
 verbranden,schreeuw,0.041
-geven,iets geven,
+geven,geven,1.0
 grommen,iemand laten schrikken,
 springen,verbazing,0.135
 snijden,snijden,1.0
@@ -8894,7 +8894,7 @@ man,man,1.0
 oud,baby,0.066
 oud,vallen,0.02
 oud,ziek,0.136
-regen,feluisteren,
+regen,fluisteren,0.086
 regen,herfst,0.241
 regen,water,0.337
 bang,schreeuwen,0.229
