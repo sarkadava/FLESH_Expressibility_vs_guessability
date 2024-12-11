@@ -201,3 +201,63 @@ write.csv(the_best, paste0(dataset, "the_best.csv"), row.names = FALSE)
 the_worst <- bind_rows(worst_of_worst, missing_worst_concepts)
 write.csv(the_worst, paste0(dataset, "the_worst.csv"), row.names = FALSE)
 
+# Combine the_best and the_worst with the "optimality" column in one pipeline
+final_combined <- bind_rows(
+  the_best %>% mutate(optimality = "best"),
+  the_worst %>% mutate(optimality = "worst")
+)
+
+# Calculate the difference in cosine_similarity between best and worst for each concept
+best_worst_concept_comparison <- final_combined %>%
+  group_by(concept) %>%
+  summarise(
+    similarity_distance = max(cosine_similarity[optimality == "best"], na.rm = TRUE) -
+      max(cosine_similarity[optimality == "worst"], na.rm = TRUE),
+    
+    best_cosine_similarity = max(cosine_similarity[optimality == "best"], na.rm = TRUE),
+    worst_cosine_similarity = max(cosine_similarity[optimality == "worst"], na.rm = TRUE),
+    
+    best_perf_dyad = max(perf_dyad[optimality == "best"], na.rm = TRUE),
+    worst_perf_dyad = max(perf_dyad[optimality == "worst"], na.rm = TRUE),
+    
+    best_perf_participant_ID = max(perf_participant_ID[optimality == "best"], na.rm = TRUE),
+    worst_perf_participant_ID = max(perf_participant_ID[optimality == "worst"], na.rm = TRUE),
+    
+    best_mean_cosine_similarity = max(mean_cosine_similarity[optimality == "best"], na.rm = TRUE),
+    worst_mean_cosine_similarity = max(mean_cosine_similarity[optimality == "worst"], na.rm = TRUE)
+  ) %>%
+  ungroup()
+
+# Dyad and participant distribution ----
+length(unique(the_best$dyad))
+length(unique(the_worst$dyad))
+
+length(unique(the_best$participant_ID))
+length(unique(the_worst$participant_ID))
+
+# Frequency of dyads
+the_best %>%
+  group_by(dyad) %>%
+  summarise(dyad_count = n()) %>%
+  arrange(desc(dyad_count)) %>% 
+  print(n = 50)
+the_worst %>%
+  group_by(dyad) %>%
+  summarise(dyad_count = n()) %>%
+  arrange(desc(dyad_count)) %>% 
+  print(n = 50)
+
+# Frequency of participants
+the_best %>%
+  group_by(participant_ID) %>%
+  summarise(participant_count = n()) %>%
+  arrange(desc(participant_count)) %>% 
+  print(n = 50)
+the_worst %>%
+  group_by(participant_ID) %>%
+  summarise(participant_count = n()) %>%
+  arrange(desc(participant_count)) %>% 
+  print(n = 60)
+
+
+# END ----
