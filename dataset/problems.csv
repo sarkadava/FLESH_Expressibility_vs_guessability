@@ -119,7 +119,6 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 48,practice,1,fiets,geluiden,bellenblaas,2,59_2,2,59,108,bicycle,
 90,target,1,vuur,gebaren,,0,59_2,2,59,108,fire,
 97,target,1,man,gebaren,,0,59_2,2,59,108,male,
-1,practice,0,bloem,gebaren,,0,5_1,1,5,109,flower,
 92,practice,1,geheim,geluiden,stil zijn,2,5_2,2,5,110,secret,
 2,practice,0,leeg,gebaren,inschenken van drinken,0,60_1,1,60,111,empty,
 46,practice,1,koken,geluiden,bubbelen,0,60_1,1,60,112,to cook,
