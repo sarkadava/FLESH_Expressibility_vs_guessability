@@ -43,7 +43,7 @@ guessability, preregistered at
 ```{r source setup, echo = TRUE, message=FALSE, warning = FALSE}
 
 ########## folders ##########
-library(here)
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 parentfolder <- dirname(getwd())
 
@@ -101,7 +101,7 @@ expr_dutch <- read_csv(paste0(dataset, "expressibility_dutch.csv"))
 
 ```
 
-# Cleaning
+## Cleaning
 
 ```{r}
 df <- df %>%
@@ -133,6 +133,66 @@ df <- df %>%
   select(-`trial_type`) # Remove trial_type columns
 
 ```
+
+## Exclude data points
+
+We will remove productions in which the producers did not adhere with the modality condition (e.g., produced a gesture in the vocalization condition). The amount of excluded datapoints will be reported for each modality Any additional unforeseen exclusions will be reported.
+
+```{r}
+# exclude here (make to NA)
+```
+
+Adapt this code below to calculate NAs.
+
+```{r calculate NAs, eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+# Columns to process
+columns_to_process <- c(
+  "duration", "duration_noSilence", 
+)
+
+# Ensure columns to process are numeric
+columns_to_process <- columns_to_process[columns_to_process %in% names(data_prepost)]
+columns_to_process <- columns_to_process[sapply(data_prepost[columns_to_process], is.numeric)]
+
+# Function to calculate raw number and proportion of NAs
+calculate_na_stats <- function(df, columns, group_column) {
+  # Total NA stats
+  total_na_counts <- colSums(is.na(df[, columns]))
+  total_rows <- nrow(df)
+  total_proportions <- total_na_counts / total_rows * 100
+  
+  # Initialize a data frame for results
+  result_df <- data.frame(Variable = columns)
+  
+  # Calculate NA stats for each group
+  unique_groups <- unique(df[[group_column]])
+  for (group in unique_groups) {
+    group_data <- df[df[[group_column]] == group, ]
+    group_na_counts <- colSums(is.na(group_data[, columns]))
+    group_total_rows <- nrow(group_data)
+    group_proportions <- group_na_counts / group_total_rows * 100
+    
+    # Add group-specific NA counts and proportions in "count / proportion%" format
+    result_df[[paste0(group, "_NA")]] <- paste0(
+      group_na_counts, " / ", round(group_proportions, 2), "%"
+    )
+  }
+  
+  # Add total NA stats in "count / proportion%" format
+  result_df[["Total_NA"]] <- paste0(
+    total_na_counts, " / ", round(total_proportions, 2), "%"
+  )
+  
+  return(result_df)
+}
+
+# Calculate NA stats
+na_stats <- calculate_na_stats(data_prepost, columns_to_process, "language")
+
+# Print the results
+print(na_stats_before)
+```
+
 
 # Descriptive statistics
 
@@ -339,7 +399,7 @@ df %>%
   print(n = 150)
 ```
 
-### Hypothesis 1
+### Hypothesis 1: Expressibility vs. guessability
 
 *The higher the expressibility rating of the concept for the modality in
 which the concept is produced, the higher the guessability will be.*
@@ -488,12 +548,12 @@ df %>%
 ggsave(paste0(plots, "H1_expressibility_guessSimilarity.png"), plot = last_plot(), width = 8, height = 5, dpi = 300)
 ```
 
-### Hypothesis 2
+### Hypothesis 2: Expressibility vs. repetitions
 
 *The higher the expressibility rating of the concept for the modality in
 which the concept is produced, the fewer repetitions there will be.*
 
-Calculate correaltion between expressibility and correction
+Calculate correlation between expressibility and correction
 
 ```{r}
 df_part2 <- df %>%
@@ -664,7 +724,7 @@ df %>%
 ggsave(paste0(plots, "corrections_across_modalities.png"), plot = last_plot(), width = 6, height = 4, dpi = 300)
 ```
 
-### Hypothesis 3
+### Hypothesis 3: Guessability vs. experiment part
 
 *Guessability is higher when there is feedback between a producer and a
 guesser (i.e., in the second half of the experiment, where the guesser
@@ -857,7 +917,7 @@ df %>%
 ```
 
 
-### Hypothesis 4
+### Hypothesis 4: Guessability vs. modality
 
 *Guessability will differ by modality; the order from highest to lowest
 will be: combined \> gesture \> vocalization.*

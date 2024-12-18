@@ -32,11 +32,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-This is the modeling of expressibility vs.
-guessability, preregistered at
-[AsPredicted](https://aspredicted.org/kmry-vx5s.pdf).
+This is the modeling of expressibility vs. guessability, preregistered
+at [AsPredicted](https://aspredicted.org/kmry-vx5s.pdf).
 
-This script uses the output of `1_descriptive.Rmd` and prodcues all the values and plots reported in the paper.
+This script uses the output of `1_descriptive.Rmd` and prodcues all the
+values and plots reported in the paper.
 
 # Data preparation
 
@@ -45,7 +45,7 @@ This script uses the output of `1_descriptive.Rmd` and prodcues all the values a
 ```{r source setup, echo = TRUE, message=FALSE, warning = FALSE}
 
 ########## folders ##########
-library(here)
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 parentfolder <- dirname(getwd())
 
@@ -93,7 +93,7 @@ colorBlindBlack8  <- c("#000000", "#E69F00", "#56B4E9", "#009E73",
 df <- read_csv(paste0(dataset, "df.csv"))
 
 # Load concept list
-concepts <- read_excel(paste0(dataset, "conceptlist_info.xlsx"))
+concepts <- readxl::read_excel(paste0(dataset, "conceptlist_info.xlsx"))
 
 # Load expressibility German
 expr_german <- read_csv(paste0(dataset, "expressibility_german.csv"))
@@ -103,7 +103,197 @@ expr_dutch <- read_csv(paste0(dataset, "expressibility_dutch.csv"))
 
 ```
 
+## Information from the preregistration
 
+We will use weakly informative priors for the fixed and random effect, just informing the models about the ranges of the scale of the outcome variable.
+
+The `guessability_match` is a categorical variable and will be coded as `0` for incorrect guess and `1` for correct guess. The `guessability_similarity` will be a continuous variable expressing the cosine similarity of guesser's answer to target (estimated using ConceptNet). The `N_repetition` encompasses the data from the second half of the experiment only (where participants could repeat the production) and represents a number of repetitions until the production was correctly guessed or until a maximum of three productions was reached. The `experiment_part` is a categorical variable coded as `1` and `2`, for the respective halves of the experiment. `Modality` is a categorical variable with three levels: `combined`, `gesture`, and `vocalization`.
+
+For `N_repetion`, we will start with a Poisson model and check residuals as well as compare the mean and variance. If overdispersion is present, we will switch to negbinomial family.
+
+For the continuous `guessability_similarity` outcome variable, we will test the best fitting family by inspecting the distribution of the outcome variable. We do this because the data might not be normally distributed. We will choose an optimal family among gamma, lognormal, or skew_normal if the normal is inappropriate.
+
+# Prepare data
+
+## Sample size
+
+Calculate the effective sample size for modeling.
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+nrow(df)
+
+df %>%
+  group_by(concept) %>%
+  summarise(frequency = n()) %>%
+  arrange(desc(frequency)) %>% 
+  print(n = 100)
+```
+
+There are a total of `r nrow(df)` novel productions, from that, `r nrow(filter(df, exp_part == "1"))` in experiment part 1 and `r nrow(filter(df, exp_part == "2"))` in experiment part 2. 
+
+In experiment part 2, there are `r nrow(filter(df, correction == "0" & exp_part == "2"))` data points of the very first production, `r nrow(filter(df, correction == "1" & exp_part == "2"))` data points of the first repetition/correction (i.e., second production), and `r nrow(filter(df, correction == "2" & exp_part == "2"))` data points of the second repetition/correction (i.e., third production).
+
+Across modalities, there are `r nrow(filter(df, modality == "combined"))` productions in combined (`r nrow(filter(df, modality == "combined" & exp_part == "1"))` in part 1 vs. `r nrow(filter(df, modality == "combined" & exp_part == "2"))` in part 2), `r nrow(filter(df, modality == "gesture"))` in gesture (`r nrow(filter(df, modality == "gesture" & exp_part == "1"))` in part 1 vs. `r nrow(filter(df, modality == "gesture" & exp_part == "2"))` in part 2), and `r nrow(filter(df, modality == "vocal"))` in vocal modality (`r nrow(filter(df, modality == "vocal" & exp_part == "1"))` in part 1 vs. `r nrow(filter(df, modality == "vocal" & exp_part == "2"))` in part 2).
+
+## Variables
+
+Our hypotheses revolve around a set of fixed and random predictors for different outcome variables. 
+
+The outcome variables in the data frame `df` are:
+
+  - `guess_binary`: a *binary categorical* variable coded as `0` for incorrect guess and `1` for correct guess
+  - `cosine_similarity`: a *continuous* variable expressing the cosine similarity of guesser's answer to target (estimated using ConceptNet)
+  - `correction`: a *categorical* variable with three levels `0` for the first production, `1` for the first correction, `2` for the second correction
+  
+The predictor variables in the data frame `df` are:
+
+  - `expressibility`: a *continuous* variable expressing the rated posterior expressibility, set for each concept in each modality
+  - `exp_part`: a *binary categorical* variable coded as `1` for the first experiment part and `2` for the second experiment part
+  - `modality`: a *categorical* variable with three levels `combined` for both gesture and vocal, `gesture` for gesture only, `vocal` for vocal only
+  
+The random variables in the data frame `df` are:
+
+  - `concept`: a *categorical* variable for individual concepts (a total of `r unique(df$concept)`)
+  - `dyad`: a *categorical* variable for individual dyads (a total of `r unique(df$dyad)`)
+  - `participant_ID` (nested within `dyad`): a *categorical* variable for individual participants (a total of `r unique(df$participant_ID)`)
+  
+Preparing the variables
+
+```{r}
+# Outcome variables
+df$guess_binary <- factor(df$guess_binary, levels = c("0", "1")); contrasts(df$guess_binary) <- c(-0.5, +0.5)
+## 'cosine_similarity' is continuous, no need to transform it
+df$correction <- factor(df$correction, levels = c("0", "1", "2"))
+
+# Predictor variables
+## 'expressibility' is continuous, no transformation needed
+df$exp_part <- factor(df$exp_part, levels = c("1", "2")); contrasts(df$exp_part) <- c(-0.5, +0.5)
+df$modality <- factor(df$modality, levels = c("combined", "gesture", "vocal"))
+
+# Random variables
+df$concept <- factor(df$concept)
+df$dyad <- factor(df$dyad)
+df$participant_ID <- factor(df$participant_ID)
+
+
+# Check the (im)balance between the levels
+
+df %>% count(guess_binary) %>% mutate(prop = paste0(round(100* n / sum(n),1),"%")) 
+# imbalanced 0: 67.5%, 1: 32.5%
+
+df %>% count(correction) %>% mutate(prop = paste0(round(100* n / sum(n),1),"%")) 
+# imbalanced 0: 66.2%, 1: 19.9%, 2: 13.9%
+
+df %>% count(exp_part) %>% mutate(prop = paste0(round(100* n / sum(n),1),"%")) 
+# imbalanced 1: 33%, 2: 67%
+
+df %>% count(modality) %>% mutate(prop = paste0(round(100* n / sum(n),1),"%")) 
+# pretty balanced, combined: 31%, gesture: 31.1%, vocal: 37.9%
+
+# Random variables just if someone is interested in checking
+# df %>% count(concept) %>% mutate(prop = paste0(round(100* n / sum(n),1),"%")) 
+# df %>% count(dyad) %>% mutate(prop = paste0(round(100* n / sum(n),1),"%")) 
+# df %>% count(participant_ID) %>% mutate(prop = paste0(round(100* n / sum(n),1),"%")) 
+
+```
+
+
+# Intercept-only guessability
+
+## Guess binary
+
+Preregistered model:
+
+`guessability_match ~ 1 + (1 | dyad/participant) + (1 | concept), family = bernoulli(link='logit')`
+
+
+
+## Guess similarity
+
+Preregistered model:
+
+`guessability_similarity ~ 1 + (1 | dyad/participant) + (1 | concept)`
+
+
+
+# Hypothesis 1: Expressibility vs. guessability
+
+*The higher the expressibility rating of the concept for the modality in
+which the concept is produced, the higher the guessability will be.*
+
+## Guess binary
+
+Preregistered model:
+
+`guessability_match ~ expressibility + (1 | dyad/participant) + (1 | concept), family = bernoulli(link='logit')`
+
+
+
+## Guess similarity
+
+Preregistered model:
+
+`guessability_similarity ~ expressibility + (1 | dyad/participant) + (1 | concept)`
+
+
+
+# Hypothesis 2: Expressibility vs. repetitions
+
+*The higher the expressibility rating of the concept for the modality in
+which the concept is produced, the fewer repetitions there will be.*
+
+This is tested on subset experiment_part = "2".
+
+```{r}
+df_part2 <- df %>%
+  filter(exp_part == 2)
+```
+
+
+Preregistered models:
+
+`N_repetition ~ expressibility + (1 | dyad/participant) + (1 | concept), family = poisson()` 
+`N_repetition ~ expressibility + (1 | dyad/participant) + (1 | concept), family = negbinomial()` (if data is overdispersed)
+
+
+
+# Hypothesis 3: Guessability vs. experiment part
+
+*Guessability is higher when there is feedback between a producer and a
+guesser (i.e., in the second half of the experiment, where the guesser
+knows if they answered correctly, and the producer knows what the
+guesser answered).*
+
+## Guess binary
+
+Preregistered model:
+`guessability_match ~ experiment_part + (1 | dyad/participant) + (1 | concept), family = bernoulli(link = 'logit')`
+
+
+
+## Guess similarity
+
+Preregistered model:
+`guessability_similarity ~ experiment_part + (1 | dyad/participant) + (1 | concept)`
+
+
+
+# Hypothesis 4: Guessability vs. modality
+
+*Guessability will differ by modality; the order from highest to lowest
+will be: combined > gesture > vocalization.*
+
+## Guess binary
+
+Preregistered model:
+`guessability_match ~ modality + (1 | dyad/participant) + (1 | concept), family = bernoulli(link='logit')`
+
+
+
+## Guess similarity
+
+Preregistered model:
+`guessability_similarity ~ modality + (1 | dyad/participant) + (1 | concept)`
 
 
 
