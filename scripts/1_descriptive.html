@@ -2979,6 +2979,45 @@ statistics</h1>
 <pre><code>## [1] 84</code></pre>
 <pre class="r"><code>length(unique(df$stimulus))</code></pre>
 <pre><code>## [1] 84</code></pre>
+<p>How many productions in total?</p>
+<pre class="r"><code>nrow(df)</code></pre>
+<pre><code>## [1] 8989</code></pre>
+<p>How many productions are there per modality?</p>
+<pre class="r"><code>df %&gt;%
+  group_by(modality) %&gt;%
+  summarise(frequency = n()) %&gt;%
+  arrange(desc(frequency)) %&gt;% 
+  print(n = 100)</code></pre>
+<pre><code>## # A tibble: 3 × 2
+##   modality frequency
+##   &lt;chr&gt;        &lt;int&gt;
+## 1 vocal         3401
+## 2 gesture       2799
+## 3 combined      2789</code></pre>
+<p>How many productions are there per experiment part?</p>
+<pre class="r"><code>df %&gt;%
+  group_by(exp_part) %&gt;%
+  summarise(frequency = n()) %&gt;%
+  arrange(desc(frequency)) %&gt;% 
+  print(n = 100)</code></pre>
+<pre><code>## # A tibble: 2 × 2
+##   exp_part frequency
+##      &lt;dbl&gt;     &lt;int&gt;
+## 1        2      6021
+## 2        1      2968</code></pre>
+<p>How many productions are there per modality within experiment
+part?</p>
+<pre class="r"><code>df %&gt;%
+  group_by(exp_part, modality) %&gt;%
+  summarise(frequency = n(), .groups = &quot;drop&quot;) %&gt;%  # Calculate frequency for each concept and modality
+  pivot_wider(names_from = modality, values_from = frequency, names_prefix = &quot;modality_&quot;) %&gt;%
+  #arrange(desc(modality_combined), desc(modality_gesture), desc(modality_vocal)) %&gt;%  # Sort by modality frequencies
+  print(n = 100)</code></pre>
+<pre><code>## # A tibble: 2 × 4
+##   exp_part modality_combined modality_gesture modality_vocal
+##      &lt;dbl&gt;             &lt;int&gt;            &lt;int&gt;          &lt;int&gt;
+## 1        1               994              980            994
+## 2        2              1795             1819           2407</code></pre>
 <p>How many productions are there per concept?</p>
 <pre class="r"><code>df %&gt;%
   group_by(concept) %&gt;%

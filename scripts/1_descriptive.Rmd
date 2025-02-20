@@ -116,7 +116,7 @@ df <- df %>%
   rename(participant_dyad = participant) %>%
   rename(participant_ID = pcnID) %>%
   rename(concept = English) %>%
-  select(-`...1`) %>%  # Remove the first column
+  #select(-`Unnamed: 0`) %>%  # Remove the first column
   rename(stimulus = word)
 
 # Reorder the columns in the specified order
@@ -216,6 +216,43 @@ How many concepts?
 length(unique(df$concept))
 
 length(unique(df$stimulus))
+```
+
+How many productions in total?
+
+```{r}
+nrow(df)
+```
+
+How many productions are there per modality?
+
+```{r}
+df %>%
+  group_by(modality) %>%
+  summarise(frequency = n()) %>%
+  arrange(desc(frequency)) %>% 
+  print(n = 100)
+```
+
+How many productions are there per experiment part?
+
+```{r}
+df %>%
+  group_by(exp_part) %>%
+  summarise(frequency = n()) %>%
+  arrange(desc(frequency)) %>% 
+  print(n = 100)
+```
+
+How many productions are there per modality within experiment part?
+
+```{r}
+df %>%
+  group_by(exp_part, modality) %>%
+  summarise(frequency = n(), .groups = "drop") %>%  # Calculate frequency for each concept and modality
+  pivot_wider(names_from = modality, values_from = frequency, names_prefix = "modality_") %>%
+  #arrange(desc(modality_combined), desc(modality_gesture), desc(modality_vocal)) %>%  # Sort by modality frequencies
+  print(n = 100)
 ```
 
 How many productions are there per concept?

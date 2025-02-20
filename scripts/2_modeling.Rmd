@@ -73,6 +73,7 @@ library(brms);
 library(cmdstanr);
 library(emmeans);
 library(posterior);
+library(bayesplot);
 library(tidybayes);
 
 theme_set(theme_tidybayes() + panel_border());
@@ -105,13 +106,32 @@ expr_dutch <- read_csv(paste0(dataset, "expressibility_dutch.csv"))
 
 ## Information from the preregistration
 
-We will use weakly informative priors for the fixed and random effect, just informing the models about the ranges of the scale of the outcome variable.
+We will use weakly informative priors for the fixed and random effect,
+just informing the models about the ranges of the scale of the outcome
+variable.
 
-The `guessability_match` is a categorical variable and will be coded as `0` for incorrect guess and `1` for correct guess. The `guessability_similarity` will be a continuous variable expressing the cosine similarity of guesser's answer to target (estimated using ConceptNet). The `N_repetition` encompasses the data from the second half of the experiment only (where participants could repeat the production) and represents a number of repetitions until the production was correctly guessed or until a maximum of three productions was reached. The `experiment_part` is a categorical variable coded as `1` and `2`, for the respective halves of the experiment. `Modality` is a categorical variable with three levels: `combined`, `gesture`, and `vocalization`.
+The `guessability_match` is a categorical variable and will be coded as
+`0` for incorrect guess and `1` for correct guess. The
+`guessability_similarity` will be a continuous variable expressing the
+cosine similarity of guesser's answer to target (estimated using
+ConceptNet). The `N_repetition` encompasses the data from the second
+half of the experiment only (where participants could repeat the
+production) and represents a number of repetitions until the production
+was correctly guessed or until a maximum of three productions was
+reached. The `experiment_part` is a categorical variable coded as `1`
+and `2`, for the respective halves of the experiment. `Modality` is a
+categorical variable with three levels: `combined`, `gesture`, and
+`vocalization`.
 
-For `N_repetion`, we will start with a Poisson model and check residuals as well as compare the mean and variance. If overdispersion is present, we will switch to negbinomial family.
+For `N_repetion`, we will start with a Poisson model and check residuals
+as well as compare the mean and variance. If overdispersion is present,
+we will switch to negbinomial family.
 
-For the continuous `guessability_similarity` outcome variable, we will test the best fitting family by inspecting the distribution of the outcome variable. We do this because the data might not be normally distributed. We will choose an optimal family among gamma, lognormal, or skew_normal if the normal is inappropriate.
+For the continuous `guessability_similarity` outcome variable, we will
+test the best fitting family by inspecting the distribution of the
+outcome variable. We do this because the data might not be normally
+distributed. We will choose an optimal family among gamma, lognormal, or
+skew_normal if the normal is inappropriate.
 
 # Prepare data
 
@@ -129,34 +149,163 @@ df %>%
   print(n = 100)
 ```
 
-There are a total of `r nrow(df)` novel productions, from that, `r nrow(filter(df, exp_part == "1"))` in experiment part 1 and `r nrow(filter(df, exp_part == "2"))` in experiment part 2. 
+There are a total of `r nrow(df)` novel productions, from that,
+`r nrow(filter(df, exp_part == "1"))` in experiment part 1 and
+`r nrow(filter(df, exp_part == "2"))` in experiment part 2.
 
-In experiment part 2, there are `r nrow(filter(df, correction == "0" & exp_part == "2"))` data points of the very first production, `r nrow(filter(df, correction == "1" & exp_part == "2"))` data points of the first repetition/correction (i.e., second production), and `r nrow(filter(df, correction == "2" & exp_part == "2"))` data points of the second repetition/correction (i.e., third production).
+In experiment part 2, there are
+`r nrow(filter(df, correction == "0" & exp_part == "2"))` data points of
+the very first production,
+`r nrow(filter(df, correction == "1" & exp_part == "2"))` data points of
+the first repetition/correction (i.e., second production), and
+`r nrow(filter(df, correction == "2" & exp_part == "2"))` data points of
+the second repetition/correction (i.e., third production).
 
-Across modalities, there are `r nrow(filter(df, modality == "combined"))` productions in combined (`r nrow(filter(df, modality == "combined" & exp_part == "1"))` in part 1 vs. `r nrow(filter(df, modality == "combined" & exp_part == "2"))` in part 2), `r nrow(filter(df, modality == "gesture"))` in gesture (`r nrow(filter(df, modality == "gesture" & exp_part == "1"))` in part 1 vs. `r nrow(filter(df, modality == "gesture" & exp_part == "2"))` in part 2), and `r nrow(filter(df, modality == "vocal"))` in vocal modality (`r nrow(filter(df, modality == "vocal" & exp_part == "1"))` in part 1 vs. `r nrow(filter(df, modality == "vocal" & exp_part == "2"))` in part 2).
+Across modalities, there are
+`r nrow(filter(df, modality == "combined"))` productions in combined
+(`r nrow(filter(df, modality == "combined" & exp_part == "1"))` in part
+1 vs. `r nrow(filter(df, modality == "combined" & exp_part == "2"))` in
+part 2), `r nrow(filter(df, modality == "gesture"))` in gesture
+(`r nrow(filter(df, modality == "gesture" & exp_part == "1"))` in part 1
+vs. `r nrow(filter(df, modality == "gesture" & exp_part == "2"))` in
+part 2), and `r nrow(filter(df, modality == "vocal"))` in vocal modality
+(`r nrow(filter(df, modality == "vocal" & exp_part == "1"))` in part 1
+vs. `r nrow(filter(df, modality == "vocal" & exp_part == "2"))` in part
+2).
+
+## Cosine similarity
+
+The cosine similarity was calculated with ConceptNet. Some pairs (N = 130, ~2% of the data) were not available in ConceptNet and for those we asked participants (HOW MANY) to rate the perceived similarity. On a smaller set of pairs, we previously checked whether this is an effective way to reduce the missing values, and we found that ConceptNet and perceived similarity ratings are highly correlated (r = ????). The data reviewed below already entails the perceived similarity.
+
+Cosine similarity is inherently on -1 to 1 scale.
+As provided
+[here](https://github.com/deepinsight/insightface/issues/917):
+
+> Cosine similarity is like an inner product. If angle between two
+> vector is larger than 90 degree, the value is negative, and that means
+> that two faces(features) are clearly distinguishable.
+
+Meaning that a negative value is provided for concepts that are clearly different (i.e., not confusable).
+
+In order to be able to model the values with a wider choice of families (including zero-one inflated beta), we transformed the cosine similarity with
+
+`(df$cosine_similarity + 1) / 2`
+
+Below, we break down the missing values and look at data distribution to choose an appropriate family.
+
+```{r}
+# Total missing values for cosine_similarity and its percentage
+cat("Total missing values for cosine_similarity: ", sum(is.na(df$cosine_similarity)), "\n")
+cat("Percentage missing: ", round(100 * sum(is.na(df$cosine_similarity)) / nrow(df), 1), "%\n\n")
+
+# Breakdown by modality:
+cat("Missing values by modality:\n")
+df %>% 
+  group_by(modality) %>% 
+  summarise(
+    missing = sum(is.na(cosine_similarity)),
+    total = n(),
+    percent_missing = round(100 * sum(is.na(cosine_similarity)) / n(), 1)
+  ) %>% 
+  print(n = Inf)
+
+cat("\nBreakdown by experiment part (exp_part):\n")
+df %>% 
+  group_by(exp_part) %>% 
+  summarise(
+    missing = sum(is.na(cosine_similarity)),
+    total = n(),
+    percent_missing = round(100 * sum(is.na(cosine_similarity)) / n(), 1)
+  ) %>% 
+  print(n = Inf)
+
+cat("\nBreakdown by repetition (correction):\n")
+df %>% 
+  group_by(correction) %>% 
+  summarise(
+    missing = sum(is.na(cosine_similarity)),
+    total = n(),
+    percent_missing = round(100 * sum(is.na(cosine_similarity)) / n(), 1)
+  ) %>% 
+  print(n = Inf)
+```
+
+Let us inspect the distribution of cosine similarity
+
+```{r}
+ggplot(df, aes(x = cosine_similarity)) +
+  geom_density(fill = colorBlindBlack8[6]) +
+  theme_minimal() +
+  labs(x = "Cosine Similarity", y = "Density")
+
+moments::skewness(df$cosine_similarity)
+```
+
+The distribution is fairly bimodal. The peak at 1 results from obvious
+100% match cases that correspond to binary guess = 1. Then there is
+another peak around 0.15 which results from non-ideal guesses.
+
+```{r}
+ggplot(df, aes(x = cosine_similarity, fill = factor(guess_binary))) +
+  geom_density(alpha = 0.6) +  # alpha to make the fill slightly transparent
+  theme_minimal() +
+  labs(x = "Cosine Similarity", y = "Density", fill = "Guess binary") +
+  scale_fill_manual(values = c(colorBlindBlack8[6], colorBlindBlack8[7])) 
+```
+
+Let's compute the summary statistics of cosine similarity grouped by
+guess_binary
+
+```{r}
+df %>%
+  group_by(guess_binary) %>%
+  summarise(
+    mean_cosine_similarity = mean(cosine_similarity, na.rm = TRUE),
+    sd_cosine_similarity = sd(cosine_similarity, na.rm = TRUE),
+    min_cosine_similarity = min(cosine_similarity, na.rm = TRUE),
+    max_cosine_similarity = max(cosine_similarity, na.rm = TRUE),
+    median_cosine_similarity = median(cosine_similarity, na.rm = TRUE),
+    n = n()  # Count of observations
+  )
+
+```
 
 ## Variables
 
-Our hypotheses revolve around a set of fixed and random predictors for different outcome variables. 
+Our hypotheses revolve around a set of fixed and random predictors for
+different outcome variables.
 
 The outcome variables in the data frame `df` are:
 
-  - `guess_binary`: a *binary categorical* variable coded as `0` for incorrect guess and `1` for correct guess
-  - `cosine_similarity`: a *continuous* variable expressing the cosine similarity of guesser's answer to target (estimated using ConceptNet)
-  - `correction`: a *categorical* variable with three levels `0` for the first production, `1` for the first correction, `2` for the second correction
-  
+-   `guess_binary`: a *binary categorical* variable coded as `0` for
+    incorrect guess and `1` for correct guess
+-   `cosine_similarity`: a *continuous* variable expressing the cosine
+    similarity of guesser's answer to target (estimated using
+    ConceptNet)
+-   `correction`: a *categorical* variable with three levels `0` for the
+    first production, `1` for the first correction, `2` for the second
+    correction
+
 The predictor variables in the data frame `df` are:
 
-  - `expressibility`: a *continuous* variable expressing the rated posterior expressibility, set for each concept in each modality
-  - `exp_part`: a *binary categorical* variable coded as `1` for the first experiment part and `2` for the second experiment part
-  - `modality`: a *categorical* variable with three levels `combined` for both gesture and vocal, `gesture` for gesture only, `vocal` for vocal only
-  
+-   `expressibility`: a *continuous* variable expressing the rated
+    posterior expressibility, set for each concept in each modality
+-   `exp_part`: a *binary categorical* variable coded as `1` for the
+    first experiment part and `2` for the second experiment part
+-   `modality`: a *categorical* variable with three levels `combined`
+    for both gesture and vocal, `gesture` for gesture only, `vocal` for
+    vocal only
+
 The random variables in the data frame `df` are:
 
-  - `concept`: a *categorical* variable for individual concepts (a total of `r unique(df$concept)`)
-  - `dyad`: a *categorical* variable for individual dyads (a total of `r unique(df$dyad)`)
-  - `participant_ID` (nested within `dyad`): a *categorical* variable for individual participants (a total of `r unique(df$participant_ID)`)
-  
+-   `concept`: a *categorical* variable for individual concepts (a total
+    of `r unique(df$concept)`)
+-   `dyad`: a *categorical* variable for individual dyads (a total of
+    `r unique(df$dyad)`)
+-   `participant_ID` (nested within `dyad`): a *categorical* variable
+    for individual participants (a total of
+    `r unique(df$participant_ID)`)
+
 Preparing the variables
 
 ```{r}
@@ -176,7 +325,7 @@ df$dyad <- factor(df$dyad)
 df$participant_ID <- factor(df$participant_ID)
 
 
-# Check the (im)balance between the levels
+# Check the balance between the levels
 
 df %>% count(guess_binary) %>% mutate(prop = paste0(round(100* n / sum(n),1),"%")) 
 # imbalanced 0: 67.5%, 1: 32.5%
@@ -197,7 +346,6 @@ df %>% count(modality) %>% mutate(prop = paste0(round(100* n / sum(n),1),"%"))
 
 ```
 
-
 # Intercept-only guessability
 
 ## Guess binary
@@ -206,7 +354,87 @@ Preregistered model:
 
 `guessability_match ~ 1 + (1 | dyad/participant) + (1 | concept), family = bernoulli(link='logit')`
 
+### Model
 
+Intercept-only model for binary outcome
+
+```{r}
+mdl_null_binary <- brm(
+  formula = guess_binary ~ 1 + (1 | dyad/participant_ID) + (1 | concept),
+  data = df,
+  family = bernoulli(link = "logit"),
+  prior = c(
+    # Prior for the intercept on the logit scale:
+    prior(normal(0, 2.5), class = "Intercept"),
+    # Prior for the standard deviations of the random effects:
+    prior(normal(0, 2), class = "sd")
+  ),
+  chains = 4,
+  iter = 10000,
+  warmup = 4000,
+  seed = 17,
+  control = list(max_treedepth = 12,
+                 adapt_delta = 0.99),
+  file = paste0(models, "mdl_null_binary.rds")
+)
+
+# if we need to compress the model more
+#saveRDS(mdl_null_binary, file = paste0(models, "mdl_null_binary.rds"), compress = "xz")
+
+mdl_null_binary <- readRDS(paste0(models, "mdl_null_binary.rds"))
+```
+
+Calculate R².
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Calculate Bayesian R²
+mdl_null_binary_R2 <- bayes_R2(mdl_null_binary)
+# Save the R² output
+saveRDS(mdl_null_binary_R2, file = paste0(models, "mdl_null_binary_R2.rds"))
+
+mdl_null_binary_R2 <- readRDS(paste0(models, "mdl_null_binary_R2.rds"))
+
+mdl_null_binary_R2
+```
+
+R2 explanation.......
+
+#### Fixed effects
+
+Summarize the model: Check parameter estimates, Rhat values
+(convergence) and effective sample sizes.
+
+```{r}
+summary(mdl_null_binary)
+```
+
+Diagnostic plots.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+plot(mdl_null_binary)
+```
+
+Posterior predictive check.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+pp_check(mdl_null_binary, ndraws = 100)
+
+pp_check(mdl_null_binary, type = "error_scatter_avg", ndraws = 100)
+```
+
+Overall binary guessability is XXXXX
+
+#### Group-level effects
+
+First, get a general overview.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+as.data.frame(VarCorr(mdl_null_binary)$concept$sd) %>%
+  rownames_to_column(var = "Random Effect") %>%
+  select(`Random Effect`, Estimate, Est.Error, Q2.5, Q97.5)
+```
+
+THINK A BIT MORE WHAT TO DO WITH THE INTERCEPT ONLY MODEL.
 
 ## Guess similarity
 
@@ -214,12 +442,93 @@ Preregistered model:
 
 `guessability_similarity ~ 1 + (1 | dyad/participant) + (1 | concept)`
 
+### Model
+
+Now, let’s build the intercept-only model for the continuous outcome,
+cosine_similarity. The model uses the same random effects structure.
+Because of the data distribution, we use a zero-one inflated beta model.
+
+```{r}
+# Intercept-only model for continuous outcome:
+mdl_null_similarity <- brm(
+  formula = cosine_similarity ~ 1 + (1 | dyad/participant_ID) + (1 | concept),
+  data = df,
+  family = zero_one_inflated_beta(),
+  prior = c(
+    prior(normal(0, 5), class = "Intercept"),
+    prior(normal(0, 2), class = "sd")
+  ),
+  chains = 4,
+  iter = 10000,
+  warmup = 4000,
+  seed = 17,
+  control = list(max_treedepth = 12,
+                 adapt_delta = 0.99),
+  file = paste0(models, "mdl_null_similarity.rds")
+)
+
+# if we need to compress the model more
+#saveRDS(mdl_null_similarity, file = paste0(models, "mdl_null_similarity.rds"), compress = "xz")
+
+mdl_null_similarity <- readRDS(paste0(models, "mdl_null_similarity.rds"))
+```
+
+Calculate R².
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Calculate Bayesian R²
+mdl_null_similarity_R2 <- bayes_R2(mdl_null_similarity)
+# Save the R² output
+saveRDS(mdl_null_similarity_R2, file = paste0(models, "mdl_null_similarity_R2.rds"))
+
+mdl_null_similarity_R2 <- readRDS(paste0(models, "mdl_null_similarity_R2.rds"))
+
+mdl_null_similarity_R2
+```
+
+R2 explanation.......
+
+#### Fixed effects
+
+Summarize the model: Check parameter estimates, Rhat values
+(convergence) and effective sample sizes.
+
+```{r}
+summary(mdl_null_similarity)
+```
+
+Diagnostic plots.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+plot(mdl_null_similarity)
+```
+
+Posterior predictive check.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+pp_check(mdl_null_similarity, ndraws = 100)
+
+pp_check(mdl_null_similarity, type = "error_scatter_avg", ndraws = 100)
+```
+
+Overall binary guessability is XXXXX
+
+#### Group-level effects
+
+First, get a general overview.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+as.data.frame(VarCorr(mdl_null_similarity)$concept$sd) %>%
+  rownames_to_column(var = "Random Effect") %>%
+  select(`Random Effect`, Estimate, Est.Error, Q2.5, Q97.5)
+```
+
+THINK A BIT MORE WHAT TO DO WITH THE INTERCEPT ONLY MODEL.
 
 
 # Hypothesis 1: Expressibility vs. guessability
 
-*The higher the expressibility rating of the concept for the modality in
-which the concept is produced, the higher the guessability will be.*
+*The higher the expressibility rating of the concept for the modality in which the concept is produced, the higher the guessability will be.*
 
 ## Guess binary
 
@@ -227,7 +536,70 @@ Preregistered model:
 
 `guessability_match ~ expressibility + (1 | dyad/participant) + (1 | concept), family = bernoulli(link='logit')`
 
+### Model
 
+```{r}
+mdl_H1_binary <- brm(
+  formula = guess_binary ~ expressibility_dutch + (1 | dyad/participant_ID) + (1 | concept),
+  data = df,
+  family = bernoulli(link = "logit"),
+  prior = c(
+    prior(normal(0, 2.5), class = "Intercept"),
+    prior(normal(0, 1), class = "b"),        # Prior for expressibility
+    prior(normal(0, 2), class = "sd")
+  ),
+  chains = 4,
+  iter = 10000,
+  warmup = 4000,
+  seed = 17,
+  control = list(max_treedepth = 12,
+                 adapt_delta = 0.99),
+  file = paste0(models, "mdl_H1_binary.rds")
+)
+
+# if we need to compress the model more
+#saveRDS(mdl_H1_binary, file = paste0(models, "mdl_H1_binary.rds"), compress = "xz")
+
+mdl_H1_binary <- readRDS(paste0(models, "mdl_H1_binary.rds"))
+```
+
+Calculate R².
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Calculate Bayesian R²
+mdl_H1_binary_R2 <- bayes_R2(mdl_H1_binary)
+# Save the R² output
+saveRDS(mdl_H1_binary_R2, file = paste0(models, "mdl_H1_binary_R2.rds"))
+
+mdl_H1_binary_R2 <- readRDS(paste0(models, "mdl_H1_binary_R2.rds"))
+
+mdl_H1_binary_R2
+```
+
+R2 explanation.......
+
+#### Fixed effects
+
+Summarize the model: Check parameter estimates, Rhat values
+(convergence) and effective sample sizes.
+
+```{r}
+summary(mdl_H1_binary)
+```
+
+Diagnostic plots.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+plot(mdl_H1_binary)
+```
+
+Posterior predictive check.
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+pp_check(mdl_H1_binary, ndraws = 100)
+
+pp_check(mdl_H1_binary, type = "error_scatter_avg", ndraws = 100)
+```
 
 ## Guess similarity
 
@@ -235,12 +607,64 @@ Preregistered model:
 
 `guessability_similarity ~ expressibility + (1 | dyad/participant) + (1 | concept)`
 
+### Model
+
+```{r}
+mdl_H1_similarity <- brm(
+  formula = cosine_similarity  ~ expressibility_dutch + (1 | dyad/participant_ID) + (1 | concept),
+  data = df,
+  family = zero_one_inflated_beta(),
+  # Priors: using weakly informative priors on the intercept and slope,
+  # plus a beta(1,1) prior for the zero-one inflation parameter (zoi)
+  prior = c(
+    prior(normal(0, 2.5), class = "Intercept"),
+    prior(normal(0, 1), class = "b"),        # Prior for expressibility
+    prior(normal(0, 2), class = "sd"),
+    prior(beta(1, 1), class = "zoi")
+  ),
+  chains = 4,
+  iter = 10000,
+  warmup = 4000,
+  seed = 17,
+  control = list(max_treedepth = 12,
+                 adapt_delta = 0.99),
+  file = paste0(models, "mdl_H1_similarity.rds")
+)
+
+# if we need to compress the model more
+#saveRDS(mdl_H1_similarity, file = paste0(models, "mdl_H1_similarity.rds"), compress = "xz")
+
+mdl_H1_similarity <- readRDS(paste0(models, "mdl_H1_similarity.rds"))
+```
+
+Calculate R².
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Calculate Bayesian R²
+mdl_H1_similarity_R2 <- bayes_R2(mdl_H1_similarity)
+# Save the R² output
+saveRDS(mdl_H1_similarity_R2, file = paste0(models, "mdl_H1_similarity_R2.rds"))
+
+mdl_H1_similarity_R2 <- readRDS(paste0(models, "mdl_H1_similarity_R2.rds"))
+
+mdl_H1_similarity_R2
+```
+
+R2 explanation.......
+
+#### Fixed effects
+
+Summarize the model: Check parameter estimates, Rhat values
+(convergence) and effective sample sizes.
+
+```{r}
+summary(mdl_H1_binary)
+```
 
 
 # Hypothesis 2: Expressibility vs. repetitions
 
-*The higher the expressibility rating of the concept for the modality in
-which the concept is produced, the fewer repetitions there will be.*
+*The higher the expressibility rating of the concept for the modality in which the concept is produced, the fewer repetitions there will be.*
 
 This is tested on subset experiment_part = "2".
 
@@ -249,26 +673,124 @@ df_part2 <- df %>%
   filter(exp_part == 2)
 ```
 
-
 Preregistered models:
 
-`N_repetition ~ expressibility + (1 | dyad/participant) + (1 | concept), family = poisson()` 
-`N_repetition ~ expressibility + (1 | dyad/participant) + (1 | concept), family = negbinomial()` (if data is overdispersed)
+`N_repetition ~ expressibility + (1 | dyad/participant) + (1 | concept), family = poisson()`
+`N_repetition ~ expressibility + (1 | dyad/participant) + (1 | concept), family = negbinomial()`
+(if data is overdispersed)
 
+## Poisson model
 
+```{r}
+model_H2_poisson <- brm(
+  formula = N_repetition ~ expressibility + (1 | dyad/participant_ID) + (1 | concept),
+  data = df_H2,
+  family = poisson(),
+  prior = c(
+    prior(normal(0, 2.5), class = "Intercept"),
+    prior(normal(0, 1), class = "b"),        # Prior for expressibility
+    prior(normal(0, 2), class = "sd")
+  ),
+  chains = 4,
+  iter = 4000,
+  warmup = 4000,
+  seed = 17,
+  control = list(max_treedepth = 12,
+                 adapt_delta = 0.99),
+  file = paste0(models, "model_H2_poisson.rds")
+)
+
+# if we need to compress the model more
+#saveRDS(model_H2_poisson, file = paste0(models, "model_H2_poisson.rds"), compress = "xz")
+
+model_H2_poisson <- readRDS(paste0(models, "model_H2_poisson.rds"))
+```
+
+Calculate R².
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Calculate Bayesian R²
+model_H2_poisson_R2 <- bayes_R2(model_H2_poisson)
+# Save the R² output
+saveRDS(model_H2_poisson_R2, file = paste0(models, "model_H2_poisson_R2.rds"))
+
+model_H2_poisson_R2 <- readRDS(paste0(models, "model_H2_poisson_R2.rds"))
+
+model_H2_poisson_R2
+```
+
+R2 explanation.......
+
+#### Fixed effects
+
+Summarize the model: Check parameter estimates, Rhat values
+(convergence) and effective sample sizes.
+
+```{r}
+summary(model_H2_poisson)
+```
+
+If you detect overdispersion (variance >> mean), consider a negative binomial model.
 
 # Hypothesis 3: Guessability vs. experiment part
 
-*Guessability is higher when there is feedback between a producer and a
-guesser (i.e., in the second half of the experiment, where the guesser
-knows if they answered correctly, and the producer knows what the
-guesser answered).*
+*Guessability is higher when there is feedback between a producer and a guesser (i.e., in the second half of the experiment, where the guesser knows if they answered correctly, and the producer knows what the guesser answered).*
 
 ## Guess binary
 
 Preregistered model:
 `guessability_match ~ experiment_part + (1 | dyad/participant) + (1 | concept), family = bernoulli(link = 'logit')`
 
+### Model
+
+```{r}
+mdl_H3_binary <- brm(
+  formula = guess_binary ~ exp_part + (1 | dyad/participant_ID) + (1 | concept),
+  data = df,
+  family = bernoulli(link = "logit"),
+  prior = c(
+    prior(normal(0, 2.5), class = "Intercept"),
+    prior(normal(0, 1), class = "b"),        # Prior for exp_part
+    prior(normal(0, 2), class = "sd")
+  ),
+  chains = 4,
+  iter = 10000,
+  warmup = 4000,
+  seed = 17,
+  control = list(max_treedepth = 12,
+                 adapt_delta = 0.99),
+  file = paste0(models, "mdl_H3_binary.rds")
+)
+
+# if we need to compress the model more
+#saveRDS(mdl_H3_binary, file = paste0(models, "mdl_H3_binary.rds"), compress = "xz")
+
+mdl_H3_binary <- readRDS(paste0(models, "mdl_H3_binary.rds"))
+```
+
+Calculate R².
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Calculate Bayesian R²
+mdl_H3_binary_R2 <- bayes_R2(mdl_H3_binary)
+# Save the R² output
+saveRDS(mdl_H3_binary_R2, file = paste0(models, "mdl_H3_binary_R2.rds"))
+
+mdl_H3_binary_R2 <- readRDS(paste0(models, "mdl_H3_binary_R2.rds"))
+
+mdl_H3_binary_R2
+```
+
+R2 explanation.......
+
+#### Fixed effects
+
+Summarize the model: Check parameter estimates, Rhat values
+(convergence) and effective sample sizes.
+
+```{r}
+summary(mdl_H3_binary)
+```
 
 
 ## Guess similarity
@@ -276,12 +798,64 @@ Preregistered model:
 Preregistered model:
 `guessability_similarity ~ experiment_part + (1 | dyad/participant) + (1 | concept)`
 
+### Model
+
+```{r}
+mdl_H3_similarity <- brm(
+  formula = cosine_similarity  ~ exp_part + (1 | dyad/participant_ID) + (1 | concept),
+  data = df,
+  family = zero_one_inflated_beta(),
+  # Priors: using weakly informative priors on the intercept and slope,
+  # plus a beta(1,1) prior for the zero-one inflation parameter (zoi)
+  prior = c(
+    prior(normal(0, 2.5), class = "Intercept"),
+    prior(normal(0, 1), class = "b"),        # Prior for exp_part
+    prior(normal(0, 2), class = "sd"),
+    prior(beta(1, 1), class = "zoi")
+  ),
+  chains = 4,
+  iter = 10000,
+  warmup = 4000,
+  seed = 17,
+  control = list(max_treedepth = 12,
+                 adapt_delta = 0.99),
+  file = paste0(models, "mdl_H3_similarity.rds")
+)
+
+# if we need to compress the model more
+#saveRDS(mdl_H3_similarity, file = paste0(models, "mdl_H3_similarity.rds"), compress = "xz")
+
+mdl_H1_similarity <- readRDS(paste0(models, "mdl_H3_similarity.rds"))
+```
+
+Calculate R².
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Calculate Bayesian R²
+mdl_H3_similarity_R2 <- bayes_R2(mdl_H3_similarity)
+# Save the R² output
+saveRDS(mdl_H3_similarity_R2, file = paste0(models, "mdl_H3_similarity_R2.rds"))
+
+mdl_H3_similarity_R2 <- readRDS(paste0(models, "mdl_H3_similarity_R2.rds"))
+
+mdl_H3_similarity_R2
+```
+
+R2 explanation.......
+
+#### Fixed effects
+
+Summarize the model: Check parameter estimates, Rhat values
+(convergence) and effective sample sizes.
+
+```{r}
+summary(mdl_H3_similarity)
+```
 
 
 # Hypothesis 4: Guessability vs. modality
 
-*Guessability will differ by modality; the order from highest to lowest
-will be: combined > gesture > vocalization.*
+*Guessability will differ by modality; the order from highest to lowest will be: combined \> gesture \> vocalization.*
 
 ## Guess binary
 
@@ -289,12 +863,116 @@ Preregistered model:
 `guessability_match ~ modality + (1 | dyad/participant) + (1 | concept), family = bernoulli(link='logit')`
 
 
+### Model
+
+```{r}
+mdl_H4_binary <- brm(
+  formula = guess_binary ~ modality + (1 | dyad/participant_ID) + (1 | concept),
+  data = df,
+  family = bernoulli(link = "logit"),
+  prior = c(
+    prior(normal(0, 2.5), class = "Intercept"),
+    prior(normal(0, 1), class = "b"),        # Prior for modality
+    prior(normal(0, 2), class = "sd")
+  ),
+  chains = 4,
+  iter = 10000,
+  warmup = 4000,
+  seed = 17,
+  control = list(max_treedepth = 12,
+                 adapt_delta = 0.99),
+  file = paste0(models, "mdl_H4_binary.rds")
+)
+
+# if we need to compress the model more
+#saveRDS(mdl_H4_binary, file = paste0(models, "mdl_H4_binary.rds"), compress = "xz")
+
+mdl_H4_binary <- readRDS(paste0(models, "mdl_H4_binary.rds"))
+```
+
+Calculate R².
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Calculate Bayesian R²
+mdl_H4_binary_R2 <- bayes_R2(mdl_H4_binary)
+# Save the R² output
+saveRDS(mdl_H4_binary_R2, file = paste0(models, "mdl_H4_binary_R2.rds"))
+
+mdl_H4_binary_R2 <- readRDS(paste0(models, "mdl_H4_binary_R2.rds"))
+
+mdl_H4_binary_R2
+```
+
+R2 explanation.......
+
+#### Fixed effects
+
+Summarize the model: Check parameter estimates, Rhat values
+(convergence) and effective sample sizes.
+
+```{r}
+summary(mdl_H4_binary)
+```
+
 
 ## Guess similarity
 
 Preregistered model:
 `guessability_similarity ~ modality + (1 | dyad/participant) + (1 | concept)`
 
+### Model
+
+```{r}
+mdl_H4_similarity <- brm(
+  formula = cosine_similarity  ~ modality + (1 | dyad/participant_ID) + (1 | concept),
+  data = df,
+  family = zero_one_inflated_beta(),
+  # Priors: using weakly informative priors on the intercept and slope,
+  # plus a beta(1,1) prior for the zero-one inflation parameter (zoi)
+  prior = c(
+    prior(normal(0, 2.5), class = "Intercept"),
+    prior(normal(0, 1), class = "b"),        # Prior for modality
+    prior(normal(0, 2), class = "sd"),
+    prior(beta(1, 1), class = "zoi")
+  ),
+  chains = 4,
+  iter = 10000,
+  warmup = 4000,
+  seed = 17,
+  control = list(max_treedepth = 12,
+                 adapt_delta = 0.99),
+  file = paste0(models, "mdl_H4_similarity.rds")
+)
+
+# if we need to compress the model more
+#saveRDS(mdl_H4_similarity, file = paste0(models, "mdl_H4_similarity.rds"), compress = "xz")
+
+mdl_H1_similarity <- readRDS(paste0(models, "mdl_H4_similarity.rds"))
+```
+
+Calculate R².
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Calculate Bayesian R²
+mdl_H4_similarity_R2 <- bayes_R2(mdl_H4_similarity)
+# Save the R² output
+saveRDS(mdl_H4_similarity_R2, file = paste0(models, "mdl_H4_similarity_R2.rds"))
+
+mdl_H4_similarity_R2 <- readRDS(paste0(models, "mdl_H4_similarity_R2.rds"))
+
+mdl_H4_similarity_R2
+```
+
+R2 explanation.......
+
+#### Fixed effects
+
+Summarize the model: Check parameter estimates, Rhat values
+(convergence) and effective sample sizes.
+
+```{r}
+summary(mdl_H4_similarity)
+```
 
 
 # Session info
