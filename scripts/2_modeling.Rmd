@@ -104,6 +104,15 @@ expr_dutch <- read_csv(paste0(dataset, "expressibility_dutch.csv"))
 
 ```
 
+## Helper functions
+
+```{r}
+back_transform_zoib <- function(eta, zoi, coi = 1) {
+  plogis(eta) * (1 - zoi) + zoi * coi
+}
+```
+
+
 ## Information from the preregistration
 
 We will use weakly informative priors for the fixed and random effect,
@@ -310,7 +319,7 @@ Preparing the variables
 
 ```{r}
 # Outcome variables
-df$guess_binary <- factor(df$guess_binary, levels = c("0", "1")); contrasts(df$guess_binary) <- c(-0.5, +0.5)
+#df$guess_binary <- factor(df$guess_binary, levels = c("0", "1")); contrasts(df$guess_binary) <- c(-0.5, +0.5)
 ## 'cosine_similarity' is continuous, no need to transform it
 df$correction <- factor(df$correction, levels = c("0", "1", "2"))
 
@@ -388,10 +397,10 @@ mdl_null_binary <- readRDS(paste0(models, "mdl_null_binary.rds"))
 Calculate R².
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-# Calculate Bayesian R²
-mdl_null_binary_R2 <- bayes_R2(mdl_null_binary)
-# Save the R² output
-saveRDS(mdl_null_binary_R2, file = paste0(models, "mdl_null_binary_R2.rds"))
+# # Calculate Bayesian R²
+# mdl_null_binary_R2 <- bayes_R2(mdl_null_binary)
+# # Save the R² output
+# saveRDS(mdl_null_binary_R2, file = paste0(models, "mdl_null_binary_R2.rds"))
 
 mdl_null_binary_R2 <- readRDS(paste0(models, "mdl_null_binary_R2.rds"))
 
@@ -407,7 +416,12 @@ Summarize the model: Check parameter estimates, Rhat values
 
 ```{r}
 summary(mdl_null_binary)
+
+# because of the logit link, it needs to be backtransformed
+emmeans(mdl_null_binary, ~1, type = "response")
 ```
+
+Estimated posterior binary guessability is `r plogis(fixef(mdl_null_binary)[1])`.
 
 Diagnostic plots.
 
@@ -422,8 +436,6 @@ pp_check(mdl_null_binary, ndraws = 100)
 
 pp_check(mdl_null_binary, type = "error_scatter_avg", ndraws = 100)
 ```
-
-Overall binary guessability is XXXXX
 
 #### Group-level effects
 
@@ -452,12 +464,23 @@ Because of the data distribution, we use a zero-one inflated beta model.
 ```{r}
 # Intercept-only model for continuous outcome:
 mdl_null_similarity <- brm(
-  formula = cosine_similarity ~ 1 + (1 | dyad/participant_ID) + (1 | concept),
+  # Main formula for the beta part (μ)
+  bf(cosine_similarity ~ 1 + (1 | dyad/participant_ID) + (1 | concept)) +
+  # Explicit intercept-only subformulas for the other parameters:
+  bf(phi ~ 1) +
+  bf(zoi ~ 1) +
+  bf(coi ~ 1),  # coi is fixed at 1, so set this via a constant.
   data = df,
   family = zero_one_inflated_beta(),
   prior = c(
-    prior(normal(0, 5), class = "Intercept"),
-    prior(normal(0, 2), class = "sd")
+    # For the main mu parameter:
+    prior(normal(0, 5), class = "Intercept", resp = "cosine_similarity"),
+    prior(normal(0, 2), class = "sd", resp = "cosine_similarity"),
+    # Priors for the other distributional parameters:
+    prior(normal(0, 5), class = "Intercept", dpar = "phi"),
+    prior(normal(0, 5), class = "Intercept", dpar = "zoi"),
+    # to fix coi to 1, set a very tight prior:
+    prior(normal(1, 0.01), class = "Intercept", dpar = "coi")
   ),
   cores = 4,
   chains = 4,
@@ -497,7 +520,14 @@ Summarize the model: Check parameter estimates, Rhat values
 
 ```{r}
 summary(mdl_null_similarity)
+
+back_transform_zoib(
+  fixef(mdl_null_similarity, dpar = "mu")["Intercept", "Estimate"],
+  fixef(mdl_null_similarity, dpar = "zoi")["Intercept", "Estimate"]
+)
 ```
+
+Estimated posterior similarity guessability is `r back_transform_zoib(fixef(mdl_null_similarity, dpar = "mu")["Intercept", "Estimate"], fixef(mdl_null_similarity, dpar = "zoi")["Intercept", "Estimate"])`.
 
 Diagnostic plots.
 
@@ -512,8 +542,6 @@ pp_check(mdl_null_similarity, ndraws = 100)
 
 pp_check(mdl_null_similarity, type = "error_scatter_avg", ndraws = 100)
 ```
-
-Overall binary guessability is XXXXX
 
 #### Group-level effects
 
