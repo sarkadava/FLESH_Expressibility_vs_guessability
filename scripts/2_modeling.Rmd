@@ -369,6 +369,7 @@ mdl_null_binary <- brm(
     # Prior for the standard deviations of the random effects:
     prior(normal(0, 2), class = "sd")
   ),
+  cores = 4,
   chains = 4,
   iter = 10000,
   warmup = 4000,
@@ -458,6 +459,7 @@ mdl_null_similarity <- brm(
     prior(normal(0, 5), class = "Intercept"),
     prior(normal(0, 2), class = "sd")
   ),
+  cores = 4,
   chains = 4,
   iter = 10000,
   warmup = 4000,
@@ -548,6 +550,7 @@ mdl_H1_binary <- brm(
     prior(normal(0, 1), class = "b"),        # Prior for expressibility
     prior(normal(0, 2), class = "sd")
   ),
+  cores = 4,
   chains = 4,
   iter = 10000,
   warmup = 4000,
@@ -622,6 +625,7 @@ mdl_H1_similarity <- brm(
     prior(normal(0, 2), class = "sd"),
     prior(beta(1, 1), class = "zoi")
   ),
+  cores = 4,
   chains = 4,
   iter = 10000,
   warmup = 4000,
@@ -691,6 +695,7 @@ model_H2_poisson <- brm(
     prior(normal(0, 1), class = "b"),        # Prior for expressibility
     prior(normal(0, 2), class = "sd")
   ),
+  cores = 4,
   chains = 4,
   iter = 4000,
   warmup = 4000,
@@ -753,6 +758,7 @@ mdl_H3_binary <- brm(
     prior(normal(0, 1), class = "b"),        # Prior for exp_part
     prior(normal(0, 2), class = "sd")
   ),
+  cores = 4,
   chains = 4,
   iter = 10000,
   warmup = 4000,
@@ -813,6 +819,7 @@ mdl_H3_similarity <- brm(
     prior(normal(0, 2), class = "sd"),
     prior(beta(1, 1), class = "zoi")
   ),
+  cores = 4,
   chains = 4,
   iter = 10000,
   warmup = 4000,
@@ -875,6 +882,7 @@ mdl_H4_binary <- brm(
     prior(normal(0, 1), class = "b"),        # Prior for modality
     prior(normal(0, 2), class = "sd")
   ),
+  cores = 4,
   chains = 4,
   iter = 10000,
   warmup = 4000,
@@ -935,6 +943,7 @@ mdl_H4_similarity <- brm(
     prior(normal(0, 2), class = "sd"),
     prior(beta(1, 1), class = "zoi")
   ),
+  cores = 4,
   chains = 4,
   iter = 10000,
   warmup = 4000,
