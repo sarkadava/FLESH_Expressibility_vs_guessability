@@ -63,7 +63,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 8,target,0,regen,gebaren,regen,0,10_2,2,10,1,rain,1.0,1,0.729078471280972,environment,10_2_trial_7_p0_regen_gebaren_c0_final.avi
 9,target,0,verdrietig,gebaren,huilen,0,10_2,2,10,1,sad,0.695,0,0.816931671134317,valence,10_2_trial_8_p0_verdrietig_gebaren_c0_final.avi
 10,target,0,verdrietig,gebaren,verdrietig,1,10_2,2,10,1,sad,1.0,1,0.816931671134317,valence,10_2_trial_9_p0_verdrietig_gebaren_c1_final.avi
-11,target,0,langzaam,gebaren,slowmotion,0,10_2,2,10,1,slow,0.9107000000000001,0,0.689425946655567,manner,10_2_trial_10_p0_langzaam_gebaren_c0_final.avi
+11,target,0,langzaam,gebaren,slowmotion,0,10_2,2,10,1,slow,0.90335,0,0.689425946655567,manner,10_2_trial_10_p0_langzaam_gebaren_c0_final.avi
 12,target,0,langzaam,gebaren,joggen,1,10_2,2,10,1,slow,0.612,0,0.689425946655567,manner,10_2_trial_11_p0_langzaam_gebaren_c1_final.avi
 13,target,0,langzaam,gebaren,langzaam,2,10_2,2,10,1,slow,1.0,1,0.689425946655567,manner,10_2_trial_12_p0_langzaam_gebaren_c2_final.avi
 14,target,0,weten,gebaren,denken,0,10_2,2,10,1,to know,0.816,0,0.506590701964198,cognitive,10_2_trial_13_p0_weten_gebaren_c0_final.avi
@@ -138,7 +138,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 83,target,0,springen,geluiden,scannen,1,10_2,2,10,1,to jump,0.519,0,0.343503131163236,locomotion,10_2_trial_82_p0_springen_geluiden_c1_final.avi
 84,target,0,springen,geluiden,gitaar,2,10_2,2,10,1,to jump,0.47,0,0.343503131163236,locomotion,10_2_trial_83_p0_springen_geluiden_c2_final.avi
 85,practice,1,glimlach,geluiden,giechelen,0,10_2,2,10,2,smile,0.781,0,,,10_2_pr_84_p1_glimlach_geluiden_c0_final.avi
-86,practice,1,glimlach,geluiden,catcallen,1,10_2,2,10,2,smile,0.57145,0,,,10_2_pr_85_p1_glimlach_geluiden_c1_final.avi
+86,practice,1,glimlach,geluiden,catcallen,1,10_2,2,10,2,smile,0.56665,0,,,10_2_pr_85_p1_glimlach_geluiden_c1_final.avi
 87,practice,1,glimlach,geluiden,begroeten,2,10_2,2,10,2,smile,0.617,0,,,10_2_pr_86_p1_glimlach_geluiden_c2_final.avi
 88,practice,1,sneeuw,geluiden,omweer,0,10_2,2,10,2,snow,0.69,0,,,10_2_pr_87_p1_sneeuw_geluiden_c0_final.avi
 89,practice,1,sneeuw,geluiden,regen,1,10_2,2,10,2,snow,0.727,0,,,10_2_pr_88_p1_sneeuw_geluiden_c1_final.avi
@@ -174,7 +174,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 14,target,1,klein,combinatie,krimpen,0,11_1,1,11,4,small,0.64,0,0.779274600156361,quantity,11_1_trial_13_p1_klein_combinatie_final.avi
 15,target,1,sterk,combinatie,sterk,0,11_1,1,11,4,strong,1.0,1,0.82173351174681,animate,11_1_trial_14_p1_sterk_combinatie_final.avi
 16,target,1,blazen,combinatie,blazen,0,11_1,1,11,4,to blow,1.0,1,0.771810542050373,vocal_oral,11_1_trial_15_p1_blazen_combinatie_final.avi
-17,target,1,slaan,combinatie,highfive,0,11_1,1,11,4,to hit,0.77145,0,0.794014980882957,manual,11_1_trial_16_p1_slaan_combinatie_final.avi
+17,target,1,slaan,combinatie,highfive,0,11_1,1,11,4,to hit,0.76,0,0.794014980882957,manual,11_1_trial_16_p1_slaan_combinatie_final.avi
 18,target,1,weten,combinatie,idee,0,11_1,1,11,4,to know,0.646,0,0.561280966931274,cognitive,11_1_trial_17_p1_weten_combinatie_final.avi
 19,practice,0,gek,gebaren,gek,0,11_1,1,11,3,crazy,1.0,1,,,11_1_pr_18_p0_gek_gebaren_final.avi
 20,practice,0,olifant,gebaren,olifant,0,11_1,1,11,3,elephant,1.0,1,,,11_1_pr_19_p0_olifant_gebaren_final.avi
@@ -228,7 +228,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 14,target,0,man,geluiden,boos,1,11_2,2,11,3,male,0.558,0,0.422189612157541,animate,11_2_trial_13_p0_man_geluiden_c1_final.avi
 15,target,0,man,geluiden,man,2,11_2,2,11,3,male,1.0,1,0.422189612157541,animate,11_2_trial_14_p0_man_geluiden_c2_final.avi
 16,target,0,verdrietig,geluiden,huilen,0,11_2,2,11,3,sad,0.695,0,0.746777577338304,valence,11_2_trial_15_p0_verdrietig_geluiden_c0_final.avi
-17,target,0,verdrietig,geluiden,sniffen,1,11_2,2,11,3,sad,0.76785,0,0.746777577338304,valence,11_2_trial_16_p0_verdrietig_geluiden_c1_final.avi
+17,target,0,verdrietig,geluiden,sniffen,1,11_2,2,11,3,sad,0.76,0,0.746777577338304,valence,11_2_trial_16_p0_verdrietig_geluiden_c1_final.avi
 18,target,0,verdrietig,geluiden,verdrietig,2,11_2,2,11,3,sad,1.0,1,0.746777577338304,valence,11_2_trial_17_p0_verdrietig_geluiden_c2_final.avi
 19,target,0,rennen,geluiden,rennen,0,11_2,2,11,3,to run,1.0,1,0.336019187014838,locomotion,11_2_trial_18_p0_rennen_geluiden_c0_final.avi
 20,target,0,gooien,geluiden,gooien,0,11_2,2,11,3,to throw,1.0,1,0.32044193552744,manual,11_2_trial_19_p0_gooien_geluiden_c0_final.avi
@@ -277,7 +277,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 63,target,1,luidruchtig,combinatie,roepen,1,11_2,2,11,4,loud,0.653,0,0.639905020121821,auditory,11_2_trial_62_p1_luidruchtig_combinatie_c1_final.avi
 64,target,1,luidruchtig,combinatie,aanvallen,2,11_2,2,11,4,loud,0.533,0,0.639905020121821,auditory,11_2_trial_63_p1_luidruchtig_combinatie_c2_final.avi
 65,target,1,berg,combinatie,klimmen,0,11_2,2,11,4,mountain,0.704,0,0.63512643878935,environment,11_2_trial_64_p1_berg_combinatie_c0_final.avi
-66,target,1,berg,combinatie,bergwandeling,1,11_2,2,11,4,mountain,0.8392999999999999,0,0.63512643878935,environment,11_2_trial_65_p1_berg_combinatie_c1_final.avi
+66,target,1,berg,combinatie,bergwandeling,1,11_2,2,11,4,mountain,0.82665,0,0.63512643878935,environment,11_2_trial_65_p1_berg_combinatie_c1_final.avi
 67,target,1,berg,combinatie,berg,2,11_2,2,11,4,mountain,1.0,1,0.63512643878935,environment,11_2_trial_66_p1_berg_combinatie_c2_final.avi
 68,target,1,dik,combinatie,dik,0,11_2,2,11,4,thick,1.0,1,0.770642312607539,quantity,11_2_trial_67_p1_dik_combinatie_c0_final.avi
 69,target,1,vechten,combinatie,vechten,0,11_2,2,11,4,to fight,1.0,1,0.820194675119722,survival,11_2_trial_68_p1_vechten_combinatie_c0_final.avi
@@ -315,7 +315,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 101,target,1,ik,gebaren,ikzelf,2,11_2,2,11,4,I,0.923,0,0.696928502541587,social,11_2_trial_100_p1_ik_gebaren_c2_final.avi
 102,target,1,dood,gebaren,dood,0,11_2,2,11,4,dead,1.0,1,0.75602172047801,animate,11_2_trial_101_p1_dood_gebaren_c0_final.avi
 103,target,1,ver,gebaren,kijken,0,11_2,2,11,4,far,0.584,0,0.577545048933384,spatial,11_2_trial_102_p1_ver_gebaren_c0_final.avi
-104,target,1,ver,gebaren,ver weg,1,11_2,2,11,4,far,0.9,0,0.577545048933384,spatial,11_2_trial_103_p1_ver_gebaren_c1_final.avi
+104,target,1,ver,gebaren,ver weg,1,11_2,2,11,4,far,0.88335,0,0.577545048933384,spatial,11_2_trial_103_p1_ver_gebaren_c1_final.avi
 105,target,1,vis,gebaren,vis,0,11_2,2,11,4,fish,1.0,1,0.69659625199764,animal,11_2_trial_104_p1_vis_gebaren_c0_final.avi
 106,target,1,vlieg,gebaren,sprenkelen,0,11_2,2,11,4,fly,0.576,0,0.59811289452599,animal,11_2_trial_105_p1_vlieg_gebaren_c0_final.avi
 107,target,1,vlieg,gebaren,zweven,1,11_2,2,11,4,fly,0.738,0,0.59811289452599,animal,11_2_trial_106_p1_vlieg_gebaren_c1_final.avi
@@ -357,7 +357,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 32,target,1,klein,geluiden,,0,12_1,1,12,6,small,0.529,0,0.297645530994546,quantity,12_1_trial_31_p1_klein_geluiden_final.avi
 33,target,1,piepen,geluiden,alarm,0,12_1,1,12,6,squeak,0.668,0,0.74489926936724,auditory,12_1_trial_32_p1_piepen_geluiden_final.avi
 34,target,1,sterk,geluiden,leeuw,0,12_1,1,12,6,strong,0.576,0,0.408761111306824,animate,12_1_trial_33_p1_sterk_geluiden_final.avi
-35,target,1,ademen,geluiden,buiten adem,0,12_1,1,12,6,to breathe,0.77145,0,0.784779073219606,olfactory,12_1_trial_34_p1_ademen_geluiden_final.avi
+35,target,1,ademen,geluiden,buiten adem,0,12_1,1,12,6,to breathe,0.76,0,0.784779073219606,olfactory,12_1_trial_34_p1_ademen_geluiden_final.avi
 36,target,1,lopen,geluiden,blazen,0,12_1,1,12,6,to walk,0.575,0,0.319057764809126,locomotion,12_1_trial_35_p1_lopen_geluiden_final.avi
 37,practice,0,olifant,combinatie,olifant,0,12_1,1,12,5,elephant,1.0,1,,,12_1_pr_36_p0_olifant_combinatie_final.avi
 38,practice,0,snijden,combinatie,snijden,0,12_1,1,12,5,to cut,1.0,1,,,12_1_pr_37_p0_snijden_combinatie_final.avi
@@ -450,7 +450,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 71,target,1,hoorn,geluiden,trombone,2,12_2,2,12,6,horn,0.76,0,0.612503914010408,other,12_2_trial_70_p1_hoorn_geluiden_c2_final.avi
 72,target,1,oud,geluiden,ziek,0,12_2,2,12,6,old,0.568,0,0.310336292435631,time,12_2_trial_71_p1_oud_geluiden_c0_final.avi
 73,target,1,oud,geluiden,verbaast,1,12_2,2,12,6,old,0.494,0,0.310336292435631,time,12_2_trial_72_p1_oud_geluiden_c1_final.avi
-74,target,1,oud,geluiden,wakker worden,2,12_2,2,12,6,old,0.54285,0,0.310336292435631,time,12_2_trial_73_p1_oud_geluiden_c2_final.avi
+74,target,1,oud,geluiden,wakker worden,2,12_2,2,12,6,old,0.54,0,0.310336292435631,time,12_2_trial_73_p1_oud_geluiden_c2_final.avi
 75,target,1,ziek,geluiden,ziek,0,12_2,2,12,6,sick,1.0,1,0.548898090158061,animate,12_2_trial_74_p1_ziek_geluiden_c0_final.avi
 76,target,1,kruipen,geluiden,baby,0,12_2,2,12,6,to crawl,0.523,0,0.267089158391543,locomotion,12_2_trial_75_p1_kruipen_geluiden_c0_final.avi
 77,target,1,kruipen,geluiden,brabbelen,1,12_2,2,12,6,to crawl,0.571,0,0.267089158391543,locomotion,12_2_trial_76_p1_kruipen_geluiden_c1_final.avi
@@ -544,7 +544,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 52,target,1,jagen,gebaren,oorlog,0,13_1,1,13,8,to hunt,0.583,0,0.63343521888758,survival,13_1_trial_51_p1_jagen_gebaren_final.avi
 53,target,1,springen,gebaren,springen,0,13_1,1,13,8,to jump,1.0,1,0.834800108850706,locomotion,13_1_trial_52_p1_springen_gebaren_final.avi
 54,target,1,kotsen,gebaren,overgeven,0,13_1,1,13,8,to vomit,0.887,0,0.802266372635419,gustatory,13_1_trial_53_p1_kotsen_gebaren_final.avi
-1,practice,0,telefoon,geluiden,ringtoon,0,13_2,2,13,7,telephone,0.8107,0,,,13_2_pr_0_p0_telefoon_geluiden_c0_final.avi
+1,practice,0,telefoon,geluiden,ringtoon,0,13_2,2,13,7,telephone,0.79665,0,,,13_2_pr_0_p0_telefoon_geluiden_c0_final.avi
 2,practice,0,telefoon,geluiden,telefoon,1,13_2,2,13,7,telephone,1.0,1,,,13_2_pr_1_p0_telefoon_geluiden_c1_final.avi
 3,practice,0,zwaaien,geluiden,wind,0,13_2,2,13,7,to wave,0.598,0,,,13_2_pr_2_p0_zwaaien_geluiden_c0_final.avi
 4,practice,0,zwaaien,geluiden,spugen,1,13_2,2,13,7,to wave,0.552,0,,,13_2_pr_3_p0_zwaaien_geluiden_c1_final.avi
@@ -639,7 +639,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 93,target,0,geven,combinatie,geven,0,13_2,2,13,7,to give,1.0,1,0.65119202306575,manual,13_2_trial_92_p0_geven_combinatie_c0_final.avi
 94,practice,1,klok,combinatie,klok,0,13_2,2,13,8,clock,1.0,1,,,13_2_pr_93_p1_klok_combinatie_c0_final.avi
 95,practice,1,eend,combinatie,eend,0,13_2,2,13,8,duck,1.0,1,,,13_2_pr_94_p1_eend_combinatie_c0_final.avi
-96,target,1,kind,combinatie,moedergans,0,13_2,2,13,8,child,0.6393,0,0.595086558643404,social,13_2_trial_95_p1_kind_combinatie_c0_final.avi
+96,target,1,kind,combinatie,moedergans,0,13_2,2,13,8,child,0.63335,0,0.595086558643404,social,13_2_trial_95_p1_kind_combinatie_c0_final.avi
 97,target,1,kind,combinatie,kind,1,13_2,2,13,8,child,1.0,1,0.595086558643404,social,13_2_trial_96_p1_kind_combinatie_c1_final.avi
 98,target,1,vrouw,combinatie,irritant,0,13_2,2,13,8,female,0.519,0,0.656370403148978,animate,13_2_trial_97_p1_vrouw_combinatie_c0_final.avi
 99,target,1,vrouw,combinatie,meisje,1,13_2,2,13,8,female,0.807,0,0.656370403148978,animate,13_2_trial_98_p1_vrouw_combinatie_c1_final.avi
@@ -650,7 +650,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 104,target,1,regen,combinatie,regen,0,13_2,2,13,8,rain,1.0,1,0.719579068930045,environment,13_2_trial_103_p1_regen_combinatie_c0_final.avi
 105,target,1,zwemmen,combinatie,zwemmen,0,13_2,2,13,8,to swim,1.0,1,0.808464019729012,locomotion,13_2_trial_104_p1_zwemmen_combinatie_c0_final.avi
 106,target,1,wind,combinatie,raken,0,13_2,2,13,8,wind,0.516,0,0.641802506189562,environment,13_2_trial_105_p1_wind_combinatie_c0_final.avi
-107,target,1,wind,combinatie,föhnen,1,13_2,2,13,8,wind,0.78215,0,0.641802506189562,environment,13_2_trial_106_p1_wind_combinatie_c1_final.avi
+107,target,1,wind,combinatie,föhnen,1,13_2,2,13,8,wind,0.77,0,0.641802506189562,environment,13_2_trial_106_p1_wind_combinatie_c1_final.avi
 108,target,1,wind,combinatie,wind,2,13_2,2,13,8,wind,1.0,1,0.641802506189562,environment,13_2_trial_107_p1_wind_combinatie_c2_final.avi
 1,practice,0,snijden,combinatie,zagen,0,14_1,1,14,9,to cut,0.642,0,,,14_1_pr_0_p0_snijden_combinatie_final.avi
 2,practice,0,rijk,combinatie,uitgeven,0,14_1,1,14,9,rich,0.542,0,,,14_1_pr_1_p0_rijk_combinatie_final.avi
@@ -756,7 +756,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 48,practice,1,telefoon,gebaren,telefoon,1,14_2,2,14,10,telephone,1.0,1,,,14_2_pr_47_p1_telefoon_gebaren_c1_final.avi
 49,target,1,bitter,gebaren,vies,0,14_2,2,14,10,bitter,0.708,0,0.292422929920138,gustatory,14_2_trial_48_p1_bitter_gebaren_c0_final.avi
 50,target,1,bitter,gebaren,zuur,1,14_2,2,14,10,bitter,0.791,0,0.292422929920138,gustatory,14_2_trial_49_p1_bitter_gebaren_c1_final.avi
-51,target,1,bitter,gebaren,vies eten,2,14_2,2,14,10,bitter,0.73215,0,0.292422929920138,gustatory,14_2_trial_50_p1_bitter_gebaren_c2_final.avi
+51,target,1,bitter,gebaren,vies eten,2,14_2,2,14,10,bitter,0.72665,0,0.292422929920138,gustatory,14_2_trial_50_p1_bitter_gebaren_c2_final.avi
 52,target,1,koud,gebaren,koud,0,14_2,2,14,10,cold,1.0,1,0.847021849271004,temperature,14_2_trial_51_p1_koud_gebaren_c0_final.avi
 53,target,1,geur,gebaren,bloem,0,14_2,2,14,10,odor,0.607,0,0.580764408529184,olfactory,14_2_trial_52_p1_geur_gebaren_c0_final.avi
 54,target,1,geur,gebaren,ruiken,1,14_2,2,14,10,odor,0.933,0,0.580764408529184,olfactory,14_2_trial_53_p1_geur_gebaren_c1_final.avi
@@ -860,7 +860,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 46,practice,1,koken,combinatie,koken,0,15_1,1,15,12,to cook,1.0,1,,,15_1_pr_45_p1_koken_combinatie_final.avi
 47,practice,1,olifant,combinatie,olifant,0,15_1,1,15,12,elephant,1.0,1,,,15_1_pr_46_p1_olifant_combinatie_final.avi
 48,target,1,ik,combinatie,jijzelf,0,15_1,1,15,12,I,0.789,0,0.689936218632502,social,15_1_trial_47_p1_ik_combinatie_final.avi
-49,target,1,vuur,combinatie,open haard,0,15_1,1,15,12,fire,0.82855,0,0.603966694081322,object,15_1_trial_48_p1_vuur_combinatie_final.avi
+49,target,1,vuur,combinatie,open haard,0,15_1,1,15,12,fire,0.8200000000000001,0,0.603966694081322,object,15_1_trial_48_p1_vuur_combinatie_final.avi
 50,target,1,zwaar,combinatie,bewegen,0,15_1,1,15,12,heavy,0.542,0,0.680855320383285,quantity,15_1_trial_49_p1_zwaar_combinatie_final.avi
 51,target,1,drinken,combinatie,drinken,0,15_1,1,15,12,to drink,1.0,1,0.809230111883697,vocal_oral,15_1_trial_50_p1_drinken_combinatie_final.avi
 52,target,1,vechten,combinatie,boksen,0,15_1,1,15,12,to fight,0.773,0,0.820194675119722,survival,15_1_trial_51_p1_vechten_combinatie_final.avi
@@ -962,13 +962,13 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 94,target,1,kind,gebaren,baby,0,15_2,2,15,12,child,0.881,0,0.561592930943448,social,15_2_trial_93_p1_kind_gebaren_c0_final.avi
 95,target,1,kind,gebaren,peuter,1,15_2,2,15,12,child,0.916,0,0.561592930943448,social,15_2_trial_94_p1_kind_gebaren_c1_final.avi
 96,target,1,kind,gebaren,kind,2,15_2,2,15,12,child,1.0,1,0.561592930943448,social,15_2_trial_95_p1_kind_gebaren_c2_final.avi
-97,target,1,ver,gebaren,ver weg,0,15_2,2,15,12,far,0.9,0,0.577545048933384,spatial,15_2_trial_96_p1_ver_gebaren_c0_final.avi
+97,target,1,ver,gebaren,ver weg,0,15_2,2,15,12,far,0.88335,0,0.577545048933384,spatial,15_2_trial_96_p1_ver_gebaren_c0_final.avi
 98,target,1,vis,gebaren,slang,0,15_2,2,15,12,fish,0.606,0,0.69659625199764,animal,15_2_trial_97_p1_vis_gebaren_c0_final.avi
 99,target,1,vis,gebaren,kronkelen,1,15_2,2,15,12,fish,0.517,0,0.69659625199764,animal,15_2_trial_98_p1_vis_gebaren_c1_final.avi
 100,target,1,vis,gebaren,zee,2,15_2,2,15,12,fish,0.749,0,0.69659625199764,animal,15_2_trial_99_p1_vis_gebaren_c2_final.avi
 101,target,1,regen,gebaren,regen,0,15_2,2,15,12,rain,1.0,1,0.729078471280972,environment,15_2_trial_100_p1_regen_gebaren_c0_final.avi
 102,target,1,piepen,gebaren,kip,0,15_2,2,15,12,squeak,0.565,0,0.329523830267451,auditory,15_2_trial_101_p1_piepen_gebaren_c0_final.avi
-103,target,1,piepen,gebaren,kuikelen,1,15_2,2,15,12,squeak,0.64285,0,0.329523830267451,auditory,15_2_trial_102_p1_piepen_gebaren_c1_final.avi
+103,target,1,piepen,gebaren,kuikelen,1,15_2,2,15,12,squeak,0.63335,0,0.329523830267451,auditory,15_2_trial_102_p1_piepen_gebaren_c1_final.avi
 104,target,1,piepen,gebaren,kwaken,2,15_2,2,15,12,squeak,0.672,0,0.329523830267451,auditory,15_2_trial_103_p1_piepen_gebaren_c2_final.avi
 105,target,1,vangen,gebaren,vangen,0,15_2,2,15,12,to catch,1.0,1,0.747603541088915,manual,15_2_trial_104_p1_vangen_gebaren_c0_final.avi
 1,practice,0,bloem,combinatie,kaars,0,16_1,1,16,13,flower,0.603,0,,,16_1_pr_0_p0_bloem_combinatie_final.avi
@@ -1034,7 +1034,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 7,target,0,springen,combinatie,springen,0,16_2,2,16,13,to jump,1.0,1,0.814537922310332,locomotion,16_2_trial_6_p0_springen_combinatie_c0_final.avi
 8,target,0,weten,combinatie,weten,0,16_2,2,16,13,to know,1.0,1,0.561280966931274,cognitive,16_2_trial_7_p0_weten_combinatie_c0_final.avi
 9,target,0,gooien,combinatie,slaan,0,16_2,2,16,13,to throw,0.732,0,0.803268146536285,manual,16_2_trial_8_p0_gooien_combinatie_c0_final.avi
-10,target,0,gooien,combinatie,highfive,1,16_2,2,16,13,to throw,0.59285,0,0.803268146536285,manual,16_2_trial_9_p0_gooien_combinatie_c1_final.avi
+10,target,0,gooien,combinatie,highfive,1,16_2,2,16,13,to throw,0.58665,0,0.803268146536285,manual,16_2_trial_9_p0_gooien_combinatie_c1_final.avi
 11,target,0,gooien,combinatie,dunken,2,16_2,2,16,13,to throw,0.639,0,0.803268146536285,manual,16_2_trial_10_p0_gooien_combinatie_c2_final.avi
 12,target,0,water,combinatie,zuipen,0,16_2,2,16,13,water,0.664,0,0.574876010515767,environment,16_2_trial_11_p0_water_combinatie_c0_final.avi
 13,target,0,water,combinatie,drinken,1,16_2,2,16,13,water,0.692,0,0.574876010515767,environment,16_2_trial_12_p0_water_combinatie_c1_final.avi
@@ -1102,7 +1102,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 75,practice,0,sneeuw,geluiden,vrolijk,2,16_2,2,16,13,snow,0.573,0,,,16_2_pr_74_p0_sneeuw_geluiden_c2_final.avi
 76,target,0,ei,geluiden,kip,0,16_2,2,16,13,egg,0.77,0,0.286021122209493,object,16_2_trial_75_p0_ei_geluiden_c0_final.avi
 77,target,0,ei,geluiden,haan,1,16_2,2,16,13,egg,0.688,0,0.286021122209493,object,16_2_trial_76_p0_ei_geluiden_c1_final.avi
-78,target,0,ei,geluiden,kukelen,2,16_2,2,16,13,egg,0.73215,0,0.286021122209493,object,16_2_trial_77_p0_ei_geluiden_c2_final.avi
+78,target,0,ei,geluiden,kukelen,2,16_2,2,16,13,egg,0.71665,0,0.286021122209493,object,16_2_trial_77_p0_ei_geluiden_c2_final.avi
 79,target,0,zwaar,geluiden,zuchten,0,16_2,2,16,13,heavy,0.602,0,0.38282540003767,quantity,16_2_trial_78_p0_zwaar_geluiden_c0_final.avi
 80,target,0,zwaar,geluiden,moe,1,16_2,2,16,13,heavy,0.658,0,0.38282540003767,quantity,16_2_trial_79_p0_zwaar_geluiden_c1_final.avi
 81,target,0,zwaar,geluiden,zuchten,2,16_2,2,16,13,heavy,0.602,0,0.38282540003767,quantity,16_2_trial_80_p0_zwaar_geluiden_c2_final.avi
@@ -1136,7 +1136,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 109,target,1,huilen,geluiden,ruiken,0,16_2,2,16,14,to cry,0.588,0,0.822727134099333,vocal_oral,16_2_trial_108_p1_huilen_geluiden_c0_final.avi
 110,target,1,huilen,geluiden,huilen,1,16_2,2,16,14,to cry,1.0,1,0.822727134099333,vocal_oral,16_2_trial_109_p1_huilen_geluiden_c1_final.avi
 111,target,1,horen,geluiden,lekker,0,16_2,2,16,14,to hear,0.56,0,0.293526913460625,auditory,16_2_trial_110_p1_horen_geluiden_c0_final.avi
-112,target,1,horen,geluiden,huh,1,16_2,2,16,14,to hear,0.65715,0,0.293526913460625,auditory,16_2_trial_111_p1_horen_geluiden_c1_final.avi
+112,target,1,horen,geluiden,huh,1,16_2,2,16,14,to hear,0.64665,0,0.293526913460625,auditory,16_2_trial_111_p1_horen_geluiden_c1_final.avi
 113,target,1,horen,geluiden,zingen,2,16_2,2,16,14,to hear,0.648,0,0.293526913460625,auditory,16_2_trial_112_p1_horen_geluiden_c2_final.avi
 114,target,1,slaan,geluiden,schieten,0,16_2,2,16,14,to hit,0.734,0,0.582960821716634,manual,16_2_trial_113_p1_slaan_geluiden_c0_final.avi
 115,target,1,slaan,geluiden,heet,1,16_2,2,16,14,to hit,0.555,0,0.582960821716634,manual,16_2_trial_114_p1_slaan_geluiden_c1_final.avi
@@ -1207,7 +1207,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 10,target,0,niet,gebaren,niet,2,17_2,2,17,15,not,1.0,1,0.546206866167494,logical,17_2_trial_9_p0_niet_gebaren_c2_final.avi
 11,target,0,stil,gebaren,stilte,0,17_2,2,17,15,silent,0.896,0,0.818566029243692,auditory,17_2_trial_10_p0_stil_gebaren_c0_final.avi
 12,target,0,stil,gebaren,stiller,1,17_2,2,17,15,silent,1.0,0,0.818566029243692,auditory,17_2_trial_11_p0_stil_gebaren_c1_final.avi
-13,target,0,stil,gebaren,ssst,2,17_2,2,17,15,silent,0.8893,0,0.818566029243692,auditory,17_2_trial_12_p0_stil_gebaren_c2_final.avi
+13,target,0,stil,gebaren,ssst,2,17_2,2,17,15,silent,0.87665,0,0.818566029243692,auditory,17_2_trial_12_p0_stil_gebaren_c2_final.avi
 14,target,0,zuur,gebaren,zuur,0,17_2,2,17,15,sour,1.0,1,0.582381884483062,gustatory,17_2_trial_13_p0_zuur_gebaren_c0_final.avi
 15,target,0,ademen,gebaren,ademhalen,0,17_2,2,17,15,to breathe,0.994,0,0.781560751401395,olfactory,17_2_trial_14_p0_ademen_gebaren_c0_final.avi
 16,target,0,weten,gebaren,slim,0,17_2,2,17,15,to know,0.606,0,0.506590701964198,cognitive,17_2_trial_15_p0_weten_gebaren_c0_final.avi
@@ -1250,7 +1250,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 53,target,0,vliegen,geluiden,strand,1,17_2,2,17,15,to fly,0.507,0,0.451697867828672,locomotion,17_2_trial_52_p0_vliegen_geluiden_c1_final.avi
 54,target,0,vliegen,geluiden,vuurwerk,2,17_2,2,17,15,to fly,0.585,0,0.451697867828672,locomotion,17_2_trial_53_p0_vliegen_geluiden_c2_final.avi
 55,target,0,gooien,geluiden,toeter,0,17_2,2,17,15,to throw,0.493,0,0.32044193552744,manual,17_2_trial_54_p0_gooien_geluiden_c0_final.avi
-56,target,0,gooien,geluiden,startsignaal,1,17_2,2,17,15,to throw,0.6107,0,0.32044193552744,manual,17_2_trial_55_p0_gooien_geluiden_c1_final.avi
+56,target,0,gooien,geluiden,startsignaal,1,17_2,2,17,15,to throw,0.60335,0,0.32044193552744,manual,17_2_trial_55_p0_gooien_geluiden_c1_final.avi
 57,target,0,gooien,geluiden,oorlog,2,17_2,2,17,15,to throw,0.516,0,0.32044193552744,manual,17_2_trial_56_p0_gooien_geluiden_c2_final.avi
 58,target,0,wind,geluiden,wind,0,17_2,2,17,15,wind,1.0,1,0.609732905825591,environment,17_2_trial_57_p0_wind_geluiden_c0_final.avi
 59,practice,1,glimlach,geluiden,afvragen,0,17_2,2,17,16,smile,0.55,0,,,17_2_pr_58_p1_glimlach_geluiden_c0_final.avi
@@ -1470,7 +1470,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 105,target,1,water,combinatie,waterval,0,18_2,2,18,18,water,0.727,0,0.574876010515767,environment,18_2_trial_104_p1_water_combinatie_c0_final.avi
 106,target,1,water,combinatie,kraan,1,18_2,2,18,18,water,0.708,0,0.574876010515767,environment,18_2_trial_105_p1_water_combinatie_c1_final.avi
 107,target,1,water,combinatie,water,2,18_2,2,18,18,water,1.0,1,0.574876010515767,environment,18_2_trial_106_p1_water_combinatie_c2_final.avi
-1,practice,0,snijden,geluiden,banden oppompen,0,19_1,1,19,19,to cut,0.5107,0,,,19_1_pr_0_p0_snijden_geluiden_final.avi
+1,practice,0,snijden,geluiden,banden oppompen,0,19_1,1,19,19,to cut,0.51,0,,,19_1_pr_0_p0_snijden_geluiden_final.avi
 2,practice,0,rijk,geluiden,springen,0,19_1,1,19,19,rich,0.527,0,,,19_1_pr_1_p0_rijk_geluiden_final.avi
 3,target,0,koud,geluiden,koud,0,19_1,1,19,19,cold,1.0,1,0.744751221657995,temperature,19_1_trial_2_p0_koud_geluiden_final.avi
 4,target,0,hond,geluiden,hond,0,19_1,1,19,19,dog,1.0,1,0.846022321803246,animal,19_1_trial_3_p0_hond_geluiden_final.avi
@@ -1547,7 +1547,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 21,target,0,springen,geluiden,springen,0,19_2,2,19,19,to jump,1.0,1,0.343503131163236,locomotion,19_2_trial_20_p0_springen_geluiden_c0_final.avi
 22,practice,1,juichen,geluiden,juichen,0,19_2,2,19,20,to cheer,1.0,1,,,19_2_pr_21_p1_juichen_geluiden_c0_final.avi
 23,practice,1,telefoon,geluiden,deurbel,0,19_2,2,19,20,telephone,0.716,0,,,19_2_pr_22_p1_telefoon_geluiden_c0_final.avi
-24,practice,1,telefoon,geluiden,ringtoon,1,19_2,2,19,20,telephone,0.8107,0,,,19_2_pr_23_p1_telefoon_geluiden_c1_final.avi
+24,practice,1,telefoon,geluiden,ringtoon,1,19_2,2,19,20,telephone,0.79665,0,,,19_2_pr_23_p1_telefoon_geluiden_c1_final.avi
 25,practice,1,telefoon,geluiden,bel,2,19_2,2,19,20,telephone,0.718,0,,,19_2_pr_24_p1_telefoon_geluiden_c2_final.avi
 26,target,1,ei,geluiden,kip,0,19_2,2,19,20,egg,0.77,0,0.286021122209493,object,19_2_trial_25_p1_ei_geluiden_c0_final.avi
 27,target,1,ei,geluiden,pikken,1,19_2,2,19,20,egg,0.519,0,0.286021122209493,object,19_2_trial_26_p1_ei_geluiden_c1_final.avi
@@ -1564,7 +1564,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 38,target,1,wind,geluiden,wind,0,19_2,2,19,20,wind,1.0,1,0.609732905825591,environment,19_2_trial_37_p1_wind_geluiden_c0_final.avi
 39,practice,0,fiets,combinatie,fietsen,0,19_2,2,19,19,bicycle,0.975,0,,,19_2_pr_38_p0_fiets_combinatie_c0_final.avi
 40,practice,0,fiets,combinatie,bellen,1,19_2,2,19,19,bicycle,0.518,0,,,19_2_pr_39_p0_fiets_combinatie_c1_final.avi
-41,practice,0,fiets,combinatie,fietsbel,2,19_2,2,19,19,bicycle,0.85355,0,,,19_2_pr_40_p0_fiets_combinatie_c2_final.avi
+41,practice,0,fiets,combinatie,fietsbel,2,19_2,2,19,19,bicycle,0.83335,0,,,19_2_pr_40_p0_fiets_combinatie_c2_final.avi
 42,practice,0,bal,combinatie,basketbal,0,19_2,2,19,19,ball,0.847,0,,,19_2_pr_41_p0_bal_combinatie_c0_final.avi
 43,practice,0,bal,combinatie,gooien,1,19_2,2,19,19,ball,0.656,0,,,19_2_pr_42_p0_bal_combinatie_c1_final.avi
 44,practice,0,bal,combinatie,bal,2,19_2,2,19,19,ball,1.0,1,,,19_2_pr_43_p0_bal_combinatie_c2_final.avi
@@ -1591,7 +1591,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 65,target,1,langzaam,combinatie,sloom,0,19_2,2,19,20,slow,0.901,0,0.697044299048591,manner,19_2_trial_64_p1_langzaam_combinatie_c0_final.avi
 66,target,1,dik,combinatie,dik,0,19_2,2,19,20,thick,1.0,1,0.770642312607539,quantity,19_2_trial_65_p1_dik_combinatie_c0_final.avi
 67,target,1,onweer,combinatie,vuurwerk,0,19_2,2,19,20,thunder,0.616,0,0.560816179699852,environment,19_2_trial_66_p1_onweer_combinatie_c0_final.avi
-68,target,1,onweer,combinatie,oud en nieuw,1,19_2,2,19,20,thunder,0.62145,0,0.560816179699852,environment,19_2_trial_67_p1_onweer_combinatie_c1_final.avi
+68,target,1,onweer,combinatie,oud en nieuw,1,19_2,2,19,20,thunder,0.61335,0,0.560816179699852,environment,19_2_trial_67_p1_onweer_combinatie_c1_final.avi
 69,target,1,onweer,combinatie,douche,2,19_2,2,19,20,thunder,0.621,0,0.560816179699852,environment,19_2_trial_68_p1_onweer_combinatie_c2_final.avi
 70,target,1,drinken,combinatie,drinken,0,19_2,2,19,20,to drink,1.0,1,0.809230111883697,vocal_oral,19_2_trial_69_p1_drinken_combinatie_c0_final.avi
 71,target,1,grommen,combinatie,boos,0,19_2,2,19,20,to growl,0.653,0,0.713962417775868,vocal_oral,19_2_trial_70_p1_grommen_combinatie_c0_final.avi
@@ -1617,7 +1617,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 91,practice,1,zwaaien,gebaren,zwaaien,0,19_2,2,19,20,to wave,1.0,1,,,19_2_pr_90_p1_zwaaien_gebaren_c0_final.avi
 92,practice,1,klok,gebaren,klok,0,19_2,2,19,20,clock,1.0,1,,,19_2_pr_91_p1_klok_gebaren_c0_final.avi
 93,target,1,vuur,gebaren,vaas,0,19_2,2,19,20,fire,0.55,0,0.612736156749429,object,19_2_trial_92_p1_vuur_gebaren_c0_final.avi
-94,target,1,vuur,gebaren,open haard,1,19_2,2,19,20,fire,0.82855,0,0.612736156749429,object,19_2_trial_93_p1_vuur_gebaren_c1_final.avi
+94,target,1,vuur,gebaren,open haard,1,19_2,2,19,20,fire,0.8200000000000001,0,0.612736156749429,object,19_2_trial_93_p1_vuur_gebaren_c1_final.avi
 95,target,1,vuur,gebaren,vuur,2,19_2,2,19,20,fire,1.0,1,0.612736156749429,object,19_2_trial_94_p1_vuur_gebaren_c2_final.avi
 96,target,1,man,gebaren,plassen,0,19_2,2,19,20,male,0.535,0,0.578869739327133,animate,19_2_trial_95_p1_man_gebaren_c0_final.avi
 97,target,1,man,gebaren,man,1,19_2,2,19,20,male,1.0,1,0.578869739327133,animate,19_2_trial_96_p1_man_gebaren_c1_final.avi
@@ -1675,7 +1675,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 43,target,0,zuur,geluiden,misselijk,0,1_1,1,1,21,sour,0.648,0,0.361936361379245,gustatory,1_1_trial_42_p0_zuur_geluiden_final.avi
 44,target,0,kruipen,geluiden,roeien,0,1_1,1,1,21,to crawl,0.517,0,0.267089158391543,locomotion,1_1_trial_43_p0_kruipen_geluiden_final.avi
 45,target,0,gooien,geluiden,waaien,0,1_1,1,1,21,to throw,0.656,0,0.32044193552744,manual,1_1_trial_44_p0_gooien_geluiden_final.avi
-46,practice,1,snijden,geluiden,traplopen,0,1_1,1,1,22,to cut,0.55,0,,,1_1_pr_45_p1_snijden_geluiden_final.avi
+46,practice,1,snijden,geluiden,traplopen,0,1_1,1,1,22,to cut,0.54665,0,,,1_1_pr_45_p1_snijden_geluiden_final.avi
 47,practice,1,langzaam,geluiden,wind,0,1_1,1,1,22,slow,0.53,0,0.369492215989784,manner,1_1_pr_46_p1_langzaam_geluiden_final.avi
 48,target,1,ver,geluiden,drinken,0,1_1,1,1,22,far,0.491,0,0.306589745694138,spatial,1_1_trial_47_p1_ver_geluiden_final.avi
 49,target,1,vuur,geluiden,kruipen,0,1_1,1,1,22,fire,0.489,0,0.325215717417947,object,1_1_trial_48_p1_vuur_geluiden_final.avi
@@ -1747,14 +1747,14 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 61,target,0,zout,gebaren,zuur,0,1_2,2,1,21,salt,0.736,0,0.28573045256734,gustatory,1_2_trial_60_p0_zout_gebaren_c0_final.avi
 62,target,0,zout,gebaren,zout,1,1_2,2,1,21,salt,1.0,1,0.28573045256734,gustatory,1_2_trial_61_p0_zout_gebaren_c1_final.avi
 63,target,0,langzaam,gebaren,lopen,0,1_2,2,1,21,slow,0.614,0,0.689425946655567,manner,1_2_trial_62_p0_langzaam_gebaren_c0_final.avi
-64,target,0,langzaam,gebaren,zachtjes lopen,1,1_2,2,1,21,slow,0.78215,0,0.689425946655567,manner,1_2_trial_63_p0_langzaam_gebaren_c1_final.avi
+64,target,0,langzaam,gebaren,zachtjes lopen,1,1_2,2,1,21,slow,0.76665,0,0.689425946655567,manner,1_2_trial_63_p0_langzaam_gebaren_c1_final.avi
 65,target,0,langzaam,gebaren,langzaam,2,1_2,2,1,21,slow,1.0,1,0.689425946655567,manner,1_2_trial_64_p0_langzaam_gebaren_c2_final.avi
-66,target,0,staart,gebaren,wc rol,0,1_2,2,1,21,tail,0.5143,0,0.594711648335829,quantity,1_2_trial_65_p0_staart_gebaren_c0_final.avi
+66,target,0,staart,gebaren,wc rol,0,1_2,2,1,21,tail,0.51665,0,0.594711648335829,quantity,1_2_trial_65_p0_staart_gebaren_c0_final.avi
 67,target,0,staart,gebaren,staart,1,1_2,2,1,21,tail,1.0,1,0.594711648335829,quantity,1_2_trial_66_p0_staart_gebaren_c1_final.avi
 68,target,0,horen,gebaren,doof,0,1_2,2,1,21,to hear,0.581,0,0.755612083056296,auditory,1_2_trial_67_p0_horen_gebaren_c0_final.avi
 69,target,0,horen,gebaren,horen,1,1_2,2,1,21,to hear,1.0,1,0.755612083056296,auditory,1_2_trial_68_p0_horen_gebaren_c1_final.avi
 70,target,0,fluisteren,gebaren,stil,0,1_2,2,1,21,to whisper,0.715,0,0.615289104632194,auditory,1_2_trial_69_p0_fluisteren_gebaren_c0_final.avi
-71,target,0,fluisteren,gebaren,stilte vragen,1,1_2,2,1,21,to whisper,0.78215,0,0.615289104632194,auditory,1_2_trial_70_p0_fluisteren_gebaren_c1_final.avi
+71,target,0,fluisteren,gebaren,stilte vragen,1,1_2,2,1,21,to whisper,0.76665,0,0.615289104632194,auditory,1_2_trial_70_p0_fluisteren_gebaren_c1_final.avi
 72,target,0,fluisteren,gebaren,vertellen,2,1_2,2,1,21,to whisper,0.649,0,0.615289104632194,auditory,1_2_trial_71_p0_fluisteren_gebaren_c2_final.avi
 73,practice,1,bal,gebaren,rondje,0,1_2,2,1,22,ball,0.616,0,,,1_2_pr_72_p1_bal_gebaren_c0_final.avi
 74,practice,1,bal,gebaren,voetbal,1,1_2,2,1,22,ball,0.809,0,,,1_2_pr_73_p1_bal_gebaren_c1_final.avi
@@ -1807,7 +1807,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 121,target,1,eten,combinatie,opeten,0,1_2,2,1,22,to eat,0.89,0,0.799176047935077,vocal_oral,1_2_trial_120_p1_eten_combinatie_c0_final.avi
 122,target,1,eten,combinatie,eten,1,1_2,2,1,22,to eat,1.0,1,0.799176047935077,vocal_oral,1_2_trial_121_p1_eten_combinatie_c1_final.avi
 123,target,1,ruiken,combinatie,ruiken,0,1_2,2,1,22,to smell,1.0,1,0.762309813460577,olfactory,1_2_trial_122_p1_ruiken_combinatie_c0_final.avi
-124,target,1,water,combinatie,regendrank,0,1_2,2,1,22,water,0.6893,0,0.574876010515767,environment,1_2_trial_123_p1_water_combinatie_c0_final.avi
+124,target,1,water,combinatie,regendrank,0,1_2,2,1,22,water,0.68335,0,0.574876010515767,environment,1_2_trial_123_p1_water_combinatie_c0_final.avi
 125,target,1,water,combinatie,beslaan,1,1_2,2,1,22,water,0.544,0,0.574876010515767,environment,1_2_trial_124_p1_water_combinatie_c1_final.avi
 126,target,1,water,combinatie,slaan,2,1_2,2,1,22,water,0.514,0,0.574876010515767,environment,1_2_trial_125_p1_water_combinatie_c2_final.avi
 1,practice,0,olifant,combinatie,olifant,0,20_1,1,20,23,elephant,1.0,1,,,20_1_pr_0_p0_olifant_combinatie_final.avi
@@ -1920,7 +1920,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 54,target,0,hoorn,combinatie,trompet,1,20_2,2,20,23,horn,0.83,0,0.523817227867007,other,20_2_trial_53_p0_hoorn_combinatie_c1_final.avi
 55,target,0,hoorn,combinatie,aankondigen,2,20_2,2,20,23,horn,0.544,0,0.523817227867007,other,20_2_trial_54_p0_hoorn_combinatie_c2_final.avi
 56,target,0,piepen,combinatie,typen,0,20_2,2,20,23,squeak,0.545,0,0.543249319540667,auditory,20_2_trial_55_p0_piepen_combinatie_c0_final.avi
-57,target,0,piepen,combinatie,hoge toon,1,20_2,2,20,23,squeak,0.8785499999999999,0,0.543249319540667,auditory,20_2_trial_56_p0_piepen_combinatie_c1_final.avi
+57,target,0,piepen,combinatie,hoge toon,1,20_2,2,20,23,squeak,0.87,0,0.543249319540667,auditory,20_2_trial_56_p0_piepen_combinatie_c1_final.avi
 58,target,0,piepen,combinatie,pieptoon,2,20_2,2,20,23,squeak,0.752,0,0.543249319540667,auditory,20_2_trial_57_p0_piepen_combinatie_c2_final.avi
 59,target,0,eten,combinatie,eten,0,20_2,2,20,23,to eat,1.0,1,0.799176047935077,vocal_oral,20_2_trial_58_p0_eten_combinatie_c0_final.avi
 60,target,0,staan,combinatie,stevig,0,20_2,2,20,23,to stand,0.61,0,0.588114856958718,locomotion,20_2_trial_59_p0_staan_combinatie_c0_final.avi
@@ -1976,7 +1976,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 1,practice,0,rijk,geluiden,gillen,0,21_1,1,21,25,rich,0.536,0,,,21_1_pr_0_p0_rijk_geluiden_final.avi
 2,practice,0,olifant,geluiden,applaus,0,21_1,1,21,25,elephant,0.493,0,,,21_1_pr_1_p0_olifant_geluiden_final.avi
 3,target,0,groot,geluiden,uitschreeuwen,0,21_1,1,21,25,big,0.537,0,0.35201321754525,quantity,21_1_trial_2_p0_groot_geluiden_final.avi
-4,target,0,koud,geluiden,koud hebben,0,21_1,1,21,25,cold,0.8857,0,0.744751221657995,temperature,21_1_trial_3_p0_koud_geluiden_final.avi
+4,target,0,koud,geluiden,koud hebben,0,21_1,1,21,25,cold,0.88,0,0.744751221657995,temperature,21_1_trial_3_p0_koud_geluiden_final.avi
 5,target,0,hoog,geluiden,verwondering,0,21_1,1,21,25,high,0.507,0,0.312736784773088,auditory,21_1_trial_4_p0_hoog_geluiden_final.avi
 6,target,0,kauwen,geluiden,eten,0,21_1,1,21,25,to chew,0.748,0,0.713509315277749,gustatory,21_1_trial_5_p0_kauwen_geluiden_final.avi
 7,target,0,huilen,geluiden,huilen,0,21_1,1,21,25,to cry,1.0,1,0.822727134099333,vocal_oral,21_1_trial_6_p0_huilen_geluiden_final.avi
@@ -2012,7 +2012,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 37,practice,0,haasten,combinatie,rennen,0,21_1,1,21,25,to hurry,0.678,0,,,21_1_pr_36_p0_haasten_combinatie_final.avi
 38,practice,0,koken,combinatie,koken,0,21_1,1,21,25,to cook,1.0,1,,,21_1_pr_37_p0_koken_combinatie_final.avi
 39,target,0,vis,combinatie,vis,0,21_1,1,21,25,fish,1.0,1,0.741024648680267,animal,21_1_trial_38_p0_vis_combinatie_final.avi
-40,target,0,langzaam,combinatie,slowmotion,0,21_1,1,21,25,slow,0.9107000000000001,0,0.697044299048591,manner,21_1_trial_39_p0_langzaam_combinatie_final.avi
+40,target,0,langzaam,combinatie,slowmotion,0,21_1,1,21,25,slow,0.90335,0,0.697044299048591,manner,21_1_trial_39_p0_langzaam_combinatie_final.avi
 41,target,0,klein,combinatie,klein,0,21_1,1,21,25,small,1.0,1,0.779274600156361,quantity,21_1_trial_40_p0_klein_combinatie_final.avi
 42,target,0,sterk,combinatie,sterk,0,21_1,1,21,25,strong,1.0,1,0.82173351174681,animate,21_1_trial_41_p0_sterk_combinatie_final.avi
 43,target,0,weten,combinatie,bevestigen,0,21_1,1,21,25,to know,0.643,0,0.561280966931274,cognitive,21_1_trial_42_p0_weten_combinatie_final.avi
@@ -2110,7 +2110,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 81,practice,0,zingen,gebaren,zingen,0,21_2,2,21,25,to sing,1.0,1,,,21_2_pr_80_p0_zingen_gebaren_c0_final.avi
 82,target,0,zoemen,gebaren,lawaai,0,21_2,2,21,25,buzz,0.801,0,0.400420365943101,auditory,21_2_trial_81_p0_zoemen_gebaren_c0_final.avi
 83,target,0,zoemen,gebaren,vlieg,1,21_2,2,21,25,buzz,0.592,0,0.400420365943101,auditory,21_2_trial_82_p0_zoemen_gebaren_c1_final.avi
-84,target,0,zoemen,gebaren,wattenstaaf,2,21_2,2,21,25,buzz,0.52145,0,0.400420365943101,auditory,21_2_trial_83_p0_zoemen_gebaren_c2_final.avi
+84,target,0,zoemen,gebaren,wattenstaaf,2,21_2,2,21,25,buzz,0.52,0,0.400420365943101,auditory,21_2_trial_83_p0_zoemen_gebaren_c2_final.avi
 85,target,0,zwaar,gebaren,zwaar,0,21_2,2,21,25,heavy,1.0,1,0.688818480327848,quantity,21_2_trial_84_p0_zwaar_gebaren_c0_final.avi
 86,target,0,bang,gebaren,bang,0,21_2,2,21,25,scared,1.0,1,0.713438710786138,valence,21_2_trial_85_p0_bang_gebaren_c0_final.avi
 87,target,0,scherp,gebaren,pijn,0,21_2,2,21,25,sharp,0.594,0,0.501172040780983,haptic,21_2_trial_86_p0_scherp_gebaren_c0_final.avi
@@ -2143,7 +2143,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 2,practice,0,leeg,geluiden,verbaasd,0,22_1,1,22,27,empty,0.56,0,,,22_1_pr_1_p0_leeg_geluiden_final.avi
 3,target,0,groot,geluiden,lekker,0,22_1,1,22,27,big,0.626,0,0.35201321754525,quantity,22_1_trial_2_p0_groot_geluiden_final.avi
 4,target,0,vuur,geluiden,wind,0,22_1,1,22,27,fire,0.589,0,0.325215717417947,object,22_1_trial_3_p0_vuur_geluiden_final.avi
-5,target,0,vis,geluiden,bubbelen,0,22_1,1,22,27,fish,0.75715,0,0.51844889378327,animal,22_1_trial_4_p0_vis_geluiden_final.avi
+5,target,0,vis,geluiden,bubbelen,0,22_1,1,22,27,fish,0.74665,0,0.51844889378327,animal,22_1_trial_4_p0_vis_geluiden_final.avi
 6,target,0,stil,geluiden,stilte,0,22_1,1,22,27,silent,0.896,0,0.753476033670045,auditory,22_1_trial_5_p0_stil_geluiden_final.avi
 7,target,0,klein,geluiden,muis,0,22_1,1,22,27,small,0.59,0,0.297645530994546,quantity,22_1_trial_6_p0_klein_geluiden_final.avi
 8,target,0,slapen,geluiden,snurken,0,22_1,1,22,27,to sleep,0.797,0,0.735692139606025,survival,22_1_trial_7_p0_slapen_geluiden_final.avi
@@ -2168,7 +2168,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 27,target,0,zuigen,gebaren,roken,0,22_1,1,22,27,to suck,0.674,0,0.641118953574169,vocal_oral,22_1_trial_26_p0_zuigen_gebaren_final.avi
 28,practice,1,koken,gebaren,roeren,0,22_1,1,22,28,to cook,0.66,0,,,22_1_pr_27_p1_koken_gebaren_final.avi
 29,practice,1,rijk,gebaren,geld,0,22_1,1,22,28,rich,0.585,0,,,22_1_pr_28_p1_rijk_gebaren_final.avi
-30,target,1,langzaam,gebaren,slowmotion,0,22_1,1,22,28,slow,0.9107000000000001,0,0.689425946655567,manner,22_1_trial_29_p1_langzaam_gebaren_final.avi
+30,target,1,langzaam,gebaren,slowmotion,0,22_1,1,22,28,slow,0.90335,0,0.689425946655567,manner,22_1_trial_29_p1_langzaam_gebaren_final.avi
 31,target,1,zoet,gebaren,lachen,0,22_1,1,22,28,sweet,0.549,0,0.258150304252129,gustatory,22_1_trial_30_p1_zoet_gebaren_final.avi
 32,target,1,bijten,gebaren,bijten,0,22_1,1,22,28,to bite,1.0,1,0.788344961875328,vocal_oral,22_1_trial_31_p1_bijten_gebaren_final.avi
 33,target,1,verbranden,gebaren,schrikken,0,22_1,1,22,28,to burn,0.544,0,0.557444340806456,other,22_1_trial_32_p1_verbranden_gebaren_final.avi
@@ -2320,7 +2320,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 11,practice,1,koken,combinatie,koken,0,23_1,1,23,30,to cook,1.0,1,,,23_1_pr_10_p1_koken_combinatie_final.avi
 12,target,1,scherp,combinatie,snee,0,23_1,1,23,30,sharp,0.616,0,0.557153125291575,haptic,23_1_trial_11_p1_scherp_combinatie_final.avi
 13,target,1,ziek,combinatie,verkouden,0,23_1,1,23,30,sick,0.64,0,0.716614849190809,animate,23_1_trial_12_p1_ziek_combinatie_final.avi
-14,target,1,langzaam,combinatie,slowmotion,0,23_1,1,23,30,slow,0.9107000000000001,0,0.697044299048591,manner,23_1_trial_13_p1_langzaam_combinatie_final.avi
+14,target,1,langzaam,combinatie,slowmotion,0,23_1,1,23,30,slow,0.90335,0,0.697044299048591,manner,23_1_trial_13_p1_langzaam_combinatie_final.avi
 15,target,1,dik,combinatie,dik,0,23_1,1,23,30,thick,1.0,1,0.770642312607539,quantity,23_1_trial_14_p1_dik_combinatie_final.avi
 16,target,1,huilen,combinatie,huilen,0,23_1,1,23,30,to cry,1.0,1,0.83134459155959,vocal_oral,23_1_trial_15_p1_huilen_combinatie_final.avi
 17,target,1,staan,combinatie,vragen,0,23_1,1,23,30,to stand,0.643,0,0.588114856958718,locomotion,23_1_trial_16_p1_staan_combinatie_final.avi
@@ -2335,7 +2335,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 26,target,0,fluisteren,geluiden,fluisteren,0,23_1,1,23,29,to whisper,1.0,1,0.703341393070909,auditory,23_1_trial_25_p0_fluisteren_geluiden_final.avi
 27,target,0,water,geluiden,water,0,23_1,1,23,29,water,1.0,1,0.500621316131559,environment,23_1_trial_26_p0_water_geluiden_final.avi
 28,practice,1,bloem,geluiden,schattig,0,23_1,1,23,30,flower,0.627,0,,,23_1_pr_27_p1_bloem_geluiden_final.avi
-29,practice,1,haasten,geluiden,buiten adem,0,23_1,1,23,30,to hurry,0.82855,0,,,23_1_pr_28_p1_haasten_geluiden_final.avi
+29,practice,1,haasten,geluiden,buiten adem,0,23_1,1,23,30,to hurry,0.81,0,,,23_1_pr_28_p1_haasten_geluiden_final.avi
 30,target,1,zoemen,geluiden,lekker,0,23_1,1,23,30,buzz,0.535,0,0.716372172073136,auditory,23_1_trial_29_p1_zoemen_geluiden_final.avi
 31,target,1,dood,geluiden,vies,0,23_1,1,23,30,dead,0.534,0,0.423358570613411,animate,23_1_trial_30_p1_dood_geluiden_final.avi
 32,target,1,ver,geluiden,schrikken,0,23_1,1,23,30,far,0.553,0,0.306589745694138,spatial,23_1_trial_31_p1_ver_geluiden_final.avi
@@ -2368,7 +2368,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 5,target,0,vogel,gebaren,vliegen,0,23_2,2,23,29,bird,0.717,0,0.796298864905725,animal,23_2_trial_4_p0_vogel_gebaren_c0_final.avi
 6,target,0,vogel,gebaren,vogel,1,23_2,2,23,29,bird,1.0,1,0.796298864905725,animal,23_2_trial_5_p0_vogel_gebaren_c1_final.avi
 7,target,0,bitter,gebaren,vies,0,23_2,2,23,29,bitter,0.708,0,0.292422929920138,gustatory,23_2_trial_6_p0_bitter_gebaren_c0_final.avi
-8,target,0,bitter,gebaren,vies eten,1,23_2,2,23,29,bitter,0.73215,0,0.292422929920138,gustatory,23_2_trial_7_p0_bitter_gebaren_c1_final.avi
+8,target,0,bitter,gebaren,vies eten,1,23_2,2,23,29,bitter,0.72665,0,0.292422929920138,gustatory,23_2_trial_7_p0_bitter_gebaren_c1_final.avi
 9,target,0,bitter,gebaren,bitter,2,23_2,2,23,29,bitter,1.0,1,0.292422929920138,gustatory,23_2_trial_8_p0_bitter_gebaren_c2_final.avi
 10,target,0,koud,gebaren,koud,0,23_2,2,23,29,cold,1.0,1,0.847021849271004,temperature,23_2_trial_9_p0_koud_gebaren_c0_final.avi
 11,target,0,luidruchtig,gebaren,box,0,23_2,2,23,29,loud,0.576,0,0.618296512390658,auditory,23_2_trial_10_p0_luidruchtig_gebaren_c0_final.avi
@@ -2395,7 +2395,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 32,target,1,springen,gebaren,springen,0,23_2,2,23,30,to jump,1.0,1,0.834800108850706,locomotion,23_2_trial_31_p1_springen_gebaren_c0_final.avi
 33,target,1,likken,gebaren,likken,0,23_2,2,23,30,to lick,1.0,1,0.757301371697859,gustatory,23_2_trial_32_p1_likken_gebaren_c0_final.avi
 34,practice,0,fiets,geluiden,bel,0,23_2,2,23,29,bicycle,0.529,0,,,23_2_pr_33_p0_fiets_geluiden_c0_final.avi
-35,practice,0,fiets,geluiden,fietsbel,1,23_2,2,23,29,bicycle,0.85355,0,,,23_2_pr_34_p0_fiets_geluiden_c1_final.avi
+35,practice,0,fiets,geluiden,fietsbel,1,23_2,2,23,29,bicycle,0.83335,0,,,23_2_pr_34_p0_fiets_geluiden_c1_final.avi
 36,practice,0,fiets,geluiden,alarm,2,23_2,2,23,29,bicycle,0.523,0,,,23_2_pr_35_p0_fiets_geluiden_c2_final.avi
 37,practice,0,telefoon,geluiden,beltoon,0,23_2,2,23,29,telephone,0.836,0,,,23_2_pr_36_p0_telefoon_geluiden_c0_final.avi
 38,practice,0,telefoon,geluiden,telefoon,1,23_2,2,23,29,telephone,1.0,1,,,23_2_pr_37_p0_telefoon_geluiden_c1_final.avi
@@ -2443,7 +2443,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 80,practice,0,geheim,combinatie,juffrouw,1,23_2,2,23,29,secret,0.533,0,,,23_2_pr_79_p0_geheim_combinatie_c1_final.avi
 81,practice,0,geheim,combinatie,optreden,2,23_2,2,23,29,secret,0.48,0,,,23_2_pr_80_p0_geheim_combinatie_c2_final.avi
 82,target,0,hond,combinatie,hond,0,23_2,2,23,29,dog,1.0,1,0.779877846324741,animal,23_2_trial_81_p0_hond_combinatie_c0_final.avi
-83,target,0,zuur,combinatie,shotje,0,23_2,2,23,29,sour,0.65715,0,0.577087113295253,gustatory,23_2_trial_82_p0_zuur_combinatie_c0_final.avi
+83,target,0,zuur,combinatie,shotje,0,23_2,2,23,29,sour,0.64665,0,0.577087113295253,gustatory,23_2_trial_82_p0_zuur_combinatie_c0_final.avi
 84,target,0,zuur,combinatie,zuur,1,23_2,2,23,29,sour,1.0,1,0.577087113295253,gustatory,23_2_trial_83_p0_zuur_combinatie_c1_final.avi
 85,target,0,bijten,combinatie,happen,0,23_2,2,23,29,to bite,0.979,0,0.780811330443828,vocal_oral,23_2_trial_84_p0_bijten_combinatie_c0_final.avi
 86,target,0,bijten,combinatie,kauwen,1,23_2,2,23,29,to bite,0.856,0,0.780811330443828,vocal_oral,23_2_trial_85_p0_bijten_combinatie_c1_final.avi
@@ -2615,7 +2615,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 89,practice,0,fiets,combinatie,wielrenner,1,24_2,2,24,31,bicycle,0.941,0,,,24_2_pr_88_p0_fiets_combinatie_c1_final.avi
 90,practice,0,fiets,combinatie,roeien,2,24_2,2,24,31,bicycle,0.594,0,,,24_2_pr_89_p0_fiets_combinatie_c2_final.avi
 91,target,0,bliksem,combinatie,raket,0,24_2,2,24,31,lightning,0.626,0,0.596218227203866,environment,24_2_trial_90_p0_bliksem_combinatie_c0_final.avi
-92,target,0,bliksem,combinatie,meteor,1,24_2,2,24,31,lightning,0.675,0,0.596218227203866,environment,24_2_trial_91_p0_bliksem_combinatie_c1_final.avi
+92,target,0,bliksem,combinatie,meteor,1,24_2,2,24,31,lightning,0.66335,0,0.596218227203866,environment,24_2_trial_91_p0_bliksem_combinatie_c1_final.avi
 93,target,0,bliksem,combinatie,bom,2,24_2,2,24,31,lightning,0.59,0,0.596218227203866,environment,24_2_trial_92_p0_bliksem_combinatie_c2_final.avi
 94,target,0,ziek,combinatie,ziek,0,24_2,2,24,31,sick,1.0,1,0.716614849190809,animate,24_2_trial_93_p0_ziek_combinatie_c0_final.avi
 95,target,0,blazen,combinatie,wind,0,24_2,2,24,31,to blow,0.732,0,0.771810542050373,vocal_oral,24_2_trial_94_p0_blazen_combinatie_c0_final.avi
@@ -2673,7 +2673,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 25,target,0,stil,gebaren,stil,0,25_1,1,25,33,silent,1.0,1,0.818566029243692,auditory,25_1_trial_24_p0_stil_gebaren_final.avi
 26,target,0,verbranden,gebaren,verbranden,0,25_1,1,25,33,to burn,1.0,1,0.557444340806456,other,25_1_trial_25_p0_verbranden_gebaren_final.avi
 27,target,0,huilen,gebaren,verdrietig,0,25_1,1,25,33,to cry,0.695,0,0.842937622085652,vocal_oral,25_1_trial_26_p0_huilen_gebaren_final.avi
-28,practice,1,koken,gebaren,pannenkoeken bakken,0,25_1,1,25,34,to cook,0.78215,0,,,25_1_pr_27_p1_koken_gebaren_final.avi
+28,practice,1,koken,gebaren,pannenkoeken bakken,0,25_1,1,25,34,to cook,0.77335,0,,,25_1_pr_27_p1_koken_gebaren_final.avi
 29,practice,1,snijden,gebaren,snijden,0,25_1,1,25,34,to cut,1.0,1,,,25_1_pr_28_p1_snijden_gebaren_final.avi
 30,target,1,ik,gebaren,jezelf,0,25_1,1,25,34,I,0.806,0,0.696928502541587,social,25_1_trial_29_p1_ik_gebaren_final.avi
 31,target,1,snel,gebaren,rennen,0,25_1,1,25,34,fast,0.688,0,0.714505262077287,manner,25_1_trial_30_p1_snel_gebaren_final.avi
@@ -2755,7 +2755,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 53,target,1,vangen,gebaren,bal,0,25_2,2,25,34,to catch,0.575,0,0.747603541088915,manual,25_2_trial_52_p1_vangen_gebaren_c0_final.avi
 54,target,1,vangen,gebaren,vangen,1,25_2,2,25,34,to catch,1.0,1,0.747603541088915,manual,25_2_trial_53_p1_vangen_gebaren_c1_final.avi
 55,target,1,kauwen,gebaren,kauwen,0,25_2,2,25,34,to chew,1.0,1,0.732601016130094,gustatory,25_2_trial_54_p1_kauwen_gebaren_c0_final.avi
-56,target,1,water,gebaren,poolparty,0,25_2,2,25,34,water,0.76785,0,0.560355838581374,environment,25_2_trial_55_p1_water_gebaren_c0_final.avi
+56,target,1,water,gebaren,poolparty,0,25_2,2,25,34,water,0.75665,0,0.560355838581374,environment,25_2_trial_55_p1_water_gebaren_c0_final.avi
 57,target,1,water,gebaren,vakantie,1,25_2,2,25,34,water,0.485,0,0.560355838581374,environment,25_2_trial_56_p1_water_gebaren_c1_final.avi
 58,target,1,water,gebaren,strand,2,25_2,2,25,34,water,0.6,0,0.560355838581374,environment,25_2_trial_57_p1_water_gebaren_c2_final.avi
 59,target,1,wind,gebaren,waterspuwer,0,25_2,2,25,34,wind,0.612,0,0.535647636647091,environment,25_2_trial_58_p1_wind_gebaren_c0_final.avi
@@ -2839,7 +2839,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 38,practice,0,gek,geluiden,lachen,0,26_1,1,26,35,crazy,0.639,0,,,26_1_pr_37_p0_gek_geluiden_final.avi
 39,target,0,walgen,geluiden,braken,0,26_1,1,26,35,disgusted,0.741,0,0.664921279040402,valence,26_1_trial_38_p0_walgen_geluiden_final.avi
 40,target,0,blij,geluiden,lachen,0,26_1,1,26,35,happy,0.673,0,0.571342868662109,valence,26_1_trial_39_p0_blij_geluiden_final.avi
-41,target,0,heet,geluiden,buiten adem,0,26_1,1,26,35,hot,0.64285,0,0.49098203287298,temperature,26_1_trial_40_p0_heet_geluiden_final.avi
+41,target,0,heet,geluiden,buiten adem,0,26_1,1,26,35,hot,0.63335,0,0.49098203287298,temperature,26_1_trial_40_p0_heet_geluiden_final.avi
 42,target,0,verdrietig,geluiden,huilen,0,26_1,1,26,35,sad,0.695,0,0.746777577338304,valence,26_1_trial_41_p0_verdrietig_geluiden_final.avi
 43,target,0,bijten,geluiden,eten,0,26_1,1,26,35,to bite,0.698,0,0.631514571319774,vocal_oral,26_1_trial_42_p0_bijten_geluiden_final.avi
 44,target,0,lachen,geluiden,lachen,0,26_1,1,26,35,to laugh,1.0,1,0.87420386676992,vocal_oral,26_1_trial_43_p0_lachen_geluiden_final.avi
@@ -2924,7 +2924,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 69,target,1,misschien,combinatie,eens,2,26_2,2,26,36,maybe,0.777,0,0.599769001504526,logical,26_2_trial_68_p1_misschien_combinatie_c2_final.avi
 70,target,1,bang,combinatie,schrikken,0,26_2,2,26,36,scared,0.874,0,0.758043579817488,valence,26_2_trial_69_p1_bang_combinatie_c0_final.avi
 71,target,1,bang,combinatie,teleurgesteld,1,26_2,2,26,36,scared,0.689,0,0.758043579817488,valence,26_2_trial_70_p1_bang_combinatie_c1_final.avi
-72,target,1,bang,combinatie,niet willen,2,26_2,2,26,36,scared,0.7357,0,0.758043579817488,valence,26_2_trial_71_p1_bang_combinatie_c2_final.avi
+72,target,1,bang,combinatie,niet willen,2,26_2,2,26,36,scared,0.73335,0,0.758043579817488,valence,26_2_trial_71_p1_bang_combinatie_c2_final.avi
 73,target,1,langzaam,combinatie,vervelen,0,26_2,2,26,36,slow,0.573,0,0.697044299048591,manner,26_2_trial_72_p1_langzaam_combinatie_c0_final.avi
 74,target,1,langzaam,combinatie,langzaam,1,26_2,2,26,36,slow,1.0,1,0.697044299048591,manner,26_2_trial_73_p1_langzaam_combinatie_c1_final.avi
 75,target,1,blazen,combinatie,blazen,0,26_2,2,26,36,to blow,1.0,1,0.771810542050373,vocal_oral,26_2_trial_74_p1_blazen_combinatie_c0_final.avi
@@ -2943,7 +2943,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 88,target,0,man,gebaren,bodybuilder,0,26_2,2,26,35,male,0.622,0,0.578869739327133,animate,26_2_trial_87_p0_man_gebaren_c0_final.avi
 89,target,0,man,gebaren,sterk,1,26_2,2,26,35,male,0.535,0,0.578869739327133,animate,26_2_trial_88_p0_man_gebaren_c1_final.avi
 90,target,0,man,gebaren,man,2,26_2,2,26,35,male,1.0,1,0.578869739327133,animate,26_2_trial_89_p0_man_gebaren_c2_final.avi
-91,target,0,piepen,gebaren,hardcore,0,26_2,2,26,35,squeak,0.56785,0,0.329523830267451,auditory,26_2_trial_90_p0_piepen_gebaren_c0_final.avi
+91,target,0,piepen,gebaren,hardcore,0,26_2,2,26,35,squeak,0.56335,0,0.329523830267451,auditory,26_2_trial_90_p0_piepen_gebaren_c0_final.avi
 92,target,0,piepen,gebaren,muziek,1,26_2,2,26,35,squeak,0.562,0,0.329523830267451,auditory,26_2_trial_91_p0_piepen_gebaren_c1_final.avi
 93,target,0,piepen,gebaren,rumoer,2,26_2,2,26,35,squeak,0.685,0,0.329523830267451,auditory,26_2_trial_92_p0_piepen_gebaren_c2_final.avi
 94,target,0,jagen,gebaren,jagen,0,26_2,2,26,35,to hunt,1.0,1,0.63343521888758,survival,26_2_trial_93_p0_jagen_gebaren_c0_final.avi
@@ -3021,7 +3021,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 50,target,1,oud,geluiden,moe,0,27_1,1,27,38,old,0.627,0,0.310336292435631,time,27_1_trial_49_p1_oud_geluiden_final.avi
 51,target,1,geven,geluiden,lachen,0,27_1,1,27,38,to give,0.534,0,0.275959375649482,manual,27_1_trial_50_p1_geven_geluiden_final.avi
 52,target,1,springen,geluiden,ongeloofwaardig,0,27_1,1,27,38,to jump,0.557,0,0.343503131163236,locomotion,27_1_trial_51_p1_springen_geluiden_final.avi
-53,target,1,rennen,geluiden,buiten adem,0,27_1,1,27,38,to run,0.79285,0,0.336019187014838,locomotion,27_1_trial_52_p1_rennen_geluiden_final.avi
+53,target,1,rennen,geluiden,buiten adem,0,27_1,1,27,38,to run,0.78665,0,0.336019187014838,locomotion,27_1_trial_52_p1_rennen_geluiden_final.avi
 54,target,1,staan,geluiden,boos,0,27_1,1,27,38,to stand,0.519,0,0.318111108747142,locomotion,27_1_trial_53_p1_staan_geluiden_final.avi
 1,practice,0,bal,gebaren,rond,0,27_2,2,27,37,ball,0.613,0,,,27_2_pr_0_p0_bal_gebaren_c0_final.avi
 2,practice,0,bal,gebaren,bal,1,27_2,2,27,37,ball,1.0,1,,,27_2_pr_1_p0_bal_gebaren_c1_final.avi
@@ -3304,7 +3304,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 21,target,0,zwaar,combinatie,groot,0,29_1,1,29,41,heavy,0.76,0,0.680855320383285,quantity,29_1_trial_20_p0_zwaar_combinatie_final.avi
 22,target,0,berg,combinatie,bergen,0,29_1,1,29,41,mountain,0.776,0,0.63512643878935,environment,29_1_trial_21_p0_berg_combinatie_final.avi
 23,target,0,oud,combinatie,bejaard,0,29_1,1,29,41,old,0.907,0,0.598288311266584,time,29_1_trial_22_p0_oud_combinatie_final.avi
-24,target,0,langzaam,combinatie,slowmotion,0,29_1,1,29,41,slow,0.9107000000000001,0,0.697044299048591,manner,29_1_trial_23_p0_langzaam_combinatie_final.avi
+24,target,0,langzaam,combinatie,slowmotion,0,29_1,1,29,41,slow,0.90335,0,0.697044299048591,manner,29_1_trial_23_p0_langzaam_combinatie_final.avi
 25,target,0,sterk,combinatie,sterk,0,29_1,1,29,41,strong,1.0,1,0.82173351174681,animate,29_1_trial_24_p0_sterk_combinatie_final.avi
 26,target,0,kruipen,combinatie,kat,0,29_1,1,29,41,to crawl,0.548,0,0.786001237160513,locomotion,29_1_trial_25_p0_kruipen_combinatie_final.avi
 27,target,0,huilen,combinatie,huilen,0,29_1,1,29,41,to cry,1.0,1,0.83134459155959,vocal_oral,29_1_trial_26_p0_huilen_combinatie_final.avi
@@ -3313,7 +3313,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 30,target,1,groot,combinatie,uitrekken,0,29_1,1,29,42,big,0.573,0,0.762672115162265,quantity,29_1_trial_29_p1_groot_combinatie_final.avi
 31,target,1,bitter,combinatie,walgen,0,29_1,1,29,42,bitter,0.647,0,0.409843169892478,gustatory,29_1_trial_30_p1_bitter_combinatie_final.avi
 32,target,1,ver,combinatie,zoeken,0,29_1,1,29,42,far,0.582,0,0.550625431083315,spatial,29_1_trial_31_p1_ver_combinatie_final.avi
-33,target,1,hoorn,combinatie,teletubbie,0,29_1,1,29,42,horn,0.54645,0,0.523817227867007,other,29_1_trial_32_p1_hoorn_combinatie_final.avi
+33,target,1,hoorn,combinatie,teletubbie,0,29_1,1,29,42,horn,0.54335,0,0.523817227867007,other,29_1_trial_32_p1_hoorn_combinatie_final.avi
 34,target,1,luidruchtig,combinatie,schreeuwen,0,29_1,1,29,42,loud,0.734,0,0.639905020121821,auditory,29_1_trial_33_p1_luidruchtig_combinatie_final.avi
 35,target,1,staart,combinatie,afvegen,0,29_1,1,29,42,tail,0.537,0,0.613189302838734,quantity,29_1_trial_34_p1_staart_combinatie_final.avi
 36,target,1,slaan,combinatie,slaan,0,29_1,1,29,42,to hit,1.0,1,0.794014980882957,manual,29_1_trial_35_p1_slaan_combinatie_final.avi
@@ -3324,7 +3324,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 41,target,0,jagen,gebaren,vechten,0,29_1,1,29,41,to hunt,0.633,0,0.63343521888758,survival,29_1_trial_40_p0_jagen_gebaren_final.avi
 42,target,0,springen,gebaren,pompen,0,29_1,1,29,41,to jump,0.574,0,0.834800108850706,locomotion,29_1_trial_41_p0_springen_gebaren_final.avi
 43,target,0,likken,gebaren,likken,0,29_1,1,29,41,to lick,1.0,1,0.757301371697859,gustatory,29_1_trial_42_p0_likken_gebaren_final.avi
-44,target,0,ruiken,gebaren,bloemen ruiken,0,29_1,1,29,41,to smell,0.84645,0,0.767441240842589,olfactory,29_1_trial_43_p0_ruiken_gebaren_final.avi
+44,target,0,ruiken,gebaren,bloemen ruiken,0,29_1,1,29,41,to smell,0.83335,0,0.767441240842589,olfactory,29_1_trial_43_p0_ruiken_gebaren_final.avi
 45,target,0,zwemmen,gebaren,zwemmen,0,29_1,1,29,41,to swim,1.0,1,0.829267273459481,locomotion,29_1_trial_44_p0_zwemmen_gebaren_final.avi
 46,practice,1,koken,gebaren,verven,0,29_1,1,29,42,to cook,0.554,0,,,29_1_pr_45_p1_koken_gebaren_final.avi
 47,practice,1,knippen,gebaren,knippen,0,29_1,1,29,42,to cut,1.0,1,,,29_1_pr_46_p1_knippen_gebaren_final.avi
@@ -3346,7 +3346,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 9,target,0,regen,gebaren,regen,0,29_2,2,29,41,rain,1.0,1,0.729078471280972,environment,29_2_trial_8_p0_regen_gebaren_c0_final.avi
 10,target,0,zoet,gebaren,snoepje,0,29_2,2,29,41,sweet,0.87,0,0.258150304252129,gustatory,29_2_trial_9_p0_zoet_gebaren_c0_final.avi
 11,target,0,zoet,gebaren,proeven,1,29_2,2,29,41,sweet,0.585,0,0.258150304252129,gustatory,29_2_trial_10_p0_zoet_gebaren_c1_final.avi
-12,target,0,zoet,gebaren,lekker vinden,2,29_2,2,29,41,sweet,0.7607,0,0.258150304252129,gustatory,29_2_trial_11_p0_zoet_gebaren_c2_final.avi
+12,target,0,zoet,gebaren,lekker vinden,2,29_2,2,29,41,sweet,0.75335,0,0.258150304252129,gustatory,29_2_trial_11_p0_zoet_gebaren_c2_final.avi
 13,target,0,horen,gebaren,luisteren,0,29_2,2,29,41,to hear,0.813,0,0.755612083056296,auditory,29_2_trial_12_p0_horen_gebaren_c0_final.avi
 14,target,0,horen,gebaren,horen,1,29_2,2,29,41,to hear,1.0,1,0.755612083056296,auditory,29_2_trial_13_p0_horen_gebaren_c1_final.avi
 15,target,0,staan,gebaren,staan,0,29_2,2,29,41,to stand,1.0,1,0.607218233017746,locomotion,29_2_trial_14_p0_staan_gebaren_c0_final.avi
@@ -3413,7 +3413,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 76,target,0,kind,combinatie,klein,0,29_2,2,29,41,child,0.664,0,0.595086558643404,social,29_2_trial_75_p0_kind_combinatie_c0_final.avi
 77,target,0,kind,combinatie,kind,1,29_2,2,29,41,child,1.0,1,0.595086558643404,social,29_2_trial_76_p0_kind_combinatie_c1_final.avi
 78,target,0,walgen,combinatie,walgen,0,29_2,2,29,41,disgusted,1.0,1,0.673077034619221,valence,29_2_trial_77_p0_walgen_combinatie_c0_final.avi
-79,target,0,misschien,combinatie,keuze maken,0,29_2,2,29,41,maybe,0.71785,0,0.599769001504526,logical,29_2_trial_78_p0_misschien_combinatie_c0_final.avi
+79,target,0,misschien,combinatie,keuze maken,0,29_2,2,29,41,maybe,0.71335,0,0.599769001504526,logical,29_2_trial_78_p0_misschien_combinatie_c0_final.avi
 80,target,0,misschien,combinatie,kiezen,1,29_2,2,29,41,maybe,0.579,0,0.599769001504526,logical,29_2_trial_79_p0_misschien_combinatie_c1_final.avi
 81,target,0,misschien,combinatie,onzeker,2,29_2,2,29,41,maybe,0.562,0,0.599769001504526,logical,29_2_trial_80_p0_misschien_combinatie_c2_final.avi
 82,target,0,vangen,combinatie,vangen,0,29_2,2,29,41,to catch,1.0,1,0.715821711656047,manual,29_2_trial_81_p0_vangen_combinatie_c0_final.avi
@@ -3564,7 +3564,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 73,target,1,kotsen,geluiden,kotsen,0,2_2,2,2,44,to vomit,1.0,1,0.79853309737283,gustatory,2_2_trial_72_p1_kotsen_geluiden_c0_final.avi
 74,practice,0,fiets,gebaren,fietsen,0,2_2,2,2,43,bicycle,0.975,0,,,2_2_pr_73_p0_fiets_gebaren_c0_final.avi
 75,practice,0,fiets,gebaren,wielrennen,1,2_2,2,2,43,bicycle,0.895,0,,,2_2_pr_74_p0_fiets_gebaren_c1_final.avi
-76,practice,0,fiets,gebaren,motorrijden,2,2_2,2,2,43,bicycle,0.72855,0,,,2_2_pr_75_p0_fiets_gebaren_c2_final.avi
+76,practice,0,fiets,gebaren,motorrijden,2,2_2,2,2,43,bicycle,0.71665,0,,,2_2_pr_75_p0_fiets_gebaren_c2_final.avi
 77,practice,0,sneeuw,gebaren,sneeuw,0,2_2,2,2,43,snow,1.0,1,,,2_2_pr_76_p0_sneeuw_gebaren_c0_final.avi
 78,target,0,koud,gebaren,koud,0,2_2,2,2,43,cold,1.0,1,0.847021849271004,temperature,2_2_trial_77_p0_koud_gebaren_c0_final.avi
 79,target,0,walgen,gebaren,vies,0,2_2,2,2,43,disgusted,0.677,0,0.584517923117511,valence,2_2_trial_78_p0_walgen_gebaren_c0_final.avi
@@ -3777,7 +3777,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 15,target,1,geur,gebaren,ruiken,0,31_1,1,31,48,odor,0.933,0,0.580764408529184,olfactory,31_1_trial_14_p1_geur_gebaren_final.avi
 16,target,1,drinken,gebaren,drinken,0,31_1,1,31,48,to drink,1.0,1,0.828570667489932,vocal_oral,31_1_trial_15_p1_drinken_gebaren_final.avi
 17,target,1,vliegen,gebaren,vliegen,0,31_1,1,31,48,to fly,1.0,1,0.833642786833868,locomotion,31_1_trial_16_p1_vliegen_gebaren_final.avi
-18,target,1,staan,gebaren,alfaman,0,31_1,1,31,48,to stand,0.55355,0,0.607218233017746,locomotion,31_1_trial_17_p1_staan_gebaren_final.avi
+18,target,1,staan,gebaren,alfaman,0,31_1,1,31,48,to stand,0.55,0,0.607218233017746,locomotion,31_1_trial_17_p1_staan_gebaren_final.avi
 19,practice,0,haasten,geluiden,heet,0,31_1,1,31,47,to hurry,0.567,0,,,31_1_pr_18_p0_haasten_geluiden_final.avi
 20,practice,0,comfortabel,geluiden,blij,0,31_1,1,31,47,comfortable,0.678,0,,,31_1_pr_19_p0_comfortabel_geluiden_final.avi
 21,target,0,ik,geluiden,geïrriteerd,0,31_1,1,31,47,I,0.553,0,0.357741139583888,social,31_1_trial_20_p0_ik_geluiden_final.avi
@@ -3818,7 +3818,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 2,practice,0,bal,gebaren,bal,1,31_2,2,31,47,ball,1.0,1,,,31_2_pr_1_p0_bal_gebaren_c1_final.avi
 3,practice,0,klok,gebaren,horloge,0,31_2,2,31,47,clock,0.856,0,,,31_2_pr_2_p0_klok_gebaren_c0_final.avi
 4,practice,0,klok,gebaren,tijd,1,31_2,2,31,47,clock,0.666,0,,,31_2_pr_3_p0_klok_gebaren_c1_final.avi
-5,practice,0,klok,gebaren,op tijd,2,31_2,2,31,47,clock,0.80715,0,,,31_2_pr_4_p0_klok_gebaren_c2_final.avi
+5,practice,0,klok,gebaren,op tijd,2,31_2,2,31,47,clock,0.79,0,,,31_2_pr_4_p0_klok_gebaren_c2_final.avi
 6,target,0,bitter,gebaren,vies,0,31_2,2,31,47,bitter,0.708,0,0.292422929920138,gustatory,31_2_trial_5_p0_bitter_gebaren_c0_final.avi
 7,target,0,bitter,gebaren,drinken,1,31_2,2,31,47,bitter,0.577,0,0.292422929920138,gustatory,31_2_trial_6_p0_bitter_gebaren_c1_final.avi
 8,target,0,bitter,gebaren,zuur,2,31_2,2,31,47,bitter,0.791,0,0.292422929920138,gustatory,31_2_trial_7_p0_bitter_gebaren_c2_final.avi
@@ -3946,7 +3946,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 19,practice,0,leeg,gebaren,neerzetten,0,32_1,1,32,49,empty,0.557,0,,,32_1_pr_18_p0_leeg_gebaren_final.avi
 20,practice,0,knippen,gebaren,knippen,0,32_1,1,32,49,to cut,1.0,1,,,32_1_pr_19_p0_knippen_gebaren_final.avi
 21,target,0,vogel,gebaren,vliegen,0,32_1,1,32,49,bird,0.717,0,0.796298864905725,animal,32_1_trial_20_p0_vogel_gebaren_final.avi
-22,target,0,vrouw,gebaren,lichaamsfiguur,0,32_1,1,32,49,female,0.7607,0,0.646814871143661,animate,32_1_trial_21_p0_vrouw_gebaren_final.avi
+22,target,0,vrouw,gebaren,lichaamsfiguur,0,32_1,1,32,49,female,0.74665,0,0.646814871143661,animate,32_1_trial_21_p0_vrouw_gebaren_final.avi
 23,target,0,verdrietig,gebaren,huilen,0,32_1,1,32,49,sad,0.695,0,0.816931671134317,valence,32_1_trial_22_p0_verdrietig_gebaren_final.avi
 24,target,0,zout,gebaren,zuur,0,32_1,1,32,49,salt,0.736,0,0.28573045256734,gustatory,32_1_trial_23_p0_zout_gebaren_final.avi
 25,target,0,vangen,gebaren,gooien,0,32_1,1,32,49,to catch,0.677,0,0.747603541088915,manual,32_1_trial_24_p0_vangen_gebaren_final.avi
@@ -3981,7 +3981,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 54,target,1,jagen,geluiden,schieten,0,32_1,1,32,50,to hunt,0.735,0,0.303762958061108,survival,32_1_trial_53_p1_jagen_geluiden_final.avi
 1,practice,0,geheim,gebaren,stil,0,32_2,2,32,49,secret,0.633,0,,,32_2_pr_0_p0_geheim_gebaren_c0_final.avi
 2,practice,0,geheim,gebaren,stilte,1,32_2,2,32,49,secret,0.705,0,,,32_2_pr_1_p0_geheim_gebaren_c1_final.avi
-3,practice,0,geheim,gebaren,stil zijn,2,32_2,2,32,49,secret,0.75,0,,,32_2_pr_2_p0_geheim_gebaren_c2_final.avi
+3,practice,0,geheim,gebaren,stil zijn,2,32_2,2,32,49,secret,0.74,0,,,32_2_pr_2_p0_geheim_gebaren_c2_final.avi
 4,practice,0,juichen,gebaren,juichen,0,32_2,2,32,49,to cheer,1.0,1,,,32_2_pr_3_p0_juichen_gebaren_c0_final.avi
 5,target,0,ei,gebaren,lekker,0,32_2,2,32,49,egg,0.571,0,0.545621192753626,object,32_2_trial_4_p0_ei_gebaren_c0_final.avi
 6,target,0,ei,gebaren,ei,1,32_2,2,32,49,egg,1.0,1,0.545621192753626,object,32_2_trial_5_p0_ei_gebaren_c1_final.avi
@@ -4035,7 +4035,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 54,practice,1,sneeuw,combinatie,sneeuwvlok,2,32_2,2,32,50,snow,0.913,0,,,32_2_pr_53_p1_sneeuw_combinatie_c2_final.avi
 55,target,1,vlieg,combinatie,bij,0,32_2,2,32,50,fly,0.575,0,0.682424716627464,animal,32_2_trial_54_p1_vlieg_combinatie_c0_final.avi
 56,target,1,vlieg,combinatie,vlieg,1,32_2,2,32,50,fly,1.0,1,0.682424716627464,animal,32_2_trial_55_p1_vlieg_combinatie_c1_final.avi
-57,target,1,langzaam,combinatie,slowmotion,0,32_2,2,32,50,slow,0.9107000000000001,0,0.697044299048591,manner,32_2_trial_56_p1_langzaam_combinatie_c0_final.avi
+57,target,1,langzaam,combinatie,slowmotion,0,32_2,2,32,50,slow,0.90335,0,0.697044299048591,manner,32_2_trial_56_p1_langzaam_combinatie_c0_final.avi
 58,target,1,langzaam,combinatie,langzaam,1,32_2,2,32,50,slow,1.0,1,0.697044299048591,manner,32_2_trial_57_p1_langzaam_combinatie_c1_final.avi
 59,target,1,slang,combinatie,slang,0,32_2,2,32,50,snake,1.0,1,0.80478903012149,animal,32_2_trial_58_p1_slang_combinatie_c0_final.avi
 60,target,1,kruipen,combinatie,kruipen,0,32_2,2,32,50,to crawl,1.0,1,0.786001237160513,locomotion,32_2_trial_59_p1_kruipen_combinatie_c0_final.avi
@@ -4060,15 +4060,15 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 79,target,0,zwaar,geluiden,boos,1,32_2,2,32,49,heavy,0.662,0,0.38282540003767,quantity,32_2_trial_78_p0_zwaar_geluiden_c1_final.avi
 80,target,0,zwaar,geluiden,geïrriteerd,2,32_2,2,32,49,heavy,0.616,0,0.38282540003767,quantity,32_2_trial_79_p0_zwaar_geluiden_c2_final.avi
 81,target,0,hoog,geluiden,lekker,0,32_2,2,32,49,high,0.56,0,0.312736784773088,auditory,32_2_trial_80_p0_hoog_geluiden_c0_final.avi
-82,target,0,hoog,geluiden,hoge toon,1,32_2,2,32,49,high,0.81785,0,0.312736784773088,auditory,32_2_trial_81_p0_hoog_geluiden_c1_final.avi
+82,target,0,hoog,geluiden,hoge toon,1,32_2,2,32,49,high,0.80335,0,0.312736784773088,auditory,32_2_trial_81_p0_hoog_geluiden_c1_final.avi
 83,target,0,hoog,geluiden,paard,2,32_2,2,32,49,high,0.517,0,0.312736784773088,auditory,32_2_trial_82_p0_hoog_geluiden_c2_final.avi
 84,target,0,stil,geluiden,slang,0,32_2,2,32,49,silent,0.491,0,0.753476033670045,auditory,32_2_trial_83_p0_stil_geluiden_c0_final.avi
 85,target,0,stil,geluiden,stil,1,32_2,2,32,49,silent,1.0,1,0.753476033670045,auditory,32_2_trial_84_p0_stil_geluiden_c1_final.avi
 86,target,0,zuur,geluiden,koud,0,32_2,2,32,49,sour,0.599,0,0.361936361379245,gustatory,32_2_trial_85_p0_zuur_geluiden_c0_final.avi
 87,target,0,zuur,geluiden,vies,1,32_2,2,32,49,sour,0.623,0,0.361936361379245,gustatory,32_2_trial_86_p0_zuur_geluiden_c1_final.avi
-88,target,0,zuur,geluiden,niet lekker,2,32_2,2,32,49,sour,0.7,0,0.361936361379245,gustatory,32_2_trial_87_p0_zuur_geluiden_c2_final.avi
+88,target,0,zuur,geluiden,niet lekker,2,32_2,2,32,49,sour,0.69665,0,0.361936361379245,gustatory,32_2_trial_87_p0_zuur_geluiden_c2_final.avi
 89,target,0,likken,geluiden,pop,0,32_2,2,32,49,to lick,0.537,0,0.687199600527179,gustatory,32_2_trial_88_p0_likken_geluiden_c0_final.avi
-90,target,0,likken,geluiden,fles ontkurken,1,32_2,2,32,49,to lick,0.51785,0,0.687199600527179,gustatory,32_2_trial_89_p0_likken_geluiden_c1_final.avi
+90,target,0,likken,geluiden,fles ontkurken,1,32_2,2,32,49,to lick,0.51665,0,0.687199600527179,gustatory,32_2_trial_89_p0_likken_geluiden_c1_final.avi
 91,target,0,likken,geluiden,geluid,2,32_2,2,32,49,to lick,0.515,0,0.687199600527179,gustatory,32_2_trial_90_p0_likken_geluiden_c2_final.avi
 92,practice,1,zwaaien,geluiden,wind,0,32_2,2,32,50,to wave,0.598,0,,,32_2_pr_91_p1_zwaaien_geluiden_c0_final.avi
 93,practice,1,zwaaien,geluiden,fluiten,1,32_2,2,32,50,to wave,0.611,0,,,32_2_pr_92_p1_zwaaien_geluiden_c1_final.avi
@@ -4242,7 +4242,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 92,target,0,kauwen,combinatie,kauwen,0,33_2,2,33,51,to chew,1.0,1,0.779574764611609,gustatory,33_2_trial_91_p0_kauwen_combinatie_c0_final.avi
 93,target,0,eten,combinatie,eten,0,33_2,2,33,51,to eat,1.0,1,0.799176047935077,vocal_oral,33_2_trial_92_p0_eten_combinatie_c0_final.avi
 94,practice,1,zwaaien,combinatie,zwaaien,0,33_2,2,33,52,to wave,1.0,1,,,33_2_pr_93_p1_zwaaien_combinatie_c0_final.avi
-95,practice,1,bal,combinatie,vissenkom,0,33_2,2,33,52,ball,0.69645,0,,,33_2_pr_94_p1_bal_combinatie_c0_final.avi
+95,practice,1,bal,combinatie,vissenkom,0,33_2,2,33,52,ball,0.68665,0,,,33_2_pr_94_p1_bal_combinatie_c0_final.avi
 96,practice,1,bal,combinatie,bal,1,33_2,2,33,52,ball,1.0,1,,,33_2_pr_95_p1_bal_combinatie_c1_final.avi
 97,target,1,hond,combinatie,hond,0,33_2,2,33,52,dog,1.0,1,0.779877846324741,animal,33_2_trial_96_p1_hond_combinatie_c0_final.avi
 98,target,1,vuur,combinatie,tornado,0,33_2,2,33,52,fire,0.611,0,0.603966694081322,object,33_2_trial_97_p1_vuur_combinatie_c0_final.avi
@@ -4253,7 +4253,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 103,target,1,ziek,combinatie,ziek,0,33_2,2,33,52,sick,1.0,1,0.716614849190809,animate,33_2_trial_102_p1_ziek_combinatie_c0_final.avi
 104,target,1,slang,combinatie,slang,0,33_2,2,33,52,snake,1.0,1,0.80478903012149,animal,33_2_trial_103_p1_slang_combinatie_c0_final.avi
 105,target,1,vechten,combinatie,boksen,0,33_2,2,33,52,to fight,0.773,0,0.820194675119722,survival,33_2_trial_104_p1_vechten_combinatie_c0_final.avi
-106,target,1,vechten,combinatie,knockout,1,33_2,2,33,52,to fight,0.80355,0,0.820194675119722,survival,33_2_trial_105_p1_vechten_combinatie_c1_final.avi
+106,target,1,vechten,combinatie,knockout,1,33_2,2,33,52,to fight,0.79665,0,0.820194675119722,survival,33_2_trial_105_p1_vechten_combinatie_c1_final.avi
 107,target,1,vechten,combinatie,vechten,2,33_2,2,33,52,to fight,1.0,1,0.820194675119722,survival,33_2_trial_106_p1_vechten_combinatie_c2_final.avi
 108,target,1,kotsen,combinatie,overgeven,0,33_2,2,33,52,to vomit,0.887,0,0.828901259475311,gustatory,33_2_trial_107_p1_kotsen_combinatie_c0_final.avi
 109,target,1,kotsen,combinatie,kotsen,1,33_2,2,33,52,to vomit,1.0,1,0.828901259475311,gustatory,33_2_trial_108_p1_kotsen_combinatie_c1_final.avi
@@ -4337,7 +4337,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 24,practice,1,juichen,geluiden,juichen,0,34_2,2,34,54,to cheer,1.0,1,,,34_2_pr_23_p1_juichen_geluiden_c0_final.avi
 25,target,1,koud,geluiden,koud,0,34_2,2,34,54,cold,1.0,1,0.744751221657995,temperature,34_2_trial_24_p1_koud_geluiden_c0_final.avi
 26,target,1,vis,geluiden,water,0,34_2,2,34,54,fish,0.706,0,0.51844889378327,animal,34_2_trial_25_p1_vis_geluiden_c0_final.avi
-27,target,1,vis,geluiden,blub,1,34_2,2,34,54,fish,0.8357,0,0.51844889378327,animal,34_2_trial_26_p1_vis_geluiden_c1_final.avi
+27,target,1,vis,geluiden,blub,1,34_2,2,34,54,fish,0.8200000000000001,0,0.51844889378327,animal,34_2_trial_26_p1_vis_geluiden_c1_final.avi
 28,target,1,vis,geluiden,kraan,2,34_2,2,34,54,fish,0.556,0,0.51844889378327,animal,34_2_trial_27_p1_vis_geluiden_c2_final.avi
 29,target,1,zoet,geluiden,lekker,0,34_2,2,34,54,sweet,0.807,0,0.246745380421205,gustatory,34_2_trial_28_p1_zoet_geluiden_c0_final.avi
 30,target,1,zoet,geluiden,smakelijk,1,34_2,2,34,54,sweet,0.791,0,0.246745380421205,gustatory,34_2_trial_29_p1_zoet_geluiden_c1_final.avi
@@ -4427,7 +4427,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 18,target,1,ruiken,combinatie,ruiken,0,35_1,1,35,56,to smell,1.0,1,0.762309813460577,olfactory,35_1_trial_17_p1_ruiken_combinatie_final.avi
 19,practice,0,knippen,gebaren,knippen,0,35_1,1,35,55,to cut,1.0,1,,,35_1_pr_18_p0_knippen_gebaren_final.avi
 20,practice,0,dansen,gebaren,dansen,0,35_1,1,35,55,to dance,1.0,1,,,35_1_pr_19_p0_dansen_gebaren_final.avi
-21,target,0,bitter,gebaren,bubbelen,0,35_1,1,35,55,bitter,0.55715,0,0.292422929920138,gustatory,35_1_trial_20_p0_bitter_gebaren_final.avi
+21,target,0,bitter,gebaren,bubbelen,0,35_1,1,35,55,bitter,0.55335,0,0.292422929920138,gustatory,35_1_trial_20_p0_bitter_gebaren_final.avi
 22,target,0,hoorn,gebaren,blazen,0,35_1,1,35,55,horn,0.643,0,0.541237492784099,other,35_1_trial_21_p0_hoorn_gebaren_final.avi
 23,target,0,luidruchtig,gebaren,luisteren,0,35_1,1,35,55,loud,0.582,0,0.618296512390658,auditory,35_1_trial_22_p0_luidruchtig_gebaren_final.avi
 24,target,0,misschien,gebaren,afvragen,0,35_1,1,35,55,maybe,0.676,0,0.504368306013113,logical,35_1_trial_23_p0_misschien_gebaren_final.avi
@@ -4465,7 +4465,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 2,practice,0,eend,gebaren,vogel,1,35_2,2,35,55,duck,0.808,0,,,35_2_pr_1_p0_eend_gebaren_c1_final.avi
 3,practice,0,eend,gebaren,vis,2,35_2,2,35,55,duck,0.638,0,,,35_2_pr_2_p0_eend_gebaren_c2_final.avi
 4,practice,0,klok,gebaren,tijd,0,35_2,2,35,55,clock,0.666,0,,,35_2_pr_3_p0_klok_gebaren_c0_final.avi
-5,practice,0,klok,gebaren,zonuren,1,35_2,2,35,55,clock,0.6857,0,,,35_2_pr_4_p0_klok_gebaren_c1_final.avi
+5,practice,0,klok,gebaren,zonuren,1,35_2,2,35,55,clock,0.67335,0,,,35_2_pr_4_p0_klok_gebaren_c1_final.avi
 6,practice,0,klok,gebaren,lucht,2,35_2,2,35,55,clock,0.522,0,,,35_2_pr_5_p0_klok_gebaren_c2_final.avi
 7,target,0,kat,gebaren,konijn,0,35_2,2,35,55,cat,0.735,0,0.71663074651487,animal,35_2_trial_6_p0_kat_gebaren_c0_final.avi
 8,target,0,kat,gebaren,kat,1,35_2,2,35,55,cat,1.0,1,0.71663074651487,animal,35_2_trial_7_p0_kat_gebaren_c1_final.avi
@@ -4486,7 +4486,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 23,target,1,snel,gebaren,record,1,35_2,2,35,56,fast,0.525,0,0.714505262077287,manner,35_2_trial_22_p1_snel_gebaren_c1_final.avi
 24,target,1,snel,gebaren,snelste,2,35_2,2,35,56,fast,0.99,0,0.714505262077287,manner,35_2_trial_23_p1_snel_gebaren_c2_final.avi
 25,target,1,scherp,gebaren,verbrand,0,35_2,2,35,56,sharp,0.559,0,0.501172040780983,haptic,35_2_trial_24_p1_scherp_gebaren_c0_final.avi
-26,target,1,scherp,gebaren,blauwe plek,1,35_2,2,35,56,sharp,0.61785,0,0.501172040780983,haptic,35_2_trial_25_p1_scherp_gebaren_c1_final.avi
+26,target,1,scherp,gebaren,blauwe plek,1,35_2,2,35,56,sharp,0.61335,0,0.501172040780983,haptic,35_2_trial_25_p1_scherp_gebaren_c1_final.avi
 27,target,1,scherp,gebaren,nagel,2,35_2,2,35,56,sharp,0.549,0,0.501172040780983,haptic,35_2_trial_26_p1_scherp_gebaren_c2_final.avi
 28,target,1,stil,gebaren,stilte,0,35_2,2,35,56,silent,0.896,0,0.818566029243692,auditory,35_2_trial_27_p1_stil_gebaren_c0_final.avi
 29,target,1,stil,gebaren,stil,1,35_2,2,35,56,silent,1.0,1,0.818566029243692,auditory,35_2_trial_28_p1_stil_gebaren_c1_final.avi
@@ -4514,7 +4514,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 51,practice,1,vliegtuig,combinatie,vliegtuig,1,35_2,2,35,56,airplane,1.0,1,,,35_2_pr_50_p1_vliegtuig_combinatie_c1_final.avi
 52,practice,1,geheim,combinatie,stilte,0,35_2,2,35,56,secret,0.705,0,,,35_2_pr_51_p1_geheim_combinatie_c0_final.avi
 53,practice,1,geheim,combinatie,stil,1,35_2,2,35,56,secret,0.633,0,,,35_2_pr_52_p1_geheim_combinatie_c1_final.avi
-54,practice,1,geheim,combinatie,niet praten,2,35_2,2,35,56,secret,0.75,0,,,35_2_pr_53_p1_geheim_combinatie_c2_final.avi
+54,practice,1,geheim,combinatie,niet praten,2,35_2,2,35,56,secret,0.73665,0,,,35_2_pr_53_p1_geheim_combinatie_c2_final.avi
 55,target,1,koud,combinatie,koud,0,35_2,2,35,56,cold,1.0,1,0.819687004635733,temperature,35_2_trial_54_p1_koud_combinatie_c0_final.avi
 56,target,1,hoog,combinatie,hoog,0,35_2,2,35,56,high,1.0,1,0.749105900955685,auditory,35_2_trial_55_p1_hoog_combinatie_c0_final.avi
 57,target,1,bang,combinatie,bang,0,35_2,2,35,56,scared,1.0,1,0.758043579817488,valence,35_2_trial_56_p1_bang_combinatie_c0_final.avi
@@ -4533,7 +4533,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 70,target,0,vis,geluiden,vis,0,35_2,2,35,55,fish,1.0,1,0.51844889378327,animal,35_2_trial_69_p0_vis_geluiden_c0_final.avi
 71,target,0,goed,geluiden,,0,35_2,2,35,55,good,,0,0.42473028945648,valence,35_2_trial_70_p0_goed_geluiden_c0_final.avi
 72,target,0,goed,geluiden,bellen,1,35_2,2,35,55,good,0.5,0,0.42473028945648,valence,35_2_trial_71_p0_goed_geluiden_c1_final.avi
-73,target,0,goed,geluiden,klingen,2,35_2,2,35,55,good,0.525,0,0.42473028945648,valence,35_2_trial_72_p0_goed_geluiden_c2_final.avi
+73,target,0,goed,geluiden,klingen,2,35_2,2,35,55,good,0.52335,0,0.42473028945648,valence,35_2_trial_72_p0_goed_geluiden_c2_final.avi
 74,target,0,klein,geluiden,teleurstelling,0,35_2,2,35,55,small,0.516,0,0.297645530994546,quantity,35_2_trial_73_p0_klein_geluiden_c0_final.avi
 75,target,0,klein,geluiden,verdrietig,1,35_2,2,35,55,small,0.573,0,0.297645530994546,quantity,35_2_trial_74_p0_klein_geluiden_c1_final.avi
 76,target,0,klein,geluiden,,2,35_2,2,35,55,small,0.529,0,0.297645530994546,quantity,35_2_trial_75_p0_klein_geluiden_c2_final.avi
@@ -4703,7 +4703,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 80,target,1,verdrietig,combinatie,verdrietig,1,36_2,2,36,58,sad,1.0,1,0.835895891065153,valence,36_2_trial_79_p1_verdrietig_combinatie_c1_final.avi
 81,target,1,blazen,combinatie,blazen,0,36_2,2,36,58,to blow,1.0,1,0.771810542050373,vocal_oral,36_2_trial_80_p1_blazen_combinatie_c0_final.avi
 82,target,1,fluisteren,combinatie,roddelen,0,36_2,2,36,58,to whisper,0.788,0,0.722861375889574,auditory,36_2_trial_81_p1_fluisteren_combinatie_c0_final.avi
-83,target,1,fluisteren,combinatie,smiespelen,1,36_2,2,36,58,to whisper,0.79645,0,0.722861375889574,auditory,36_2_trial_82_p1_fluisteren_combinatie_c1_final.avi
+83,target,1,fluisteren,combinatie,smiespelen,1,36_2,2,36,58,to whisper,0.81,0,0.722861375889574,auditory,36_2_trial_82_p1_fluisteren_combinatie_c1_final.avi
 84,target,1,fluisteren,combinatie,fluisteren,2,36_2,2,36,58,to whisper,1.0,1,0.722861375889574,auditory,36_2_trial_83_p1_fluisteren_combinatie_c2_final.avi
 85,practice,0,vliegtuig,gebaren,vliegen,0,36_2,2,36,57,airplane,0.872,0,,,36_2_pr_84_p0_vliegtuig_gebaren_c0_final.avi
 86,practice,0,vliegtuig,gebaren,vogel,1,36_2,2,36,57,airplane,0.64,0,,,36_2_pr_85_p0_vliegtuig_gebaren_c1_final.avi
@@ -4763,7 +4763,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 23,target,0,berg,geluiden,wind,0,37_1,1,37,59,mountain,0.557,0,0.292221991868001,environment,37_1_trial_22_p0_berg_geluiden_final.avi
 24,target,0,verdrietig,geluiden,snikken,0,37_1,1,37,59,sad,0.717,0,0.746777577338304,valence,37_1_trial_23_p0_verdrietig_geluiden_final.avi
 25,target,0,huilen,geluiden,huilen,0,37_1,1,37,59,to cry,1.0,1,0.822727134099333,vocal_oral,37_1_trial_24_p0_huilen_geluiden_final.avi
-26,target,0,vallen,geluiden,pijn hebben,0,37_1,1,37,59,to fall,0.8,0,0.407214738448983,locomotion,37_1_trial_25_p0_vallen_geluiden_final.avi
+26,target,0,vallen,geluiden,pijn hebben,0,37_1,1,37,59,to fall,0.79335,0,0.407214738448983,locomotion,37_1_trial_25_p0_vallen_geluiden_final.avi
 27,target,0,staan,geluiden,lachen,0,37_1,1,37,59,to stand,0.553,0,0.318111108747142,locomotion,37_1_trial_26_p0_staan_geluiden_final.avi
 28,practice,1,rijk,geluiden,geld,0,37_1,1,37,60,rich,0.585,0,,,37_1_pr_27_p1_rijk_geluiden_final.avi
 29,practice,1,knippen,geluiden,wegjagen,0,37_1,1,37,60,to cut,0.598,0,,,37_1_pr_28_p1_knippen_geluiden_final.avi
@@ -4867,7 +4867,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 73,target,1,heet,geluiden,vuur,1,37_2,2,37,60,hot,0.786,0,0.49098203287298,temperature,37_2_trial_72_p1_heet_geluiden_c1_final.avi
 74,target,1,heet,geluiden,heet,2,37_2,2,37,60,hot,1.0,1,0.49098203287298,temperature,37_2_trial_73_p1_heet_geluiden_c2_final.avi
 75,target,1,bang,geluiden,bang,0,37_2,2,37,60,scared,1.0,1,0.693961201585873,valence,37_2_trial_74_p1_bang_geluiden_c0_final.avi
-76,target,1,langzaam,geluiden,horror,0,37_2,2,37,60,slow,0.57145,0,0.369492215989784,manner,37_2_trial_75_p1_langzaam_geluiden_c0_final.avi
+76,target,1,langzaam,geluiden,horror,0,37_2,2,37,60,slow,0.56665,0,0.369492215989784,manner,37_2_trial_75_p1_langzaam_geluiden_c0_final.avi
 77,target,1,langzaam,geluiden,spannend,1,37_2,2,37,60,slow,0.559,0,0.369492215989784,manner,37_2_trial_76_p1_langzaam_geluiden_c1_final.avi
 78,target,1,langzaam,geluiden,snel,2,37_2,2,37,60,slow,0.774,0,0.369492215989784,manner,37_2_trial_77_p1_langzaam_geluiden_c2_final.avi
 79,target,1,drinken,geluiden,drinken,0,37_2,2,37,60,to drink,1.0,1,0.657074938645804,vocal_oral,37_2_trial_78_p1_drinken_geluiden_c0_final.avi
@@ -4955,7 +4955,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 46,practice,1,koken,gebaren,koken,0,38_1,1,38,62,to cook,1.0,1,,,38_1_pr_45_p1_koken_gebaren_final.avi
 47,practice,1,rijk,gebaren,rijk,0,38_1,1,38,62,rich,1.0,1,,,38_1_pr_46_p1_rijk_gebaren_final.avi
 48,target,1,vogel,gebaren,vliegen,0,38_1,1,38,62,bird,0.717,0,0.796298864905725,animal,38_1_trial_47_p1_vogel_gebaren_final.avi
-49,target,1,dood,gebaren,knockout,0,38_1,1,38,62,dead,0.77855,0,0.75602172047801,animate,38_1_trial_48_p1_dood_gebaren_final.avi
+49,target,1,dood,gebaren,knockout,0,38_1,1,38,62,dead,0.76335,0,0.75602172047801,animate,38_1_trial_48_p1_dood_gebaren_final.avi
 50,target,1,walgen,gebaren,braken,0,38_1,1,38,62,disgusted,0.741,0,0.584517923117511,valence,38_1_trial_49_p1_walgen_gebaren_final.avi
 51,target,1,misschien,gebaren,onwetend,0,38_1,1,38,62,maybe,0.533,0,0.504368306013113,logical,38_1_trial_50_p1_misschien_gebaren_final.avi
 52,target,1,niet,gebaren,nee,0,38_1,1,38,62,not,0.873,0,0.546206866167494,logical,38_1_trial_51_p1_niet_gebaren_final.avi
@@ -4965,7 +4965,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 2,practice,0,telefoon,gebaren,telefoon,1,38_2,2,38,61,telephone,1.0,1,,,38_2_pr_1_p0_telefoon_gebaren_c1_final.avi
 3,practice,0,klok,gebaren,horloge,0,38_2,2,38,61,clock,0.856,0,,,38_2_pr_2_p0_klok_gebaren_c0_final.avi
 4,practice,0,klok,gebaren,wachten,1,38_2,2,38,61,clock,0.568,0,,,38_2_pr_3_p0_klok_gebaren_c1_final.avi
-5,practice,0,klok,gebaren,op tijd,2,38_2,2,38,61,clock,0.80715,0,,,38_2_pr_4_p0_klok_gebaren_c2_final.avi
+5,practice,0,klok,gebaren,op tijd,2,38_2,2,38,61,clock,0.79,0,,,38_2_pr_4_p0_klok_gebaren_c2_final.avi
 6,target,0,blij,gebaren,glimlachen,0,38_2,2,38,61,happy,0.685,0,0.816089330970891,valence,38_2_trial_5_p0_blij_gebaren_c0_final.avi
 7,target,0,blij,gebaren,lachen,1,38_2,2,38,61,happy,0.673,0,0.816089330970891,valence,38_2_trial_6_p0_blij_gebaren_c1_final.avi
 8,target,0,blij,gebaren,goed,2,38_2,2,38,61,happy,0.697,0,0.816089330970891,valence,38_2_trial_7_p0_blij_gebaren_c2_final.avi
@@ -4986,7 +4986,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 23,target,0,water,gebaren,glas,1,38_2,2,38,61,water,0.705,0,0.560355838581374,environment,38_2_trial_22_p0_water_gebaren_c1_final.avi
 24,target,0,water,gebaren,dop,2,38_2,2,38,61,water,0.573,0,0.560355838581374,environment,38_2_trial_23_p0_water_gebaren_c2_final.avi
 25,practice,1,fiets,gebaren,fietsen,0,38_2,2,38,62,bicycle,0.975,0,,,38_2_pr_24_p1_fiets_gebaren_c0_final.avi
-26,practice,1,fiets,gebaren,trappers,1,38_2,2,38,62,bicycle,0.78215,0,,,38_2_pr_25_p1_fiets_gebaren_c1_final.avi
+26,practice,1,fiets,gebaren,trappers,1,38_2,2,38,62,bicycle,0.77335,0,,,38_2_pr_25_p1_fiets_gebaren_c1_final.avi
 27,practice,1,fiets,gebaren,wiel,2,38_2,2,38,62,bicycle,0.808,0,,,38_2_pr_26_p1_fiets_gebaren_c2_final.avi
 28,practice,1,glimlach,gebaren,glimlach,0,38_2,2,38,62,smile,1.0,1,,,38_2_pr_27_p1_glimlach_gebaren_c0_final.avi
 29,target,1,ei,gebaren,ei,0,38_2,2,38,62,egg,1.0,1,0.545621192753626,object,38_2_trial_28_p1_ei_gebaren_c0_final.avi
@@ -4996,7 +4996,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 33,target,1,onweer,gebaren,bliksem,0,38_2,2,38,62,thunder,0.846,0,0.397074838511763,environment,38_2_trial_32_p1_onweer_gebaren_c0_final.avi
 34,target,1,onweer,gebaren,onweer,1,38_2,2,38,62,thunder,1.0,1,0.397074838511763,environment,38_2_trial_33_p1_onweer_gebaren_c1_final.avi
 35,target,1,huilen,gebaren,huilen,0,38_2,2,38,62,to cry,1.0,1,0.842937622085652,vocal_oral,38_2_trial_34_p1_huilen_gebaren_c0_final.avi
-36,target,1,horen,gebaren,oordopjes,0,38_2,2,38,62,to hear,0.775,0,0.755612083056296,auditory,38_2_trial_35_p1_horen_gebaren_c0_final.avi
+36,target,1,horen,gebaren,oordopjes,0,38_2,2,38,62,to hear,0.76665,0,0.755612083056296,auditory,38_2_trial_35_p1_horen_gebaren_c0_final.avi
 37,target,1,horen,gebaren,suizen,1,38_2,2,38,62,to hear,0.647,0,0.755612083056296,auditory,38_2_trial_36_p1_horen_gebaren_c1_final.avi
 38,target,1,horen,gebaren,geluid,2,38_2,2,38,62,to hear,0.659,0,0.755612083056296,auditory,38_2_trial_37_p1_horen_gebaren_c2_final.avi
 39,target,1,slaan,gebaren,slaan,0,38_2,2,38,62,to hit,1.0,1,0.797135486956284,manual,38_2_trial_38_p1_slaan_gebaren_c0_final.avi
@@ -5108,7 +5108,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 30,target,1,luidruchtig,gebaren,schreeuwen,0,39_1,1,39,64,loud,0.734,0,0.618296512390658,auditory,39_1_trial_29_p1_luidruchtig_gebaren_final.avi
 31,target,1,ziek,gebaren,kater,0,39_1,1,39,64,sick,0.579,0,0.674832951598419,animate,39_1_trial_30_p1_ziek_gebaren_final.avi
 32,target,1,klein,gebaren,lift,0,39_1,1,39,64,small,0.511,0,0.782210786119577,quantity,39_1_trial_31_p1_klein_gebaren_final.avi
-33,target,1,piepen,gebaren,typegeluid,0,39_1,1,39,64,squeak,0.6,0,0.329523830267451,auditory,39_1_trial_32_p1_piepen_gebaren_final.avi
+33,target,1,piepen,gebaren,typegeluid,0,39_1,1,39,64,squeak,0.59335,0,0.329523830267451,auditory,39_1_trial_32_p1_piepen_gebaren_final.avi
 34,target,1,dik,gebaren,gorilla,0,39_1,1,39,64,thick,0.588,0,0.756104836111392,quantity,39_1_trial_33_p1_dik_gebaren_final.avi
 35,target,1,bijten,gebaren,bijten,0,39_1,1,39,64,to bite,1.0,1,0.788344961875328,vocal_oral,39_1_trial_34_p1_bijten_gebaren_final.avi
 36,target,1,lachen,gebaren,lachen,0,39_1,1,39,64,to laugh,1.0,1,0.829161424358265,vocal_oral,39_1_trial_35_p1_lachen_gebaren_final.avi
@@ -5158,7 +5158,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 26,target,0,kruipen,geluiden,vallen,2,39_2,2,39,63,to crawl,0.652,0,0.267089158391543,locomotion,39_2_trial_25_p0_kruipen_geluiden_c2_final.avi
 27,practice,1,geheim,geluiden,spuiten,0,39_2,2,39,64,secret,0.485,0,,,39_2_pr_26_p1_geheim_geluiden_c0_final.avi
 28,practice,1,geheim,geluiden,fluisteren,1,39_2,2,39,64,secret,0.645,0,,,39_2_pr_27_p1_geheim_geluiden_c1_final.avi
-29,practice,1,geheim,geluiden,spritzen,2,39_2,2,39,64,secret,0.5357,0,,,39_2_pr_28_p1_geheim_geluiden_c2_final.avi
+29,practice,1,geheim,geluiden,spritzen,2,39_2,2,39,64,secret,0.53335,0,,,39_2_pr_28_p1_geheim_geluiden_c2_final.avi
 30,practice,1,zingen,geluiden,zingen,0,39_2,2,39,64,to sing,1.0,1,,,39_2_pr_29_p1_zingen_geluiden_c0_final.avi
 31,target,1,kind,geluiden,baby,0,39_2,2,39,64,child,0.881,0,0.431409213563599,social,39_2_trial_30_p1_kind_geluiden_c0_final.avi
 32,target,1,kind,geluiden,huilen,1,39_2,2,39,64,child,0.557,0,0.431409213563599,social,39_2_trial_31_p1_kind_geluiden_c1_final.avi
@@ -5179,7 +5179,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 47,target,1,springen,geluiden,vallen,0,39_2,2,39,64,to jump,0.76,0,0.343503131163236,locomotion,39_2_trial_46_p1_springen_geluiden_c0_final.avi
 48,target,1,springen,geluiden,trampoline,1,39_2,2,39,64,to jump,0.708,0,0.343503131163236,locomotion,39_2_trial_47_p1_springen_geluiden_c1_final.avi
 49,target,1,springen,geluiden,stuiteren,2,39_2,2,39,64,to jump,0.781,0,0.343503131163236,locomotion,39_2_trial_48_p1_springen_geluiden_c2_final.avi
-50,practice,0,bal,combinatie,skippyballen,0,39_2,2,39,63,ball,0.82145,0,,,39_2_pr_49_p0_bal_combinatie_c0_final.avi
+50,practice,0,bal,combinatie,skippyballen,0,39_2,2,39,63,ball,0.81,0,,,39_2_pr_49_p0_bal_combinatie_c0_final.avi
 51,practice,0,bal,combinatie,basketballen,1,39_2,2,39,63,ball,0.799,0,,,39_2_pr_50_p0_bal_combinatie_c1_final.avi
 52,practice,0,bal,combinatie,balsport,2,39_2,2,39,63,ball,0.767,0,,,39_2_pr_51_p0_bal_combinatie_c2_final.avi
 53,practice,0,zwaaien,combinatie,groeten,0,39_2,2,39,63,to wave,0.613,0,,,39_2_pr_52_p0_zwaaien_combinatie_c0_final.avi
@@ -5241,7 +5241,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 109,target,1,hond,gebaren,hond,1,39_2,2,39,64,dog,1.0,1,0.702295683196924,animal,39_2_trial_108_p1_hond_gebaren_c1_final.avi
 110,target,1,zwaar,gebaren,zwaar,0,39_2,2,39,64,heavy,1.0,1,0.688818480327848,quantity,39_2_trial_109_p1_zwaar_gebaren_c0_final.avi
 111,target,1,langzaam,gebaren,snelwandelen,0,39_2,2,39,64,slow,0.567,0,0.689425946655567,manner,39_2_trial_110_p1_langzaam_gebaren_c0_final.avi
-112,target,1,langzaam,gebaren,slowmotion,1,39_2,2,39,64,slow,0.9107000000000001,0,0.689425946655567,manner,39_2_trial_111_p1_langzaam_gebaren_c1_final.avi
+112,target,1,langzaam,gebaren,slowmotion,1,39_2,2,39,64,slow,0.90335,0,0.689425946655567,manner,39_2_trial_111_p1_langzaam_gebaren_c1_final.avi
 113,target,1,langzaam,gebaren,langzaam,2,39_2,2,39,64,slow,1.0,1,0.689425946655567,manner,39_2_trial_112_p1_langzaam_gebaren_c2_final.avi
 114,target,1,geven,gebaren,geven,0,39_2,2,39,64,to give,1.0,1,0.667171182662108,manual,39_2_trial_113_p1_geven_gebaren_c0_final.avi
 1,practice,0,knippen,geluiden,slikken,0,3_1,1,3,65,to cut,0.546,0,,,3_1_pr_0_p0_knippen_geluiden_final.avi
@@ -5310,7 +5310,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 10,target,0,stil,geluiden,stil,0,3_2,2,3,65,silent,1.0,1,0.753476033670045,auditory,3_2_trial_9_p0_stil_geluiden_c0_final.avi
 11,target,0,dik,geluiden,trommelen,0,3_2,2,3,65,thick,0.547,0,0.328297815791421,quantity,3_2_trial_10_p0_dik_geluiden_c0_final.avi
 12,target,0,dik,geluiden,kruipen,1,3_2,2,3,65,thick,0.553,0,0.328297815791421,quantity,3_2_trial_11_p0_dik_geluiden_c1_final.avi
-13,target,0,dik,geluiden,traplopen,2,3_2,2,3,65,thick,0.57145,0,0.328297815791421,quantity,3_2_trial_12_p0_dik_geluiden_c2_final.avi
+13,target,0,dik,geluiden,traplopen,2,3_2,2,3,65,thick,0.56665,0,0.328297815791421,quantity,3_2_trial_12_p0_dik_geluiden_c2_final.avi
 14,target,0,horen,geluiden,snappen,0,3_2,2,3,65,to hear,0.689,0,0.293526913460625,auditory,3_2_trial_13_p0_horen_geluiden_c0_final.avi
 15,target,0,horen,geluiden,praten,1,3_2,2,3,65,to hear,0.7,0,0.293526913460625,auditory,3_2_trial_14_p0_horen_geluiden_c1_final.avi
 16,target,0,horen,geluiden,gesprek,2,3_2,2,3,65,to hear,0.627,0,0.293526913460625,auditory,3_2_trial_15_p0_horen_geluiden_c2_final.avi
@@ -5437,7 +5437,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 42,target,0,oud,geluiden,openmaken,0,40_1,1,40,67,old,0.525,0,0.310336292435631,time,40_1_trial_41_p0_oud_geluiden_final.avi
 43,target,0,langzaam,geluiden,spanning,0,40_1,1,40,67,slow,0.53,0,0.369492215989784,manner,40_1_trial_42_p0_langzaam_geluiden_final.avi
 44,target,0,staan,geluiden,snel,0,40_1,1,40,67,to stand,0.512,0,0.318111108747142,locomotion,40_1_trial_43_p0_staan_geluiden_final.avi
-45,target,0,fluisteren,geluiden,smiespelen,0,40_1,1,40,67,to whisper,0.79645,0,0.703341393070909,auditory,40_1_trial_44_p0_fluisteren_geluiden_final.avi
+45,target,0,fluisteren,geluiden,smiespelen,0,40_1,1,40,67,to whisper,0.81,0,0.703341393070909,auditory,40_1_trial_44_p0_fluisteren_geluiden_final.avi
 46,practice,1,dansen,geluiden,vrolijk,0,40_1,1,40,68,to dance,0.585,0,,,40_1_pr_45_p1_dansen_geluiden_final.avi
 47,practice,1,haasten,geluiden,snelheid,0,40_1,1,40,68,to hurry,0.727,0,,,40_1_pr_46_p1_haasten_geluiden_final.avi
 48,target,1,walgen,geluiden,afkeur,0,40_1,1,40,68,disgusted,0.67,0,0.664921279040402,valence,40_1_trial_47_p1_walgen_geluiden_final.avi
@@ -5512,7 +5512,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 63,practice,1,sneeuw,geluiden,zwemmen,2,40_2,2,40,68,snow,0.495,0,,,40_2_pr_62_p1_sneeuw_geluiden_c2_final.avi
 64,practice,1,glimlach,geluiden,liedje,0,40_2,2,40,68,smile,0.539,0,,,40_2_pr_63_p1_glimlach_geluiden_c0_final.avi
 65,practice,1,glimlach,geluiden,lachen,1,40_2,2,40,68,smile,0.858,0,,,40_2_pr_64_p1_glimlach_geluiden_c1_final.avi
-66,practice,1,glimlach,geluiden,giebelen,2,40_2,2,40,68,smile,0.77855,0,,,40_2_pr_65_p1_glimlach_geluiden_c2_final.avi
+66,practice,1,glimlach,geluiden,giebelen,2,40_2,2,40,68,smile,0.7766500000000001,0,,,40_2_pr_65_p1_glimlach_geluiden_c2_final.avi
 67,target,1,hond,geluiden,hond,0,40_2,2,40,68,dog,1.0,1,0.846022321803246,animal,40_2_trial_66_p1_hond_geluiden_c0_final.avi
 68,target,1,berg,geluiden,spannend,0,40_2,2,40,68,mountain,0.505,0,0.292221991868001,environment,40_2_trial_67_p1_berg_geluiden_c0_final.avi
 69,target,1,berg,geluiden,indrukwekkend,1,40_2,2,40,68,mountain,0.583,0,0.292221991868001,environment,40_2_trial_68_p1_berg_geluiden_c1_final.avi
@@ -5685,7 +5685,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 72,target,0,misschien,combinatie,twijfelen,0,41_2,2,41,69,maybe,0.642,0,0.599769001504526,logical,41_2_trial_71_p0_misschien_combinatie_c0_final.avi
 73,target,0,misschien,combinatie,overwegen,1,41_2,2,41,69,maybe,0.666,0,0.599769001504526,logical,41_2_trial_72_p0_misschien_combinatie_c1_final.avi
 74,target,0,misschien,combinatie,optie,2,41_2,2,41,69,maybe,0.589,0,0.599769001504526,logical,41_2_trial_73_p0_misschien_combinatie_c2_final.avi
-75,target,0,blazen,combinatie,bellenblazen,0,41_2,2,41,69,to blow,0.79645,0,0.771810542050373,vocal_oral,41_2_trial_74_p0_blazen_combinatie_c0_final.avi
+75,target,0,blazen,combinatie,bellenblazen,0,41_2,2,41,69,to blow,0.78665,0,0.771810542050373,vocal_oral,41_2_trial_74_p0_blazen_combinatie_c0_final.avi
 76,target,0,blazen,combinatie,blazen,1,41_2,2,41,69,to blow,1.0,1,0.771810542050373,vocal_oral,41_2_trial_75_p0_blazen_combinatie_c1_final.avi
 77,target,0,weten,combinatie,slim,0,41_2,2,41,69,to know,0.606,0,0.561280966931274,cognitive,41_2_trial_76_p0_weten_combinatie_c0_final.avi
 78,target,0,weten,combinatie,denken,1,41_2,2,41,69,to know,0.816,0,0.561280966931274,cognitive,41_2_trial_77_p0_weten_combinatie_c1_final.avi
@@ -5714,11 +5714,11 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 1,practice,0,haasten,gebaren,haasten,0,42_1,1,42,71,to hurry,1.0,1,,,42_1_pr_0_p0_haasten_gebaren_final.avi
 2,practice,0,snijden,gebaren,snijden,0,42_1,1,42,71,to cut,1.0,1,,,42_1_pr_1_p0_snijden_gebaren_final.avi
 3,target,0,hond,gebaren,hond,0,42_1,1,42,71,dog,1.0,1,0.702295683196924,animal,42_1_trial_2_p0_hond_gebaren_final.avi
-4,target,0,berg,gebaren,bergbeklimmen,0,42_1,1,42,71,mountain,0.8392999999999999,0,0.62087766049062,environment,42_1_trial_3_p0_berg_gebaren_final.avi
+4,target,0,berg,gebaren,bergbeklimmen,0,42_1,1,42,71,mountain,0.82335,0,0.62087766049062,environment,42_1_trial_3_p0_berg_gebaren_final.avi
 5,target,0,regen,gebaren,regen,0,42_1,1,42,71,rain,1.0,1,0.729078471280972,environment,42_1_trial_4_p0_regen_gebaren_final.avi
 6,target,0,staart,gebaren,staart,0,42_1,1,42,71,tail,1.0,1,0.594711648335829,quantity,42_1_trial_5_p0_staart_gebaren_final.avi
 7,target,0,lachen,gebaren,lachen,0,42_1,1,42,71,to laugh,1.0,1,0.829161424358265,vocal_oral,42_1_trial_6_p0_lachen_gebaren_final.avi
-8,target,0,likken,gebaren,schoonlikken,0,42_1,1,42,71,to lick,0.8643,0,0.757301371697859,gustatory,42_1_trial_7_p0_likken_gebaren_final.avi
+8,target,0,likken,gebaren,schoonlikken,0,42_1,1,42,71,to lick,0.85,0,0.757301371697859,gustatory,42_1_trial_7_p0_likken_gebaren_final.avi
 9,target,0,water,gebaren,water,0,42_1,1,42,71,water,1.0,1,0.560355838581374,environment,42_1_trial_8_p0_water_gebaren_final.avi
 10,practice,1,comfortabel,gebaren,chillen,0,42_1,1,42,72,comfortable,0.67,0,,,42_1_pr_9_p1_comfortabel_gebaren_final.avi
 11,practice,1,bloem,gebaren,bloem,0,42_1,1,42,72,flower,1.0,1,,,42_1_pr_10_p1_bloem_gebaren_final.avi
@@ -5816,7 +5816,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 49,target,1,bitter,gebaren,zuur,1,42_2,2,42,72,bitter,0.791,0,0.292422929920138,gustatory,42_2_trial_48_p1_bitter_gebaren_c1_final.avi
 50,target,1,bitter,gebaren,bitter,2,42_2,2,42,72,bitter,1.0,1,0.292422929920138,gustatory,42_2_trial_49_p1_bitter_gebaren_c2_final.avi
 51,target,1,ei,gebaren,ei,0,42_2,2,42,72,egg,1.0,1,0.545621192753626,object,42_2_trial_50_p1_ei_gebaren_c0_final.avi
-52,target,1,vuur,gebaren,open haard,0,42_2,2,42,72,fire,0.82855,0,0.612736156749429,object,42_2_trial_51_p1_vuur_gebaren_c0_final.avi
+52,target,1,vuur,gebaren,open haard,0,42_2,2,42,72,fire,0.8200000000000001,0,0.612736156749429,object,42_2_trial_51_p1_vuur_gebaren_c0_final.avi
 53,target,1,vuur,gebaren,vuur,1,42_2,2,42,72,fire,1.0,1,0.612736156749429,object,42_2_trial_52_p1_vuur_gebaren_c1_final.avi
 54,target,1,zwaar,gebaren,zwaar,0,42_2,2,42,72,heavy,1.0,1,0.688818480327848,quantity,42_2_trial_53_p1_zwaar_gebaren_c0_final.avi
 55,target,1,heet,gebaren,heet,0,42_2,2,42,72,hot,1.0,1,0.794304470986762,temperature,42_2_trial_54_p1_heet_gebaren_c0_final.avi
@@ -5848,7 +5848,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 81,practice,1,telefoon,geluiden,bezoek,2,42_2,2,42,72,telephone,0.592,0,,,42_2_pr_80_p1_telefoon_geluiden_c2_final.avi
 82,practice,1,bal,geluiden,vallen,0,42_2,2,42,72,ball,0.517,0,,,42_2_pr_81_p1_bal_geluiden_c0_final.avi
 83,practice,1,bal,geluiden,vallen,1,42_2,2,42,72,ball,0.517,0,,,42_2_pr_82_p1_bal_geluiden_c1_final.avi
-84,practice,1,bal,geluiden,traplopen,2,42_2,2,42,72,ball,0.5357,0,,,42_2_pr_83_p1_bal_geluiden_c2_final.avi
+84,practice,1,bal,geluiden,traplopen,2,42_2,2,42,72,ball,0.53335,0,,,42_2_pr_83_p1_bal_geluiden_c2_final.avi
 85,target,1,ver,geluiden,uitglijden,0,42_2,2,42,72,far,0.523,0,0.306589745694138,spatial,42_2_trial_84_p1_ver_geluiden_c0_final.avi
 86,target,1,ver,geluiden,vallen,1,42_2,2,42,72,far,0.548,0,0.306589745694138,spatial,42_2_trial_85_p1_ver_geluiden_c1_final.avi
 87,target,1,ver,geluiden,springen,2,42_2,2,42,72,far,0.541,0,0.306589745694138,spatial,42_2_trial_86_p1_ver_geluiden_c2_final.avi
@@ -6103,7 +6103,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 13,target,0,ziek,gebaren,koorts,0,44_2,2,44,75,sick,0.687,0,0.674832951598419,animate,44_2_trial_12_p0_ziek_gebaren_c0_final.avi
 14,target,0,ziek,gebaren,ziek,1,44_2,2,44,75,sick,1.0,1,0.674832951598419,animate,44_2_trial_13_p0_ziek_gebaren_c1_final.avi
 15,target,0,langzaam,gebaren,lopen,0,44_2,2,44,75,slow,0.614,0,0.689425946655567,manner,44_2_trial_14_p0_langzaam_gebaren_c0_final.avi
-16,target,0,langzaam,gebaren,slowmotion,1,44_2,2,44,75,slow,0.9107000000000001,0,0.689425946655567,manner,44_2_trial_15_p0_langzaam_gebaren_c1_final.avi
+16,target,0,langzaam,gebaren,slowmotion,1,44_2,2,44,75,slow,0.90335,0,0.689425946655567,manner,44_2_trial_15_p0_langzaam_gebaren_c1_final.avi
 17,target,0,langzaam,gebaren,langzaam,2,44_2,2,44,75,slow,1.0,1,0.689425946655567,manner,44_2_trial_16_p0_langzaam_gebaren_c2_final.avi
 18,target,0,klein,gebaren,klein,0,44_2,2,44,75,small,1.0,1,0.782210786119577,quantity,44_2_trial_17_p0_klein_gebaren_c0_final.avi
 19,practice,1,juichen,gebaren,feesten,0,44_2,2,44,76,to cheer,0.651,0,,,44_2_pr_18_p1_juichen_gebaren_c0_final.avi
@@ -6128,7 +6128,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 38,target,0,ei,combinatie,kip,0,44_2,2,44,75,egg,0.77,0,0.581012583251545,object,44_2_trial_37_p0_ei_combinatie_c0_final.avi
 39,target,0,ei,combinatie,ei,1,44_2,2,44,75,egg,1.0,1,0.581012583251545,object,44_2_trial_38_p0_ei_combinatie_c1_final.avi
 40,target,0,blij,combinatie,lachen,0,44_2,2,44,75,happy,0.673,0,0.797175441371254,valence,44_2_trial_39_p0_blij_combinatie_c0_final.avi
-41,target,0,blij,combinatie,mondhoek,1,44_2,2,44,75,happy,0.7464500000000001,0,0.797175441371254,valence,44_2_trial_40_p0_blij_combinatie_c1_final.avi
+41,target,0,blij,combinatie,mondhoek,1,44_2,2,44,75,happy,0.74,0,0.797175441371254,valence,44_2_trial_40_p0_blij_combinatie_c1_final.avi
 42,target,0,blij,combinatie,goed,2,44_2,2,44,75,happy,0.697,0,0.797175441371254,valence,44_2_trial_41_p0_blij_combinatie_c2_final.avi
 43,target,0,hoorn,combinatie,hoorn,0,44_2,2,44,75,horn,1.0,1,0.523817227867007,other,44_2_trial_42_p0_hoorn_combinatie_c0_final.avi
 44,target,0,bliksem,combinatie,bliksem,0,44_2,2,44,75,lightning,1.0,1,0.596218227203866,environment,44_2_trial_43_p0_bliksem_combinatie_c0_final.avi
@@ -6375,7 +6375,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 8,target,0,vallen,combinatie,vallen,0,46_1,1,46,79,to fall,1.0,1,0.723823542025595,locomotion,46_1_trial_7_p0_vallen_combinatie_final.avi
 9,target,0,likken,combinatie,likken,0,46_1,1,46,79,to lick,1.0,1,0.791051083509889,gustatory,46_1_trial_8_p0_likken_combinatie_final.avi
 10,practice,1,snijden,combinatie,snijden,0,46_1,1,46,80,to cut,1.0,1,,,46_1_pr_9_p1_snijden_combinatie_final.avi
-11,practice,1,gek,combinatie,gekke bek,0,46_1,1,46,80,crazy,0.8107,0,,,46_1_pr_10_p1_gek_combinatie_final.avi
+11,practice,1,gek,combinatie,gekke bek,0,46_1,1,46,80,crazy,0.8,0,,,46_1_pr_10_p1_gek_combinatie_final.avi
 12,target,1,zoemen,combinatie,vlieg,0,46_1,1,46,80,buzz,0.592,0,0.647930328473485,auditory,46_1_trial_11_p1_zoemen_combinatie_final.avi
 13,target,1,koud,combinatie,koud,0,46_1,1,46,80,cold,1.0,1,0.819687004635733,temperature,46_1_trial_12_p1_koud_combinatie_final.avi
 14,target,1,heet,combinatie,heet,0,46_1,1,46,80,hot,1.0,1,0.785049622345663,temperature,46_1_trial_13_p1_heet_combinatie_final.avi
@@ -6406,7 +6406,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 39,target,0,ik,geluiden,piepen,0,46_1,1,46,79,I,0.53,0,0.357741139583888,social,46_1_trial_38_p0_ik_geluiden_final.avi
 40,target,0,vlieg,geluiden,zoemen,0,46_1,1,46,79,fly,0.592,0,0.56695234249888,animal,46_1_trial_39_p0_vlieg_geluiden_final.avi
 41,target,0,bliksem,geluiden,bom,0,46_1,1,46,79,lightning,0.59,0,0.549301947437214,environment,46_1_trial_40_p0_bliksem_geluiden_final.avi
-42,target,0,staart,geluiden,racewagen,0,46_1,1,46,79,tail,0.54645,0,0.26916670248274,quantity,46_1_trial_41_p0_staart_geluiden_final.avi
+42,target,0,staart,geluiden,racewagen,0,46_1,1,46,79,tail,0.54335,0,0.26916670248274,quantity,46_1_trial_41_p0_staart_geluiden_final.avi
 43,target,0,kauwen,geluiden,smakken,0,46_1,1,46,79,to chew,0.65,0,0.713509315277749,gustatory,46_1_trial_42_p0_kauwen_geluiden_final.avi
 44,target,0,ruiken,geluiden,snuiven,0,46_1,1,46,79,to smell,0.817,0,0.50270369735164,olfactory,46_1_trial_43_p0_ruiken_geluiden_final.avi
 45,target,0,zwemmen,geluiden,langskomen,0,46_1,1,46,79,to swim,0.55,0,0.331918128145918,locomotion,46_1_trial_44_p0_zwemmen_geluiden_final.avi
@@ -6484,7 +6484,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 63,target,1,misschien,geluiden,teleurstelling,1,46_2,2,46,80,maybe,0.552,0,0.314638353811457,logical,46_2_trial_62_p1_misschien_geluiden_c1_final.avi
 64,target,1,misschien,geluiden,kiezen,2,46_2,2,46,80,maybe,0.579,0,0.314638353811457,logical,46_2_trial_63_p1_misschien_geluiden_c2_final.avi
 65,target,1,piepen,geluiden,bellen,0,46_2,2,46,80,squeak,0.675,0,0.74489926936724,auditory,46_2_trial_64_p1_piepen_geluiden_c0_final.avi
-66,target,1,piepen,geluiden,achteruit rijden,1,46_2,2,46,80,squeak,0.71785,0,0.74489926936724,auditory,46_2_trial_65_p1_piepen_geluiden_c1_final.avi
+66,target,1,piepen,geluiden,achteruit rijden,1,46_2,2,46,80,squeak,0.70665,0,0.74489926936724,auditory,46_2_trial_65_p1_piepen_geluiden_c1_final.avi
 67,target,1,piepen,geluiden,vogel,2,46_2,2,46,80,squeak,0.599,0,0.74489926936724,auditory,46_2_trial_66_p1_piepen_geluiden_c2_final.avi
 68,target,1,huilen,geluiden,lachen,0,46_2,2,46,80,to cry,0.726,0,0.822727134099333,vocal_oral,46_2_trial_67_p1_huilen_geluiden_c0_final.avi
 69,target,1,huilen,geluiden,huilen,1,46_2,2,46,80,to cry,1.0,1,0.822727134099333,vocal_oral,46_2_trial_68_p1_huilen_geluiden_c1_final.avi
@@ -6503,7 +6503,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 82,target,0,geur,combinatie,geur,1,46_2,2,46,79,odor,1.0,1,0.665167842854809,olfactory,46_2_trial_81_p0_geur_combinatie_c1_final.avi
 83,target,0,oud,combinatie,oud,0,46_2,2,46,79,old,1.0,1,0.598288311266584,time,46_2_trial_82_p0_oud_combinatie_c0_final.avi
 84,target,0,regen,combinatie,regen,0,46_2,2,46,79,rain,1.0,1,0.719579068930045,environment,46_2_trial_83_p0_regen_combinatie_c0_final.avi
-85,target,0,langzaam,combinatie,slowmotion,0,46_2,2,46,79,slow,0.9107000000000001,0,0.697044299048591,manner,46_2_trial_84_p0_langzaam_combinatie_c0_final.avi
+85,target,0,langzaam,combinatie,slowmotion,0,46_2,2,46,79,slow,0.90335,0,0.697044299048591,manner,46_2_trial_84_p0_langzaam_combinatie_c0_final.avi
 86,target,0,langzaam,combinatie,langzaam,1,46_2,2,46,79,slow,1.0,1,0.697044299048591,manner,46_2_trial_85_p0_langzaam_combinatie_c1_final.avi
 87,target,0,slang,combinatie,slang,0,46_2,2,46,79,snake,1.0,1,0.80478903012149,animal,46_2_trial_86_p0_slang_combinatie_c0_final.avi
 88,practice,1,klok,combinatie,tijd,0,46_2,2,46,80,clock,0.666,0,,,46_2_pr_87_p1_klok_combinatie_c0_final.avi
@@ -6621,7 +6621,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 44,target,0,blazen,geluiden,wind,0,47_2,2,47,81,to blow,0.732,0,0.805891834375597,vocal_oral,47_2_trial_43_p0_blazen_geluiden_c0_final.avi
 45,target,0,blazen,geluiden,blazen,1,47_2,2,47,81,to blow,1.0,1,0.805891834375597,vocal_oral,47_2_trial_44_p0_blazen_geluiden_c1_final.avi
 46,target,0,ademen,geluiden,hijgen,0,47_2,2,47,81,to breathe,0.797,0,0.784779073219606,olfactory,47_2_trial_45_p0_ademen_geluiden_c0_final.avi
-47,target,0,ademen,geluiden,buiten adem,1,47_2,2,47,81,to breathe,0.77145,0,0.784779073219606,olfactory,47_2_trial_46_p0_ademen_geluiden_c1_final.avi
+47,target,0,ademen,geluiden,buiten adem,1,47_2,2,47,81,to breathe,0.76,0,0.784779073219606,olfactory,47_2_trial_46_p0_ademen_geluiden_c1_final.avi
 48,target,0,ademen,geluiden,rennen,2,47_2,2,47,81,to breathe,0.58,0,0.784779073219606,olfactory,47_2_trial_47_p0_ademen_geluiden_c2_final.avi
 49,target,0,weten,geluiden,idee,0,47_2,2,47,81,to know,0.646,0,0.388979878106872,cognitive,47_2_trial_48_p0_weten_geluiden_c0_final.avi
 50,target,0,weten,geluiden,denken,1,47_2,2,47,81,to know,0.816,0,0.388979878106872,cognitive,47_2_trial_49_p0_weten_geluiden_c1_final.avi
@@ -6688,7 +6688,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 2,practice,0,koken,geluiden,stoom,0,48_1,1,48,83,to cook,0.646,0,,,48_1_pr_1_p0_koken_geluiden_final.avi
 3,target,0,ver,geluiden,vuurwerk,0,48_1,1,48,83,far,0.529,0,0.306589745694138,spatial,48_1_trial_2_p0_ver_geluiden_final.avi
 4,target,0,blij,geluiden,idee,0,48_1,1,48,83,happy,0.539,0,0.571342868662109,valence,48_1_trial_3_p0_blij_geluiden_final.avi
-5,target,0,hoog,geluiden,formule 1,0,48_1,1,48,83,high,0.55715,0,0.312736784773088,auditory,48_1_trial_4_p0_hoog_geluiden_final.avi
+5,target,0,hoog,geluiden,formule 1,0,48_1,1,48,83,high,0.55335,0,0.312736784773088,auditory,48_1_trial_4_p0_hoog_geluiden_final.avi
 6,target,0,bang,geluiden,koud,0,48_1,1,48,83,scared,0.6,0,0.693961201585873,valence,48_1_trial_5_p0_bang_geluiden_final.avi
 7,target,0,slang,geluiden,slang,0,48_1,1,48,83,snake,1.0,1,0.756185551284266,animal,48_1_trial_6_p0_slang_geluiden_final.avi
 8,target,0,drinken,geluiden,drinken,0,48_1,1,48,83,to drink,1.0,1,0.657074938645804,vocal_oral,48_1_trial_7_p0_drinken_geluiden_final.avi
@@ -7290,7 +7290,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 95,target,0,zoet,combinatie,zoet,1,50_2,2,50,89,sweet,1.0,1,0.307835133794218,gustatory,50_2_trial_94_p0_zoet_combinatie_c1_final.avi
 96,target,0,likken,combinatie,likken,0,50_2,2,50,89,to lick,1.0,1,0.791051083509889,gustatory,50_2_trial_95_p0_likken_combinatie_c0_final.avi
 97,practice,1,fiets,combinatie,fietsen,0,50_2,2,50,90,bicycle,0.975,0,,,50_2_pr_96_p1_fiets_combinatie_c0_final.avi
-98,practice,1,fiets,combinatie,fietsbel,1,50_2,2,50,90,bicycle,0.85355,0,,,50_2_pr_97_p1_fiets_combinatie_c1_final.avi
+98,practice,1,fiets,combinatie,fietsbel,1,50_2,2,50,90,bicycle,0.83335,0,,,50_2_pr_97_p1_fiets_combinatie_c1_final.avi
 99,practice,1,fiets,combinatie,wielrennen,2,50_2,2,50,90,bicycle,0.895,0,,,50_2_pr_98_p1_fiets_combinatie_c2_final.avi
 100,practice,1,klok,combinatie,klok,0,50_2,2,50,90,clock,1.0,1,,,50_2_pr_99_p1_klok_combinatie_c0_final.avi
 101,target,1,hond,combinatie,hond,0,50_2,2,50,90,dog,1.0,1,0.779877846324741,animal,50_2_trial_100_p1_hond_combinatie_c0_final.avi
@@ -7330,7 +7330,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 21,target,0,vogel,combinatie,vogel,0,51_1,1,51,91,bird,1.0,1,0.806460221089258,animal,51_1_trial_20_p0_vogel_combinatie_final.avi
 22,target,0,berg,combinatie,klimmen,0,51_1,1,51,91,mountain,0.704,0,0.63512643878935,environment,51_1_trial_21_p0_berg_combinatie_final.avi
 23,target,0,scherp,combinatie,snijden,0,51_1,1,51,91,sharp,0.623,0,0.557153125291575,haptic,51_1_trial_22_p0_scherp_combinatie_final.avi
-24,target,0,langzaam,combinatie,slowmotion,0,51_1,1,51,91,slow,0.9107000000000001,0,0.697044299048591,manner,51_1_trial_23_p0_langzaam_combinatie_final.avi
+24,target,0,langzaam,combinatie,slowmotion,0,51_1,1,51,91,slow,0.90335,0,0.697044299048591,manner,51_1_trial_23_p0_langzaam_combinatie_final.avi
 25,target,0,klein,combinatie,kuikentje,0,51_1,1,51,91,small,0.643,0,0.779274600156361,quantity,51_1_trial_24_p0_klein_combinatie_final.avi
 26,target,0,slaan,combinatie,slaan,0,51_1,1,51,91,to hit,1.0,1,0.794014980882957,manual,51_1_trial_25_p0_slaan_combinatie_final.avi
 27,target,0,weten,combinatie,begrijpen,0,51_1,1,51,91,to know,0.866,0,0.561280966931274,cognitive,51_1_trial_26_p0_weten_combinatie_final.avi
@@ -7485,7 +7485,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 19,practice,0,comfortabel,combinatie,gezellig,0,52_1,1,52,93,comfortable,0.826,0,,,52_1_pr_18_p0_comfortabel_combinatie_final.avi
 20,practice,0,haasten,combinatie,rennen,0,52_1,1,52,93,to hurry,0.678,0,,,52_1_pr_19_p0_haasten_combinatie_final.avi
 21,target,0,vogel,combinatie,vogel,0,52_1,1,52,93,bird,1.0,1,0.806460221089258,animal,52_1_trial_20_p0_vogel_combinatie_final.avi
-22,target,0,oud,combinatie,oud persoon,0,52_1,1,52,93,old,0.88215,0,0.598288311266584,time,52_1_trial_21_p0_oud_combinatie_final.avi
+22,target,0,oud,combinatie,oud persoon,0,52_1,1,52,93,old,0.86665,0,0.598288311266584,time,52_1_trial_21_p0_oud_combinatie_final.avi
 23,target,0,regen,combinatie,regen,0,52_1,1,52,93,rain,1.0,1,0.719579068930045,environment,52_1_trial_22_p0_regen_combinatie_final.avi
 24,target,0,blazen,combinatie,blazen,0,52_1,1,52,93,to blow,1.0,1,0.771810542050373,vocal_oral,52_1_trial_23_p0_blazen_combinatie_final.avi
 25,target,0,eten,combinatie,eten,0,52_1,1,52,93,to eat,1.0,1,0.799176047935077,vocal_oral,52_1_trial_24_p0_eten_combinatie_final.avi
@@ -7619,7 +7619,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 1,practice,0,comfortabel,combinatie,opgelucht,0,53_1,1,53,95,comfortable,0.633,0,,,53_1_pr_0_p0_comfortabel_combinatie_final.avi
 2,practice,0,koken,combinatie,koken,0,53_1,1,53,95,to cook,1.0,1,,,53_1_pr_1_p0_koken_combinatie_final.avi
 3,target,0,vuur,combinatie,pijn,0,53_1,1,53,95,fire,0.545,0,0.603966694081322,object,53_1_trial_2_p0_vuur_combinatie_final.avi
-4,target,0,hoog,combinatie,onder de indruk,0,53_1,1,53,95,high,0.6285499999999999,0,0.749105900955685,auditory,53_1_trial_3_p0_hoog_combinatie_final.avi
+4,target,0,hoog,combinatie,onder de indruk,0,53_1,1,53,95,high,0.62,0,0.749105900955685,auditory,53_1_trial_3_p0_hoog_combinatie_final.avi
 5,target,0,heet,combinatie,pijn,0,53_1,1,53,95,hot,0.56,0,0.785049622345663,temperature,53_1_trial_4_p0_heet_combinatie_final.avi
 6,target,0,verdrietig,combinatie,huilen,0,53_1,1,53,95,sad,0.695,0,0.835895891065153,valence,53_1_trial_5_p0_verdrietig_combinatie_final.avi
 7,target,0,slang,combinatie,slang,0,53_1,1,53,95,snake,1.0,1,0.80478903012149,animal,53_1_trial_6_p0_slang_combinatie_final.avi
@@ -7794,7 +7794,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 12,target,1,bitter,gebaren,eten,0,54_1,1,54,98,bitter,0.502,0,0.292422929920138,gustatory,54_1_trial_11_p1_bitter_gebaren_final.avi
 13,target,1,blij,gebaren,lachen,0,54_1,1,54,98,happy,0.673,0,0.816089330970891,valence,54_1_trial_12_p1_blij_gebaren_final.avi
 14,target,1,heet,gebaren,heet,0,54_1,1,54,98,hot,1.0,1,0.794304470986762,temperature,54_1_trial_13_p1_heet_gebaren_final.avi
-15,target,1,langzaam,gebaren,slowmotion,0,54_1,1,54,98,slow,0.9107000000000001,0,0.689425946655567,manner,54_1_trial_14_p1_langzaam_gebaren_final.avi
+15,target,1,langzaam,gebaren,slowmotion,0,54_1,1,54,98,slow,0.90335,0,0.689425946655567,manner,54_1_trial_14_p1_langzaam_gebaren_final.avi
 16,target,1,sterk,gebaren,sterk,0,54_1,1,54,98,strong,1.0,1,0.824278361111733,animate,54_1_trial_15_p1_sterk_gebaren_final.avi
 17,target,1,ademen,gebaren,ademen,0,54_1,1,54,98,to breathe,1.0,1,0.781560751401395,olfactory,54_1_trial_16_p1_ademen_gebaren_final.avi
 18,target,1,horen,gebaren,oor,0,54_1,1,54,98,to hear,0.608,0,0.755612083056296,auditory,54_1_trial_17_p1_horen_gebaren_final.avi
@@ -7895,7 +7895,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 59,target,1,grommen,combinatie,grommen,0,54_2,2,54,98,to growl,1.0,1,0.713962417775868,vocal_oral,54_2_trial_58_p1_grommen_combinatie_c0_final.avi
 60,target,1,lachen,combinatie,lachen,0,54_2,2,54,98,to laugh,1.0,1,0.852786166779168,vocal_oral,54_2_trial_59_p1_lachen_combinatie_c0_final.avi
 61,practice,0,bal,geluiden,druppelen,0,54_2,2,54,97,ball,0.55,0,,,54_2_pr_60_p0_bal_geluiden_c0_final.avi
-62,practice,0,bal,geluiden,pingpongen,1,54_2,2,54,97,ball,0.7464500000000001,0,,,54_2_pr_61_p0_bal_geluiden_c1_final.avi
+62,practice,0,bal,geluiden,pingpongen,1,54_2,2,54,97,ball,0.73665,0,,,54_2_pr_61_p0_bal_geluiden_c1_final.avi
 63,practice,0,bal,geluiden,tafeltennis,2,54_2,2,54,97,ball,0.752,0,,,54_2_pr_62_p0_bal_geluiden_c2_final.avi
 64,practice,0,sneeuw,geluiden,koud,0,54_2,2,54,97,snow,0.736,0,,,54_2_pr_63_p0_sneeuw_geluiden_c0_final.avi
 65,practice,0,sneeuw,geluiden,versnellen,1,54_2,2,54,97,snow,0.507,0,,,54_2_pr_64_p0_sneeuw_geluiden_c1_final.avi
@@ -8049,7 +8049,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 53,target,0,berg,geluiden,moe,0,55_2,2,55,99,mountain,0.529,0,0.292221991868001,environment,55_2_trial_52_p0_berg_geluiden_c0_final.avi
 54,target,0,berg,geluiden,blazen,1,55_2,2,55,99,mountain,0.504,0,0.292221991868001,environment,55_2_trial_53_p0_berg_geluiden_c1_final.avi
 55,target,0,berg,geluiden,wind,2,55_2,2,55,99,mountain,0.557,0,0.292221991868001,environment,55_2_trial_54_p0_berg_geluiden_c2_final.avi
-56,target,0,ruiken,geluiden,sniffen,0,55_2,2,55,99,to smell,0.90355,0,0.50270369735164,olfactory,55_2_trial_55_p0_ruiken_geluiden_c0_final.avi
+56,target,0,ruiken,geluiden,sniffen,0,55_2,2,55,99,to smell,0.90335,0,0.50270369735164,olfactory,55_2_trial_55_p0_ruiken_geluiden_c0_final.avi
 57,target,0,ruiken,geluiden,ruiken,1,55_2,2,55,99,to smell,1.0,1,0.50270369735164,olfactory,55_2_trial_56_p0_ruiken_geluiden_c1_final.avi
 58,target,0,lopen,geluiden,stukjes,0,55_2,2,55,99,to walk,0.543,0,0.319057764809126,locomotion,55_2_trial_57_p0_lopen_geluiden_c0_final.avi
 59,target,0,lopen,geluiden,opblazen,1,55_2,2,55,99,to walk,0.605,0,0.319057764809126,locomotion,55_2_trial_58_p0_lopen_geluiden_c1_final.avi
@@ -8087,7 +8087,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 91,target,0,vuur,combinatie,ontploffing,1,55_2,2,55,99,fire,0.722,0,0.603966694081322,object,55_2_trial_90_p0_vuur_combinatie_c1_final.avi
 92,target,0,vuur,combinatie,vuurwerk,2,55_2,2,55,99,fire,0.767,0,0.603966694081322,object,55_2_trial_91_p0_vuur_combinatie_c2_final.avi
 93,target,0,blij,combinatie,juichen,0,55_2,2,55,99,happy,0.74,0,0.797175441371254,valence,55_2_trial_92_p0_blij_combinatie_c0_final.avi
-94,target,0,blij,combinatie,supporten,1,55_2,2,55,99,happy,0.69645,0,0.797175441371254,valence,55_2_trial_93_p0_blij_combinatie_c1_final.avi
+94,target,0,blij,combinatie,supporten,1,55_2,2,55,99,happy,0.68665,0,0.797175441371254,valence,55_2_trial_93_p0_blij_combinatie_c1_final.avi
 95,target,0,blij,combinatie,plezier,2,55_2,2,55,99,happy,0.719,0,0.797175441371254,valence,55_2_trial_94_p0_blij_combinatie_c2_final.avi
 96,target,0,bliksem,combinatie,krassen,0,55_2,2,55,99,lightning,0.54,0,0.596218227203866,environment,55_2_trial_95_p0_bliksem_combinatie_c0_final.avi
 97,target,0,bliksem,combinatie,vulkaan,1,55_2,2,55,99,lightning,0.593,0,0.596218227203866,environment,55_2_trial_96_p0_bliksem_combinatie_c1_final.avi
@@ -8196,7 +8196,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 27,target,1,kind,geluiden,praten,2,56_2,2,56,102,child,0.52,0,0.431409213563599,social,56_2_trial_26_p1_kind_geluiden_c2_final.avi
 28,target,1,snel,geluiden,wind,0,56_2,2,56,102,fast,0.544,0,0.45736979983774,manner,56_2_trial_27_p1_snel_geluiden_c0_final.avi
 29,target,1,snel,geluiden,racen,1,56_2,2,56,102,fast,0.635,0,0.45736979983774,manner,56_2_trial_28_p1_snel_geluiden_c1_final.avi
-30,target,1,snel,geluiden,formule 1,2,56_2,2,56,102,fast,0.7893,0,0.45736979983774,manner,56_2_trial_29_p1_snel_geluiden_c2_final.avi
+30,target,1,snel,geluiden,formule 1,2,56_2,2,56,102,fast,0.78,0,0.45736979983774,manner,56_2_trial_29_p1_snel_geluiden_c2_final.avi
 31,target,1,luidruchtig,geluiden,schreeuwen,0,56_2,2,56,102,loud,0.734,0,0.587862264905011,auditory,56_2_trial_30_p1_luidruchtig_geluiden_c0_final.avi
 32,target,1,luidruchtig,geluiden,lachen,1,56_2,2,56,102,loud,0.57,0,0.587862264905011,auditory,56_2_trial_31_p1_luidruchtig_geluiden_c1_final.avi
 33,target,1,luidruchtig,geluiden,instemmen,2,56_2,2,56,102,loud,0.5,0,0.587862264905011,auditory,56_2_trial_32_p1_luidruchtig_geluiden_c2_final.avi
@@ -8210,7 +8210,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 41,target,1,kauwen,geluiden,kauwen,2,56_2,2,56,102,to chew,1.0,1,0.713509315277749,gustatory,56_2_trial_40_p1_kauwen_geluiden_c2_final.avi
 42,target,1,geven,geluiden,instemmen,0,56_2,2,56,102,to give,0.704,0,0.275959375649482,manual,56_2_trial_41_p1_geven_geluiden_c0_final.avi
 43,target,1,geven,geluiden,eens,1,56_2,2,56,102,to give,0.578,0,0.275959375649482,manual,56_2_trial_42_p1_geven_geluiden_c1_final.avi
-44,target,1,geven,geluiden,ohja,2,56_2,2,56,102,to give,0.5357,0,0.275959375649482,manual,56_2_trial_43_p1_geven_geluiden_c2_final.avi
+44,target,1,geven,geluiden,ohja,2,56_2,2,56,102,to give,0.53335,0,0.275959375649482,manual,56_2_trial_43_p1_geven_geluiden_c2_final.avi
 45,practice,0,geheim,gebaren,stil,0,56_2,2,56,101,secret,0.633,0,,,56_2_pr_44_p0_geheim_gebaren_c0_final.avi
 46,practice,0,geheim,gebaren,zachtjes,1,56_2,2,56,101,secret,0.589,0,,,56_2_pr_45_p0_geheim_gebaren_c1_final.avi
 47,practice,0,geheim,gebaren,fluisteren,2,56_2,2,56,101,secret,0.645,0,,,56_2_pr_46_p0_geheim_gebaren_c2_final.avi
@@ -8428,7 +8428,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 94,target,0,gooien,gebaren,gooien,0,57_2,2,57,103,to throw,1.0,1,0.828635174388149,manual,57_2_trial_93_p0_gooien_gebaren_c0_final.avi
 95,practice,1,geheim,gebaren,klein,0,57_2,2,57,104,secret,0.539,0,,,57_2_pr_94_p1_geheim_gebaren_c0_final.avi
 96,practice,1,geheim,gebaren,fluisteren,1,57_2,2,57,104,secret,0.645,0,,,57_2_pr_95_p1_geheim_gebaren_c1_final.avi
-97,practice,1,geheim,gebaren,stil zijn,2,57_2,2,57,104,secret,0.75,0,,,57_2_pr_96_p1_geheim_gebaren_c2_final.avi
+97,practice,1,geheim,gebaren,stil zijn,2,57_2,2,57,104,secret,0.74,0,,,57_2_pr_96_p1_geheim_gebaren_c2_final.avi
 98,practice,1,sneeuw,gebaren,sneeuw,0,57_2,2,57,104,snow,1.0,1,,,57_2_pr_97_p1_sneeuw_gebaren_c0_final.avi
 99,target,1,walgen,gebaren,vies,0,57_2,2,57,104,disgusted,0.677,0,0.584517923117511,valence,57_2_trial_98_p1_walgen_gebaren_c0_final.avi
 100,target,1,walgen,gebaren,misselijk,1,57_2,2,57,104,disgusted,0.873,0,0.584517923117511,valence,57_2_trial_99_p1_walgen_gebaren_c1_final.avi
@@ -8610,10 +8610,10 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 2,practice,0,olifant,combinatie,olifant,0,59_1,1,59,107,elephant,1.0,1,,,59_1_pr_1_p0_olifant_combinatie_final.avi
 3,target,0,berg,combinatie,bom,0,59_1,1,59,107,mountain,0.542,0,0.63512643878935,environment,59_1_trial_2_p0_berg_combinatie_final.avi
 4,target,0,niet,combinatie,nee,0,59_1,1,59,107,not,0.873,0,0.582985856060995,logical,59_1_trial_3_p0_niet_combinatie_final.avi
-5,target,0,dik,combinatie,grote buik,0,59_1,1,59,107,thick,0.875,0,0.770642312607539,quantity,59_1_trial_4_p0_dik_combinatie_final.avi
+5,target,0,dik,combinatie,grote buik,0,59_1,1,59,107,thick,0.86,0,0.770642312607539,quantity,59_1_trial_4_p0_dik_combinatie_final.avi
 6,target,0,verbranden,combinatie,schreeuw,0,59_1,1,59,107,to burn,0.521,0,0.56189613651175,other,59_1_trial_5_p0_verbranden_combinatie_final.avi
 7,target,0,geven,combinatie,geven,0,59_1,1,59,107,to give,1.0,1,0.65119202306575,manual,59_1_trial_6_p0_geven_combinatie_final.avi
-8,target,0,grommen,combinatie,iemand laten schrikken,0,59_1,1,59,107,to growl,0.6893,0,0.713962417775868,vocal_oral,59_1_trial_7_p0_grommen_combinatie_final.avi
+8,target,0,grommen,combinatie,iemand laten schrikken,0,59_1,1,59,107,to growl,0.67665,0,0.713962417775868,vocal_oral,59_1_trial_7_p0_grommen_combinatie_final.avi
 9,target,0,springen,combinatie,verbazing,0,59_1,1,59,107,to jump,0.568,0,0.814537922310332,locomotion,59_1_trial_8_p0_springen_combinatie_final.avi
 10,practice,1,snijden,combinatie,snijden,0,59_1,1,59,108,to cut,1.0,1,,,59_1_pr_9_p1_snijden_combinatie_final.avi
 11,practice,1,leeg,combinatie,verrassing,0,59_1,1,59,108,empty,0.511,0,,,59_1_pr_10_p1_leeg_combinatie_final.avi
@@ -8704,10 +8704,10 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 42,target,0,horen,geluiden,instemmen,2,59_2,2,59,107,to hear,0.731,0,0.293526913460625,auditory,59_2_trial_41_p0_horen_geluiden_c2_final.avi
 43,target,0,staan,geluiden,alien,0,59_2,2,59,107,to stand,0.511,0,0.318111108747142,locomotion,59_2_trial_42_p0_staan_geluiden_c0_final.avi
 44,target,0,staan,geluiden,verward,1,59_2,2,59,107,to stand,0.537,0,0.318111108747142,locomotion,59_2_trial_43_p0_staan_geluiden_c1_final.avi
-45,target,0,staan,geluiden,hogedrukspuit,2,59_2,2,59,107,to stand,0.5393,0,0.318111108747142,locomotion,59_2_trial_44_p0_staan_geluiden_c2_final.avi
+45,target,0,staan,geluiden,hogedrukspuit,2,59_2,2,59,107,to stand,0.53665,0,0.318111108747142,locomotion,59_2_trial_44_p0_staan_geluiden_c2_final.avi
 46,practice,1,fiets,geluiden,fietsen,0,59_2,2,59,108,bicycle,0.975,0,,,59_2_pr_45_p1_fiets_geluiden_c0_final.avi
 47,practice,1,fiets,geluiden,deurbel,1,59_2,2,59,108,bicycle,0.529,0,,,59_2_pr_46_p1_fiets_geluiden_c1_final.avi
-48,practice,1,fiets,geluiden,bellenblaas,2,59_2,2,59,108,bicycle,0.50715,0,,,59_2_pr_47_p1_fiets_geluiden_c2_final.avi
+48,practice,1,fiets,geluiden,bellenblaas,2,59_2,2,59,108,bicycle,0.50665,0,,,59_2_pr_47_p1_fiets_geluiden_c2_final.avi
 49,practice,1,vliegtuig,geluiden,gapen,0,59_2,2,59,108,airplane,0.502,0,,,59_2_pr_48_p1_vliegtuig_geluiden_c0_final.avi
 50,practice,1,vliegtuig,geluiden,remmen,1,59_2,2,59,108,airplane,0.574,0,,,59_2_pr_49_p1_vliegtuig_geluiden_c1_final.avi
 51,practice,1,vliegtuig,geluiden,blazen,2,59_2,2,59,108,airplane,0.567,0,,,59_2_pr_50_p1_vliegtuig_geluiden_c2_final.avi
@@ -8906,7 +8906,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 89,practice,1,fiets,geluiden,haaste,2,5_2,2,5,110,bicycle,0.517,0,,,5_2_pr_88_p1_fiets_geluiden_c2_final.avi
 90,practice,1,geheim,geluiden,stil,0,5_2,2,5,110,secret,0.633,0,,,5_2_pr_89_p1_geheim_geluiden_c0_final.avi
 91,practice,1,geheim,geluiden,bibliotheek,1,5_2,2,5,110,secret,0.563,0,,,5_2_pr_90_p1_geheim_geluiden_c1_final.avi
-92,practice,1,geheim,geluiden,stil zijn,2,5_2,2,5,110,secret,0.75,0,,,5_2_pr_91_p1_geheim_geluiden_c2_final.avi
+92,practice,1,geheim,geluiden,stil zijn,2,5_2,2,5,110,secret,0.74,0,,,5_2_pr_91_p1_geheim_geluiden_c2_final.avi
 93,target,1,boos,geluiden,geïrriteerd,0,5_2,2,5,110,angry,0.889,0,0.742980107622976,valence,5_2_trial_92_p1_boos_geluiden_c0_final.avi
 94,target,1,boos,geluiden,boos,1,5_2,2,5,110,angry,1.0,1,0.742980107622976,valence,5_2_trial_93_p1_boos_geluiden_c1_final.avi
 95,target,1,ziek,geluiden,ziek,0,5_2,2,5,110,sick,1.0,1,0.548898090158061,animate,5_2_trial_94_p1_ziek_geluiden_c0_final.avi
@@ -8919,7 +8919,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 102,target,1,vallen,geluiden,vallen,1,5_2,2,5,110,to fall,1.0,1,0.407214738448983,locomotion,5_2_trial_101_p1_vallen_geluiden_c1_final.avi
 103,target,1,wind,geluiden,wind,0,5_2,2,5,110,wind,1.0,1,0.609732905825591,environment,5_2_trial_102_p1_wind_geluiden_c0_final.avi
 1,practice,0,haasten,gebaren,rennen,0,60_1,1,60,111,to hurry,0.678,0,,,60_1_pr_0_p0_haasten_gebaren_final.avi
-2,practice,0,leeg,gebaren,inschenken van drinken,0,60_1,1,60,111,empty,0.675,0,,,60_1_pr_1_p0_leeg_gebaren_final.avi
+2,practice,0,leeg,gebaren,inschenken van drinken,0,60_1,1,60,111,empty,0.66665,0,,,60_1_pr_1_p0_leeg_gebaren_final.avi
 3,target,0,koud,gebaren,koud,0,60_1,1,60,111,cold,1.0,1,0.847021849271004,temperature,60_1_trial_2_p0_koud_gebaren_final.avi
 4,target,0,ver,gebaren,wijzen,0,60_1,1,60,111,far,0.579,0,0.577545048933384,spatial,60_1_trial_3_p0_ver_gebaren_final.avi
 5,target,0,vuur,gebaren,bal,0,60_1,1,60,111,fire,0.54,0,0.612736156749429,object,60_1_trial_4_p0_vuur_gebaren_final.avi
@@ -8963,7 +8963,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 43,target,0,staart,geluiden,muis,0,60_1,1,60,111,tail,0.559,0,0.26916670248274,quantity,60_1_trial_42_p0_staart_geluiden_final.avi
 44,target,0,blazen,geluiden,blazen,0,60_1,1,60,111,to blow,1.0,1,0.805891834375597,vocal_oral,60_1_trial_43_p0_blazen_geluiden_final.avi
 45,target,0,lachen,geluiden,lachen,0,60_1,1,60,111,to laugh,1.0,1,0.87420386676992,vocal_oral,60_1_trial_44_p0_lachen_geluiden_final.avi
-46,practice,1,koken,geluiden,bubbelen,0,60_1,1,60,112,to cook,0.79645,0,,,60_1_pr_45_p1_koken_geluiden_final.avi
+46,practice,1,koken,geluiden,bubbelen,0,60_1,1,60,112,to cook,0.78,0,,,60_1_pr_45_p1_koken_geluiden_final.avi
 47,practice,1,rijk,geluiden,geld,0,60_1,1,60,112,rich,0.585,0,,,60_1_pr_46_p1_rijk_geluiden_final.avi
 48,target,1,groot,geluiden,berg,0,60_1,1,60,112,big,0.583,0,0.35201321754525,quantity,60_1_trial_47_p1_groot_geluiden_final.avi
 49,target,1,oud,geluiden,deur,0,60_1,1,60,112,old,0.52,0,0.310336292435631,time,60_1_trial_48_p1_oud_geluiden_final.avi
@@ -9167,7 +9167,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 28,target,1,hoog,combinatie,cirkel,2,61_2,2,61,114,high,0.489,0,0.749105900955685,auditory,61_2_trial_27_p1_hoog_combinatie_c2_final.avi
 29,target,1,bliksem,combinatie,glijbaan,0,61_2,2,61,114,lightning,0.536,0,0.596218227203866,environment,61_2_trial_28_p1_bliksem_combinatie_c0_final.avi
 30,target,1,bliksem,combinatie,vuurwerk,1,61_2,2,61,114,lightning,0.639,0,0.596218227203866,environment,61_2_trial_29_p1_bliksem_combinatie_c1_final.avi
-31,target,1,bliksem,combinatie,vliegtuigcrash,2,61_2,2,61,114,lightning,0.6143,0,0.596218227203866,environment,61_2_trial_30_p1_bliksem_combinatie_c2_final.avi
+31,target,1,bliksem,combinatie,vliegtuigcrash,2,61_2,2,61,114,lightning,0.60665,0,0.596218227203866,environment,61_2_trial_30_p1_bliksem_combinatie_c2_final.avi
 32,target,1,verdrietig,combinatie,huilen,0,61_2,2,61,114,sad,0.695,0,0.835895891065153,valence,61_2_trial_31_p1_verdrietig_combinatie_c0_final.avi
 33,target,1,verdrietig,combinatie,verdrietig,1,61_2,2,61,114,sad,1.0,1,0.835895891065153,valence,61_2_trial_32_p1_verdrietig_combinatie_c1_final.avi
 34,target,1,ziek,combinatie,ziek,0,61_2,2,61,114,sick,1.0,1,0.716614849190809,animate,61_2_trial_33_p1_ziek_combinatie_c0_final.avi
@@ -9179,7 +9179,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 40,practice,0,vliegtuig,gebaren,instappen,1,61_2,2,61,113,airplane,0.581,0,,,61_2_pr_39_p0_vliegtuig_gebaren_c1_final.avi
 41,practice,0,vliegtuig,gebaren,opstijgen,2,61_2,2,61,113,airplane,0.652,0,,,61_2_pr_40_p0_vliegtuig_gebaren_c2_final.avi
 42,target,0,goed,gebaren,tevreden,0,61_2,2,61,113,good,0.658,0,0.690424355205965,valence,61_2_trial_41_p0_goed_gebaren_c0_final.avi
-43,target,0,goed,gebaren,goed zo,1,61_2,2,61,113,good,0.8893,0,0.690424355205965,valence,61_2_trial_42_p0_goed_gebaren_c1_final.avi
+43,target,0,goed,gebaren,goed zo,1,61_2,2,61,113,good,0.88,0,0.690424355205965,valence,61_2_trial_42_p0_goed_gebaren_c1_final.avi
 44,target,0,goed,gebaren,goed,2,61_2,2,61,113,good,1.0,1,0.690424355205965,valence,61_2_trial_43_p0_goed_gebaren_c2_final.avi
 45,target,0,geur,gebaren,parfum,0,61_2,2,61,113,odor,0.961,0,0.580764408529184,olfactory,61_2_trial_44_p0_geur_gebaren_c0_final.avi
 46,target,0,geur,gebaren,ruiken,1,61_2,2,61,113,odor,0.933,0,0.580764408529184,olfactory,61_2_trial_45_p0_geur_gebaren_c1_final.avi
@@ -9236,7 +9236,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 97,practice,1,eend,geluiden,kwekken,0,61_2,2,61,114,duck,0.608,0,,,61_2_pr_96_p1_eend_geluiden_c0_final.avi
 98,practice,1,eend,geluiden,eend,1,61_2,2,61,114,duck,1.0,1,,,61_2_pr_97_p1_eend_geluiden_c1_final.avi
 99,target,1,vogel,geluiden,fluiten,0,61_2,2,61,114,bird,0.633,0,0.615450673796237,animal,61_2_trial_98_p1_vogel_geluiden_c0_final.avi
-100,target,1,vogel,geluiden,chippen,1,61_2,2,61,114,bird,0.7142999999999999,0,0.615450673796237,animal,61_2_trial_99_p1_vogel_geluiden_c1_final.avi
+100,target,1,vogel,geluiden,chippen,1,61_2,2,61,114,bird,0.71,0,0.615450673796237,animal,61_2_trial_99_p1_vogel_geluiden_c1_final.avi
 101,target,1,vogel,geluiden,vogel,2,61_2,2,61,114,bird,1.0,1,0.615450673796237,animal,61_2_trial_100_p1_vogel_geluiden_c2_final.avi
 102,target,1,bitter,geluiden,vies,0,61_2,2,61,114,bitter,0.708,0,0.21654433031206,gustatory,61_2_trial_101_p1_bitter_geluiden_c0_final.avi
 103,target,1,bitter,geluiden,proeven,1,61_2,2,61,114,bitter,0.568,0,0.21654433031206,gustatory,61_2_trial_102_p1_bitter_geluiden_c1_final.avi
@@ -9268,12 +9268,12 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 17,target,1,zwemmen,gebaren,zwemmen,0,62_1,1,62,116,to swim,1.0,1,0.829267273459481,locomotion,62_1_trial_16_p1_zwemmen_gebaren_final.avi
 18,target,1,lopen,gebaren,fietsen,0,62_1,1,62,116,to walk,0.642,0,0.841423850173278,locomotion,62_1_trial_17_p1_lopen_gebaren_final.avi
 19,practice,0,knippen,combinatie,knippen,0,62_1,1,62,115,to cut,1.0,1,,,62_1_pr_18_p0_knippen_combinatie_final.avi
-20,practice,0,gek,combinatie,vies doen,0,62_1,1,62,115,crazy,0.6143,0,,,62_1_pr_19_p0_gek_combinatie_final.avi
+20,practice,0,gek,combinatie,vies doen,0,62_1,1,62,115,crazy,0.61,0,,,62_1_pr_19_p0_gek_combinatie_final.avi
 21,target,0,boos,combinatie,boos,0,62_1,1,62,115,angry,1.0,1,0.818182220108296,valence,62_1_trial_20_p0_boos_combinatie_final.avi
 22,target,0,hond,combinatie,hond,0,62_1,1,62,115,dog,1.0,1,0.779877846324741,animal,62_1_trial_21_p0_hond_combinatie_final.avi
 23,target,0,vuur,combinatie,berg,0,62_1,1,62,115,fire,0.552,0,0.603966694081322,object,62_1_trial_22_p0_vuur_combinatie_final.avi
 24,target,0,niet,combinatie,arrogant,0,62_1,1,62,115,not,0.521,0,0.582985856060995,logical,62_1_trial_23_p0_niet_combinatie_final.avi
-25,target,0,piepen,combinatie,koplampen,0,62_1,1,62,115,squeak,0.55355,0,0.543249319540667,auditory,62_1_trial_24_p0_piepen_combinatie_final.avi
+25,target,0,piepen,combinatie,koplampen,0,62_1,1,62,115,squeak,0.55,0,0.543249319540667,auditory,62_1_trial_24_p0_piepen_combinatie_final.avi
 26,target,0,vangen,combinatie,vangen,0,62_1,1,62,115,to catch,1.0,1,0.715821711656047,manual,62_1_trial_25_p0_vangen_combinatie_final.avi
 27,target,0,water,combinatie,drinken,0,62_1,1,62,115,water,0.692,0,0.574876010515767,environment,62_1_trial_26_p0_water_combinatie_final.avi
 28,practice,1,haasten,combinatie,hoepelen,0,62_1,1,62,116,to hurry,0.566,0,,,62_1_pr_27_p1_haasten_combinatie_final.avi
@@ -9344,7 +9344,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 39,practice,0,glimlach,combinatie,lach,2,62_2,2,62,115,smile,0.965,0,,,62_2_pr_38_p0_glimlach_combinatie_c2_final.avi
 40,practice,0,bal,combinatie,bal,0,62_2,2,62,115,ball,1.0,1,,,62_2_pr_39_p0_bal_combinatie_c0_final.avi
 41,target,0,bitter,combinatie,zuur,0,62_2,2,62,115,bitter,0.791,0,0.409843169892478,gustatory,62_2_trial_40_p0_bitter_combinatie_c0_final.avi
-42,target,0,bitter,combinatie,tongzuur,1,62_2,2,62,115,bitter,0.65715,0,0.409843169892478,gustatory,62_2_trial_41_p0_bitter_combinatie_c1_final.avi
+42,target,0,bitter,combinatie,tongzuur,1,62_2,2,62,115,bitter,0.64665,0,0.409843169892478,gustatory,62_2_trial_41_p0_bitter_combinatie_c1_final.avi
 43,target,0,bitter,combinatie,bitter,2,62_2,2,62,115,bitter,1.0,1,0.409843169892478,gustatory,62_2_trial_42_p0_bitter_combinatie_c2_final.avi
 44,target,0,kat,combinatie,kat,0,62_2,2,62,115,cat,1.0,1,0.782999080138815,animal,62_2_trial_43_p0_kat_combinatie_c0_final.avi
 45,target,0,koud,combinatie,rillingen,0,62_2,2,62,115,cold,0.63,0,0.819687004635733,temperature,62_2_trial_44_p0_koud_combinatie_c0_final.avi
@@ -9468,8 +9468,8 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 44,target,0,langzaam,geluiden,rust,0,63_1,1,63,117,slow,0.615,0,0.369492215989784,manner,63_1_trial_43_p0_langzaam_geluiden_final.avi
 45,target,0,grommen,geluiden,eng,0,63_1,1,63,117,to growl,0.552,0,0.751462893836329,vocal_oral,63_1_trial_44_p0_grommen_geluiden_final.avi
 46,practice,1,koken,geluiden,eten,0,63_1,1,63,118,to cook,0.742,0,,,63_1_pr_45_p1_koken_geluiden_final.avi
-47,practice,1,olifant,geluiden,trompetteren,0,63_1,1,63,118,elephant,0.72145,0,,,63_1_pr_46_p1_olifant_geluiden_final.avi
-48,target,1,bitter,geluiden,niet lekker,0,63_1,1,63,118,bitter,0.7643,0,0.21654433031206,gustatory,63_1_trial_47_p1_bitter_geluiden_final.avi
+47,practice,1,olifant,geluiden,trompetteren,0,63_1,1,63,118,elephant,0.71335,0,,,63_1_pr_46_p1_olifant_geluiden_final.avi
+48,target,1,bitter,geluiden,niet lekker,0,63_1,1,63,118,bitter,0.75335,0,0.21654433031206,gustatory,63_1_trial_47_p1_bitter_geluiden_final.avi
 49,target,1,kat,geluiden,poes,0,63_1,1,63,118,cat,0.9,0,0.840948971730618,animal,63_1_trial_48_p1_kat_geluiden_final.avi
 50,target,1,dood,geluiden,neuriën,0,63_1,1,63,118,dead,0.519,0,0.423358570613411,animate,63_1_trial_49_p1_dood_geluiden_final.avi
 51,target,1,man,geluiden,chagrijnig,0,63_1,1,63,118,male,0.557,0,0.422189612157541,animate,63_1_trial_50_p1_man_geluiden_final.avi
@@ -9632,7 +9632,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 16,target,0,zuigen,gebaren,zuigen,0,64_2,2,64,119,to suck,1.0,1,0.641118953574169,vocal_oral,64_2_trial_15_p0_zuigen_gebaren_c0_final.avi
 17,practice,1,bal,gebaren,bal,0,64_2,2,64,120,ball,1.0,1,,,64_2_pr_16_p1_bal_gebaren_c0_final.avi
 18,practice,1,zingen,gebaren,zingen,0,64_2,2,64,120,to sing,1.0,1,,,64_2_pr_17_p1_zingen_gebaren_c0_final.avi
-19,target,1,ver,gebaren,ver weg,0,64_2,2,64,120,far,0.9,0,0.577545048933384,spatial,64_2_trial_18_p1_ver_gebaren_c0_final.avi
+19,target,1,ver,gebaren,ver weg,0,64_2,2,64,120,far,0.88335,0,0.577545048933384,spatial,64_2_trial_18_p1_ver_gebaren_c0_final.avi
 20,target,1,ver,gebaren,ver,1,64_2,2,64,120,far,1.0,1,0.577545048933384,spatial,64_2_trial_19_p1_ver_gebaren_c1_final.avi
 21,target,1,niet,gebaren,verboden,0,64_2,2,64,120,not,0.683,0,0.546206866167494,logical,64_2_trial_20_p1_niet_gebaren_c0_final.avi
 22,target,1,niet,gebaren,regels,1,64_2,2,64,120,not,0.566,0,0.546206866167494,logical,64_2_trial_21_p1_niet_gebaren_c1_final.avi
@@ -9689,13 +9689,13 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 73,practice,0,zwaaien,combinatie,zwaaien,0,64_2,2,64,119,to wave,1.0,1,,,64_2_pr_72_p0_zwaaien_combinatie_c0_final.avi
 74,practice,0,vliegtuig,combinatie,vliegen,0,64_2,2,64,119,airplane,0.872,0,,,64_2_pr_73_p0_vliegtuig_combinatie_c0_final.avi
 75,practice,0,vliegtuig,combinatie,zweven,1,64_2,2,64,119,airplane,0.716,0,,,64_2_pr_74_p0_vliegtuig_combinatie_c1_final.avi
-76,practice,0,vliegtuig,combinatie,skispringen,2,64_2,2,64,119,airplane,0.575,0,,,64_2_pr_75_p0_vliegtuig_combinatie_c2_final.avi
+76,practice,0,vliegtuig,combinatie,skispringen,2,64_2,2,64,119,airplane,0.57,0,,,64_2_pr_75_p0_vliegtuig_combinatie_c2_final.avi
 77,target,0,walgen,combinatie,vies,0,64_2,2,64,119,disgusted,0.677,0,0.673077034619221,valence,64_2_trial_76_p0_walgen_combinatie_c0_final.avi
 78,target,0,walgen,combinatie,walgen,1,64_2,2,64,119,disgusted,1.0,1,0.673077034619221,valence,64_2_trial_77_p0_walgen_combinatie_c1_final.avi
 79,target,0,snel,combinatie,rennen,0,64_2,2,64,119,fast,0.688,0,0.72586293491431,manner,64_2_trial_78_p0_snel_combinatie_c0_final.avi
 80,target,0,snel,combinatie,race,1,64_2,2,64,119,fast,0.578,0,0.72586293491431,manner,64_2_trial_79_p0_snel_combinatie_c1_final.avi
 81,target,0,snel,combinatie,tijdstip,2,64_2,2,64,119,fast,0.618,0,0.72586293491431,manner,64_2_trial_80_p0_snel_combinatie_c2_final.avi
-82,target,0,vuur,combinatie,open haard,0,64_2,2,64,119,fire,0.82855,0,0.603966694081322,object,64_2_trial_81_p0_vuur_combinatie_c0_final.avi
+82,target,0,vuur,combinatie,open haard,0,64_2,2,64,119,fire,0.8200000000000001,0,0.603966694081322,object,64_2_trial_81_p0_vuur_combinatie_c0_final.avi
 83,target,0,vuur,combinatie,kachel,1,64_2,2,64,119,fire,0.74,0,0.603966694081322,object,64_2_trial_82_p0_vuur_combinatie_c1_final.avi
 84,target,0,vuur,combinatie,vuur,2,64_2,2,64,119,fire,1.0,1,0.603966694081322,object,64_2_trial_83_p0_vuur_combinatie_c2_final.avi
 85,target,0,grommen,combinatie,tijger,0,64_2,2,64,119,to growl,0.569,0,0.713962417775868,vocal_oral,64_2_trial_84_p0_grommen_combinatie_c0_final.avi
@@ -9706,7 +9706,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 90,target,0,kotsen,combinatie,kotsen,0,64_2,2,64,119,to vomit,1.0,1,0.828901259475311,gustatory,64_2_trial_89_p0_kotsen_combinatie_c0_final.avi
 91,practice,1,glimlach,combinatie,lachen,0,64_2,2,64,120,smile,0.858,0,,,64_2_pr_90_p1_glimlach_combinatie_c0_final.avi
 92,practice,1,glimlach,combinatie,glimlachen,1,64_2,2,64,120,smile,0.992,0,,,64_2_pr_91_p1_glimlach_combinatie_c1_final.avi
-93,practice,1,glimlach,combinatie,mondhoek,2,64_2,2,64,120,smile,0.78215,0,,,64_2_pr_92_p1_glimlach_combinatie_c2_final.avi
+93,practice,1,glimlach,combinatie,mondhoek,2,64_2,2,64,120,smile,0.7766500000000001,0,,,64_2_pr_92_p1_glimlach_combinatie_c2_final.avi
 94,practice,1,eend,combinatie,eend,0,64_2,2,64,120,duck,1.0,1,,,64_2_pr_93_p1_eend_combinatie_c0_final.avi
 95,target,1,groot,combinatie,man,0,64_2,2,64,120,big,0.542,0,0.762672115162265,quantity,64_2_trial_94_p1_groot_combinatie_c0_final.avi
 96,target,1,groot,combinatie,groot,1,64_2,2,64,120,big,1.0,1,0.762672115162265,quantity,64_2_trial_95_p1_groot_combinatie_c1_final.avi
@@ -9819,7 +9819,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 40,target,0,bliksem,geluiden,spook,0,65_2,2,65,121,lightning,0.553,0,0.549301947437214,environment,65_2_trial_39_p0_bliksem_geluiden_c0_final.avi
 41,target,0,bliksem,geluiden,bom,1,65_2,2,65,121,lightning,0.59,0,0.549301947437214,environment,65_2_trial_40_p0_bliksem_geluiden_c1_final.avi
 42,target,0,bliksem,geluiden,explosie,2,65_2,2,65,121,lightning,0.636,0,0.549301947437214,environment,65_2_trial_41_p0_bliksem_geluiden_c2_final.avi
-43,target,0,geur,geluiden,sniffen,0,65_2,2,65,121,odor,0.8392999999999999,0,0.338392427450938,olfactory,65_2_trial_42_p0_geur_geluiden_c0_final.avi
+43,target,0,geur,geluiden,sniffen,0,65_2,2,65,121,odor,0.82335,0,0.338392427450938,olfactory,65_2_trial_42_p0_geur_geluiden_c0_final.avi
 44,target,0,geur,geluiden,snikken,1,65_2,2,65,121,odor,0.524,0,0.338392427450938,olfactory,65_2_trial_43_p0_geur_geluiden_c1_final.avi
 45,target,0,geur,geluiden,ruiken,2,65_2,2,65,121,odor,0.933,0,0.338392427450938,olfactory,65_2_trial_44_p0_geur_geluiden_c2_final.avi
 46,target,0,scherp,geluiden,pijn,0,65_2,2,65,121,sharp,0.594,0,0.289772587287242,haptic,65_2_trial_45_p0_scherp_geluiden_c0_final.avi
@@ -9941,11 +9941,11 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 9,target,0,luidruchtig,combinatie,geluid,2,66_2,2,66,123,loud,0.716,0,0.639905020121821,auditory,66_2_trial_8_p0_luidruchtig_combinatie_c2_final.avi
 10,target,0,zout,combinatie,zout,0,66_2,2,66,123,salt,1.0,1,0.303234302798168,gustatory,66_2_trial_9_p0_zout_combinatie_c0_final.avi
 11,target,0,stil,combinatie,stil,0,66_2,2,66,123,silent,1.0,1,0.820863352178508,auditory,66_2_trial_10_p0_stil_combinatie_c0_final.avi
-12,target,0,langzaam,combinatie,slowmotion,0,66_2,2,66,123,slow,0.9107000000000001,0,0.697044299048591,manner,66_2_trial_11_p0_langzaam_combinatie_c0_final.avi
+12,target,0,langzaam,combinatie,slowmotion,0,66_2,2,66,123,slow,0.90335,0,0.697044299048591,manner,66_2_trial_11_p0_langzaam_combinatie_c0_final.avi
 13,target,0,langzaam,combinatie,langzaam,1,66_2,2,66,123,slow,1.0,1,0.697044299048591,manner,66_2_trial_12_p0_langzaam_combinatie_c1_final.avi
 14,target,0,staart,combinatie,hond,0,66_2,2,66,123,tail,0.615,0,0.613189302838734,quantity,66_2_trial_13_p0_staart_combinatie_c0_final.avi
 15,target,0,staart,combinatie,kwispelen,1,66_2,2,66,123,tail,0.68,0,0.613189302838734,quantity,66_2_trial_14_p0_staart_combinatie_c1_final.avi
-16,target,0,staart,combinatie,hondenstaart,2,66_2,2,66,123,tail,0.89645,0,0.613189302838734,quantity,66_2_trial_15_p0_staart_combinatie_c2_final.avi
+16,target,0,staart,combinatie,hondenstaart,2,66_2,2,66,123,tail,0.89,0,0.613189302838734,quantity,66_2_trial_15_p0_staart_combinatie_c2_final.avi
 17,target,0,rennen,combinatie,rennen,0,66_2,2,66,123,to run,1.0,1,0.831792245684357,locomotion,66_2_trial_16_p0_rennen_combinatie_c0_final.avi
 18,practice,1,glimlach,combinatie,blij,0,66_2,2,66,124,smile,0.687,0,,,66_2_pr_17_p1_glimlach_combinatie_c0_final.avi
 19,practice,1,glimlach,combinatie,glimlach,1,66_2,2,66,124,smile,1.0,1,,,66_2_pr_18_p1_glimlach_combinatie_c1_final.avi
@@ -9953,7 +9953,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 21,practice,1,eend,combinatie,eend,1,66_2,2,66,124,duck,1.0,1,,,66_2_pr_20_p1_eend_combinatie_c1_final.avi
 22,target,1,dood,combinatie,dood,0,66_2,2,66,124,dead,1.0,1,0.734358077385097,animate,66_2_trial_21_p1_dood_combinatie_c0_final.avi
 23,target,1,ei,combinatie,bal,0,66_2,2,66,124,egg,0.612,0,0.581012583251545,object,66_2_trial_22_p1_ei_combinatie_c0_final.avi
-24,target,1,ei,combinatie,geldmunt,1,66_2,2,66,124,egg,0.525,0,0.581012583251545,object,66_2_trial_23_p1_ei_combinatie_c1_final.avi
+24,target,1,ei,combinatie,geldmunt,1,66_2,2,66,124,egg,0.52335,0,0.581012583251545,object,66_2_trial_23_p1_ei_combinatie_c1_final.avi
 25,target,1,ei,combinatie,spruitje,2,66_2,2,66,124,egg,0.611,0,0.581012583251545,object,66_2_trial_24_p1_ei_combinatie_c2_final.avi
 26,target,1,bang,combinatie,bang,0,66_2,2,66,124,scared,1.0,1,0.758043579817488,valence,66_2_trial_25_p1_bang_combinatie_c0_final.avi
 27,target,1,piepen,combinatie,vogel,0,66_2,2,66,124,squeak,0.599,0,0.543249319540667,auditory,66_2_trial_26_p1_piepen_combinatie_c0_final.avi
@@ -9990,7 +9990,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 58,target,1,walgen,gebaren,afschuw,1,66_2,2,66,124,disgusted,0.871,0,0.584517923117511,valence,66_2_trial_57_p1_walgen_gebaren_c1_final.avi
 59,target,1,walgen,gebaren,afschuwelijk,2,66_2,2,66,124,disgusted,0.738,0,0.584517923117511,valence,66_2_trial_58_p1_walgen_gebaren_c2_final.avi
 60,target,1,bliksem,gebaren,vermoorden,0,66_2,2,66,124,lightning,0.503,0,0.525289002863704,environment,66_2_trial_59_p1_bliksem_gebaren_c0_final.avi
-61,target,1,bliksem,gebaren,doodvallen,1,66_2,2,66,124,lightning,0.6393,0,0.525289002863704,environment,66_2_trial_60_p1_bliksem_gebaren_c1_final.avi
+61,target,1,bliksem,gebaren,doodvallen,1,66_2,2,66,124,lightning,0.6366499999999999,0,0.525289002863704,environment,66_2_trial_60_p1_bliksem_gebaren_c1_final.avi
 62,target,1,bliksem,gebaren,hoeken,2,66_2,2,66,124,lightning,0.488,0,0.525289002863704,environment,66_2_trial_61_p1_bliksem_gebaren_c2_final.avi
 63,target,1,berg,gebaren,wolk,0,66_2,2,66,124,mountain,0.627,0,0.62087766049062,environment,66_2_trial_62_p1_berg_gebaren_c0_final.avi
 64,target,1,berg,gebaren,groots,1,66_2,2,66,124,mountain,0.595,0,0.62087766049062,environment,66_2_trial_63_p1_berg_gebaren_c1_final.avi
@@ -9999,7 +9999,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 67,target,1,ruiken,gebaren,ruiken,0,66_2,2,66,124,to smell,1.0,1,0.767441240842589,olfactory,66_2_trial_66_p1_ruiken_gebaren_c0_final.avi
 68,target,1,lopen,gebaren,lopen,0,66_2,2,66,124,to walk,1.0,1,0.841423850173278,locomotion,66_2_trial_67_p1_lopen_gebaren_c0_final.avi
 69,practice,0,telefoon,geluiden,bellen,0,66_2,2,66,123,telephone,0.836,0,,,66_2_pr_68_p0_telefoon_geluiden_c0_final.avi
-70,practice,0,telefoon,geluiden,fietsbel,1,66_2,2,66,123,telephone,0.63215,0,,,66_2_pr_69_p0_telefoon_geluiden_c1_final.avi
+70,practice,0,telefoon,geluiden,fietsbel,1,66_2,2,66,123,telephone,0.62335,0,,,66_2_pr_69_p0_telefoon_geluiden_c1_final.avi
 71,practice,0,telefoon,geluiden,inhalen,2,66_2,2,66,123,telephone,0.554,0,,,66_2_pr_70_p0_telefoon_geluiden_c2_final.avi
 72,practice,0,juichen,geluiden,juichen,0,66_2,2,66,123,to cheer,1.0,1,,,66_2_pr_71_p0_juichen_geluiden_c0_final.avi
 73,target,0,goed,geluiden,juichen,0,66_2,2,66,123,good,0.551,0,0.42473028945648,valence,66_2_trial_72_p0_goed_geluiden_c0_final.avi
@@ -10013,7 +10013,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 81,target,0,bijten,geluiden,hap,1,66_2,2,66,123,to bite,0.886,0,0.631514571319774,vocal_oral,66_2_trial_80_p0_bijten_geluiden_c1_final.avi
 82,target,0,bijten,geluiden,bijten,2,66_2,2,66,123,to bite,1.0,1,0.631514571319774,vocal_oral,66_2_trial_81_p0_bijten_geluiden_c2_final.avi
 83,target,0,kruipen,geluiden,moe,0,66_2,2,66,123,to crawl,0.549,0,0.267089158391543,locomotion,66_2_trial_82_p0_kruipen_geluiden_c0_final.avi
-84,target,0,kruipen,geluiden,gestommel,1,66_2,2,66,123,to crawl,0.61785,0,0.267089158391543,locomotion,66_2_trial_83_p0_kruipen_geluiden_c1_final.avi
+84,target,0,kruipen,geluiden,gestommel,1,66_2,2,66,123,to crawl,0.61,0,0.267089158391543,locomotion,66_2_trial_83_p0_kruipen_geluiden_c1_final.avi
 85,target,0,vechten,geluiden,schieten,0,66_2,2,66,123,to fight,0.603,0,0.551944383571384,survival,66_2_trial_84_p0_vechten_geluiden_c0_final.avi
 86,target,0,vechten,geluiden,aanvallen,1,66_2,2,66,123,to fight,0.664,0,0.551944383571384,survival,66_2_trial_85_p0_vechten_geluiden_c1_final.avi
 87,target,0,vechten,geluiden,raken,2,66_2,2,66,123,to fight,0.577,0,0.551944383571384,survival,66_2_trial_86_p0_vechten_geluiden_c2_final.avi
@@ -10041,10 +10041,10 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 2,practice,0,comfortabel,combinatie,slapen,0,67_1,1,67,125,comfortable,0.637,0,,,67_1_pr_1_p0_comfortabel_combinatie_final.avi
 3,target,0,bitter,combinatie,vies,0,67_1,1,67,125,bitter,0.708,0,0.409843169892478,gustatory,67_1_trial_2_p0_bitter_combinatie_final.avi
 4,target,0,walgen,combinatie,overgeven,0,67_1,1,67,125,disgusted,0.676,0,0.673077034619221,valence,67_1_trial_3_p0_walgen_combinatie_final.avi
-5,target,0,goed,combinatie,goed bezig,0,67_1,1,67,125,good,0.84645,0,0.687562055559869,valence,67_1_trial_4_p0_goed_combinatie_final.avi
+5,target,0,goed,combinatie,goed bezig,0,67_1,1,67,125,good,0.83,0,0.687562055559869,valence,67_1_trial_4_p0_goed_combinatie_final.avi
 6,target,0,hoog,combinatie,gooien,0,67_1,1,67,125,high,0.563,0,0.749105900955685,auditory,67_1_trial_5_p0_hoog_combinatie_final.avi
 7,target,0,luidruchtig,combinatie,eng,0,67_1,1,67,125,loud,0.654,0,0.639905020121821,auditory,67_1_trial_6_p0_luidruchtig_combinatie_final.avi
-8,target,0,zout,combinatie,niet lekker vinden,0,67_1,1,67,125,salt,0.6143,0,0.303234302798168,gustatory,67_1_trial_7_p0_zout_combinatie_final.avi
+8,target,0,zout,combinatie,niet lekker vinden,0,67_1,1,67,125,salt,0.61,0,0.303234302798168,gustatory,67_1_trial_7_p0_zout_combinatie_final.avi
 9,target,0,sterk,combinatie,sterk,0,67_1,1,67,125,strong,1.0,1,0.82173351174681,animate,67_1_trial_8_p0_sterk_combinatie_final.avi
 10,practice,1,haasten,combinatie,rennen,0,67_1,1,67,126,to hurry,0.678,0,,,67_1_pr_9_p1_haasten_combinatie_final.avi
 11,practice,1,leeg,combinatie,rond,0,67_1,1,67,126,empty,0.591,0,,,67_1_pr_10_p1_leeg_combinatie_final.avi
@@ -10139,7 +10139,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 46,target,1,weten,geluiden,denken,0,67_2,2,67,126,to know,0.816,0,0.388979878106872,cognitive,67_2_trial_45_p1_weten_geluiden_c0_final.avi
 47,target,1,weten,geluiden,weten,1,67_2,2,67,126,to know,1.0,1,0.388979878106872,cognitive,67_2_trial_46_p1_weten_geluiden_c1_final.avi
 48,practice,0,vliegtuig,combinatie,vliegtuig,0,67_2,2,67,125,airplane,1.0,1,,,67_2_pr_47_p0_vliegtuig_combinatie_c0_final.avi
-49,practice,0,zwaaien,combinatie,gedag zeggen,0,67_2,2,67,125,to wave,0.88215,0,,,67_2_pr_48_p0_zwaaien_combinatie_c0_final.avi
+49,practice,0,zwaaien,combinatie,gedag zeggen,0,67_2,2,67,125,to wave,0.87,0,,,67_2_pr_48_p0_zwaaien_combinatie_c0_final.avi
 50,practice,0,zwaaien,combinatie,groeten,1,67_2,2,67,125,to wave,0.613,0,,,67_2_pr_49_p0_zwaaien_combinatie_c1_final.avi
 51,practice,0,zwaaien,combinatie,zwaaien,2,67_2,2,67,125,to wave,1.0,1,,,67_2_pr_50_p0_zwaaien_combinatie_c2_final.avi
 52,target,0,kat,combinatie,kat,0,67_2,2,67,125,cat,1.0,1,0.782999080138815,animal,67_2_trial_51_p0_kat_combinatie_c0_final.avi
@@ -10247,10 +10247,10 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 49,target,1,zoemen,gebaren,mediteren,0,69_1,1,69,128,buzz,0.542,0,0.400420365943101,auditory,69_1_trial_48_p1_zoemen_gebaren_final.avi
 50,target,1,koud,gebaren,koud,0,69_1,1,69,128,cold,1.0,1,0.847021849271004,temperature,69_1_trial_49_p1_koud_gebaren_final.avi
 51,target,1,hoog,gebaren,lang,0,69_1,1,69,128,high,0.672,0,0.763929389158889,auditory,69_1_trial_50_p1_hoog_gebaren_final.avi
-52,target,1,langzaam,gebaren,slowmotion,0,69_1,1,69,128,slow,0.9107000000000001,0,0.689425946655567,manner,69_1_trial_51_p1_langzaam_gebaren_final.avi
+52,target,1,langzaam,gebaren,slowmotion,0,69_1,1,69,128,slow,0.90335,0,0.689425946655567,manner,69_1_trial_51_p1_langzaam_gebaren_final.avi
 53,target,1,huilen,gebaren,huilen,0,69_1,1,69,128,to cry,1.0,1,0.842937622085652,vocal_oral,69_1_trial_52_p1_huilen_gebaren_final.avi
 54,target,1,gooien,gebaren,gooien,0,69_1,1,69,128,to throw,1.0,1,0.828635174388149,manual,69_1_trial_53_p1_gooien_gebaren_final.avi
-1,practice,0,fiets,gebaren,motorrijden,0,69_2,2,69,127,bicycle,0.72855,0,,,69_2_pr_0_p0_fiets_gebaren_c0_final.avi
+1,practice,0,fiets,gebaren,motorrijden,0,69_2,2,69,127,bicycle,0.71665,0,,,69_2_pr_0_p0_fiets_gebaren_c0_final.avi
 2,practice,0,fiets,gebaren,sporten,1,69_2,2,69,127,bicycle,0.612,0,,,69_2_pr_1_p0_fiets_gebaren_c1_final.avi
 3,practice,0,fiets,gebaren,paardrijden,2,69_2,2,69,127,bicycle,0.712,0,,,69_2_pr_2_p0_fiets_gebaren_c2_final.avi
 4,practice,0,bal,gebaren,cirkel,0,69_2,2,69,127,ball,0.594,0,,,69_2_pr_3_p0_bal_gebaren_c0_final.avi
@@ -10302,7 +10302,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 50,target,0,scherp,combinatie,koken,2,69_2,2,69,127,sharp,0.566,0,0.557153125291575,haptic,69_2_trial_49_p0_scherp_combinatie_c2_final.avi
 51,target,0,horen,combinatie,luisteren,0,69_2,2,69,127,to hear,0.813,0,0.740356572783746,auditory,69_2_trial_50_p0_horen_combinatie_c0_final.avi
 52,target,0,horen,combinatie,begrijpen,1,69_2,2,69,127,to hear,0.723,0,0.740356572783746,auditory,69_2_trial_51_p0_horen_combinatie_c1_final.avi
-53,target,0,horen,combinatie,hummen,2,69_2,2,69,127,to hear,0.6,0,0.740356572783746,auditory,69_2_trial_52_p0_horen_combinatie_c2_final.avi
+53,target,0,horen,combinatie,hummen,2,69_2,2,69,127,to hear,0.59665,0,0.740356572783746,auditory,69_2_trial_52_p0_horen_combinatie_c2_final.avi
 54,target,0,staan,combinatie,jurk,0,69_2,2,69,127,to stand,0.525,0,0.588114856958718,locomotion,69_2_trial_53_p0_staan_combinatie_c0_final.avi
 55,target,0,staan,combinatie,aanmoedigen,1,69_2,2,69,127,to stand,0.598,0,0.588114856958718,locomotion,69_2_trial_54_p0_staan_combinatie_c1_final.avi
 56,target,0,staan,combinatie,sterk,2,69_2,2,69,127,to stand,0.597,0,0.588114856958718,locomotion,69_2_trial_55_p0_staan_combinatie_c2_final.avi
@@ -10329,7 +10329,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 77,target,0,vlieg,geluiden,bij,0,69_2,2,69,127,fly,0.575,0,0.56695234249888,animal,69_2_trial_76_p0_vlieg_geluiden_c0_final.avi
 78,target,0,vlieg,geluiden,wesp,1,69_2,2,69,127,fly,0.699,0,0.56695234249888,animal,69_2_trial_77_p0_vlieg_geluiden_c1_final.avi
 79,target,0,vlieg,geluiden,bromvlieg,2,69_2,2,69,127,fly,0.818,0,0.56695234249888,animal,69_2_trial_78_p0_vlieg_geluiden_c2_final.avi
-80,target,0,man,geluiden,hummen,0,69_2,2,69,127,male,0.54285,0,0.422189612157541,animate,69_2_trial_79_p0_man_geluiden_c0_final.avi
+80,target,0,man,geluiden,hummen,0,69_2,2,69,127,male,0.54,0,0.422189612157541,animate,69_2_trial_79_p0_man_geluiden_c0_final.avi
 81,target,0,man,geluiden,begroeten,1,69_2,2,69,127,male,0.522,0,0.422189612157541,animate,69_2_trial_80_p0_man_geluiden_c1_final.avi
 82,target,0,man,geluiden,herkennen,2,69_2,2,69,127,male,0.523,0,0.422189612157541,animate,69_2_trial_81_p0_man_geluiden_c2_final.avi
 83,target,0,geur,geluiden,ruiken,0,69_2,2,69,127,odor,0.933,0,0.338392427450938,olfactory,69_2_trial_82_p0_geur_geluiden_c0_final.avi
@@ -10364,7 +10364,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 112,target,1,zuur,geluiden,wind,0,69_2,2,69,128,sour,0.564,0,0.361936361379245,gustatory,69_2_trial_111_p1_zuur_geluiden_c0_final.avi
 113,target,1,zuur,geluiden,rilling,1,69_2,2,69,128,sour,0.517,0,0.361936361379245,gustatory,69_2_trial_112_p1_zuur_geluiden_c1_final.avi
 114,target,1,zuur,geluiden,mislukken,2,69_2,2,69,128,sour,0.525,0,0.361936361379245,gustatory,69_2_trial_113_p1_zuur_geluiden_c2_final.avi
-115,target,1,dik,geluiden,vol zitten,0,69_2,2,69,128,thick,0.67855,0,0.328297815791421,quantity,69_2_trial_114_p1_dik_geluiden_c0_final.avi
+115,target,1,dik,geluiden,vol zitten,0,69_2,2,69,128,thick,0.6699999999999999,0,0.328297815791421,quantity,69_2_trial_114_p1_dik_geluiden_c0_final.avi
 116,target,1,dik,geluiden,misselijk,1,69_2,2,69,128,thick,0.565,0,0.328297815791421,quantity,69_2_trial_115_p1_dik_geluiden_c1_final.avi
 117,target,1,dik,geluiden,uitgeteld,2,69_2,2,69,128,thick,0.542,0,0.328297815791421,quantity,69_2_trial_116_p1_dik_geluiden_c2_final.avi
 118,target,1,lachen,geluiden,lachen,0,69_2,2,69,128,to laugh,1.0,1,0.87420386676992,vocal_oral,69_2_trial_117_p1_lachen_geluiden_c0_final.avi
@@ -10437,7 +10437,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 13,target,0,verdrietig,geluiden,teleurstelling,2,6_2,2,6,129,sad,0.698,0,0.746777577338304,valence,6_2_trial_12_p0_verdrietig_geluiden_c2_final.avi
 14,target,0,bang,geluiden,schrikken,0,6_2,2,6,129,scared,0.874,0,0.693961201585873,valence,6_2_trial_13_p0_bang_geluiden_c0_final.avi
 15,target,0,bang,geluiden,spoken,1,6_2,2,6,129,scared,0.666,0,0.693961201585873,valence,6_2_trial_14_p0_bang_geluiden_c1_final.avi
-16,target,0,bang,geluiden,griezelen,2,6_2,2,6,129,scared,0.85355,0,0.693961201585873,valence,6_2_trial_15_p0_bang_geluiden_c2_final.avi
+16,target,0,bang,geluiden,griezelen,2,6_2,2,6,129,scared,0.84665,0,0.693961201585873,valence,6_2_trial_15_p0_bang_geluiden_c2_final.avi
 17,target,0,staart,geluiden,verwarring,0,6_2,2,6,129,tail,0.488,0,0.26916670248274,quantity,6_2_trial_16_p0_staart_geluiden_c0_final.avi
 18,target,0,staart,geluiden,vraag,1,6_2,2,6,129,tail,0.509,0,0.26916670248274,quantity,6_2_trial_17_p0_staart_geluiden_c1_final.avi
 19,target,0,staart,geluiden,zoeken,2,6_2,2,6,129,tail,0.525,0,0.26916670248274,quantity,6_2_trial_18_p0_staart_geluiden_c2_final.avi
@@ -10470,7 +10470,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 46,target,1,vangen,geluiden,aanmoedigen,1,6_2,2,6,130,to catch,0.615,0,0.302403521174031,manual,6_2_trial_45_p1_vangen_geluiden_c1_final.avi
 47,target,1,vangen,geluiden,winnen,2,6_2,2,6,130,to catch,0.755,0,0.302403521174031,manual,6_2_trial_46_p1_vangen_geluiden_c2_final.avi
 48,practice,0,fiets,combinatie,fietsen,0,6_2,2,6,129,bicycle,0.975,0,,,6_2_pr_47_p0_fiets_combinatie_c0_final.avi
-49,practice,0,fiets,combinatie,fietsbel,1,6_2,2,6,129,bicycle,0.85355,0,,,6_2_pr_48_p0_fiets_combinatie_c1_final.avi
+49,practice,0,fiets,combinatie,fietsbel,1,6_2,2,6,129,bicycle,0.83335,0,,,6_2_pr_48_p0_fiets_combinatie_c1_final.avi
 50,practice,0,fiets,combinatie,inhalen,2,6_2,2,6,129,bicycle,0.545,0,,,6_2_pr_49_p0_fiets_combinatie_c2_final.avi
 51,practice,0,eend,combinatie,eend,0,6_2,2,6,129,duck,1.0,1,,,6_2_pr_50_p0_eend_combinatie_c0_final.avi
 52,target,0,misschien,combinatie,overleggen,0,6_2,2,6,129,maybe,0.544,0,0.599769001504526,logical,6_2_trial_51_p0_misschien_combinatie_c0_final.avi
@@ -10530,7 +10530,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 106,target,1,zoet,gebaren,smaak,2,6_2,2,6,130,sweet,0.676,0,0.258150304252129,gustatory,6_2_trial_105_p1_zoet_gebaren_c2_final.avi
 107,target,1,huilen,gebaren,tranen,0,6_2,2,6,130,to cry,0.765,0,0.842937622085652,vocal_oral,6_2_trial_106_p1_huilen_gebaren_c0_final.avi
 108,target,1,huilen,gebaren,huilen,1,6_2,2,6,130,to cry,1.0,1,0.842937622085652,vocal_oral,6_2_trial_107_p1_huilen_gebaren_c1_final.avi
-109,target,1,zuigen,gebaren,duimzuigen,0,6_2,2,6,130,to suck,0.8357,0,0.641118953574169,vocal_oral,6_2_trial_108_p1_zuigen_gebaren_c0_final.avi
+109,target,1,zuigen,gebaren,duimzuigen,0,6_2,2,6,130,to suck,0.82335,0,0.641118953574169,vocal_oral,6_2_trial_108_p1_zuigen_gebaren_c0_final.avi
 110,target,1,zuigen,gebaren,proeven,1,6_2,2,6,130,to suck,0.561,0,0.641118953574169,vocal_oral,6_2_trial_109_p1_zuigen_gebaren_c1_final.avi
 111,target,1,zuigen,gebaren,duimen,2,6_2,2,6,130,to suck,0.693,0,0.641118953574169,vocal_oral,6_2_trial_110_p1_zuigen_gebaren_c2_final.avi
 112,target,1,water,gebaren,piano,0,6_2,2,6,130,water,0.517,0,0.560355838581374,environment,6_2_trial_111_p1_water_gebaren_c0_final.avi
@@ -10538,7 +10538,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 114,target,1,water,gebaren,zwembad,2,6_2,2,6,130,water,0.695,0,0.560355838581374,environment,6_2_trial_113_p1_water_gebaren_c2_final.avi
 115,target,1,wind,gebaren,wind,0,6_2,2,6,130,wind,1.0,1,0.535647636647091,environment,6_2_trial_114_p1_wind_gebaren_c0_final.avi
 1,practice,0,bloem,geluiden,uil,0,70_1,1,70,131,flower,0.614,0,,,70_1_pr_0_p0_bloem_geluiden_final.avi
-2,practice,0,dansen,geluiden,snoop dog,0,70_1,1,70,131,to dance,0.65,0,,,70_1_pr_1_p0_dansen_geluiden_final.avi
+2,practice,0,dansen,geluiden,snoop dog,0,70_1,1,70,131,to dance,0.64,0,,,70_1_pr_1_p0_dansen_geluiden_final.avi
 3,target,0,ver,geluiden,uil,0,70_1,1,70,131,far,0.542,0,0.306589745694138,spatial,70_1_trial_2_p0_ver_geluiden_final.avi
 4,target,0,vrouw,geluiden,zingen,0,70_1,1,70,131,female,0.506,0,0.403534954357456,animate,70_1_trial_3_p0_vrouw_geluiden_final.avi
 5,target,0,sterk,geluiden,pen,0,70_1,1,70,131,strong,0.537,0,0.408761111306824,animate,70_1_trial_4_p0_sterk_geluiden_final.avi
@@ -10660,7 +10660,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 67,practice,0,zingen,geluiden,zingen,0,70_2,2,70,131,to sing,1.0,1,,,70_2_pr_66_p0_zingen_geluiden_c0_final.avi
 68,target,0,boos,geluiden,ontevreden,0,70_2,2,70,131,angry,0.771,0,0.742980107622976,valence,70_2_trial_67_p0_boos_geluiden_c0_final.avi
 69,target,0,boos,geluiden,grommen,1,70_2,2,70,131,angry,0.653,0,0.742980107622976,valence,70_2_trial_68_p0_boos_geluiden_c1_final.avi
-70,target,0,boos,geluiden,hmmpf,2,70_2,2,70,131,angry,0.7393,0,0.742980107622976,valence,70_2_trial_69_p0_boos_geluiden_c2_final.avi
+70,target,0,boos,geluiden,hmmpf,2,70_2,2,70,131,angry,0.7233499999999999,0,0.742980107622976,valence,70_2_trial_69_p0_boos_geluiden_c2_final.avi
 71,target,0,vogel,geluiden,vogel,0,70_2,2,70,131,bird,1.0,1,0.615450673796237,animal,70_2_trial_70_p0_vogel_geluiden_c0_final.avi
 72,target,0,dood,geluiden,overgeven,0,70_2,2,70,131,dead,0.559,0,0.423358570613411,animate,70_2_trial_71_p0_dood_geluiden_c0_final.avi
 73,target,0,dood,geluiden,kots,1,70_2,2,70,131,dead,0.545,0,0.423358570613411,animate,70_2_trial_72_p0_dood_geluiden_c1_final.avi
@@ -10709,7 +10709,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 12,target,1,zwaar,geluiden,eten,0,71_1,1,71,134,heavy,0.516,0,0.38282540003767,quantity,71_1_trial_11_p1_zwaar_geluiden_final.avi
 13,target,1,scherp,geluiden,bliksem,0,71_1,1,71,134,sharp,0.579,0,0.289772587287242,haptic,71_1_trial_12_p1_scherp_geluiden_final.avi
 14,target,1,langzaam,geluiden,dansen,0,71_1,1,71,134,slow,0.552,0,0.369492215989784,manner,71_1_trial_13_p1_langzaam_geluiden_final.avi
-15,target,1,zuur,geluiden,iets heel lekkers,0,71_1,1,71,134,sour,0.60715,0,0.361936361379245,gustatory,71_1_trial_14_p1_zuur_geluiden_final.avi
+15,target,1,zuur,geluiden,iets heel lekkers,0,71_1,1,71,134,sour,0.6,0,0.361936361379245,gustatory,71_1_trial_14_p1_zuur_geluiden_final.avi
 16,target,1,dik,geluiden,teleurstelling,0,71_1,1,71,134,thick,0.525,0,0.328297815791421,quantity,71_1_trial_15_p1_dik_geluiden_final.avi
 17,target,1,verbranden,geluiden,waterval,0,71_1,1,71,134,to burn,0.495,0,0.367189286077145,other,71_1_trial_16_p1_verbranden_geluiden_final.avi
 18,target,1,rennen,geluiden,auto,0,71_1,1,71,134,to run,0.583,0,0.336019187014838,locomotion,71_1_trial_17_p1_rennen_geluiden_final.avi
@@ -10784,7 +10784,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 33,practice,0,zwaaien,geluiden,heet,2,71_2,2,71,133,to wave,0.526,0,,,71_2_pr_32_p0_zwaaien_geluiden_c2_final.avi
 34,practice,0,telefoon,geluiden,alarm,0,71_2,2,71,133,telephone,0.632,0,,,71_2_pr_33_p0_telefoon_geluiden_c0_final.avi
 35,practice,0,telefoon,geluiden,bel,1,71_2,2,71,133,telephone,0.718,0,,,71_2_pr_34_p0_telefoon_geluiden_c1_final.avi
-36,practice,0,telefoon,geluiden,ringtoon,2,71_2,2,71,133,telephone,0.8107,0,,,71_2_pr_35_p0_telefoon_geluiden_c2_final.avi
+36,practice,0,telefoon,geluiden,ringtoon,2,71_2,2,71,133,telephone,0.79665,0,,,71_2_pr_35_p0_telefoon_geluiden_c2_final.avi
 37,target,0,vogel,geluiden,dieren,0,71_2,2,71,133,bird,0.723,0,0.615450673796237,animal,71_2_trial_36_p0_vogel_geluiden_c0_final.avi
 38,target,0,vogel,geluiden,vogel,1,71_2,2,71,133,bird,1.0,1,0.615450673796237,animal,71_2_trial_37_p0_vogel_geluiden_c1_final.avi
 39,target,0,zoemen,geluiden,bij,0,71_2,2,71,133,buzz,0.582,0,0.716372172073136,auditory,71_2_trial_38_p0_zoemen_geluiden_c0_final.avi
@@ -10856,14 +10856,14 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 105,target,1,regen,combinatie,regen,0,71_2,2,71,134,rain,1.0,1,0.719579068930045,environment,71_2_trial_104_p1_regen_combinatie_c0_final.avi
 106,target,1,blazen,combinatie,blazen,0,71_2,2,71,134,to blow,1.0,1,0.771810542050373,vocal_oral,71_2_trial_105_p1_blazen_combinatie_c0_final.avi
 107,target,1,slaan,combinatie,slaan,0,71_2,2,71,134,to hit,1.0,1,0.794014980882957,manual,71_2_trial_106_p1_slaan_combinatie_c0_final.avi
-108,target,1,jagen,combinatie,pijl-en-boog,0,71_2,2,71,134,to hunt,0.79285,0,0.682815334308846,survival,71_2_trial_107_p1_jagen_combinatie_c0_final.avi
+108,target,1,jagen,combinatie,pijl-en-boog,0,71_2,2,71,134,to hunt,0.78335,0,0.682815334308846,survival,71_2_trial_107_p1_jagen_combinatie_c0_final.avi
 109,target,1,jagen,combinatie,pijl,1,71_2,2,71,134,to hunt,0.618,0,0.682815334308846,survival,71_2_trial_108_p1_jagen_combinatie_c1_final.avi
 110,target,1,jagen,combinatie,boogschutter,2,71_2,2,71,134,to hunt,0.593,0,0.682815334308846,survival,71_2_trial_109_p1_jagen_combinatie_c2_final.avi
 111,target,1,zuigen,combinatie,kussen,0,71_2,2,71,134,to suck,0.633,0,0.671311406311871,vocal_oral,71_2_trial_110_p1_zuigen_combinatie_c0_final.avi
 112,target,1,zuigen,combinatie,zoenen,1,71_2,2,71,134,to suck,0.721,0,0.671311406311871,vocal_oral,71_2_trial_111_p1_zuigen_combinatie_c1_final.avi
 113,target,1,zuigen,combinatie,kus,2,71_2,2,71,134,to suck,0.638,0,0.671311406311871,vocal_oral,71_2_trial_112_p1_zuigen_combinatie_c2_final.avi
 1,practice,0,comfortabel,gebaren,genieten,0,72_1,1,72,135,comfortable,0.676,0,,,72_1_pr_0_p0_comfortabel_gebaren_final.avi
-2,practice,0,rijk,gebaren,geld uitgeven,0,72_1,1,72,135,rich,0.77855,0,,,72_1_pr_1_p0_rijk_gebaren_final.avi
+2,practice,0,rijk,gebaren,geld uitgeven,0,72_1,1,72,135,rich,0.78,0,,,72_1_pr_1_p0_rijk_gebaren_final.avi
 3,target,0,vuur,gebaren,dirigeren,0,72_1,1,72,135,fire,0.526,0,0.612736156749429,object,72_1_trial_2_p0_vuur_gebaren_final.avi
 4,target,0,hoog,gebaren,signaleren,0,72_1,1,72,135,high,0.535,0,0.763929389158889,auditory,72_1_trial_3_p0_hoog_gebaren_final.avi
 5,target,0,man,gebaren,mannelijk,0,72_1,1,72,135,male,0.739,0,0.578869739327133,animate,72_1_trial_4_p0_man_gebaren_final.avi
@@ -10899,8 +10899,8 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 35,target,1,lachen,geluiden,lachen,0,72_1,1,72,136,to laugh,1.0,1,0.87420386676992,vocal_oral,72_1_trial_34_p1_lachen_geluiden_final.avi
 36,target,1,water,geluiden,zinken,0,72_1,1,72,136,water,0.646,0,0.500621316131559,environment,72_1_trial_35_p1_water_geluiden_final.avi
 37,practice,0,snijden,combinatie,snijden,0,72_1,1,72,135,to cut,1.0,1,,,72_1_pr_36_p0_snijden_combinatie_final.avi
-38,practice,0,olifant,combinatie,trompet spelen,0,72_1,1,72,135,elephant,0.6285499999999999,0,,,72_1_pr_37_p0_olifant_combinatie_final.avi
-39,target,0,snel,combinatie,afval wegvegen,0,72_1,1,72,135,fast,0.5607,0,0.72586293491431,manner,72_1_trial_38_p0_snel_combinatie_final.avi
+38,practice,0,olifant,combinatie,trompet spelen,0,72_1,1,72,135,elephant,0.62,0,,,72_1_pr_37_p0_olifant_combinatie_final.avi
+39,target,0,snel,combinatie,afval wegvegen,0,72_1,1,72,135,fast,0.55665,0,0.72586293491431,manner,72_1_trial_38_p0_snel_combinatie_final.avi
 40,target,0,vis,combinatie,zinken,0,72_1,1,72,135,fish,0.571,0,0.741024648680267,animal,72_1_trial_39_p0_vis_combinatie_final.avi
 41,target,0,luidruchtig,combinatie,schreeuwen,0,72_1,1,72,135,loud,0.734,0,0.639905020121821,auditory,72_1_trial_40_p0_luidruchtig_combinatie_final.avi
 42,target,0,geur,combinatie,ruiken,0,72_1,1,72,135,odor,0.933,0,0.665167842854809,olfactory,72_1_trial_41_p0_geur_combinatie_final.avi
@@ -10931,7 +10931,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 13,target,0,geven,gebaren,verkopen,1,72_2,2,72,135,to give,0.671,0,0.667171182662108,manual,72_2_trial_12_p0_geven_gebaren_c1_final.avi
 14,target,0,geven,gebaren,voedselbank,2,72_2,2,72,135,to give,0.571,0,0.667171182662108,manual,72_2_trial_13_p0_geven_gebaren_c2_final.avi
 15,target,0,wind,gebaren,scheet,0,72_2,2,72,135,wind,0.836,0,0.535647636647091,environment,72_2_trial_14_p0_wind_gebaren_c0_final.avi
-16,target,0,wind,gebaren,luchtverfrisser,1,72_2,2,72,135,wind,0.65,0,0.535647636647091,environment,72_2_trial_15_p0_wind_gebaren_c1_final.avi
+16,target,0,wind,gebaren,luchtverfrisser,1,72_2,2,72,135,wind,0.64335,0,0.535647636647091,environment,72_2_trial_15_p0_wind_gebaren_c1_final.avi
 17,target,0,wind,gebaren,geur,2,72_2,2,72,135,wind,0.622,0,0.535647636647091,environment,72_2_trial_16_p0_wind_gebaren_c2_final.avi
 18,practice,1,klok,gebaren,telraam,0,72_2,2,72,136,clock,0.586,0,,,72_2_pr_17_p1_klok_gebaren_c0_final.avi
 19,practice,1,klok,gebaren,agenda,1,72_2,2,72,136,clock,0.582,0,,,72_2_pr_18_p1_klok_gebaren_c1_final.avi
@@ -10957,7 +10957,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 39,target,1,horen,gebaren,horen,1,72_2,2,72,136,to hear,1.0,1,0.755612083056296,auditory,72_2_trial_38_p1_horen_gebaren_c1_final.avi
 40,practice,0,zingen,geluiden,zingen,0,72_2,2,72,135,to sing,1.0,1,,,72_2_pr_39_p0_zingen_geluiden_c0_final.avi
 41,practice,0,fiets,geluiden,fietsen,0,72_2,2,72,135,bicycle,0.975,0,,,72_2_pr_40_p0_fiets_geluiden_c0_final.avi
-42,practice,0,fiets,geluiden,pakketbezorger,1,72_2,2,72,135,bicycle,0.67145,0,,,72_2_pr_41_p0_fiets_geluiden_c1_final.avi
+42,practice,0,fiets,geluiden,pakketbezorger,1,72_2,2,72,135,bicycle,0.66335,0,,,72_2_pr_41_p0_fiets_geluiden_c1_final.avi
 43,practice,0,fiets,geluiden,bellen,2,72_2,2,72,135,bicycle,0.518,0,,,72_2_pr_42_p0_fiets_geluiden_c2_final.avi
 44,target,0,boos,geluiden,grommen,0,72_2,2,72,135,angry,0.653,0,0.742980107622976,valence,72_2_trial_43_p0_boos_geluiden_c0_final.avi
 45,target,0,boos,geluiden,woede,1,72_2,2,72,135,angry,0.813,0,0.742980107622976,valence,72_2_trial_44_p0_boos_geluiden_c1_final.avi
@@ -10968,7 +10968,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 50,target,0,dood,geluiden,breken,0,72_2,2,72,135,dead,0.517,0,0.423358570613411,animate,72_2_trial_49_p0_dood_geluiden_c0_final.avi
 51,target,0,dood,geluiden,vallen,1,72_2,2,72,135,dead,0.596,0,0.423358570613411,animate,72_2_trial_50_p0_dood_geluiden_c1_final.avi
 52,target,0,sterk,geluiden,twijfelen,0,72_2,2,72,135,strong,0.587,0,0.408761111306824,animate,72_2_trial_51_p0_sterk_geluiden_c0_final.avi
-53,target,0,sterk,geluiden,stemmingswisseling,1,72_2,2,72,135,strong,0.5357,0,0.408761111306824,animate,72_2_trial_52_p0_sterk_geluiden_c1_final.avi
+53,target,0,sterk,geluiden,stemmingswisseling,1,72_2,2,72,135,strong,0.53335,0,0.408761111306824,animate,72_2_trial_52_p0_sterk_geluiden_c1_final.avi
 54,target,0,sterk,geluiden,winnen,2,72_2,2,72,135,strong,0.58,0,0.408761111306824,animate,72_2_trial_53_p0_sterk_geluiden_c2_final.avi
 55,target,0,zoet,geluiden,wijn,0,72_2,2,72,135,sweet,0.585,0,0.246745380421205,gustatory,72_2_trial_54_p0_zoet_geluiden_c0_final.avi
 56,target,0,zoet,geluiden,diner,1,72_2,2,72,135,sweet,0.58,0,0.246745380421205,gustatory,72_2_trial_55_p0_zoet_geluiden_c1_final.avi
@@ -10981,11 +10981,11 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 63,practice,1,eend,geluiden,pad,1,72_2,2,72,136,duck,0.613,0,,,72_2_pr_62_p1_eend_geluiden_c1_final.avi
 64,practice,1,eend,geluiden,dolfijn,2,72_2,2,72,136,duck,0.601,0,,,72_2_pr_63_p1_eend_geluiden_c2_final.avi
 65,practice,1,telefoon,geluiden,fietsen,0,72_2,2,72,136,telephone,0.505,0,,,72_2_pr_64_p1_telefoon_geluiden_c0_final.avi
-66,practice,1,telefoon,geluiden,pakketbezorger,1,72_2,2,72,136,telephone,0.5607,0,,,72_2_pr_65_p1_telefoon_geluiden_c1_final.avi
-67,practice,1,telefoon,geluiden,tour de france,2,72_2,2,72,136,telephone,0.54645,0,,,72_2_pr_66_p1_telefoon_geluiden_c2_final.avi
+66,practice,1,telefoon,geluiden,pakketbezorger,1,72_2,2,72,136,telephone,0.55665,0,,,72_2_pr_65_p1_telefoon_geluiden_c1_final.avi
+67,practice,1,telefoon,geluiden,tour de france,2,72_2,2,72,136,telephone,0.54335,0,,,72_2_pr_66_p1_telefoon_geluiden_c2_final.avi
 68,target,1,bitter,geluiden,drinken,0,72_2,2,72,136,bitter,0.577,0,0.21654433031206,gustatory,72_2_trial_67_p1_bitter_geluiden_c0_final.avi
 69,target,1,bitter,geluiden,soep,1,72_2,2,72,136,bitter,0.563,0,0.21654433031206,gustatory,72_2_trial_68_p1_bitter_geluiden_c1_final.avi
-70,target,1,bitter,geluiden,magnetronmaaltijd,2,72_2,2,72,136,bitter,0.5643,0,0.21654433031206,gustatory,72_2_trial_69_p1_bitter_geluiden_c2_final.avi
+70,target,1,bitter,geluiden,magnetronmaaltijd,2,72_2,2,72,136,bitter,0.56,0,0.21654433031206,gustatory,72_2_trial_69_p1_bitter_geluiden_c2_final.avi
 71,target,1,langzaam,geluiden,bij,0,72_2,2,72,136,slow,0.56,0,0.369492215989784,manner,72_2_trial_70_p1_langzaam_geluiden_c0_final.avi
 72,target,1,langzaam,geluiden,fietsen,1,72_2,2,72,136,slow,0.55,0,0.369492215989784,manner,72_2_trial_71_p1_langzaam_geluiden_c1_final.avi
 73,target,1,langzaam,geluiden,atletiek,2,72_2,2,72,136,slow,0.483,0,0.369492215989784,manner,72_2_trial_72_p1_langzaam_geluiden_c2_final.avi
@@ -10994,10 +10994,10 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 76,target,1,klein,geluiden,uil,2,72_2,2,72,136,small,0.547,0,0.297645530994546,quantity,72_2_trial_75_p1_klein_geluiden_c2_final.avi
 77,target,1,staart,geluiden,hond,0,72_2,2,72,136,tail,0.615,0,0.26916670248274,quantity,72_2_trial_76_p1_staart_geluiden_c0_final.avi
 78,target,1,staart,geluiden,jagen,1,72_2,2,72,136,tail,0.587,0,0.26916670248274,quantity,72_2_trial_77_p1_staart_geluiden_c1_final.avi
-79,target,1,staart,geluiden,hondenshow,2,72_2,2,72,136,tail,0.6643,0,0.26916670248274,quantity,72_2_trial_78_p1_staart_geluiden_c2_final.avi
+79,target,1,staart,geluiden,hondenshow,2,72_2,2,72,136,tail,0.65335,0,0.26916670248274,quantity,72_2_trial_78_p1_staart_geluiden_c2_final.avi
 80,target,1,onweer,geluiden,oorlog,0,72_2,2,72,136,thunder,0.536,0,0.515683484907029,environment,72_2_trial_79_p1_onweer_geluiden_c0_final.avi
 81,target,1,onweer,geluiden,geweer,1,72_2,2,72,136,thunder,0.527,0,0.515683484907029,environment,72_2_trial_80_p1_onweer_geluiden_c1_final.avi
-82,target,1,onweer,geluiden,lightsaber,2,72_2,2,72,136,thunder,0.61785,0,0.515683484907029,environment,72_2_trial_81_p1_onweer_geluiden_c2_final.avi
+82,target,1,onweer,geluiden,lightsaber,2,72_2,2,72,136,thunder,0.61335,0,0.515683484907029,environment,72_2_trial_81_p1_onweer_geluiden_c2_final.avi
 83,target,1,drinken,geluiden,drinken,0,72_2,2,72,136,to drink,1.0,1,0.657074938645804,vocal_oral,72_2_trial_82_p1_drinken_geluiden_c0_final.avi
 84,target,1,gooien,geluiden,vallen,0,72_2,2,72,136,to throw,0.691,0,0.32044193552744,manual,72_2_trial_83_p1_gooien_geluiden_c0_final.avi
 85,target,1,gooien,geluiden,omvallen,1,72_2,2,72,136,to throw,0.699,0,0.32044193552744,manual,72_2_trial_84_p1_gooien_geluiden_c1_final.avi
@@ -11075,7 +11075,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 40,target,0,kat,geluiden,kat,0,7_1,1,7,137,cat,1.0,1,0.840948971730618,animal,7_1_trial_39_p0_kat_geluiden_final.avi
 41,target,0,goed,geluiden,goed,0,7_1,1,7,137,good,1.0,1,0.42473028945648,valence,7_1_trial_40_p0_goed_geluiden_final.avi
 42,target,0,luidruchtig,geluiden,woedend,0,7_1,1,7,137,loud,0.73,0,0.587862264905011,auditory,7_1_trial_41_p0_luidruchtig_geluiden_final.avi
-43,target,0,geur,geluiden,sniffen,0,7_1,1,7,137,odor,0.8392999999999999,0,0.338392427450938,olfactory,7_1_trial_42_p0_geur_geluiden_final.avi
+43,target,0,geur,geluiden,sniffen,0,7_1,1,7,137,odor,0.82335,0,0.338392427450938,olfactory,7_1_trial_42_p0_geur_geluiden_final.avi
 44,target,0,klein,geluiden,muis,0,7_1,1,7,137,small,0.59,0,0.297645530994546,quantity,7_1_trial_43_p0_klein_geluiden_final.avi
 45,target,0,eten,geluiden,doorslikken,0,7_1,1,7,137,to eat,0.675,0,0.672077057888257,vocal_oral,7_1_trial_44_p0_eten_geluiden_final.avi
 46,practice,1,koken,geluiden,water,0,7_1,1,7,138,to cook,0.694,0,,,7_1_pr_45_p1_koken_geluiden_final.avi
@@ -11086,7 +11086,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 51,target,1,huilen,geluiden,huilen,0,7_1,1,7,138,to cry,1.0,1,0.822727134099333,vocal_oral,7_1_trial_50_p1_huilen_geluiden_final.avi
 52,target,1,springen,geluiden,schreeuw,0,7_1,1,7,138,to jump,0.627,0,0.343503131163236,locomotion,7_1_trial_51_p1_springen_geluiden_final.avi
 53,target,1,lachen,geluiden,lachen,0,7_1,1,7,138,to laugh,1.0,1,0.87420386676992,vocal_oral,7_1_trial_52_p1_lachen_geluiden_final.avi
-54,target,1,rennen,geluiden,buiten adem,0,7_1,1,7,138,to run,0.79285,0,0.336019187014838,locomotion,7_1_trial_53_p1_rennen_geluiden_final.avi
+54,target,1,rennen,geluiden,buiten adem,0,7_1,1,7,138,to run,0.78665,0,0.336019187014838,locomotion,7_1_trial_53_p1_rennen_geluiden_final.avi
 1,practice,0,geheim,gebaren,stil,0,7_2,2,7,137,secret,0.633,0,,,7_2_pr_0_p0_geheim_gebaren_c0_final.avi
 2,practice,0,geheim,gebaren,geluid,1,7_2,2,7,137,secret,0.506,0,,,7_2_pr_1_p0_geheim_gebaren_c1_final.avi
 3,practice,0,geheim,gebaren,luisteren,2,7_2,2,7,137,secret,0.545,0,,,7_2_pr_2_p0_geheim_gebaren_c2_final.avi
@@ -11131,7 +11131,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 42,target,0,zwaar,geluiden,uitgeput,0,7_2,2,7,137,heavy,0.591,0,0.38282540003767,quantity,7_2_trial_41_p0_zwaar_geluiden_c0_final.avi
 43,target,0,zwaar,geluiden,zwaar,1,7_2,2,7,137,heavy,1.0,1,0.38282540003767,quantity,7_2_trial_42_p0_zwaar_geluiden_c1_final.avi
 44,target,0,heet,geluiden,uitgeput,0,7_2,2,7,137,hot,0.543,0,0.49098203287298,temperature,7_2_trial_43_p0_heet_geluiden_c0_final.avi
-45,target,0,heet,geluiden,buiten adem,1,7_2,2,7,137,hot,0.64285,0,0.49098203287298,temperature,7_2_trial_44_p0_heet_geluiden_c1_final.avi
+45,target,0,heet,geluiden,buiten adem,1,7_2,2,7,137,hot,0.63335,0,0.49098203287298,temperature,7_2_trial_44_p0_heet_geluiden_c1_final.avi
 46,target,0,heet,geluiden,moe,2,7_2,2,7,137,hot,0.573,0,0.49098203287298,temperature,7_2_trial_45_p0_heet_geluiden_c2_final.avi
 47,target,0,misschien,geluiden,knikken,0,7_2,2,7,137,maybe,0.563,0,0.314638353811457,logical,7_2_trial_46_p0_misschien_geluiden_c0_final.avi
 48,target,0,misschien,geluiden,ja,1,7_2,2,7,137,maybe,0.723,0,0.314638353811457,logical,7_2_trial_47_p0_misschien_geluiden_c1_final.avi
@@ -11200,10 +11200,10 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 8,target,0,jagen,gebaren,jagen,0,8_1,1,8,139,to hunt,1.0,1,0.63343521888758,survival,8_1_trial_7_p0_jagen_gebaren_final.avi
 9,target,0,slapen,gebaren,slapen,0,8_1,1,8,139,to sleep,1.0,1,0.857932288330088,survival,8_1_trial_8_p0_slapen_gebaren_final.avi
 10,practice,1,dansen,gebaren,dansen,0,8_1,1,8,140,to dance,1.0,1,,,8_1_pr_9_p1_dansen_gebaren_final.avi
-11,practice,1,bloem,gebaren,bloemen ruiken,0,8_1,1,8,140,flower,0.8392999999999999,0,,,8_1_pr_10_p1_bloem_gebaren_final.avi
+11,practice,1,bloem,gebaren,bloemen ruiken,0,8_1,1,8,140,flower,0.82665,0,,,8_1_pr_10_p1_bloem_gebaren_final.avi
 12,target,1,vis,gebaren,paling,0,8_1,1,8,140,fish,0.804,0,0.69659625199764,animal,8_1_trial_11_p1_vis_gebaren_final.avi
-13,target,1,goed,gebaren,duim omhoog,0,8_1,1,8,140,good,0.8893,0,0.690424355205965,valence,8_1_trial_12_p1_goed_gebaren_final.avi
-14,target,1,bliksem,gebaren,appels plukken,0,8_1,1,8,140,lightning,0.50715,0,0.525289002863704,environment,8_1_trial_13_p1_bliksem_gebaren_final.avi
+13,target,1,goed,gebaren,duim omhoog,0,8_1,1,8,140,good,0.88335,0,0.690424355205965,valence,8_1_trial_12_p1_goed_gebaren_final.avi
+14,target,1,bliksem,gebaren,appels plukken,0,8_1,1,8,140,lightning,0.50665,0,0.525289002863704,environment,8_1_trial_13_p1_bliksem_gebaren_final.avi
 15,target,1,grommen,gebaren,tijger,0,8_1,1,8,140,to growl,0.569,0,0.533166466445803,vocal_oral,8_1_trial_14_p1_grommen_gebaren_final.avi
 16,target,1,lachen,gebaren,huilen,0,8_1,1,8,140,to laugh,0.726,0,0.829161424358265,vocal_oral,8_1_trial_15_p1_lachen_gebaren_final.avi
 17,target,1,rennen,gebaren,rennen,0,8_1,1,8,140,to run,1.0,1,0.826568126656141,locomotion,8_1_trial_16_p1_rennen_gebaren_final.avi
@@ -11270,7 +11270,7 @@ trial_order,trial_type,participant,word,modality,answer,correction,sessionID,exp
 24,target,1,blij,combinatie,blij,1,8_2,2,8,140,happy,1.0,1,0.797175441371254,valence,8_2_trial_23_p1_blij_combinatie_c1_final.avi
 25,target,1,niet,combinatie,afwijzen,0,8_2,2,8,140,not,0.598,0,0.582985856060995,logical,8_2_trial_24_p1_niet_combinatie_c0_final.avi
 26,target,1,niet,combinatie,slecht,1,8_2,2,8,140,not,0.629,0,0.582985856060995,logical,8_2_trial_25_p1_niet_combinatie_c1_final.avi
-27,target,1,niet,combinatie,niet goed,2,8_2,2,8,140,not,0.79285,0,0.582985856060995,logical,8_2_trial_26_p1_niet_combinatie_c2_final.avi
+27,target,1,niet,combinatie,niet goed,2,8_2,2,8,140,not,0.7766500000000001,0,0.582985856060995,logical,8_2_trial_26_p1_niet_combinatie_c2_final.avi
 28,target,1,onweer,combinatie,vuurwerk,0,8_2,2,8,140,thunder,0.616,0,0.560816179699852,environment,8_2_trial_27_p1_onweer_combinatie_c0_final.avi
 29,target,1,onweer,combinatie,storm,1,8_2,2,8,140,thunder,0.94,0,0.560816179699852,environment,8_2_trial_28_p1_onweer_combinatie_c1_final.avi
 30,target,1,onweer,combinatie,bliksem,2,8_2,2,8,140,thunder,0.846,0,0.560816179699852,environment,8_2_trial_29_p1_onweer_combinatie_c2_final.avi
