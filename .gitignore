@@ -2,3 +2,7 @@
 /numberbatch
 dataset/problems _forJet.csv
 dataset/README_forJet.txt
+*.npy
+*.json
+02_Guessability_evaluation/numberbatch/numberbatch-en.txt
+02_Guessability_evaluation/numberbatch/numberbatch.txt

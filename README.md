@@ -1,23 +1,27 @@
-# FLESH_Expressibility_vs_guessability
+# Expressibility vs guessability
 
-/dataset
+## Repository structure
+<pre>
+├── 01_Expressibility              # Data, scripts, and models for modelling expressibility estimates ratings
+│   ├── rawdata                    # Raw data to be preprocessed and modelled
+|   ├── data                       # Processed dataframes
+|   ├── scripts                    # Scripts for pre-processing and modelling  
+|   ├── models                     # Models
 
-All dataframes that are used in scripts, or are results of scripts
+├── 02_Guessability_evaluation     # Data, scripts, and models for evaluating the relationship between expressibility and guessability
+│   ├── rawdata                    # Raw data to be preprocessed and modelled
+│   ├── data                       # Processed dataframes
+│   ├── scripts                    # Scripts for pre-processing and modelling  
+|   ├── models                     # Models 
+|   ├── plots                      # Visualizations 
+│
+├── 03_Simulations                 # Data, scripts and models for expressibility-related simulations 
+│   ├── data                       # Processed dataframes
+│   ├── scripts                    # Scripts for pre-processing and modelling  
+|   ├── models                     # Models 
+</pre>
 
-/numberbatch
+## Prerequisites
 
-ConceptNet embeddings
-
-/rawdata
-
-All log files from sessions
-
-In this folder, there are following scripts
-
-Data_wrangle.ipynb: used to take all raw data and summarize them into single dataframe
-ConceptNet_similarity.ipynb: used to calculate cosine similarity between each concept-answer pair and add some other info (e.g., expressibility)
-
-
-
-TODO:
-- fill in missing cosine similarities 
+- Python, jupyter notebook
+- R, R studio

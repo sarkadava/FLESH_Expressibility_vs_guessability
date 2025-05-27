@@ -1,0 +1,418 @@
+---
+title: "reparation of posterior predictive distribution matrix"
+author: "Aleksandra Ćwiek, Susanne Fuchs, Šárka Kadavá, Wim Pouw (alph.)"
+date: "2025-04-23"
+link-citations: true
+output:
+  html_document:
+    number_sections: yes
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    df_print: paged
+  pdf_document:
+    number_sections: yes
+    toc: yes
+    toc_depth: '3'
+  html_notebook:
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Setup
+
+This is a Rmd with script to draw random samples from posterior predictive distribution of concepts
+
+```{r packages, message=FALSE, warning=FALSE}
+
+
+required_packages <- c("readr", # data wrangling
+                       "dplyr", 
+                       "BayesFactor", # bayes packages
+                       "bayestestR", 
+                       "brms",
+                       "rstanarm",
+                       "RcppCNPy",
+                       "reticulate")
+
+# Loop over the packages and check if they are installed
+for (package in required_packages) {
+  if (!require(package, character.only = TRUE)) {
+    # If the package is not installed, install it
+    install.packages(package)
+    # Load the package
+    library(package, character.only = TRUE)
+  }
+}
+
+
+```
+
+Set up the folder environment
+```{r folders, warning=FALSE}
+
+# current folder (first go to session -> set working directory -> to source file location)
+parentfolder <- dirname(getwd())
+
+# list the folders
+datasets  <- paste0(parentfolder, '/datasets/')
+models <- paste0(parentfolder, '/models/')
+
+```
+
+# Model check
+
+Let's check out the model that had the best fit, this one we will use to sample from posterior predictive distribution.
+```{r model load, warning=FALSE}
+
+# read the model
+mdl_zoib2 <- readRDS(paste0(models, "mdl_zoib2.rds"))
+
+```
+
+Let's look at the summary
+```{r model check, warning=FALSE}
+
+summary(mdl_zoib2)
+pp_check(mdl_zoib2, ndraws = 100)
+plot(mdl_zoib2)
+
+conditional_effects(mdl_zoib2)
+conditional_effects(mdl_zoib2, sample_prior = "only")
+```
+
+# Concept preparation
+
+Let's get the list of all the concepts
+```{r empty df, warning=FALSE}
+
+expr <- read_csv(paste0(datasets, '/df_estim_dutch.csv'))
+
+unique_words <- unique(expr$word)
+unique_modalities <- unique(expr$modality)
+
+newdata <- expand.grid(word = unique_words, modality = unique_modalities)
+
+# we do not need predictions for multimodal, so let's get rid of them
+
+newdata <- newdata %>%
+  filter(modality != 'multimodal')
+
+```
+
+# Posterior predictive distribution matrix
+
+We want to get posterior predictive distributions for each concept, based on our model
+```{r ppd, warning=FALSE}
+
+predict <- rstanarm::posterior_predict(mdl_zoib2, newdata = newdata, draws=1)
+
+# https://mc-stan.org/rstanarm/reference/posterior_predict.stanreg.html
+
+# it has 8000 rows, 4x2000 (chains x iterations)
+# each column represents a concept*modality, as defined in new data
+
+```
+
+Let's plot the histogram of some of the words, just as a sanity check
+```{r, warning=FALSE}
+
+hist(predict[,200])
+
+```
+
+Here we see that the expressibility is not normally distributed, therefore we cannot, for example, sample from normal distribution defined by the mean and standard error.
+
+# Saving 
+
+Let's save it
+```{r save matrix as csv, warning=FALSE}
+
+write.csv(predict, file = paste0(datasets, 'ppd_matrix.csv'), row.names = FALSE)
+write.csv(newdata, file = paste0(datasets, 'empty_df.csv'), row.names = FALSE)
+
+
+```
+
+
+#####
+
+Here happens simulations
+
+
+#######
+
+
+# Evaluation of the simulations
+
+```{r load in results of sims, warning=FALSE}
+
+library(bayestestR)
+library(jsonlite)
+
+bayesfolder = paste0(parentfolder, '/datasets/bayestest/')
+sims = paste0(parentfolder, '/datasets/simulation_results/')
+
+# get all json files in the folder
+simfiles <- list.files(sims, pattern = "\\.json$", full.names = TRUE)
+simfiles
+
+```
+
+## Bayes Factor
+
+```{r load in and perform bayes test, warning=FALSE}
+
+# prepare empty df for results
+results <- data.frame(
+  simfile = character(),
+  bf_mean = numeric(),
+  bf_sd = numeric(),
+  bf10_mean = numeric(),
+  bf10_sd = numeric(),
+  bf_a3 = numeric()
+)
+
+
+for (i in 1:length(simfiles)) {
+  
+  print(paste0("Loading file: ", simfiles[i]))
+
+  # Read the JSON file
+  data <- fromJSON(simfiles[i], simplifyDataFrame = TRUE)
+
+  #data[[3]][1] # this is one experiment with all vocal expressibilities
+  #data[[4]][1] # this is one experiment with all gesture expressibilities
+
+  # make df just for this simulation
+  results_for_sim <- data.frame(
+    simfile = numeric(),
+    experiment = integer(),
+    bf = numeric(),
+    bf10 = numeric()
+  )
+  
+  sim_report <- data.frame(
+    simfile = character(),
+    bf_mean = numeric(),
+    bf_sd = numeric(),
+    bf10_mean = numeric(),
+    bf10_sd = numeric(),
+    bf_a3 = numeric()
+  )
+
+  # loop over experiments in this file
+  print('Processing experiments')
+  for (j in 1:length(data[[3]])) {
+    #print(j)
+    # for this one experiment, get them vocal and gesture expressibilities into one list
+
+    #gesture_expressibilities <- data[[4]][j]
+    #vocal_expressibilities <- data[[3]][j]
+
+    # load all values from data[[3]][1] and data[[4]][1] into separate vectors
+    gesture_expressibilities <- unlist(data[[3]][j])
+    vocal_expressibilities <- unlist(data[[4]][j])
+
+    # Perform the Bayes factor test
+    bf_result <- ttestBF(x = gesture_expressibilities, y = vocal_expressibilities, paired = FALSE)
+    bf <- extractBF(bf_result)$bf
+    # log it
+    bf10 <- log(bf)
+    
+    # save the results in the df for this simulation
+    results_for_sim <- rbind(results_for_sim, data.frame(
+      simfile = simfiles[i],
+      experiment = j,
+      bf = bf,
+      bf10 = bf10
+    ))
+    
+  }
+
+  print('Summarizing experiments')
+
+  # Number of experiments
+  n_experiments <- nrow(results_for_sim)
+
+  # Count and percentage of BF > 3
+  bf_above_3_n <- sum(results_for_sim$bf > 3)
+  bf_above_3_pct <- (bf_above_3_n / n_experiments) * 100
+  
+  sim_report <- data.frame(
+    simfile = simfiles[i],
+    bf_mean = mean(results_for_sim$bf),
+    bf_sd = sd(results_for_sim$bf),
+    bf10_mean = mean(results_for_sim$bf10),
+    bf10_sd = sd(results_for_sim$bf10),
+    bf_a3 = bf_above_3_pct
+  )
+
+  # save the results in the df for all simulations
+  results <- rbind(results, sim_report)  
+  write.csv(results, "bayesfactor_summary.csv", row.names = FALSE)
+  
+
+}
+ 
+```
+
+## Posterior sample
+
+```{r}
+
+set.seed(123)
+
+# prepare empty df for results
+results <- data.frame(
+  simfile = character(),
+  sample = numeric(),
+  mu_mean = numeric(),
+  mu_sd = numeric(),
+  mean_beta = numeric(),
+  sd_beta = numeric(),
+  sigma_mean = numeric(),
+  delta_mean = numeric(),
+  delta_sd = numeric()
+)
+
+for (i in 1:length(simfiles)) {
+  
+  print(paste0("Loading file: ", simfiles[i]))
+
+  # Read the JSON file
+  data <- fromJSON(simfiles[i], simplifyDataFrame = TRUE)
+
+  # Pick one random experiment
+  r <- sample(0:100000, 1)
+  
+  # loop over experiments in this file
+  print('Processing experiments')
+  
+  # load all values from data[[3]][1] and data[[4]][1] into separate vectors
+  gesture_expressibilities <- unlist(data[[3]][r])
+  vocal_expressibilities <- unlist(data[[4]][r])
+
+  # Perform the Bayes factor test
+  bf_result <- ttestBF(x = gesture_expressibilities, y = vocal_expressibilities, paired = FALSE)
+  bf <- extractBF(bf_result)$bf
+
+  
+  #get the posterior samples
+  posterior_samples <- posterior(bf_result, iterations = 2000)
+  posterior_df <- as.data.frame(posterior_samples)
+  
+  
+  # rename beta for easier work
+  posterior_df <- posterior_df %>%
+  rename(beta = "beta (x - y)")
+  
+  # get mean and sd of mu, credible interval
+  posterior_df %>%
+  summarise(
+    simfile = simfiles[i],
+    sample = r,
+    mean_mu = mean(mu),
+    sd_mu = sd(mu),
+    mean_beta = mean(beta),
+    sd_beta = sd(beta),
+    sigma_mean = mean(sig2),
+    delta_mean = mean(delta),
+    delta_sd = sd(delta)
+   
+  ) -> posterior_summary
+
+  # save the results in the df for all simulations
+  results <- rbind(results, posterior_summary)  
+  write.csv(results, "posteriors_summary.csv", row.names = FALSE)
+  
+}
+
+```
+
+
+## Summarizing
+
+```{r}
+
+
+bf <- read_csv("bayesfactor_summary.csv")
+post <- read_csv("posteriors_summary.csv")
+
+# Merge
+data <- merge(bf, post, by = "simfile")
+
+# Round all to three
+data <- data %>%
+  mutate(across(where(is.numeric), ~ round(.x, 3)))
+
+```
+
+Make a pretty table for the paper
+```{r}
+
+library(knitr)
+library(kableExtra)
+
+data %>%
+  kable(digits = 3, format = "html", caption = "My Table") %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+```
+
+Plots
+```{r}
+
+library(tidyverse)
+
+colstoplot <- c("bf10_mean", "mean_beta", "delta_mean")
+
+# Custom facet labels
+pretty_labels <- c(
+  bf10_mean = "Bayes Factor (log mean)",
+  mean_beta = "Difference β (mean)",
+  delta_mean = "Cohen's d (mean)"
+)
+
+# Pivot and label
+df_long <- data %>%
+  select(all_of(colstoplot)) %>%
+  pivot_longer(cols = everything(), names_to = "Variable", values_to = "Value") %>%
+  mutate(Variable = factor(Variable, levels = colstoplot, labels = pretty_labels))
+
+# Assign color-blind friendly colors
+fill_colors <- c(
+  "Bayes Factor (log mean)" = "#0072B2",   # Blue
+  "Difference β (mean)"    = "#D55E00",   # Vermillion
+  "Cohen's d (mean)"    = "#F0E442"    # Yellow
+)
+
+# Plot
+ggplot(df_long, aes(x = Value, fill = Variable)) +
+  geom_density(alpha = 0.6, color = "black", linewidth = 0.3) +
+  scale_fill_manual(values = fill_colors) +
+  facet_wrap(~ Variable, scales = "free", ncol = 3) +
+  theme_minimal(base_size = 14) +
+  theme(
+    strip.text = element_text(face = "bold", size = 13),
+    plot.title = element_text(hjust = 0.5, face = "bold"),
+    legend.position = "none",  # remove redundant legend
+    panel.grid.minor = element_blank()
+  ) +
+  labs(
+    x = NULL,
+    y = NULL
+  )
+
+
+```
+
+

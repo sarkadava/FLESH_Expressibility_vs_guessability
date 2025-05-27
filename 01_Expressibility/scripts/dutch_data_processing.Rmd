@@ -1,0 +1,585 @@
+---
+title: "experiment-1a_dutch"
+output: html_document
+date: "2023-01-17"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Setting up
+
+```{r setup}
+
+###### folders ###########
+
+#current folder (first go to session -> set working directory -> to source file location)
+parentfolder <- dirname(getwd())
+print(parentfolder)
+#list the folders
+datasets    <- paste0(parentfolder, '/Data/')
+folderdata  <- paste0(datasets, '/raw_data/')
+
+print(folderdata)
+
+##### packages ######
+library(readr)
+library(R.utils)
+library(dplyr)
+library(tidyr)
+library(readxl)
+
+```
+
+How many participants finished until the end?
+```{r participants}
+
+# info from Pavlovia
+## 237 completed
+## 109 aborted
+
+list_data <- list.files(paste0(folderdata), pattern = ".csv")
+length(list_data) # 264 csv files in total, the empty ones or aborted early before trial round deleted manually
+
+
+```
+
+One df
+```{r making one df}
+
+## Read the first csv file as a start for combining all individual dataframes
+data = read.csv(paste0(folderdata, "/001324_flesh_expressibility_dutch.csv"))
+
+## Write another column 'file' with a filename
+data$file = '001324_flesh_expressibility_dutch.csv'
+
+dirs = list.files(paste0(folderdata), pattern = ".csv")
+
+##### Combine dataframes #####
+
+for (ifile in dirs){
+  ## Set the path according to the mother directory
+  newdata = read.csv(paste0(folderdata, "/", ifile))
+  newdata$file = ifile
+  
+  data=plyr::rbind.fill(data,newdata)
+    
+  }
+  
+
+### remove duplicate rows
+data <- unique(data)
+
+```
+
+
+Filtering data frame
+```{r filtering data frame}
+
+# Deselect unneeded variables:
+
+# variables that has only NAs
+data <- select(data, -c(natlang4, natlang5, natlang6))
+data <- select(data, -c(lang6, lang7, lang8, proficiency6, proficiency7, proficiency8))
+
+# Psychopy metadata
+data <- select(data, -c(psychopyVersion, OS, frameRate, expName, session, presentation.limit, date))
+data <- select(data, -c(xRes, yRes))
+# unnecesary timings etc
+data <- select(data, -c(introduction_weiter.numClicks, introduction_weiter.timesOn, introduction_weiter.timesOff, mouse.x, mouse.y, mouse.leftButton, mouse.midButton,  mouse.rightButton, mouse.time, mouse.clicked_name, button_confirm.numClicks, button_confirm.timesOn, button_confirm.timesOff, button_exit.numClicks, button_exit.timesOn, button_exit.timesOff, practice_weiter.numClicks, practice_weiter.timesOn, practice_weiter.timesOff, pr_message_weiter.numClicks, pr_message_weiter.timesOn, pr_message_weiter.timesOff, pr_remember_weiter.numClicks, pr_remember_weiter.timesOn, pr_remember_weiter.timesOff,  button_weiter.numClicks, button_weiter.timesOn, button_weiter.timesOff, pr_image, start_weiter.numClicks, trials.order))
+
+# unnecesary timings vol 2
+data <- select(data, -c(welcome_weiter.numClicks, welcome_weiter.timesOn, welcome_weiter.timesOff, radio.for.required.checkboxes, sensorypref.., practice_trials.thisRepN, practice_trials.thisTrialN, practice_trials.thisN, practice_trials.thisIndex, practice_trials.ran, start_weiter.timesOff, message_weiter.numClicks, message_weiter.timesOn, message_weiter.timesOff, trial_remember_weiter.numClicks, trial_remember_weiter.timesOn, trial_remember_weiter.timesOff, Count, Shelf.time, trial_button_weiter.numClicks, trial_button_weiter.timesOn, trial_button_weiter.timesOff, trials.thisRepN, trials.thisTrialN, trials.thisN, trials.thisIndex, trials.ran, fordict, trial_img, end_experiment.numClicks, end_experiment.timesOff))
+
+## delete practice round
+data <- select(data, -c(pr_expressibility.response, pr_expressibility.rt, pr_word, pr_question))
+
+## some more
+data <- select(data, -c(blocks.thisRepN, blocks.thisTrialN, blocks.thisN, blocks.thisIndex, blocks.ran, blocks.order, trial_list, task, mod_image, remember))
+
+### remove duplicate rows
+data <- unique(data)
+
+
+## change name of columns
+colnames(data)[26]  <- "trial_start_time" 
+colnames(data)[27]  <- "expressibility" 
+colnames(data)[28]  <- "response_time"
+colnames(data)[30]  <- "modality"
+colnames(data)[34]  <- "end_time"
+
+
+```
+
+Detection of problems
+```{r any problems}
+
+# signs of test
+unique(data$natlang1)
+unique(data$lang1) 
+unique(data$problem_text)
+unique(data$comment_text)
+unique(data$exp_ID)
+
+# 
+# ## find the corresponding participants
+row_index <- which(data$comment_text == "enkele keer verschoof het balletje op de balk nadat ik op volgende had gedrukt. ")
+which <- data[row_index, "exp_ID"]
+unique(which)
+
+# delete test trials
+data <- data %>% filter(exp_ID != 22894 & exp_ID != 221539 & exp_ID != 410740 & exp_ID != 590154 & exp_ID != 682029 & exp_ID != 70523 & exp_ID != 'NA')
+
+# delete pilot 
+data <- data %>% filter(exp_ID != 232400 & exp_ID != 254289 & exp_ID != 682241 & exp_ID != 148688 & exp_ID != 582962 & exp_ID != 'wimpouw' & exp_ID != '%SURVEY_CODE%')
+
+# delete ppcns using phone/ipad
+data <- data %>% filter(exp_ID != 789985 & exp_ID != 968829)
+
+# problems
+## 141475
+# er stond telkens bij de herinnering niet hetzelfde als boven de vraag, want daar stond zonder taal
+## 417863
+# Door de tijd die het koste om de woorden te laden, vergat ik een beetje wat ik wel en niet mocht doen.
+## 683060
+# Het duurde erg lang tot de volgende vraag kwam, heb af en toe echt 30 seconden moeten wachten!
+## 723521
+# bij sommige vragen verschoof de stip mee met de muis voordat ik op verder drukte
+## 871335
+# , er stond geen duidelijke minimum leeftijd aangegeven maar de leeftijden startte vanaf 18 jaar 
+
+
+# comments
+## 871335
+# Ik heb het feit dat NGT bestaat even achterwege gelaten
+## 832980
+# enkele keer verschoof het balletje op de balk nadat ik op volgende had gedrukt.
+
+
+# exp_ID to delete, bugs
+
+data <- data %>% 
+  filter(exp_ID != 738964 & exp_ID != 439659 & exp_ID != 126241 & exp_ID != 490543 & exp_ID != 914515 & exp_ID != 510856 & exp_ID != 895055 & exp_ID != 372271 & exp_ID != 426597 & exp_ID != 126241 & exp_ID != 639780)
+
+
+## we can delete problem columns now
+data <- select(data, -c(problem, problem_text))
+
+length(unique(data$exp_ID)) ## 228 unique participants (not all completed)
+
+```
+
+We need to convert time info to numeric and distribute all over the df
+```{r update some df things}
+
+# times as numeric
+
+data <- data %>% mutate(trial_start_time = parse_number(data$trial_start_time))
+data <- data %>% mutate(end_time = parse_number(data$end_time))
+
+# times everywhere in the column 
+
+data <- data %>% group_by(exp_ID) %>% 
+  fill(trial_start_time) %>% 
+  fill(trial_start_time, .direction = "up") %>% 
+  ungroup()
+
+data <- data %>% group_by(exp_ID) %>% 
+  fill(end_time) %>% 
+  fill(end_time, .direction = "up") %>% 
+  ungroup()
+
+## delete rows where expressibility is NA
+
+data <- data %>% filter(!is.na(expressibility))
+
+## add duration column
+
+data$duration <- NA 
+data$duration <- data$end_time - data$trial_start_time
+
+
+```
+
+Renaming columns and correcting language information
+```{r naming corrections}
+
+## rename modality column
+
+data$modality <- ifelse(data$modality == "question_vocal.png", "vocal", 
+                      ifelse(data$modality == "question_multimodal.png", "multimodal",
+                             ifelse(data$modality == "question_gesture.png", "gesture", NA)))
+
+
+# natlang1
+
+# ## find the corresponding participants
+row_index <- which(data$lang1 == "engels, Duits en een beetje Frans")
+which <- data[row_index, "exp_ID"]
+unique(which)
+
+
+data$natlang1 <- "nederlands"
+
+# correct pcn 728515
+data$natlang1[data$exp_ID == 728515] <- "nederlands"
+data$natlang2[data$exp_ID == 728515] <- "chinees"
+
+# natlang2
+unique(data$natlang2)
+
+# people mentioning dialect
+## 257220 Limburgs
+## 567345 Dialect
+data$dialect <- NA
+data$natlang2[data$exp_ID == 257220] <- NA
+data$dialect[data$exp_ID == 257220] <- "limburgs"
+data$natlang2[data$exp_ID == 567345] <- NA
+data$dialect[data$exp_ID == 567345] <- "dialect"
+
+# uniforming
+data$natlang2 <- gsub("Farsi ", 'farsi', data$natlang2)
+data$natlang2 <- gsub("-", NA, data$natlang2)
+data$natlang2 <- tolower(data$natlang2)
+
+#natlang3
+unique(data$natlang3)
+data$natlang3 <- tolower(data$natlang3)
+
+## Note, pcn 680990 have ovelap between natlangs and langs
+
+unique(data$lang1) 
+## Note, pcn 901632 overlap between natlang and lang
+
+## correct participants
+###398421
+data$lang1[data$exp_ID == 398421] <- 'duits'
+data$lang2[data$exp_ID == 398421] <- 'engels'
+data$lang3[data$exp_ID == 398421] <- 'frans'
+data$lang4[data$exp_ID == 257220] <- 'zweeds'
+
+## 784091
+data$lang1[data$exp_ID == 784091] <- 'engels'
+data$lang2[data$exp_ID == 784091] <- 'duits'
+
+##18102	
+data$lang1[data$exp_ID == 18102] <- 'engels'
+data$lang2[data$exp_ID == 18102] <- 'duits'
+
+##115296
+data$lang1[data$exp_ID == 115296] <- 'engels'
+data$lang2[data$exp_ID == 115296] <- 'duits'
+data$proficiency2[data$exp_ID == 115296] <- 2
+
+##319675		
+data$lang1[data$exp_ID == 319675] <- 'engels'
+data$lang2[data$exp_ID == 319675] <- 'duits'
+data$proficiency2[data$exp_ID == 319675] <- 2
+
+##512122	
+data$lang1[data$exp_ID == 512122] <- 'engels'
+data$lang2[data$exp_ID == 512122] <- 'duits'
+
+##552962
+data$lang1[data$exp_ID == 552962] <- 'engels'
+data$lang2[data$exp_ID == 552962] <- 'duits'
+
+##882595
+data$lang1[data$exp_ID == 882595] <- 'engels'
+data$lang2[data$exp_ID == 882595] <- 'duits'
+data$proficiency2[data$exp_ID == 882595] <- 2
+data$lang3[data$exp_ID == 882595] <- 'frans'
+data$proficiency2[data$exp_ID == 882595] <- 1 # Note, in answer 'een beetje'
+
+##208529
+data$lang1[data$exp_ID == 208529] <- 'engels'
+data$lang3[data$exp_ID == 208529] <- 'duits'
+data$proficiency3[data$exp_ID == 208529] <- 2
+
+##625900
+data$lang1[data$exp_ID == 625900] <- 'engels'
+data$lang2[data$exp_ID == 625900] <- 'duits'
+data$proficiency2 <- 2
+
+##804688
+data$lang1[data$exp_ID == 804688] <- 'engels'
+data$lang2[data$exp_ID == 804688] <- 'duits'
+data$proficiency2[data$exp_ID == 804688] <- 1 # Note, een beetje
+data$lang3[data$exp_ID == 804688] <- 'italiaans'
+
+
+# English, englisch, Englisch, Englisch, Enlisch, english, englisch
+data$lang1 <- gsub("Nederlands |Nederlands|Nedetlands|Nederlandes|NEderlands|Nederland|Nederlands (moedertaal)", "nederlands", data$lang1)
+data$lang1 <- gsub("Engels |Engels|engels ", "engels", data$lang1)
+data$lang1 <- gsub("Servo-Kroatisch ", "servo-kroatisch", data$lang1)
+
+# lower case
+data$lang1 <- tolower(data$lang1)
+
+#lang2
+unique(data$lang2)
+data$lang2 <- gsub("Duits|duits|Duits ", "duits", data$lang2)
+data$lang2 <- gsub("Frans |Frans", "frans", data$lang2)
+# lower case
+data$lang2 <- tolower(data$lang2)
+
+#lang3
+unique(data$lang3)
+data$lang3 <- tolower(data$lang3)
+data$lang3 <- gsub("spaans ", "spaans", data$lang3)
+data$lang3 <- gsub("duits ", "duits", data$lang3)
+
+#lang4
+unique(data$lang4)
+# lower case
+data$lang4 <- tolower(data$lang4)
+
+#lang4
+unique(data$lang5)
+# lower case
+data$lang5 <- tolower(data$lang5)
+```
+
+How many words were finished by participants?
+```{r amount of words}
+
+# Calculate the number of words rated by each participant
+df_word_count <- data %>%
+  group_by(exp_ID) %>%
+  summarize(word_count = n())
+
+summary(df_word_count)
+
+## all participants finished at least 1 third - the same rule applied for German data
+```
+
+Duration of trial/rating and missing end times
+```{r duration, UNFINISHED}
+
+## QUESTION what is the reaction time, or minimum thinkable time for process the word?
+
+### Participants without end time
+
+# participant 89227, finished
+
+## start time: 123.773
+## 1st block start: 131.918
+## 2nd block start: 228.318
+## 3rd block start: 312.068
+
+a <- 312.068-228.318 #duration of the 2nd block
+b <- 228.318-131.918 # duration of the 1st block
+c <- c(a,b) 
+d <- mean(c) # mean of the duration of a block 
+e <- d/20 # duration per word in the block
+f <- 312.068 + d # time of start of the 3rd block + mean duration = end of the trial as such
+
+# e = 4.50375 (duration per word/rating)
+# end time = 402.143 
+
+data$end_time[data$participant == 89227] <- 402.143 
+
+# participant 122364, finished
+
+a <- 620.892-515.534
+b <- 515.534-396.372
+c <- c(a,b)
+d <- mean(c)
+e <- d/20
+f <- 620.892 + d 
+
+# e = 5.613
+# end time = 733.152
+
+data$end_time[data$participant == 122364] <- 733.152 
+
+# participant 248410, finished
+
+a <- 310.126-230.957
+b <- 230.957-145.253
+c <- c(a,b)
+d <- mean(c)
+e <- d/20
+f <- 310.126 + d
+
+# e = 4.121825
+# end time = 392.5625
+
+data$end_time[data$participant == 248410] <- 392.5625 
+
+# participant 366882, one modality + 2
+
+a <- 322.981-162.071
+e <- a/20
+f <- e*22
+g <- 162.071 + f # end time
+
+# e = 8.0455
+# end time: 339.072
+
+data$end_time[data$participant == 366882] <- 339.072 
+
+
+# participant 479477, one modality + 2 (22)
+
+a <- 421.952-262.606
+e <- a/20
+f <- e*22
+g <- 262.606 + f
+
+# e = 7.9673
+## end time = 437.8866
+
+data$end_time[data$participant == 479477] <- 437.8866 
+
+
+# participant 536733, 1 modality + 17
+
+a <- 433.13-239.074
+e <- a/20
+f <- e*37
+g <- 239.074 + f
+
+
+# e = 9.7028
+# end time = 598.0776
+
+data$end_time[data$participant == 536733] <- 598.0776 
+
+
+# participant 568428, finished
+
+a <- 282.694-215.866
+b <- 215.866-137.504
+c <- c(a,b)
+d <- mean(c)
+e <- d/20
+f <- 282.694 + d
+
+# e = 3.62975
+# end time = 355.289
+
+data$end_time[data$participant == 568428] <- 355.289 
+
+
+# participant 791441, finished
+
+a <- 270.113-216.670
+b <- 216.670-134.801
+c <- c(a,b)
+d <- mean(c)
+e <- d/20
+f <- 270.113 + d
+
+# e = 3.3828
+# end time = 337.769
+
+data$end_time[data$participant == 791441] <- 337.769 
+
+
+# participant 965452, finished
+
+a <- 531.396-419.111
+b <- 419.111-279.798
+c <- c(a,b)
+d <- mean(c)
+e <- d/20
+f <- 531.396 + d
+
+# e = 6.28995
+# end time = 657.195
+
+data$end_time[data$participant == 965452] <- 657.195 
+
+
+## add duration column
+
+data$duration <- NA 
+data$duration <- data$end_time - data$trial_start_time
+
+
+# av duration per rating (dur / number of rows)
+
+df_duration <- data %>% group_by(participant) %>% 
+  summarize(duration_per_word = duration / n())
+
+df_duration <- unique(df_duration)
+
+
+```
+Let's correct sensory preference columns
+```{r sensory preference re-do}
+
+# 1 - hearing only
+# 2 - visual only
+# 3 - taste only
+# 4 - other 
+
+# 5 - hearing + visual
+# 6 - hearing + taste 
+# 7 - hearing + other
+# 8 - visual + taste ### NONE
+# 9 - visual + other
+# 10 - taste + other ### NONE
+
+# 11 - hearing + visual + taste 
+# 12 - hearing + taste + other ### NONE
+# 13 - visual + taste + other ### NONE
+
+# 14 - hearing + visual + taste + other - in other words all
+
+
+data$sensorypref <- NA
+data$sensorypref <- ifelse(!is.na(data$sensorypref1) & is.na(data$sensorypref2) & is.na(data$sensorypref3) & is.na(data$sensorypref4), '1',
+                           ifelse(!is.na(data$sensorypref2) & is.na(data$sensorypref1) & is.na(data$sensorypref3) & is.na(data$sensorypref4), '2',
+                                  ifelse(!is.na(data$sensorypref3) & is.na(data$sensorypref1) & is.na(data$sensorypref2) & is.na(data$sensorypref4), '3', 
+                                         ifelse(!is.na(data$sensorypref4) & is.na(data$sensorypref1) & is.na(data$sensorypref2) & is.na(data$sensorypref3), '4', 
+                                                ifelse(!is.na(data$sensorypref1) & !is.na(data$sensorypref2) & is.na(data$sensorypref3) & is.na(data$sensorypref4), '5',
+                                                       ifelse(!is.na(data$sensorypref1) & !is.na(data$sensorypref3) & is.na(data$sensorypref2) & is.na(data$sensorypref4), '6',
+                                                              ifelse(!is.na(data$sensorypref1) & !is.na(data$sensorypref4) & is.na(data$sensorypref2) & is.na(data$sensorypref3), '7',
+                                                                     ifelse(!is.na(data$sensorypref2) & !is.na(data$sensorypref3) & is.na(data$sensorypref1) & is.na(data$sensorypref4), '8',
+                                                                            ifelse(!is.na(data$sensorypref2) & !is.na(data$sensorypref4) & is.na(data$sensorypref1) & is.na(data$sensorypref3), '9',
+                                                                                   ifelse(!is.na(data$sensorypref3) & !is.na(data$sensorypref4) & is.na(data$sensorypref1) & is.na(data$sensorypref2), '10',
+                                                                                          ifelse(!is.na(data$sensorypref1) & !is.na(data$sensorypref2) & !is.na(data$sensorypref3) & is.na(data$sensorypref4), '11',
+                                                                                                 ifelse(!is.na(data$sensorypref1) & !is.na(data$sensorypref3) & !is.na(data$sensorypref4) & is.na(data$sensorypref2), '12',
+                                                                                                        ifelse(!is.na(data$sensorypref2) & !is.na(data$sensorypref3) & !is.na(data$sensorypref4) & is.na(data$sensorypref1), '13', '14')))))))))))))
+
+```
+
+
+Add part of speech information
+```{r TODO}
+
+# add part of speech info etc
+# load concept excel with info about PoS and SemCat
+concepts <- read_excel("../Data/conceptlist_info.xlsx")
+
+# rename col Dutch as word so we can match
+colnames(concepts)[7] <- "word"
+
+# create df that matches info from df data and concepts
+df_expressibility <- merge(data, concepts, by = "word")
+```
+
+Reorder columns and save
+```{r reorder and save}
+df_expressibility <- df_expressibility %>% select(word, modality, expressibility, SemanticCat, PoS, response_time, trial_start_time, end_time, duration, exp_ID, age, gender, natlang1, natlang2, natlang3, dialect, lang1, proficiency1, lang2, proficiency2, lang3, proficiency3, lang4, proficiency4, lang5, proficiency5, country, education, dyslexia, mobility, currentloc, sensorypref, file)
+
+### remove duplicate rows
+df_expressibility <- unique(df_expressibility)
+
+# this is the final dataset
+write.csv(df_expressibility, paste0(datasets, "df_expressibility_dutch_final.csv"), row.names = FALSE)
+
+```
+
+Sanity check for how many words we have rated
+```{r number of ratings per word and modality}
+
+df_expressibility <- read_csv("../Datasets/df_expressibility_final.csv")
+df_ratings <- df_expressibility %>% group_by(word, modality) %>% 
+  summarize(rating_amount = length(expressibility))
+
+```
+
