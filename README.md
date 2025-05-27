@@ -1,7 +1,7 @@
 # Expressibility vs guessability
 
 ## Repository structure
-
+<pre>
 ├── 01_Expressibility              # Data, scripts, and models for modelling expressibility estimates ratings
 │   ├── rawdata                    # Raw data to be preprocessed and modelled
 |   ├── data                       # Processed dataframes
@@ -19,7 +19,6 @@
 │   ├── data                       # Processed dataframes
 │   ├── scripts                    # Scripts for pre-processing and modelling  
 |   ├── models                     # Models 
-
 </pre>
 
 ## Prerequisites
