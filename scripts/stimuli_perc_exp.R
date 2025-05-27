@@ -30,7 +30,7 @@ df <- df %>%
   rename(participant_dyad = participant) %>%
   rename(participant_ID = pcnID) %>%
   rename(concept = English) %>%
-  select(-`...1`) %>%  # Remove the first column
+  #select(-`...1`) %>%  # Remove the first column
   rename(stimulus = word)
 
 # Reorder the columns in the specified order
