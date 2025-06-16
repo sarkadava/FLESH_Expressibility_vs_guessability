@@ -1,3 +1,8 @@
+FLESH_Expressibility_vs_guessability\02_Guessability_evaluation\rawdata
+
+Here we store all log files from referential experiment administered in PsychoPy.
+
+
 Notes
 # dyad 0 - pilot data, excluded from analysis
 # dyad 18 - same as for dyad 44, but experiment broke after 1 whole condition (gebaren), plus 1 or two trials for a condition (geluiden). Two remaining conditions (geluiden, combinatie) have been run through in the reinitiated experiment.

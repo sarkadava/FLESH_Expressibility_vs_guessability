@@ -1,20 +1,26 @@
-all_data_raw: all data copied from sessions and put together
+FLESH_Expressibility_vs_guessability\02_Guessability_evaluation\dataset
 
-conceptlist_info: all concepts used in our experiments (expressibility ratings, productions, etc.) with additional information about semantic category, PoS, etc.
+Here we store all datasets produced by scripts in folder scripts
 
-problems: concepts/words for which we don't have cosine similarity yet (mostly two-word answers, but maybe some mis-spellings too)
 
-expressibility_dutch: expressibility data for Dutch experiment, modeled + raw average
+- all_data_raw: all data copied from sessions and put together
 
-expressibility_german: expressibility data for German experiment, modeled + raw average
+- conceptlist_info: all concepts used in our experiments (expressibility ratings, productions, etc.) with additional information about semantic category, PoS, etc.
 
-similarity_df_final: data with concepts, answers, expressibility, cosine similarity, and other info
+- problems: concepts/words for which we don't have cosine similarity yet (mostly two-word answers, but maybe some misspellings too)
 
-df_similarity_only: data only with target, answer and cosine similarity (the numberbatch usually takes a lot of time to load, so to prevent running it all the time again, this is just all the data)
+- expressibility_dutch: expressibility data for Dutch experiment, modeled + raw average
 
+- expressibility_german: expressibility data for German experiment, modeled + raw average
+
+- similarity_df_final: data with concepts, answers, expressibility, cosine similarity, and other info
+
+- df_similarity_only: data only with target, answer and cosine similarity (the numberbatch usually takes a lot of time to load, so to prevent running it all the time again, this is just all the data)
+
+- similarity_nl_responses_GForms: responses on target-answer pairs where cosine similarity is not available, administered by Google Forms
 ----
 
-New additions
+Column legend in similarity_df_final:
 	- column pcnID, tracking participants (ignoring the two parts of a session), in form session_participant
 	- column for dyad
 	- column for correction, note that part 1 has value of correction 0
@@ -22,13 +28,10 @@ New additions
 	- column trial_type keeps track of what concept is target/practice
 	- column cycle renamed to participant (0 starts first, 1 follows, this is decided by rock-paper-scissors game and kept constant throughout the session)
 	- column session ID stands for session_part
-	- new dataframe df_similarity_only, see above the reason (it's just for data-wrangling purposes)
+
 
 Notes
 	- dyad 68 is not there because consent was withdrawn
 	- dyad 49 - needs to be check which concepts repeat in part 2 and get rid of them (part 1 was accidentaly different dyad number so some concepts repeat)
 
-TODO
-
-	- file name (will add later, need to check the string format of the video/audio name)
 
