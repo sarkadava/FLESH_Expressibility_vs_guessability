@@ -5,9 +5,9 @@ This repository stores coding pipeline to process, analyze & model data associat
 This project has been preregistered on November 24, 2024 on [AsPredicted (#200596)](https://aspredicted.org/kmry-vx5s.pdf). 
 
 ## Structure of the project
-[:dog:] Open dataset of perceived expressibility with raw values and modeled posterior estimates
-[:white_check_mark:] Validation of perceived expressibility against real-time guessability
-[:computer:] Simulation of experiments with varying design parameters using validated expressibility
+[🐶] Open dataset of perceived expressibility with raw values and modeled posterior estimates <br>
+[✅] Validation of perceived expressibility against real-time guessability <br>
+[💻] Simulation of experiments with varying design parameters using validated expressibility <br>
 
 ## Repository structure
 <pre>
