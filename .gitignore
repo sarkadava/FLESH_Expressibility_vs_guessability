@@ -8,4 +8,3 @@ dataset/README_forJet.txt
 02_Guessability_evaluation/numberbatch/numberbatch.txt
 02_Guessability_evaluation/scripts/stimuli_perc_exp.R
 03_Simulations/scripts/2_Run_simulations_all_old.ipynb
-*.rds
