@@ -1,18 +1,18 @@
 ---
 title: "Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation"
 subtitle: "Modelling script"
-author: Aleksandra Cwiek (cwiek[et]leibniz-zas[dot]de)
-output: html_document
+author: Aleksandra Cwiek (cwiek[at]leibniz-zas[dot]de)
 date: "2025-06-01"
 bibliography: references.bib
-link-citations: true
 output:
-  html_document:
+  rmarkdown::html_document:
+    theme: readable
     number_sections: yes
     toc: yes
     toc_depth: 4
     toc_float: yes
     df_print: paged
+    code_folding: hide
   pdf_document:
     number_sections: yes
     toc: yes
@@ -24,6 +24,8 @@ output:
     toc_float: yes
 editor_options: 
   chunk_output_type: console
+  markdown: 
+    wrap: 72
 ---
 
 ```{r setup knit, include=FALSE}
@@ -44,6 +46,7 @@ required_packages <- c("tidyverse", # data wrangling
                        "furrr",
                        "stringr", 
                        "broom", # for tidy model outputs
+                       "rstan",
                        "brms",
                        "cmdstanr", 
                        "HDInterval", # package for credible interval computation
@@ -875,7 +878,7 @@ if (file.exists(paste0(models, "mdl_zoib3_loo.rds"))) {
 
 And for the final, we take simple phi, zoi, and coi, but make the predictors more complex.
 
-```{r mdl zoib 4, echo=TRUE, message=FALSE, warning=FALSE, eval=FALSE}
+```{r mdl zoib 4, eval=FALSE, echo=TRUE, message=FALSE, warning=FALSE}
 # compute mdl4
 mdl_zoib4 <- brm(bf(expressibility_norm ~ 1 + modality + PoS + SemanticCat + 
                       (1 + modality || word),
@@ -1041,8 +1044,8 @@ p_zoib <- p_zoib + scale_fill_manual(values = modality_colors)
 p_zoib
 
 # save the plot
-#ggsave(plot = p_zoib, filename = paste0(figures,'by_word_zoib_dutch.pdf'),
- #      width = 16, height = 8)
+ggsave(plot = p_zoib, filename = paste0(figures,'by_word_zoib_dutch.pdf'),
+     width = 16, height = 8)
 ```
 
 Plot the words separately for each modality.
@@ -1151,3 +1154,5 @@ This completes the analysis.
 sessionInfo()
 
 ```
+
+# References

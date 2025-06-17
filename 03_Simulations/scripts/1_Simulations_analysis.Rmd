@@ -2,7 +2,6 @@
 title: "Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation"
 subtitle: "Preparating data for simulations & analyzing results"
 author: Sarka Kadava (kadava[at]leibniz-zas[dot]de)
-output: html_document
 date: "2025-06-01"
 output:
   rmarkdown::html_document:
@@ -46,7 +45,13 @@ required_packages <- c("readr", # data wrangling
                        "brms",
                        "rstanarm",
                        "RcppCNPy",
-                       "reticulate")
+                       "reticulate",
+                       "knitr", 
+                       "kableExtra", # for table
+                       "tidyverse",
+                       "bayestestR", # bayes ttest
+                       "jsonlite") # working with json
+
 
 # Loop over the packages and check if they are installed
 for (package in required_packages) {
@@ -67,9 +72,12 @@ Set up the folder environment
 # current folder (first go to session -> set working directory -> to source file location)
 parentfolder <- dirname(getwd())
 
+print(parentfolder)
+
 # list the folders
 datasets  <- paste0(parentfolder, '/datasets/')
-models <- paste0(parentfolder, '/models/') ##REDO
+expressmodels <- paste0(parentfolder, '/../01_Expressibility/models/')
+expressdata <- paste0(parentfolder, '/../01_Expressibility/data/')
 
 ```
 
@@ -82,7 +90,7 @@ Let's check out the model that had the best fit, this one we will use to sample 
 ```{r model load, warning=FALSE}
 
 # read the model
-mdl_zoib2 <- readRDS(paste0(models, "mdl_zoib2.rds"))
+mdl_zoib2 <- readRDS(paste0(expressmodels, "mdl_zoib2.rds"))
 
 ```
 
@@ -102,7 +110,7 @@ conditional_effects(mdl_zoib2, sample_prior = "only")
 Let's get the list of all the concepts
 ```{r empty df, warning=FALSE}
 
-expr <- read_csv(paste0(datasets, '/df_estim_dutch.csv')) ##REDO
+expr <- read_csv(paste0(expressdata, '/df_estim_dutch.csv')) 
 
 unique_words <- unique(expr$word)
 unique_modalities <- unique(expr$modality)
@@ -163,8 +171,6 @@ After running all simulations, we can return to calculate for each the Bayesian 
 
 ```{r load in results of sims, warning=FALSE}
 
-library(bayestestR)
-library(jsonlite)
 
 bayesfolder = paste0(parentfolder, '/datasets/bayestest/')
 sims = paste0(parentfolder, '/datasets/simulation_results/')
@@ -180,7 +186,7 @@ simfiles
 
 We loop over each simulation within a simulation type, and perform Bayesian t-test. Then for each simulation type, we assess 1) mean and std of Bayes Factor and proportion of simulations that have BF>3, meaning there is more than anectodal evidence for accepting alternative hypothesis that gesture and vocal expressibility are different.
 
-```{r load in and perform bayes test, warning=FALSE}
+```{r load in and perform bayes test, warning=FALSE, eval=FALSE}
 
 # prepare empty df for results
 results <- data.frame(
@@ -279,7 +285,7 @@ for (i in 1:length(simfiles)) {
 
 To also assess other information from the Bayesian t-test, we randomly pick one simulation within a simulation type and assess 1) mean and std of the posterior estimate, 2) mean and std of the difference between vocal and gesture expressibility, i.e., beta, 3) mean variance sigma, and 4) mean and std of standardized effect size delta.
 
-```{r}
+```{r sampling posteriors, eval=FALSE, warning=FALSE}
 
 set.seed(123)
 
@@ -352,11 +358,11 @@ for (i in 1:length(simfiles)) {
 
 ## Summarizing
 
-```{r}
+```{r load in data, warning=FALSE}
 
 
-bf <- read_csv("bayesfactor_summary.csv")
-post <- read_csv("posteriors_summary.csv")
+bf <- read_csv(paste0(datasets, "bayesfactor_summary.csv")) 
+post <- read_csv(paste0(datasets, "posteriors_summary.csv"))
 
 # Merge
 data <- merge(bf, post, by = "simfile")
@@ -368,10 +374,7 @@ data <- data %>%
 ```
 
 Make a pretty table for the paper
-```{r}
-
-library(knitr)
-library(kableExtra)
+```{r pretty table, warning=FALSE}
 
 data %>%
   kable(digits = 3, format = "html", caption = "My Table") %>%
@@ -380,9 +383,8 @@ data %>%
 ```
 
 ## Plots
-```{r}
+```{r plots, warning=FALSE}
 
-library(tidyverse)
 
 colstoplot <- c("bf10_mean", "mean_beta", "delta_mean")
 
