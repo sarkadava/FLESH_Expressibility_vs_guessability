@@ -17,7 +17,7 @@ This project has been preregistered on November 24, 2024 on [AsPredicted (#20059
 |   ├── scripts                    # Scripts for pre-processing and modelling  
 |   ├── models                     # Models
 |   ├── plots                      # Plots
-
+│
 ├── 02_Guessability_evaluation     # Data, scripts, and models for evaluating the relationship between expressibility and guessability
 │   ├── rawdata                    # Raw data to be preprocessed and modelled
 │   ├── dataset                    # Processed dataframes
