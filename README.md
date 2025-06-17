@@ -16,18 +16,20 @@ This project has been preregistered on November 24, 2024 on [AsPredicted (#20059
 |   ├── data                       # Processed dataframes
 |   ├── scripts                    # Scripts for pre-processing and modelling  
 |   ├── models                     # Models
+|   ├── plots                      # Plots
 
 ├── 02_Guessability_evaluation     # Data, scripts, and models for evaluating the relationship between expressibility and guessability
 │   ├── rawdata                    # Raw data to be preprocessed and modelled
-│   ├── data                       # Processed dataframes
+│   ├── dataset                    # Processed dataframes
 │   ├── scripts                    # Scripts for pre-processing and modelling  
 |   ├── models                     # Models 
 |   ├── plots                      # Visualizations 
+|   ├── numberbatch                # ConceptNet embeddings
 │
 ├── 03_Simulations                 # Data, scripts and models for expressibility-related simulations 
 │   ├── data                       # Processed dataframes
 │   ├── scripts                    # Scripts for pre-processing and modelling  
-|   ├── models                     # Models 
+
 </pre>
 
 ## Prerequisites
