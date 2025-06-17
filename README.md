@@ -1,7 +1,6 @@
 # Github repository to project Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation
 
-This repository stores coding pipeline to process, analyze & model data associated with the manuscript 'Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation'. This project investigates whether perceived expressibility predicts real-time guessability of concepts in novel communication game. ![image](https://github.com/user-attachments/assets/b82cd99c-1da9-4a9f-9ff3-d92f17a00544)
-![image](https://github.com/user-attachments/assets/b82cd99c-1da9-4a9f-9ff3-d92f17a00544)
+This repository stores coding pipeline to process, analyze & model data associated with the manuscript 'Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation'. This project investigates whether perceived expressibility predicts real-time guessability of concepts in novel communication game.
 
 This project has been preregistered on November 24, 2024 on [AsPredicted (#200596)](https://aspredicted.org/kmry-vx5s.pdf). 
 
