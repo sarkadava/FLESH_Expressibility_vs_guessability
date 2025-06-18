@@ -1,4 +1,4 @@
-FLESH_Expressibility_vs_guessability\02_Guessability_evaluation\dataset
+Expressibility_vs_guessability\02_Guessability_evaluation\dataset
 
 Here we store all datasets produced by scripts in folder scripts
 

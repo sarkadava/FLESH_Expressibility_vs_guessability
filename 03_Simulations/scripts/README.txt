@@ -1,4 +1,4 @@
-FLESH_Expressibility_vs_guessability\03_Simulations\scripts
+Expressibility_vs_guessability\03_Simulations\scripts
 
 Here we store scripts associated with simulations and analysis of their results
 

@@ -1,4 +1,4 @@
-FLESH_Expressibility_vs_guessability/01_Expressibility/data
+Expressibility_vs_guessability/01_Expressibility/data
 
 In this folder, we store all dataframes
 

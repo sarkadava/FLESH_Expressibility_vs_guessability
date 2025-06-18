@@ -1,7 +1,7 @@
 ---
 title: "Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation"
 subtitle: "Modelling script"
-author: Aleksandra Cwiek (cwiek[at]leibniz-zas[dot]de)
+author: [Anonymized for review]
 date: "2025-06-01"
 bibliography: references.bib
 output:
@@ -110,7 +110,7 @@ In the beginning, there was a practice round consisting of 2 words for each cond
 
 We used a continuous banded scale anchored at 'very bad' and 'very good' with no middle point to prevent biases and allow high precision (see @matejkaetal2016). The 'continue' option appeard only after a rating has been given by a participant. Participants were not given the option to skip a word.
 
-The rating task was implemented using PsychoPy builder (CIT) and deployed using Pavlovia. The data were collected between DATE and DATE, mostly via Clickworker. The experiment was set to present each word 23 times, as we wanted to have minimum 20 ratings for each word.
+The rating task was implemented using PsychoPy builder and deployed using Pavlovia. The participants were recruited mostly via Clickworker. The experiment was set to present each word 23 times, as we wanted to have minimum 20 ratings for each word.
 
 # Variables
 

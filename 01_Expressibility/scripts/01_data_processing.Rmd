@@ -1,7 +1,7 @@
 ---
 title: "Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation"
 subtitle: "Processing script"
-author: Sarka Kadava (kadava[at]leibniz-zas[dot]de)
+author: [Anonymized for review]
 date: "2025-06-01"
 output:
   rmarkdown::html_document:
@@ -40,13 +40,10 @@ knitr::opts_chunk$set(echo = TRUE)
 # Current folder (first go to session -> set working directory -> to source file location)
 
 parentfolder <- dirname(getwd())
-print(parentfolder)
 
 # These are folders we're gonna need
 datasets    <- paste0(parentfolder, '/data/')
 folderdata  <- paste0(parentfolder, '/rawdata/')
-
-print(folderdata)
 
 ##### packages ######
 library(readr)
@@ -75,10 +72,10 @@ Now we prepare all data into one data frame
 ```{r making one df}
 
 # Read the first csv file as a start for combining all individual dataframes
-data = read.csv(paste0(folderdata, "/001324_flesh_expressibility_dutch.csv"))
+data = read.csv(paste0(folderdata, "/001324_expressibility_dutch.csv"))
 
 # Write another column 'file' with a filename
-data$file = '001324_flesh_expressibility_dutch.csv'
+data$file = '001324_expressibility_dutch.csv'
 
 dirs = list.files(paste0(folderdata), pattern = ".csv")
 
@@ -158,7 +155,7 @@ unique(which)
 data <- data %>% filter(exp_ID != 22894 & exp_ID != 221539 & exp_ID != 410740 & exp_ID != 590154 & exp_ID != 682029 & exp_ID != 70523 & exp_ID != 'NA')
 
 # Delete pilot 
-data <- data %>% filter(exp_ID != 232400 & exp_ID != 254289 & exp_ID != 682241 & exp_ID != 148688 & exp_ID != 582962 & exp_ID != 'wimpouw' & exp_ID != '%SURVEY_CODE%')
+data <- data %>% filter(exp_ID != 232400 & exp_ID != 254289 & exp_ID != 682241 & exp_ID != 148688 & exp_ID != 582962 & exp_ID != '%SURVEY_CODE%')
 
 # Delete pcns using phone/ipad
 data <- data %>% filter(exp_ID != 789985 & exp_ID != 968829)

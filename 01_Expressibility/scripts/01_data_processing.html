@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Sarka Kadava (kadava[at]leibniz-zas[dot]de)" />
+<meta name="author" content="Anonymized for review" />
 
 <meta name="date" content="2025-06-01" />
 
@@ -2853,7 +2853,7 @@ border-radius: 0px;
 <h1 class="title toc-ignore">Self-reported expressibility predicts
 communicative success: Open dataset, validation, and simulation</h1>
 <h3 class="subtitle">Processing script</h3>
-<h4 class="author">Sarka Kadava (kadava[at]leibniz-zas[dot]de)</h4>
+<h4 class="author">Anonymized for review</h4>
 <h4 class="date">2025-06-01</h4>
 
 </div>
@@ -2866,15 +2866,12 @@ communicative success: Open dataset, validation, and simulation</h1>
 # Current folder (first go to session -&gt; set working directory -&gt; to source file location)
 
 parentfolder &lt;- dirname(getwd())
-print(parentfolder)</code></pre>
-<pre><code>## [1] &quot;E:/FLESH_Expressibility_vs_guessability/01_Expressibility&quot;</code></pre>
-<pre class="r"><code># These are folders we&#39;re gonna need
+
+# These are folders we&#39;re gonna need
 datasets    &lt;- paste0(parentfolder, &#39;/data/&#39;)
 folderdata  &lt;- paste0(parentfolder, &#39;/rawdata/&#39;)
 
-print(folderdata)</code></pre>
-<pre><code>## [1] &quot;E:/FLESH_Expressibility_vs_guessability/01_Expressibility/rawdata/&quot;</code></pre>
-<pre class="r"><code>##### packages ######
+##### packages ######
 library(readr)
 library(R.utils)
 library(dplyr)
@@ -2894,10 +2891,10 @@ length(list_data) # 262 csv files in total, the empty ones or aborted early befo
 one df</h1>
 <p>Now we prepare all data into one data frame</p>
 <pre class="r"><code># Read the first csv file as a start for combining all individual dataframes
-data = read.csv(paste0(folderdata, &quot;/001324_flesh_expressibility_dutch.csv&quot;))
+data = read.csv(paste0(folderdata, &quot;/001324_expressibility_dutch.csv&quot;))
 
 # Write another column &#39;file&#39; with a filename
-data$file = &#39;001324_flesh_expressibility_dutch.csv&#39;
+data$file = &#39;001324_expressibility_dutch.csv&#39;
 
 dirs = list.files(paste0(folderdata), pattern = &quot;.csv&quot;)
 
@@ -3063,7 +3060,7 @@ unique(which)</code></pre>
 data &lt;- data %&gt;% filter(exp_ID != 22894 &amp; exp_ID != 221539 &amp; exp_ID != 410740 &amp; exp_ID != 590154 &amp; exp_ID != 682029 &amp; exp_ID != 70523 &amp; exp_ID != &#39;NA&#39;)
 
 # Delete pilot 
-data &lt;- data %&gt;% filter(exp_ID != 232400 &amp; exp_ID != 254289 &amp; exp_ID != 682241 &amp; exp_ID != 148688 &amp; exp_ID != 582962 &amp; exp_ID != &#39;wimpouw&#39; &amp; exp_ID != &#39;%SURVEY_CODE%&#39;)
+data &lt;- data %&gt;% filter(exp_ID != 232400 &amp; exp_ID != 254289 &amp; exp_ID != 682241 &amp; exp_ID != 148688 &amp; exp_ID != 582962 &amp; exp_ID != &#39;%SURVEY_CODE%&#39;)
 
 # Delete pcns using phone/ipad
 data &lt;- data %&gt;% filter(exp_ID != 789985 &amp; exp_ID != 968829)

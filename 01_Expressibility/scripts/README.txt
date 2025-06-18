@@ -1,4 +1,4 @@
-FLESH_Expressibility_vs_guessability/01_Expressibility/scripts
+Expressibility_vs_guessability/01_Expressibility/scripts
 
 In this folder, we store the following scripts:
 

@@ -1,3 +1,3 @@
-FLESH_Expressibility_vs_guessability\02_Guessability_evaluation\models
+Expressibility_vs_guessability\02_Guessability_evaluation\models
 
 Here we store all models produced by modelling script

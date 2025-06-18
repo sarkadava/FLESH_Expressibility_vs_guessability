@@ -1,4 +1,4 @@
-FLESH_Expressibility_vs_guessability\02_Guessability_evaluation\scripts
+Expressibility_vs_guessability\02_Guessability_evaluation\scripts
 
 
 Here we store all scripts associated with preparation of data and analysis associated with validation of expressibility as a measure of guessability

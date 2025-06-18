@@ -1,4 +1,4 @@
-FLESH_Expressibility_vs_guessability\03_Simulations\datasets
+Expressibility_vs_guessability\03_Simulations\datasets
 
 Here we store datasets associated with simulating scripts
 

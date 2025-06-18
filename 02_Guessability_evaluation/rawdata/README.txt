@@ -1,4 +1,4 @@
-FLESH_Expressibility_vs_guessability\02_Guessability_evaluation\rawdata
+Expressibility_vs_guessability\02_Guessability_evaluation\rawdata
 
 Here we store all log files from referential experiment administered in PsychoPy.
 

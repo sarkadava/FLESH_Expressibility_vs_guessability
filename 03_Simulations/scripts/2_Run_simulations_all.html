@@ -7312,7 +7312,6 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
-                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7517,7 +7516,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Self-reported-expressibility-predicts-communicative-success:-Open-dataset,-validation,-and-simulation">Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation<a class="anchor-link" href="#Self-reported-expressibility-predicts-communicative-success:-Open-dataset,-validation,-and-simulation">¶</a></h1><h2 id="Simulating-experiments-based-on-posterior-estimates-of-expressibility">Simulating experiments based on posterior estimates of expressibility<a class="anchor-link" href="#Simulating-experiments-based-on-posterior-estimates-of-expressibility">¶</a></h2><p>Author: Sarka Kadava (kadava[at]leibnit-zas[dot]de)<br/>
+<h1 id="Self-reported-expressibility-predicts-communicative-success:-Open-dataset,-validation,-and-simulation">Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation<a class="anchor-link" href="#Self-reported-expressibility-predicts-communicative-success:-Open-dataset,-validation,-and-simulation">¶</a></h1><h2 id="Simulating-experiments-based-on-posterior-estimates-of-expressibility">Simulating experiments based on posterior estimates of expressibility<a class="anchor-link" href="#Simulating-experiments-based-on-posterior-estimates-of-expressibility">¶</a></h2><p>Author: [Anonymized for review]<br/>
 Date: 1. 6. 2025</p>
 </div>
 </div>
@@ -7554,25 +7553,25 @@ Date: 1. 6. 2025</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Load packages</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">glob</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">random</span>
 
 <span class="c1"># Prepare data</span>
 <span class="n">curfolder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
 <span class="n">parentfolder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">curfolder</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">))</span>
 <span class="n">mainfolder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">parentfolder</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">))</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">parentfolder</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mainfolder</span><span class="p">)</span>
+<span class="c1"># print(parentfolder)</span>
+<span class="c1"># print(mainfolder)</span>
 
 <span class="n">expressfolder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">mainfolder</span><span class="p">,</span> <span class="s1">'01_Expressibility</span><span class="se">\\</span><span class="s1">data</span><span class="se">\\</span><span class="s1">'</span><span class="p">)</span>
 <span class="n">datafolder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">parentfolder</span><span class="p">,</span> <span class="s1">'datasets'</span><span class="p">)</span>
@@ -7613,16 +7612,8 @@ Date: 1. 6. 2025</p>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>e:\FLESH_Expressibility_vs_guessability\03_Simulations
-e:\FLESH_Expressibility_vs_guessability
-</pre>
-</div>
-</div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7660,10 +7651,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>0</th>
 <td>aanraken</td>
 <td>gesture</td>
-<td>0.670934</td>
-<td>0.039554</td>
-<td>0.587932</td>
-<td>0.744501</td>
+<td>0.671534</td>
+<td>0.039510</td>
+<td>0.588136</td>
+<td>0.744594</td>
 <td>0.680309</td>
 <td>Berührung</td>
 <td>touch</td>
@@ -7674,10 +7665,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>2</th>
 <td>aanraken</td>
 <td>vocal</td>
-<td>0.207245</td>
-<td>0.038715</td>
-<td>0.139747</td>
-<td>0.296912</td>
+<td>0.206290</td>
+<td>0.038294</td>
+<td>0.142399</td>
+<td>0.294340</td>
 <td>0.177373</td>
 <td>Berührung</td>
 <td>touch</td>
@@ -7688,10 +7679,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>3</th>
 <td>aarde</td>
 <td>gesture</td>
-<td>0.538903</td>
-<td>0.048951</td>
-<td>0.439701</td>
-<td>0.630708</td>
+<td>0.540447</td>
+<td>0.049120</td>
+<td>0.444047</td>
+<td>0.632926</td>
 <td>0.543955</td>
 <td>Erde</td>
 <td>soil</td>
@@ -7702,10 +7693,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>5</th>
 <td>aarde</td>
 <td>vocal</td>
-<td>0.195023</td>
-<td>0.038012</td>
-<td>0.131692</td>
-<td>0.282805</td>
+<td>0.195378</td>
+<td>0.038231</td>
+<td>0.132023</td>
+<td>0.281966</td>
 <td>0.170487</td>
 <td>Erde</td>
 <td>soil</td>
@@ -7716,10 +7707,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>6</th>
 <td>ademen</td>
 <td>gesture</td>
-<td>0.781561</td>
-<td>0.031752</td>
-<td>0.712780</td>
-<td>0.837315</td>
+<td>0.780851</td>
+<td>0.031091</td>
+<td>0.712689</td>
+<td>0.835971</td>
 <td>0.765703</td>
 <td>atmen</td>
 <td>to breathe</td>
@@ -7730,10 +7721,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>8</th>
 <td>ademen</td>
 <td>vocal</td>
-<td>0.784779</td>
-<td>0.034433</td>
-<td>0.707833</td>
-<td>0.846537</td>
+<td>0.785386</td>
+<td>0.034437</td>
+<td>0.706235</td>
+<td>0.845971</td>
 <td>0.818681</td>
 <td>atmen</td>
 <td>to breathe</td>
@@ -7744,10 +7735,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>9</th>
 <td>alles</td>
 <td>gesture</td>
-<td>0.351045</td>
-<td>0.044295</td>
-<td>0.270716</td>
-<td>0.440715</td>
+<td>0.351968</td>
+<td>0.042526</td>
+<td>0.272118</td>
+<td>0.437654</td>
 <td>0.360793</td>
 <td>alles</td>
 <td>all</td>
@@ -7758,10 +7749,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>11</th>
 <td>alles</td>
 <td>vocal</td>
-<td>0.117868</td>
-<td>0.027274</td>
-<td>0.073675</td>
-<td>0.182893</td>
+<td>0.117634</td>
+<td>0.026610</td>
+<td>0.074905</td>
+<td>0.183275</td>
 <td>0.080647</td>
 <td>alles</td>
 <td>all</td>
@@ -7772,10 +7763,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>12</th>
 <td>arm (lichaam)</td>
 <td>gesture</td>
-<td>0.537118</td>
-<td>0.042505</td>
-<td>0.452153</td>
-<td>0.619444</td>
+<td>0.536086</td>
+<td>0.042306</td>
+<td>0.452815</td>
+<td>0.618628</td>
 <td>0.526008</td>
 <td>Arm</td>
 <td>arm</td>
@@ -7786,10 +7777,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>14</th>
 <td>arm (lichaam)</td>
 <td>vocal</td>
-<td>0.126830</td>
-<td>0.026649</td>
-<td>0.084371</td>
-<td>0.192336</td>
+<td>0.127700</td>
+<td>0.026660</td>
+<td>0.083494</td>
+<td>0.191696</td>
 <td>0.079813</td>
 <td>Arm</td>
 <td>arm</td>
@@ -7800,10 +7791,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>15</th>
 <td>as</td>
 <td>gesture</td>
-<td>0.263988</td>
-<td>0.037194</td>
-<td>0.196807</td>
-<td>0.342099</td>
+<td>0.263428</td>
+<td>0.036956</td>
+<td>0.197574</td>
+<td>0.342006</td>
 <td>0.285585</td>
 <td>Asche</td>
 <td>ash</td>
@@ -7814,10 +7805,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>17</th>
 <td>as</td>
 <td>vocal</td>
-<td>0.129187</td>
-<td>0.026662</td>
-<td>0.085523</td>
-<td>0.195273</td>
+<td>0.129065</td>
+<td>0.026645</td>
+<td>0.085073</td>
+<td>0.192178</td>
 <td>0.108047</td>
 <td>Asche</td>
 <td>ash</td>
@@ -7828,10 +7819,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>18</th>
 <td>badderen</td>
 <td>gesture</td>
-<td>0.484879</td>
-<td>0.042648</td>
-<td>0.403977</td>
-<td>0.567061</td>
+<td>0.485285</td>
+<td>0.043053</td>
+<td>0.399452</td>
+<td>0.568773</td>
 <td>0.502638</td>
 <td>baden</td>
 <td>to bathe</td>
@@ -7842,10 +7833,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>20</th>
 <td>badderen</td>
 <td>vocal</td>
-<td>0.333465</td>
-<td>0.041160</td>
-<td>0.256483</td>
-<td>0.420011</td>
+<td>0.333117</td>
+<td>0.043717</td>
+<td>0.254970</td>
+<td>0.423194</td>
 <td>0.334598</td>
 <td>baden</td>
 <td>to bathe</td>
@@ -7856,10 +7847,10 @@ e:\FLESH_Expressibility_vs_guessability
 <th>21</th>
 <td>bang</td>
 <td>gesture</td>
-<td>0.713439</td>
-<td>0.037316</td>
-<td>0.633158</td>
-<td>0.783392</td>
+<td>0.713760</td>
+<td>0.038617</td>
+<td>0.632004</td>
+<td>0.781721</td>
 <td>0.689591</td>
 <td>verängstigt</td>
 <td>scared</td>
@@ -7930,7 +7921,7 @@ e:\FLESH_Expressibility_vs_guessability
 <div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">warnings</span><span class="w"> </span><span class="kn">import</span> <span class="n">filterwarnings</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">warnings</span> <span class="kn">import</span> <span class="n">filterwarnings</span>
 <span class="n">filterwarnings</span><span class="p">(</span><span class="s2">"ignore"</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
 
 <span class="c1"># Density plot with boxplot</span>
@@ -8034,7 +8025,7 @@ vocal     0.337130  0.188260  0.273983
 <div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">warnings</span><span class="w"> </span><span class="kn">import</span> <span class="n">filterwarnings</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">warnings</span> <span class="kn">import</span> <span class="n">filterwarnings</span>
 <span class="n">filterwarnings</span><span class="p">(</span><span class="s2">"ignore"</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
 
 <span class="c1"># Gesture and vocal modality stratified by semantic category</span>
@@ -8105,7 +8096,7 @@ vocal     0.337130  0.188260  0.273983
 <div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">warnings</span><span class="w"> </span><span class="kn">import</span> <span class="n">filterwarnings</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">warnings</span> <span class="kn">import</span> <span class="n">filterwarnings</span>
 <span class="n">filterwarnings</span><span class="p">(</span><span class="s2">"ignore"</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
 
 <span class="c1"># Set overall aesthetics</span>
@@ -8184,17 +8175,17 @@ vocal     0.337130  0.188260  0.273983
 <h2 id="Simulations">Simulations<a class="anchor-link" href="#Simulations">¶</a></h2><ul>
 <li>simulation 1 = random concepts without domain constrain</li>
 </ul>
-<p>number of concepts 24 - 18 - 12
+<p>number of concepts 24 - 18 - 12 
 number of 'participants': 20 - 15 - 10</p>
 <ul>
 <li>simulation  2 = random concepts from A-E-O semantic categories</li>
 </ul>
-<p>number of concepts 24 - 18 - 12
+<p>number of concepts 24 - 18 - 12 
 number of 'participants': 20 - 15 - 10</p>
 <ul>
 <li>simulation 3 = random concepts from three random semantic categories</li>
 </ul>
-<p>number of concepts 24 - 18 - 12
+<p>number of concepts 24 - 18 - 12 
 number of 'participants': 20 - 15 - 10</p>
 <ul>
 <li>simulation 4 = random concepts from N-V-A (PoS)</li>
@@ -8228,7 +8219,7 @@ number of 'participants': 20 - 15 - 10</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">simulate_experiment</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">num_sim</span><span class="p">,</span> <span class="n">num_words</span><span class="p">,</span> <span class="n">num_data</span><span class="p">,</span> <span class="n">concepts</span><span class="p">,</span> <span class="n">distribution_matrix</span><span class="p">,</span> <span class="n">num_cat</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">simulate_experiment</span><span class="p">(</span><span class="n">domain</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">num_sim</span><span class="p">,</span> <span class="n">num_words</span><span class="p">,</span> <span class="n">num_data</span><span class="p">,</span> <span class="n">concepts</span><span class="p">,</span> <span class="n">distribution_matrix</span><span class="p">,</span> <span class="n">num_cat</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
     <span class="c1"># Domain is the variable from which you want to draw category (e.g., PoS, semantic category)</span>
     <span class="c1"># Categories is a list of categories</span>
     <span class="c1"># Num_cat is number of categories, 3 default</span>
@@ -8347,7 +8338,7 @@ number of 'participants': 20 - 15 - 10</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">warnings</span><span class="w"> </span><span class="kn">import</span> <span class="n">filterwarnings</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">warnings</span> <span class="kn">import</span> <span class="n">filterwarnings</span>
 <span class="n">filterwarnings</span><span class="p">(</span><span class="s2">"ignore"</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
 
 <span class="c1"># Here we will store the results</span>
@@ -9644,7 +9635,7 @@ To compensate for the missing point, we will create one concept x for which we s
 <div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
 
 <span class="c1"># get all the simulations into list</span>
 <span class="n">files</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">simfolder</span><span class="p">,</span> <span class="s1">'*.npy'</span><span class="p">))</span>
@@ -9661,7 +9652,7 @@ To compensate for the missing point, we will create one concept x for which we s
 <div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">convert_npy_to_json</span><span class="p">(</span><span class="n">npy_file</span><span class="p">,</span> <span class="n">json_filepath</span><span class="p">):</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert_npy_to_json</span><span class="p">(</span><span class="n">npy_file</span><span class="p">,</span> <span class="n">json_filepath</span><span class="p">):</span>
     <span class="c1"># Build list of dicts with concepts, gesture and vocal expressibilities for each simulation</span>
     <span class="n">export_data</span> <span class="o">=</span> <span class="p">[]</span>
 

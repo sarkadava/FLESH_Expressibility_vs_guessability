@@ -7312,7 +7312,6 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
-                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7517,7 +7516,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Self-reported-expressibility-predicts-communicative-success:-Open-dataset,-validation,-and-simulation">Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation<a class="anchor-link" href="#Self-reported-expressibility-predicts-communicative-success:-Open-dataset,-validation,-and-simulation">¶</a></h1><h2 id="Data-preparation-of-guessing-responses-from-referential-experiment">Data preparation of guessing responses from referential experiment<a class="anchor-link" href="#Data-preparation-of-guessing-responses-from-referential-experiment">¶</a></h2><p>Author: Sarka Kadava (kadava[at]leibnit-zas[dot]de)<br/>
+<h1 id="Self-reported-expressibility-predicts-communicative-success:-Open-dataset,-validation,-and-simulation">Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation<a class="anchor-link" href="#Self-reported-expressibility-predicts-communicative-success:-Open-dataset,-validation,-and-simulation">¶</a></h1><h2 id="Data-preparation-of-guessing-responses-from-referential-experiment">Data preparation of guessing responses from referential experiment<a class="anchor-link" href="#Data-preparation-of-guessing-responses-from-referential-experiment">¶</a></h2><p>Author: [Anonymized for review]<br/>
 Date: 1. 6. 2025</p>
 </div>
 </div>
@@ -7530,9 +7529,9 @@ Date: 1. 6. 2025</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">glob</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="n">curfolder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
 <span class="n">rawdata</span> <span class="o">=</span> <span class="n">curfolder</span> <span class="o">+</span> <span class="s1">'</span><span class="se">\\</span><span class="s1">..</span><span class="se">\\</span><span class="s1">rawdata</span><span class="se">\\</span><span class="s1">'</span>
@@ -7542,12 +7541,12 @@ Date: 1. 6. 2025</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">responsedata</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="n">rawdata</span> <span class="o">+</span> <span class="s1">'*.csv'</span><span class="p">)</span>
@@ -7555,31 +7554,18 @@ Date: 1. 6. 2025</p>
 <span class="c1"># ignore all csv files with _broken or _reinitiated, plus pilot data (see README for details)</span>
 <span class="n">responsedata</span> <span class="o">=</span> <span class="p">[</span><span class="n">file</span> <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">responsedata</span> <span class="k">if</span> <span class="s1">'_broken'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">file</span> <span class="ow">and</span> <span class="s1">'_reinitiated'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">file</span> <span class="ow">and</span> <span class="s1">'0_1'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">file</span> <span class="ow">and</span> <span class="s1">'0_2'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">file</span><span class="p">]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">responsedata</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">])</span>
+<span class="c1">#print(responsedata[0:10])</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>['e:\\FLESH_Expressibility_vs_guessability\\02_Guessability_evaluation\\scripts\\..\\rawdata\\10_results_part1.csv', 'e:\\FLESH_Expressibility_vs_guessability\\02_Guessability_evaluation\\scripts\\..\\rawdata\\10_results_part2.csv', 'e:\\FLESH_Expressibility_vs_guessability\\02_Guessability_evaluation\\scripts\\..\\rawdata\\11_results_part1.csv', 'e:\\FLESH_Expressibility_vs_guessability\\02_Guessability_evaluation\\scripts\\..\\rawdata\\11_results_part2.csv', 'e:\\FLESH_Expressibility_vs_guessability\\02_Guessability_evaluation\\scripts\\..\\rawdata\\12_results_part1.csv', 'e:\\FLESH_Expressibility_vs_guessability\\02_Guessability_evaluation\\scripts\\..\\rawdata\\12_results_part2.csv', 'e:\\FLESH_Expressibility_vs_guessability\\02_Guessability_evaluation\\scripts\\..\\rawdata\\13_results_part1.csv', 'e:\\FLESH_Expressibility_vs_guessability\\02_Guessability_evaluation\\scripts\\..\\rawdata\\13_results_part2.csv', 'e:\\FLESH_Expressibility_vs_guessability\\02_Guessability_evaluation\\scripts\\..\\rawdata\\14_results_part1.csv', 'e:\\FLESH_Expressibility_vs_guessability\\02_Guessability_evaluation\\scripts\\..\\rawdata\\14_results_part2.csv']
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_all</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
@@ -7641,410 +7627,6 @@ Date: 1. 6. 2025</p>
 <span class="n">df_all</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
     
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\10_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\10_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\11_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\11_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\12_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\12_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\13_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\13_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\14_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\14_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\15_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\15_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\16_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\16_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\17_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\17_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\18_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\18_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\19_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\19_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\1_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\1_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\20_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\20_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\21_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\21_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\22_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\22_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\23_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\23_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\24_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\24_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\25_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\25_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\26_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\26_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\27_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\27_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\28_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\28_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\29_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\29_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\2_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\2_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\30_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\30_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\31_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\31_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\32_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\32_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\33_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\33_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\34_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\34_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\35_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\35_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\36_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\36_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\37_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\37_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\38_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\38_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\39_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\39_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\3_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\3_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\40_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\40_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\41_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\41_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\42_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\42_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\43_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\43_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\44_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\44_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\45_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\45_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\46_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\46_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\47_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\47_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\48_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\48_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\49_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\49_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\4_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\4_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\50_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\50_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\51_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\51_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\52_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\52_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\53_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\53_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\54_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\54_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\55_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\55_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\56_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\56_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\57_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\57_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\58_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\58_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\59_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\59_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\5_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\5_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\60_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\60_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\61_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\61_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\62_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\62_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\63_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\63_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\64_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\64_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\65_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\65_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\66_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\66_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\67_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\67_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\69_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\69_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\6_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\6_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\70_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\70_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\71_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\71_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\72_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\72_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\7_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\7_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\8_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\8_results_part2.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\9_results_part1.csv
-working on c:\Users\Sarka Kadava\Documents\Github\FLESH_Expressibility_vs_guessability\rawdata\9_results_part2.csv
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>trial_order</th>
-<th>trial_type</th>
-<th>participant</th>
-<th>word</th>
-<th>modality</th>
-<th>answer</th>
-<th>correction</th>
-<th>sessionID</th>
-<th>exp_part</th>
-<th>dyad</th>
-<th>pcnID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>1</td>
-<td>practice</td>
-<td>0</td>
-<td>koken</td>
-<td>combinatie</td>
-<td>koken</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<th>1</th>
-<td>2</td>
-<td>practice</td>
-<td>0</td>
-<td>knippen</td>
-<td>combinatie</td>
-<td>kapper</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<th>2</th>
-<td>3</td>
-<td>target</td>
-<td>0</td>
-<td>geur</td>
-<td>combinatie</td>
-<td>ruiken</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<th>3</th>
-<td>4</td>
-<td>target</td>
-<td>0</td>
-<td>ademen</td>
-<td>combinatie</td>
-<td>ademen</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<th>4</th>
-<td>5</td>
-<td>target</td>
-<td>0</td>
-<td>eten</td>
-<td>combinatie</td>
-<td>eten</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<th>5</th>
-<td>6</td>
-<td>target</td>
-<td>0</td>
-<td>zwemmen</td>
-<td>combinatie</td>
-<td>zwemmen</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<th>6</th>
-<td>7</td>
-<td>target</td>
-<td>0</td>
-<td>gooien</td>
-<td>combinatie</td>
-<td>gooien</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<th>7</th>
-<td>8</td>
-<td>target</td>
-<td>0</td>
-<td>water</td>
-<td>combinatie</td>
-<td>regen</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<th>8</th>
-<td>9</td>
-<td>target</td>
-<td>0</td>
-<td>wind</td>
-<td>combinatie</td>
-<td>wind</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>1</td>
-</tr>
-<tr>
-<th>9</th>
-<td>10</td>
-<td>practice</td>
-<td>1</td>
-<td>rijk</td>
-<td>combinatie</td>
-<td>geld</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>2</td>
-</tr>
-<tr>
-<th>10</th>
-<td>11</td>
-<td>practice</td>
-<td>1</td>
-<td>gek</td>
-<td>combinatie</td>
-<td>blij</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>2</td>
-</tr>
-<tr>
-<th>11</th>
-<td>12</td>
-<td>target</td>
-<td>1</td>
-<td>vuur</td>
-<td>combinatie</td>
-<td>heet</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>2</td>
-</tr>
-<tr>
-<th>12</th>
-<td>13</td>
-<td>target</td>
-<td>1</td>
-<td>oud</td>
-<td>combinatie</td>
-<td>bejaard</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>2</td>
-</tr>
-<tr>
-<th>13</th>
-<td>14</td>
-<td>target</td>
-<td>1</td>
-<td>sterk</td>
-<td>combinatie</td>
-<td>sterk</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>2</td>
-</tr>
-<tr>
-<th>14</th>
-<td>15</td>
-<td>target</td>
-<td>1</td>
-<td>zoet</td>
-<td>combinatie</td>
-<td>eten</td>
-<td>0</td>
-<td>10_1</td>
-<td>1</td>
-<td>10</td>
-<td>2</td>
-</tr>
-</tbody>
-</table>
-</div>
 </div>
 </div>
 </div>

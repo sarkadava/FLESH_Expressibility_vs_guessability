@@ -1,7 +1,7 @@
 ---
 title: "Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation"
 subtitle: "Preparating data for simulations & analyzing results"
-author: Sarka Kadava (kadava[at]leibniz-zas[dot]de)
+author: [Anonymized for review]
 date: "2025-06-01"
 output:
   rmarkdown::html_document:
@@ -72,7 +72,7 @@ Set up the folder environment
 # current folder (first go to session -> set working directory -> to source file location)
 parentfolder <- dirname(getwd())
 
-print(parentfolder)
+#print(parentfolder)
 
 # list the folders
 datasets  <- paste0(parentfolder, '/datasets/')
