@@ -829,7 +829,7 @@ df_dummy %>%
 **Random effects**:
 
 ```{r fig.width=1*4, fig.height=1*7, fig.cap=capFig("Posterior estimaes of the random effects showing the median (dot), 50% (thick line) and 95% (thin lines) quantiles. Also showing 0 as the vertical dotted line and negative (blue) vs positive (red) values."), results='hide', warning=FALSE}
-
+#get_variables(b1_res_field$b1);
 grid.arrange(
   # 1 | concept:
   mdl_null_similarity_simple %>%
@@ -846,8 +846,11 @@ grid.arrange(
   #ggtitle("Posterior estimates of concept-level\ncosine similarity") +
   xlab("Posterior predicted cosine similarity") +
   ylab(NULL) +
-    theme(legend.position="bottom"),
-  nrow=1)
+  xlim(0, 1) +
+    theme(legend.position="bottom") +
+    NULL,
+
+  nrow=1);
 ```
 
 Get a general overview of the group-level effects.
@@ -1054,22 +1057,22 @@ df_dummy %>%
 **Random effects**:
 
 ```{r fig.width=1*4, fig.height=1*7, fig.cap=capFig("Posterior estimaes of the random effects showing the median (dot), 50% (thick line) and 95% (thin lines) quantiles. Also showing 0 as the vertical dotted line and negative (blue) vs positive (red) values."), results='hide', warning=FALSE}
-
+#get_variables(b1_res_field$b1);
 grid.arrange(
   # 1 | concept:
   mdl_null_binary %>%
     spread_draws(b_Intercept, r_concept[concept]) %>%
+    #filter(Order == "Intercept") %>%
     mutate(condition_mean = r_concept) %>%
-    filter(is.finite(condition_mean)) %>%  # Remove infinite/NA values
     ggplot(aes(y = concept, x = condition_mean, fill = after_stat(x < 0))) +
     stat_halfeye(alpha=0.75, point_interval=median_qi, .width=c(.50, .95)) +
     scale_fill_manual(values = c("lightsalmon", "skyblue"), name=NULL, labels=c("≥ 0", "< 0")) +
     geom_vline(xintercept = 0, linetype = "dashed") +
-    ggtitle("1 | concept") + xlab("Intercept") + ylab(NULL) + 
-    # Remove xlim to let ggplot auto-scale
-    theme(legend.position="bottom"),
-  nrow=1
-)
+    ggtitle("1 | concept") + xlab("Intercept") + ylab(NULL) + xlim(-2,2) +
+    theme(legend.position="bottom") +
+    NULL,
+
+  nrow=1);
 ```
 
 Get a general overview of the group-level effects.
@@ -1297,7 +1300,8 @@ gather_draws(mdl_H1_binary, `b_.*`, regex = TRUE) %>%
                                                       r = 0, l = 0),
                                       face = 'bold', size = 14),
           axis.text.x = element_text(face = 'bold', size = 12),
-          axis.text.y = element_text(face = 'bold', size = 12))
+          axis.text.y = element_text(face = 'bold', size = 12))+
+    NULL;
 ```
 
 
@@ -1384,8 +1388,10 @@ grid.arrange(
     scale_fill_manual(values = c("lightsalmon", "skyblue"), name=NULL, labels=c("≥ 0", "< 0")) +
     geom_vline(xintercept = 0, linetype = "dashed") +
     ggtitle("1 | concept") + xlab("Intercept") + ylab(NULL) + xlim(-2,2) +
-    theme(legend.position="bottom"),
-  nrow=1)
+    theme(legend.position="bottom") +
+    NULL,
+
+  nrow=1);
 ```
 
 Get a general overview of group-level effects.
@@ -1706,7 +1712,8 @@ gather_draws(mdl_H1_similarity, `b_.*`, regex = TRUE) %>%
                                                       r = 0, l = 0),
                                       face = 'bold', size = 14),
           axis.text.x = element_text(face = 'bold', size = 12),
-          axis.text.y = element_text(face = 'bold', size = 12))
+          axis.text.y = element_text(face = 'bold', size = 12))+
+    NULL;
 ```
 
 
@@ -1730,8 +1737,11 @@ grid.arrange(
   #ggtitle("Posterior estimates of concept-level\ncosine similarity") +
   xlab("Posterior predicted cosine similarity") +
   ylab(NULL) +
-    theme(legend.position="bottom"),
-  nrow=1)
+  xlim(0, 1) +
+    theme(legend.position="bottom") +
+    NULL,
+
+  nrow=1);
 ```
 
 Get a general overview of the group-level effects.
@@ -1989,13 +1999,12 @@ gather_draws(mdl_H2_poisson, `b_.*`, regex = TRUE) %>%
                                                       r = 0, l = 0),
                                       face = 'bold', size = 14),
           axis.text.x = element_text(face = 'bold', size = 12),
-          axis.text.y = element_text(face = 'bold', size = 12))
+          axis.text.y = element_text(face = 'bold', size = 12))+
+    NULL;
 ```
 
 **Random effects**:
-(Some chunks from here on in H2 are problematic to knit (reason unknown); therefore, they are not evaluated or included in the html but still work fine in the Rmd.)
-
-```{r echo=FALSE, fig.cap=capFig("Posterior estimates of the random effects showing the median (dot), 50% (thick line) and 95% (thin lines) quantiles. Also showing 0 as the vertical dotted line and negative (blue) vs positive (red) values."), fig.height=1*7, fig.width=1*4, warning=FALSE, results='hide'}
+```{r eval=FALSE, fig.cap=capFig("Posterior estimates of the random effects showing the median (dot), 50% (thick line) and 95% (thin lines) quantiles. Also showing 0 as the vertical dotted line and negative (blue) vs positive (red) values."), fig.height=1*7, fig.width=1*4, warning=FALSE, include=FALSE, results='hide'}
 
 grid.arrange(
   # 1 | concept:
@@ -2008,13 +2017,17 @@ grid.arrange(
     scale_fill_manual(values = c("lightsalmon", "skyblue"), name=NULL, labels=c("≥ 0", "< 0")) +
     geom_vline(xintercept = 0, linetype = "dashed") +
     ggtitle("1 | concept") + xlab("Intercept") + ylab(NULL) + xlim(-2,2) +
-    theme(legend.position="bottom"),
-  nrow=1)
+    theme(legend.position="bottom") +
+    NULL,
+
+  nrow=1);
 ```
+
+(The chunk above, cause unknown, is problematic to knit, therefore it is not shown, but the code below should warrant the interpretation.)
 
 Get a general overview of group-level effects.
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 as.data.frame(VarCorr(mdl_H2_poisson)$concept$sd) %>%
   rownames_to_column(var = "Random Effect") %>%
   select(`Random Effect`, Estimate, Est.Error, Q2.5, Q97.5)
@@ -2028,7 +2041,7 @@ The variance across different concepts is much larger than the variance across d
 
 We can plot the variance across the concepts extracting draws.
 
-```{r echo=FALSE, fig.cap=capFig("Posterior binary guessability of concepts showing the median (dot), 50% (thick line), 80% (medium thick line), and 95% (thin lines) quantiles."), fig.height=1*7, fig.width=4, warning=FALSE, results='hide'}
+```{r fig.width=4, fig.height=1*7, fig.cap=capFig("Posterior binary guessability of concepts showing the median (dot), 50% (thick line), 80% (medium thick line), and 95% (thin lines) quantiles."), results='hide', warning=FALSE}
 mdl_H2_poisson %>%
   spread_draws(r_concept[concept]) %>%
   # Combine the fixed intercept with the concept-specific random effect
@@ -2051,7 +2064,7 @@ data. This plot shows the distribution of correction values for
 each concept using a half‐eye plot (which neatly displays medians and
 uncertainty intervals) and faceting by concept.
 
-```{r echo=FALSE, fig.cap=capFig("Raw binary guessability of concepts showing the median (dot), 50% (thick line), 80% (medium thick line), and 95% (thin lines) quantiles."), fig.height=1*7, fig.width=4, warning=FALSE, results='hide'}
+```{r fig.width=4, fig.height=1*7, fig.cap=capFig("Raw binary guessability of concepts showing the median (dot), 50% (thick line), 80% (medium thick line), and 95% (thin lines) quantiles."), results='hide', warning=FALSE}
 df_part2 %>% 
   filter(!is.na(correction)) %>% 
   group_by(concept) %>% 
@@ -2072,7 +2085,7 @@ df_part2 %>%
 
 I would like to reverse the thinking, so actually find out how the expressibility changes across different corrections.
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+```{r}
 # dpois(k, mu) = Probability of Y=k for Poisson(mu)
 poisson_prob_k <- function(k, alpha, beta, x) {
   mu <- exp(alpha + beta * x)
@@ -2207,7 +2220,7 @@ grid.arrange(pp_check(mdl_H3_binary, type='stat', sta ='min') + xlab('Cosine sim
 mcmc_plot(mdl_H3_binary, variable = c("b_Intercept", "b_exp_part1"));
 ```
 ```{r fig.width=5, fig.height=5, fig.cap=capFig("Fixed effects."), results='hide', warning=FALSE}
-plot_model(mdl_H3_binary, type="emm", terms=c("exp_part"));
+plot_model(mdl_H3_binary, type="emm", terms=c("expressibility_dutch"));
 ```
 ```{r}
 # because of the logit link, it needs to be backtransformed
@@ -2328,8 +2341,8 @@ h3_bin <- gather_draws(mdl_H3_binary, `b_.*`, regex = TRUE) %>%
                                                       r = 0, l = 0),
                                       face = 'bold', size = 14),
           axis.text.x = element_text(face = 'bold', size = 12),
-          axis.text.y = element_text(face = 'bold', size = 12))
-
+          axis.text.y = element_text(face = 'bold', size = 12))+
+    NULL;
 h3_bin
 ```
 
@@ -2372,10 +2385,10 @@ ggplot(df_post, aes(x = mean_pred, fill = guess, color = guess)) +
 This plot is generated by first calculating, for each posterior draw, the average predicted probability for all observations in the "incorrect" group and separately for the "correct" group. In other words, for each draw we compute one number per group—the mean prediction across that group. The density curves in this plot show the distribution of these mean values across all posterior draws. As a result, you see two distinct peaks: one for incorrect guesses (with values very close to 0) and one for correct guesses (with values very close to 1). This aggregated view emphasizes the overall group-level prediction and clearly illustrates that, on average, the model assigns a very low probability to incorrect guesses and a very high probability to correct guesses.
 
 ```{r fig.width=10, fig.height=10, fig.cap=capFig("Posterior predicted probabilities by outcome group. This density plot is based on individual-level predictions (or a random subset thereof), stratified by guess outcome. The plot shows that predictions for incorrect guesses are tightly concentrated near 0, while predictions for correct guesses are more variable and generally higher, reflecting the model’s ability to distinguish between the two outcomes."), results='hide', warning=FALSE}
-# Take a random subset of the data (e.g., 500 observations)
-df_subset <- df %>% 
-  filter(!is.na(guess_binary)) %>% 
-  sample_n(500)
+# # Take a random subset of the data (e.g., 500 observations)
+# df_subset <- df %>% 
+#   filter(!is.na(guess_binary)) %>% 
+#   sample_n(500)
 
 # Extract posterior draws of the predicted probability for these observations
 # The plot takes a while, so if you just need a general overview, use the code above to just take a sample
@@ -2417,8 +2430,10 @@ grid.arrange(
     scale_fill_manual(values = c("lightsalmon", "skyblue"), name=NULL, labels=c("≥ 0", "< 0")) +
     geom_vline(xintercept = 0, linetype = "dashed") +
     ggtitle("1 | concept") + xlab("Intercept") + ylab(NULL) + xlim(-2,2) +
-    theme(legend.position="bottom"),
-  nrow=1)
+    theme(legend.position="bottom") +
+    NULL,
+
+  nrow=1);
 ```
 
 Get a general overview of group-level effects.
@@ -2690,8 +2705,10 @@ grid.arrange(
   xlab("Posterior predicted cosine similarity") +
   ylab(NULL) +
   xlim(0, 1) +
-    theme(legend.position="bottom"),
-  nrow=1)
+    theme(legend.position="bottom") +
+    NULL,
+
+  nrow=1);
 ```
 
 Get a general overview of the group-level effects.
@@ -2968,7 +2985,8 @@ gather_draws(mdl_H4_binary, `b_.*`, regex = TRUE) %>%
                                                       r = 0, l = 0),
                                       face = 'bold', size = 14),
           axis.text.x = element_text(face = 'bold', size = 12),
-          axis.text.y = element_text(face = 'bold', size = 12))
+          axis.text.y = element_text(face = 'bold', size = 12))+
+    NULL;
 ```
 
 
@@ -3018,8 +3036,10 @@ grid.arrange(
     scale_fill_manual(values = c("lightsalmon", "skyblue"), name=NULL, labels=c("≥ 0", "< 0")) +
     geom_vline(xintercept = 0, linetype = "dashed") +
     ggtitle("1 | concept") + xlab("Intercept") + ylab(NULL) + xlim(-2,2) +
-    theme(legend.position="bottom"),
-  nrow=1)
+    theme(legend.position="bottom") +
+    NULL,
+
+  nrow=1);
 ```
 
 Get a general overview of group-level effects.
@@ -3280,7 +3300,8 @@ gather_draws(mdl_H4_similarity, `b_.*`, regex = TRUE) %>%
                                                       r = 0, l = 0),
                                       face = 'bold', size = 14),
           axis.text.x = element_text(face = 'bold', size = 12),
-          axis.text.y = element_text(face = 'bold', size = 12))
+          axis.text.y = element_text(face = 'bold', size = 12))+
+    NULL;
 ```
 
 **Random effects**:
@@ -3304,8 +3325,10 @@ grid.arrange(
   xlab("Posterior predicted cosine similarity") +
   ylab(NULL) +
   xlim(0, 1) +
-    theme(legend.position="bottom"),
-  nrow=1)
+    theme(legend.position="bottom") +
+    NULL,
+
+  nrow=1);
 ```
 
 Get a general overview of the group-level effects.
@@ -3546,7 +3569,8 @@ gather_draws(mdl_comb_bin_res, `b_.*`, regex = TRUE) %>%
                                                       r = 0, l = 0),
                                       face = 'bold', size = 14),
           axis.text.x = element_text(face = 'bold', size = 12),
-          axis.text.y = element_text(face = 'bold', size = 12))
+          axis.text.y = element_text(face = 'bold', size = 12))+
+    NULL;
 ```
 
 
@@ -3564,8 +3588,10 @@ grid.arrange(
     scale_fill_manual(values = c("lightsalmon", "skyblue"), name=NULL, labels=c("≥ 0", "< 0")) +
     geom_vline(xintercept = 0, linetype = "dashed") +
     ggtitle("1 | concept") + xlab("Intercept") + ylab(NULL) + xlim(-2,2) +
-    theme(legend.position="bottom"),
-  nrow=1)
+    theme(legend.position="bottom") +
+    NULL,
+
+  nrow=1);
 ```
 
 Get a general overview of group-level effects.
@@ -3872,7 +3898,8 @@ gather_draws(mdl_comb_sim_res, `b_.*`, regex = TRUE) %>%
                                                       r = 0, l = 0),
                                       face = 'bold', size = 14),
           axis.text.x = element_text(face = 'bold', size = 12),
-          axis.text.y = element_text(face = 'bold', size = 12))
+          axis.text.y = element_text(face = 'bold', size = 12))+
+    NULL;
 ```
 
 
@@ -3890,8 +3917,10 @@ grid.arrange(
     scale_fill_manual(values = c("lightsalmon", "skyblue"), name=NULL, labels=c("≥ 0", "< 0")) +
     geom_vline(xintercept = 0, linetype = "dashed") +
     ggtitle("1 | concept") + xlab("Intercept") + ylab(NULL) + xlim(-2,2) +
-    theme(legend.position="bottom"),
-  nrow=1)
+    theme(legend.position="bottom") +
+    NULL,
+
+  nrow=1);
 ```
 
 Get a general overview of group-level effects.
