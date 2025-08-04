@@ -6,8 +6,8 @@ Here we store all scripts associated with preparation of data and analysis assoc
 
 - 0_Data_wangle.ipynb - preparation of raw log files from guessing experiment into one dataframe
 - 1_ConceptNet_similarity.ipynb - computing cosine similarity for all target-answer pairs generated in the experiment
--
--
+- 2_descriptive.Rmd - exploring dataset and its descriptives
+- 3_modeling.Rmd - bayesian modeling to confirm hypothesis
 
 
 
