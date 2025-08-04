@@ -1,6 +1,6 @@
 # Github repository to project Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation
 
-This repository stores coding pipeline to process, analyze & model data associated with the manuscript 'Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation'. This project investigates whether perceived expressibility predicts real-time guessability of concepts in novel communication game. The project is part of the [FLESH project](https://vicom.info/projects/on-the-flexibility-and-stability-of-gesture-speech-coordination-flesh-evidence-from-production-comprehension-and-imitation/).
+This repository stores coding pipeline to process, analyze & model data associated with the manuscript 'Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation'. This project investigates whether perceived expressibility predicts real-time guessability of concepts in novel communication game. The project is part of the [anonymized for review].
 
 This project has been preregistered on November 24, 2024 on [AsPredicted (#200596)](https://aspredicted.org/kmry-vx5s.pdf). 
 
@@ -41,3 +41,4 @@ Werever necessary, a README contains information about how to install necessary 
 
 ## How to cite
 
+[anonymized for review]

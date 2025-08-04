@@ -27,3 +27,5 @@ pip install -r requirements.txt
 
 In folder \numberbatch follow the url link to download the multilingual numberbatch (version 19.08) with word embeddings,
 unzip the file
+
+To run R scripts, run the chunks in the respective R Markdown files.
