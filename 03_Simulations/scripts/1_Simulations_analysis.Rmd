@@ -1,7 +1,7 @@
 ---
 title: "Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation"
 subtitle: "Preparating data for simulations & analyzing results"
-author: [Anonymized for review]
+author: Aleksandra Ćwiek, Susanne Fuchs, Wim Pouw, and Šárka Kadavá
 date: "2025-06-01"
 output:
   rmarkdown::html_document:
