@@ -1,7 +1,7 @@
 ---
 title: "Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation"
 subtitle: "Bayesian Modeling"
-author: "anonymized for review"
+author: "Aleksandra Ćwiek"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   rmarkdown::html_document:
@@ -1993,7 +1993,6 @@ gather_draws(mdl_H2_poisson, `b_.*`, regex = TRUE) %>%
 ```
 
 **Random effects**:
-(Some chunks from here on in H2 are problematic to knit (reason unknown); therefore, they are not evaluated or included in the html but still work fine in the Rmd.)
 
 ```{r echo=FALSE, fig.cap=capFig("Posterior estimates of the random effects showing the median (dot), 50% (thick line) and 95% (thin lines) quantiles. Also showing 0 as the vertical dotted line and negative (blue) vs positive (red) values."), fig.height=1*7, fig.width=1*4, warning=FALSE, results='hide'}
 
@@ -2069,6 +2068,8 @@ df_part2 %>%
 **Interpretation**: Our Poisson model indicates that, at an expressibility value of zero, the expected number of repetitions is about 1.6. As expressibility increases by one unit, the number of repetitions decreases by roughly 80%. In other words, when a concept’s expressibility is higher, participants in the second half of the experiment need far fewer repair attempts to get their meaning across. Because the model shows a strongly negative effect for expressibility, these results align well with the hypothesis that **concepts rated with lower expressibility lead to fewer necessary repetitions or corrections**. The posterior predictive checks confirm that our Poisson assumptions are appropriate, and there is no indication of overdispersion requiring a more complex family. Overall, higher expressibility substantially reduces the amount of guess‐producer repair that occurs, offering strong support for Hypothesis 2.
 
 ## Looking into the Poisson
+
+(This part problematic to knit (reason unknown); therefore, it is not evaluated or included in the html but still works fine in the Rmd. One just needs a powerful computer or lots of patience.)
 
 I would like to reverse the thinking, so actually find out how the expressibility changes across different corrections.
 
