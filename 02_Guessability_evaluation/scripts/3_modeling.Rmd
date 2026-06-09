@@ -71,6 +71,7 @@ library(ggdist);
 library(gridExtra);
 library(sjPlot);
 library(knitr);
+library(patchwork);
 
 # Bayesian
 library(brms);
@@ -267,6 +268,17 @@ skew_normal if the normal is inappropriate.
 ## Sample size
 
 Calculate the effective sample size for modeling.
+
+```{r}
+kept_ids <- unique(paste(df$dyad, df$participant_dyad, sep = "_"))
+# verify the match first
+sum(demo$pcn_ID %in% kept_ids)    # how many demo rows match
+setdiff(demo$pcn_ID, kept_ids)    # demo participants to be dropped
+
+demo <- demo %>%
+  filter(pcn_ID %in% kept_ids)
+```
+
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 nrow(df)
@@ -1672,7 +1684,7 @@ grid.arrange(p_obs, p_pred, ncol = 1)
 #save
 g <- arrangeGrob(p_obs, p_pred, ncol = 1)
 
-ggsave(paste0(plots, "H1_cosineModel.png"), plot = g, width = 8, height = 8, dpi = 300)
+ggsave(paste0(plots, "H1_cosineModel.png"), plot = g, width = 13, height = 7, dpi = 300)
 ```
 
 ```{r fig.width=10, fig.height=10, fig.cap=capFig("Posterior draws for the fixed effects."), results='hide', warning=FALSE}
@@ -1953,7 +1965,7 @@ ggplot(df_predictions, aes(x=expressibility_dutch, y=.epred)) +
        #title="Poisson model: Expressibility vs. # corrections"
        )
 
-#ggsave(paste0(plots, "H2_model.png"), plot = last_plot(), width = 6, height = 5, dpi = 300)
+ggsave(paste0(plots, "H2_model.png"), plot = last_plot(), width = 8, height = 3, dpi = 300)
 #ggsave(paste0(plots, "H2_model.tif"), plot = last_plot(), width = 6, height = 5, dpi = 300)
 ```
 
@@ -2666,7 +2678,7 @@ grid.arrange(h3_bin + guides(fill="none"), h3_sim + theme(axis.text.y=element_bl
 #save
 g <- arrangeGrob(h3_bin + guides(fill="none"), h3_sim + theme(axis.text.y=element_blank()), ncol = 2)
 
-ggsave(paste0(plots, "H3_models.png"), plot = g, width = 8, height = 5, dpi = 300)
+ggsave(paste0(plots, "H3_models.png"), plot = g, width = 12, height = 4, dpi = 300)
 ```
 
 
@@ -2901,40 +2913,40 @@ Switching from **combined** to **vocal** decreases the probability of a correct 
 This large negative effect indicates that  **vocal** productions are much less likely to be guessed correctly than **combined**.
 
 
-```{r fig.width=2*4, fig.height=1*7, fig.cap=capFig("Top: Raw mean binary guessability by modality. Bottom: Model-predicted probability of a correct guess by modality. The plot shows the median predicted probability along with uncertainty bands."), results='hide', warning=FALSE}
-# Panel 1: Observed distribution of modality by guess outcome
+```{r fig.width=2*4, fig.height=1*7, fig.cap=capFig("Left: Raw mean binary guessability by modality. Right: Model-predicted probability of a correct guess by modality. The plot shows the median predicted probability along with uncertainty bands."), results='hide', warning=FALSE}
+# left panel
 p_obs <- ggplot(df, aes(x = modality, y = guess_binary, fill = modality)) +
-  stat_summary(fun = "mean", geom = "bar", color = "black", alpha = 0.7) +  # Calculate mean for guess_binary (performance)
-  stat_summary(fun.data = "mean_cl_normal", geom = "errorbar", width = 0.2) +  # Add error bars (95% CI)
-  labs(
-    x = "Modality", 
-    y = "Mean binary guessability",
-  ) +
-  scale_fill_manual(values = c("combined" = colorBlindBlack8[1], "gesture" = colorBlindBlack8[2], "vocal" = colorBlindBlack8[3])) +  # Customize colors
-  guides(fill = "none") +  # Remove the fill legend
-  # scale_y_continuous(breaks = seq(0, 1, by = 0.05),
-  #                    limits = c(0,1)) +
+  stat_summary(fun = "mean", geom = "bar", color = "black", alpha = 0.7) +
+  stat_summary(fun.data = "mean_cl_normal", geom = "errorbar", width = 0.2) +
+  labs(x = "Modality", y = "Mean binary guessability") +
+  scale_fill_manual(values = c("combined" = colorBlindBlack8[1],
+                               "gesture"  = colorBlindBlack8[2],
+                               "vocal"    = colorBlindBlack8[3])) +
+  guides(fill = "none") +
+  scale_y_continuous(breaks = seq(0, 0.6, by = 0.1)) +
+  coord_cartesian(ylim = c(0, 0.6)) +          # zoom, don't censor
   theme_minimal(base_size = 18) +
-    theme(
-      #text = element_text(size = 14),  # Increase text size for readability
-      axis.text.x = element_blank(),
-      axis.title.x = element_blank(),
-      axis.title.y = element_text(vjust = 1.5)   # Adjust y-axis title position
-    )
+  theme(axis.text.x = element_blank(),
+        axis.title.x = element_blank(),
+        axis.title.y = element_text(vjust = 1.5))
 
-# Panel 2: Conditional effects of exp_part on predicted probability
-ce_exp <- conditional_effects(mdl_H4_binary, effects = "modality")
+# right panel
 p_pred <- plot(ce_exp, plot = FALSE)[[1]] +
-  labs(x = "Modality", y = "Predicted probability\nof correct guess") +
+  labs(x = "Modality", 
+       y = "Predicted probability\nof correct guess") +
+  scale_y_continuous(breaks = seq(0, 0.6, by = 0.1)) +
+  coord_cartesian(ylim = c(0, 0.6)) +
   theme_minimal(base_size = 18)
 
 # Arrange the two panels vertically using grid.arrange
-grid.arrange(p_obs, p_pred, ncol = 1)
+grid.arrange(p_obs, p_pred, nrow = 1)
 
 #save
-g <- arrangeGrob(p_obs, p_pred, ncol = 1)
 
-ggsave(paste0(plots, "H4_binaryModel.png"), plot = g, width = 8, height = 8, dpi = 300)
+combined_plot <- p_obs + p_pred   # panels auto-align
+
+ggsave(paste0(plots, "H4_binaryModel.png"),
+       plot = combined_plot, width = 13, height = 4, dpi = 300)
 ```
 
 ```{r fig.width=10, fig.height=10, fig.cap=capFig("Posterior draws for the fixed effects."), results='hide', warning=FALSE}
