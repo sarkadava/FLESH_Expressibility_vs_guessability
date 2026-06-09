@@ -409,7 +409,7 @@ fill_colors <- c(
 )
 
 # Plot
-ggplot(df_long, aes(x = Value, fill = Variable)) +
+plot <- ggplot(df_long, aes(x = Value, fill = Variable)) +
   geom_density(alpha = 0.6, color = "black", linewidth = 0.3) +
   scale_fill_manual(values = fill_colors) +
   facet_wrap(~ Variable, scales = "free", ncol = 3) +
@@ -424,6 +424,11 @@ ggplot(df_long, aes(x = Value, fill = Variable)) +
     x = NULL,
     y = NULL
   )
+
+plot
+ggsave(here(parentfolder, "/figures/metrics_simulations.png"),
+       plot, width = 12, height = 8, dpi = 300)
+
 
 ```
 
